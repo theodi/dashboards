@@ -1,6 +1,9 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (3.2.13)
+      i18n (= 0.6.1)
+      multi_json (~> 1.0)
     backports (3.3.0)
     coffee-script (2.2.0)
       coffee-script-source
@@ -25,6 +28,7 @@ GEM
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     hike (1.2.2)
+    i18n (0.6.1)
     multi_json (1.7.2)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -62,5 +66,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   dashing
   foreman

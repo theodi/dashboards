@@ -5,3 +5,4 @@ source :rubygems
 
 gem 'dashing'
 gem 'foreman'
+gem 'activesupport'
