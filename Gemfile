@@ -6,3 +6,9 @@ source 'https://rubygems.org'
 gem 'dashing'
 gem 'foreman'
 gem 'activesupport'
+
+group :development, :test do
+  gem 'rspec'
+  gem 'simplecov'
+  gem 'simplecov-rcov'
+end
