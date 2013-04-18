@@ -11,4 +11,6 @@ group :development, :test do
   gem 'rspec'
   gem 'simplecov'
   gem 'simplecov-rcov'
+  gem 'vcr'
+  gem 'fakeweb'
 end
