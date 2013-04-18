@@ -1,0 +1,16 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ol>
+  <li data-foreach-item="items">
+    <a class='label' data-route="item.url" data-bind='item.text'></a>
+  </li>
+</ol>
+
+<ul class="list-nostyle">
+  <li data-foreach-item="items">
+    <a class='label' data-bind-href="item.url" data-bind='item.text'></a>
+  </li>
+</ul>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
