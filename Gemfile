@@ -4,3 +4,4 @@ source :rubygems
 #ruby-gemset=dashboards
 
 gem 'dashing'
+gem 'foreman'
