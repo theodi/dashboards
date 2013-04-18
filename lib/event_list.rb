@@ -1,3 +1,4 @@
+require 'json'
 require 'net/http'
 require 'active_support/core_ext/date/conversions'
 
