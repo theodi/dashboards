@@ -1,1 +1,1 @@
-dashing:  dashing start -p 3000
+dashing:  bundle exec dashing start -p 3000
