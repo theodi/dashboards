@@ -7,13 +7,12 @@ y = YAML.load File.open ".chef/rackspace_secrets.yaml"
 Vagrant.configure("2") do |config|
 
   config.butcher.knife_config_file = '.chef/knife.rb'
-  config.omnibus.chef_version = :latest
 
   1.times do |num|
     
-    config.vm.define :"dashboard_theodi_org_#{num}" do |config|
+    config.vm.define :"dashboards_theodi_org_#{num}" do |config|
       config.vm.box      = "dummy"
-      config.vm.hostname = "dashboard-#{num}"
+      config.vm.hostname = "dashboards-#{num}"
 
       config.ssh.private_key_path = "./.chef/id_rsa"
       config.ssh.username         = "root"
@@ -31,13 +30,13 @@ Vagrant.configure("2") do |config|
       config.vm.provision :shell, :inline => "curl -L https://www.opscode.com/chef/install.sh | bash"
 
       config.vm.provision :chef_client do |chef|
-        chef.node_name              = "dashboard-#{num}"
+        chef.node_name              = "dashboards-#{num}"
         chef.environment            = "production"
         chef.chef_server_url        = "https://chef.theodi.org"
         chef.validation_client_name = "chef-validator"
         chef.validation_key_path    = ".chef/chef-validator.pem"
         chef.run_list               = chef.run_list = [
-            "role[dashboard]"
+            "role[dashboards]"
         ]
       end
     end
