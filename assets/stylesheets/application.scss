@@ -245,6 +245,15 @@ h3 {
   padding-top: 5px;
 }
 
+// Changes to widgets
+
+.widget-number.scribd-views {
+  background: #154d63 url(scribd.png) center no-repeat;
+}
+
+.widget-number.soundcloud-listens {
+  background: #ff6000 url(soundcloud.png) center no-repeat;
+}
 
 // ----------------------------------------------------------------------------
 // Clearfix
