@@ -1,3 +1,7 @@
 /coverage/
 .DS_Store
 *.pem
+
+.chef
+.idea
+.vagrant
