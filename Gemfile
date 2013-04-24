@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 gem 'dashing'
 gem 'foreman'
 gem 'activesupport'
+gem 'soundcloud'
 
 group :development, :test do
   gem 'rspec'
