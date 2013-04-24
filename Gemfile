@@ -7,6 +7,7 @@ gem 'dashing'
 gem 'foreman'
 gem 'activesupport'
 gem 'soundcloud'
+gem 'rscribd'
 
 group :development, :test do
   gem 'rspec'
