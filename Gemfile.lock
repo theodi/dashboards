@@ -1,3 +1,18 @@
+GIT
+  remote: git://github.com/theodi/dashing.git
+  revision: 88bd4a6d8c8aea5d12df37606a3c4ac2565beec1
+  specs:
+    dashing (1.0.4)
+      coffee-script
+      rack
+      rufus-scheduler
+      sass
+      sinatra
+      sinatra-contrib
+      sprockets
+      thin
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -10,16 +25,6 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
-    dashing (1.0.4)
-      coffee-script
-      rack
-      rufus-scheduler
-      sass
-      sinatra
-      sinatra-contrib
-      sprockets
-      thin
-      thor
     diff-lcs (1.2.3)
     dotenv (0.7.0)
     eventmachine (1.0.3)
@@ -59,7 +64,7 @@ GEM
     rspec-mocks (2.13.1)
     rufus-scheduler (2.0.18)
       tzinfo (>= 0.3.23)
-    sass (3.2.7)
+    sass (3.2.8)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -81,7 +86,7 @@ GEM
       hashie
       httmultiparty (>= 0.3)
       httparty (>= 0.7.3)
-    sprockets (2.9.2)
+    sprockets (2.9.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -100,7 +105,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  dashing
+  dashing!
   dotenv
   fakeweb
   foreman
