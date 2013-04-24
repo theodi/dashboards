@@ -8,6 +8,7 @@ gem 'foreman'
 gem 'activesupport'
 gem 'soundcloud'
 gem 'rscribd'
+gem 'dotenv'
 
 group :development, :test do
   gem 'rspec'
