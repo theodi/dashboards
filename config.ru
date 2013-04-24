@@ -5,6 +5,7 @@ Dotenv.load
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :home_dashboard, 'training'
 
   helpers do
     def protected!
