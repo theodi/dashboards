@@ -1,0 +1,224 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--163171561828460245170\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\n<SOUNDCLOUD_USERNAME>\r\n--163171561828460245170\r\nContent-Disposition:
+        form-data; name=\"password\"\r\n\r\n<SOUNDCLOUD_PASSWORD>\r\n--163171561828460245170\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\nuser.login\r\n--163171561828460245170\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--163171561828460245170\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\nbb5cba508d410611f57ae4e716ff026b\r\n--163171561828460245170--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=163171561828460245170
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 17:17:13 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '179'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3Dba58e7e0-8f30-0130-3cfc-003048c08202%26h%3D4U0pPvw22FkBCLLRw8pmMou4lPGcs0vaC%2FjHLlF54Go%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 17:17:12 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 149ms
+      etag:
+      - ! '"c10403e8ca9d497112f6e9cc14e9ad3c"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><session_key>sess-bb3wuqpldhbafr47221</session_key><user_id>16127692</user_id><username><SOUNDCLOUD_USERNAME></username><name></name></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:12 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--13549228122888193227\r\nContent-Disposition: form-data; name=\"session_key\"\r\n\r\nsess-bb3wuqpldhbafr47221\r\n--13549228122888193227\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getList\r\n--13549228122888193227\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--13549228122888193227\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n7213894f32ea5d735cdff75d22520bea\r\n--13549228122888193227--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=13549228122888193227
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 17:17:13 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '1304'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3Dbad03b00-8f30-0130-3cfc-003048c08202%26h%3DCuGi%2FW6FpaB3k2Bbi7GbUzYQXGdTLVm2o18Zw2U0VBU%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 17:17:13 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 67ms
+      etag:
+      - ! '"a52bb7d961614e83d5bad44a4c2cf44f"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><resultset totalResultsAvailable="2"
+        totalResultsReturned="2" firstResultPosition="1" list="true"><result><doc_id>81467879</doc_id><access_key>key-1nnwio6136g96rp6fbqm</access_key><secret_password>1x7crpn22hdn7gssa1l0</secret_password><title><![CDATA[Untitled]]></title><description><![CDATA[]]></description><thumbnail_url>http://imgv2-3.scribdassets.com/img/word_document/81467879/111x142/5533d7e553/1366817472</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>1</page_count><when_uploaded>2012-02-13T15:55:19+00:00</when_uploaded><when_updated>2013-04-18T09:24:12+00:00</when_updated><reads>3</reads></result><result><doc_id>137749295</doc_id><access_key>key-1pgyb5mwakgbi8s548jw</access_key><secret_password>2cd1w7af6u7afqitjer9</secret_password><title><![CDATA[3
+        Stuart Harrison-MaximisingBenefitsOpenData]]></title><description><![CDATA[fsdf]]></description><thumbnail_url>http://imgv2-4.scribdassets.com/img/word_document/137749295/111x142/c43733318f/1366818188</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>11</page_count><when_uploaded>2013-04-24T15:31:54+00:00</when_uploaded><when_updated>2013-04-24T15:32:36+00:00</when_updated><reads>7</reads></result></resultset></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:13 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--66154183719621826162\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n81467879\r\n--66154183719621826162\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--66154183719621826162\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--66154183719621826162\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-bb3wuqpldhbafr47221\r\n--66154183719621826162\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n9489216a4f506b8db0666492e6823833\r\n--66154183719621826162--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=66154183719621826162
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 17:17:14 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '75'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"0df19f99a7eb53a77ff654dc5f73b29a"'
+      x-runtime:
+      - 21ms
+      set-cookie:
+      - scribd_ubtc=u%3Dbb3c07c0-8f30-0130-e21d-0030487fb344%26h%3DcQ2C9iRy%2BRQ9uQbhLBLyOAi1Uk1S1g07EpgJrvtOPpY%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 17:17:14 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>3</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:13 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--1314517213319220122147\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n137749295\r\n--1314517213319220122147\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--1314517213319220122147\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--1314517213319220122147\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-bb3wuqpldhbafr47221\r\n--1314517213319220122147\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n05248dbeab66462c8879ed8a79f48c36\r\n--1314517213319220122147--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=1314517213319220122147
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 17:17:15 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '75'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3Dbbcf0300-8f30-0130-191f-003048c08206%26h%3DJpGHVZdRXaAqtuy3%2B%2F3Jtotq2GXN%2FIDK2hkdYr%2FfDpo%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 17:17:15 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-runtime:
+      - 18ms
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"c87c5b12e94d58cfcecae73820c53bea"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>7</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:14 GMT
+recorded_with: VCR 2.4.0

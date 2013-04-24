@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.soundcloud.com/oauth2/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=password&username=<SOUNDCLOUD_USERNAME>&password=<SOUNDCLOUD_PASSWORD>&client_id=<SOUNDCLOUD_CLIENT_ID>&client_secret=<SOUNDCLOUD_SECRET>
+    headers:
+      user-agent:
+      - SoundCloud Ruby Wrapper 0.3.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Wed, 24 Apr 2013 17:17:16 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '133'
+      connection:
+      - close
+      x-runtime:
+      - '23'
+      etag:
+      - ! '"8cd50841f3a9cb474e3e36ca29bd49e1"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      access-control-allow-headers:
+      - Accept, Authorization, Content-Type, Origin
+      access-control-expose-headers:
+      - Date
+      access-control-allow-origin:
+      - ! '*'
+      vary:
+      - Accept-Encoding
+      x-cacheable:
+      - NO:Cache-Control=max-age=0
+      x-varnish:
+      - '3230754496'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+      x-cache:
+      - MISS
+    body:
+      encoding: US-ASCII
+      string: ! '{"access_token":"1-39070-1523704-e28d96e9be3e3a8d","expires_in":21599,"scope":"*","refresh_token":"a499b0f8192974101e8b2e9762f9dd45"}'
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:15 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/me/tracks?format=json&oauth_token=1-39070-1523704-e28d96e9be3e3a8d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - SoundCloud Ruby Wrapper 0.3.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Wed, 24 Apr 2013 17:17:16 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '4953'
+      connection:
+      - close
+      x-runtime:
+      - '45'
+      etag:
+      - ! '"6cf8e3cccd85a016542e02c1dbe575e7"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      access-control-allow-headers:
+      - Accept, Authorization, Content-Type, Origin
+      access-control-expose-headers:
+      - Date
+      access-control-allow-origin:
+      - ! '*'
+      vary:
+      - Accept-Encoding
+      x-cacheable:
+      - NO:Cache-Control=max-age=0
+      x-varnish:
+      - '2092420670'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+      x-cache:
+      - MISS
+    body:
+      encoding: US-ASCII
+      string: ! '[{"kind":"track","id":6464456,"created_at":"2010/10/27 18:24:19 +0000","user_id":1523704,"duration":3573500,"commentable":true,"state":"finished","original_content_size":85731506,"sharing":"public","tag_list":"\"drum
+        and bass\" jungle mix techstep","permalink":"pez-deep-dark-dirty-and-other-things-that-begin-with-d","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Drum
+        \u0026 Bass","title":"Pez - Deep Dark Dirty and other things that begin with
+        d","description":"Another old mix from me - a mix of old and new (at the time)
+        DnB tracks with a deep, dark, but not noisy, vibe:\r\n\r\nKorn - Falling Away
+        From Me (Krust RMX) [Sony]\r\nBreak - Vanishing Point [Eastside]\r\nKryptic
+        Minds and Leon Switch - Lost World [Defcom]\r\nM.I.S.T. - Lose Control [Metalheadz]\r\nSabre
+        - Dojo [Osiris Music]\r\nSeba - Shapeshifter [Secret Operations]\r\nRoni Size
+        - Watching Windows (DJ Die RMX) [Talkin'' Loud]\r\nSeba and Paradox - Sound
+        on Sound [Bassbin]\r\nPeshay - MK Ultra [Cubik Musik]\r\nKrust - Choose Conciousness
+        [Full Cycle]\r\nSurvival - Sidewinder [DNAudio]\r\nFracture and Neptune -
+        Ups and Downs [Offshore]\r\nBreak - Locked in [Explicit Recordings]\r\nM.I.S.T
+        - Warp 1 [Soul:r]\r\nCalibre and Zero Tolerance - What I Feel [Signature]\r\nAlaska
+        and Paradox - Drum Sessions (Seba RMX) [Paradox Music]","label_name":"","release":"","track_type":"recording","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/6464456","user":{"id":1523704,"kind":"user","permalink":"<SOUNDCLOUD_USERNAME>","username":"<SOUNDCLOUD_USERNAME>","uri":"https://api.soundcloud.com/users/1523704","permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>","avatar_url":"https://i1.sndcdn.com/avatars-000002638102-vs89ln-large.jpg?6462778"},"user_playback_count":1,"user_favorite":false,"permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>/pez-deep-dark-dirty-and-other-things-that-begin-with-d","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/61Yi4W3EUNSJ_m.png","stream_url":"https://api.soundcloud.com/tracks/6464456/stream","download_url":"https://api.soundcloud.com/tracks/6464456/download","playback_count":99,"download_count":1,"favoritings_count":3,"comment_count":1,"attachments_uri":"https://api.soundcloud.com/tracks/6464456/attachments","secret_token":"s-yYFWN","secret_uri":"https://api.soundcloud.com/tracks/6464456?secret_token=s-yYFWN","downloads_remaining":99},{"kind":"track","id":6246833,"created_at":"2010/10/20
+        18:16:19 +0000","user_id":1523704,"duration":961567,"commentable":true,"state":"finished","original_content_size":38445975,"sharing":"public","tag_list":"dillinja
+        dnb jungle 1994 logic \"logic recordings\" \"drum and bass\"","permalink":"pez-dillinja-the-logic-year","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Drum
+        and Bass / Jungle","title":"Pez - Dillinja The Logic Year","description":"An
+        old mix from me featuring all the releases from Dillinja''s 1994 label Logic.
+        So many good tunes on this, and so some diversity (for a label with only three
+        releases anyway), from the smooth subtlety of the Deep Love remix to the tear
+        out amen insanity of You Don''t Know - it''s all there! \r\n\r\nIt''s only
+        20 minutes, so it''s the ideal soundtrack for having a bath, cooking your
+        dinner, or whatever else takes 20 minutes, so sir back, download, listen,
+        and enjoy a master at his craft (not me of course! Dillinja!)\r\n\r\nDillinja
+        - Deep Love Remix\r\nDillinja - Warriors\r\nDillinja and Mystery - Moods\r\nDillinja
+        - Heavenly Bass\r\nDillinja - You Don''t Know\r\nDillinja - You Don''t Know
+        (Remix)\r\n","label_name":"","release":"","track_type":"recording","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/6246833","user":{"id":1523704,"kind":"user","permalink":"<SOUNDCLOUD_USERNAME>","username":"<SOUNDCLOUD_USERNAME>","uri":"https://api.soundcloud.com/users/1523704","permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>","avatar_url":"https://i1.sndcdn.com/avatars-000002638102-vs89ln-large.jpg?6462778"},"user_playback_count":1,"user_favorite":false,"permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>/pez-dillinja-the-logic-year","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/z0ZDLbMJ0KfT_m.png","stream_url":"https://api.soundcloud.com/tracks/6246833/stream","download_url":"https://api.soundcloud.com/tracks/6246833/download","playback_count":545,"download_count":68,"favoritings_count":10,"comment_count":1,"attachments_uri":"https://api.soundcloud.com/tracks/6246833/attachments","secret_token":"s-8PzNA","secret_uri":"https://api.soundcloud.com/tracks/6246833?secret_token=s-8PzNA","downloads_remaining":32}]'
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 17:17:15 GMT
+recorded_with: VCR 2.4.0
