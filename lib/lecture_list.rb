@@ -8,12 +8,16 @@ class LectureList
     
     json = Net::HTTP.get URI.parse("http://theodi.org/lectures.json")
     lectures = JSON.parse(json)
-    num = 0
 
     lecture_list = lectures.map do |url, data|
       tickets = get_tickets(data)
-      num += 1
-      {url: url, text: "#{data['name']} (#{Date.parse(data['startDate']).to_formatted_s(:short)})", tickets: tickets, capacity: data['capacity'], class: "item#{num}"}
+      capacity = data['capacity']
+      
+      people = ""
+      (capacity - tickets).times { people += "<span class='icon-user'></span>" }
+      tickets.times { people += "<span class='icon-user available'></span>" }
+      
+      {url: url, text: data['name'], date: Date.parse(data['startDate']).to_formatted_s(:short).strip, people: people }
     end
 
     { items: lecture_list }
