@@ -59,7 +59,7 @@ class LectureList
     lecture_list = lectures.map do |url, data|
       tickets = get_tickets(data)
       num += 1
-      {url: url, text: "#{data['name']} (#{Date.parse(data['startDate']).to_formatted_s(:short)})", tickets: tickets, capacity: data['capacity'], class: "class#{num}"}
+      {url: url, text: "#{data['name']} (#{Date.parse(data['startDate']).to_formatted_s(:short)})", tickets: tickets, capacity: data['capacity']}
     end
 
     { items: lecture_list }

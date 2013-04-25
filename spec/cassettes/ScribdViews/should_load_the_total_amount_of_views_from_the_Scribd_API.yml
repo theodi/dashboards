@@ -1,0 +1,865 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--2251481171207913225281\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\n<SCRIBD_USERNAME>\r\n--2251481171207913225281\r\nContent-Disposition:
+        form-data; name=\"password\"\r\n\r\n<SCRIBD_PASSWORD>\r\n--2251481171207913225281\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\nuser.login\r\n--2251481171207913225281\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--2251481171207913225281\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n3cbfa0a82c1f7b7789c51b384f993dab\r\n--2251481171207913225281--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=2251481171207913225281
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:05 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '209'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3D411b1dc0-8f38-0130-1924-003048c08206%26h%3D0lyS2JLwVZ%2Fr2D8%2B28SmUt2EPKjvvPGgXh%2FSr1vLVY8%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:05 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-runtime:
+      - 127ms
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"2083df53ff6de65b15cba49dbbf0ac37"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><session_key>sess-2jn67kehul27hfd7pueo</session_key><user_id>200992759</user_id><username><SCRIBD_USERNAME></username><name>Open
+        Data Institute</name></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:04 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--3225024758140195160250\r\nContent-Disposition: form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--3225024758140195160250\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getList\r\n--3225024758140195160250\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--3225024758140195160250\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n35dd9681c4cb0900274666c6cf1d7cbf\r\n--3225024758140195160250--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=3225024758140195160250
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:08 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '13043'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3D42439b80-8f38-0130-3d07-003048c08202%26h%3DF6PriXPdWKJcmrvn6QNXGoi9lvEpeu1qYlTxyZCFbc8%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:07 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 48ms
+      etag:
+      - ! '"c3db583595d1666bbfb6a5c73e25a190"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><resultset totalResultsReturned="12"
+        firstResultPosition="1" list="true" totalResultsAvailable="12"><result><doc_id>122981341</doc_id><access_key>key-aa38lqofwoftrxl3wcv</access_key><secret_password>amzxgt5ebu97bkr8fmj</secret_password><title><![CDATA[Big
+        Data Comes to the NHS]]></title><description><![CDATA[<p>Friday Lunchtime
+        Lectures at the Open Data Institute. For our second lecture... Big Data Comes
+        to the NHS The NHS has been challenged to make &pound;20 billion in efficiency
+        savings by 2015. &pound;10 billion a year are spent by the NHS on essential
+        drugs. Often, there&rsquo;s a choice between a cheap generic medication, or
+        an expensive branded one, so reducing prescribing variation is a priority
+        as a painless way to save money. Big Data specialists, Francine Bennett and
+        Bruce Durling from Mastodon C took us on a journey through their work on Prescribing
+        Analytics and showed how they identified &pound;200m potential savings using
+        40 million rows of open data from the NHS.</p>]]></description><thumbnail_url>http://imgv2-3.scribdassets.com/img/word_document/122981341/111x142/5237580556/1366161332</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>13</page_count><when_uploaded>2013-01-30T16:28:08+00:00</when_uploaded><when_updated>2013-02-15T16:47:18+00:00</when_updated><reads>1481</reads></result><result><doc_id>122989561</doc_id><access_key>key-1gjsorltaz6t0xtp0hb0</access_key><secret_password>2fubgfzlxxty00p7ag0v</secret_password><title><![CDATA[Legislation
+        as Data]]></title><description><![CDATA[<p>Friday Lunchtime Lectures at the
+        Open Data Institute: 25 January 2013. For our third lecture... Legislation
+        as Data Legislation affects us all. Many of our most important rights, duties
+        and obligations are set out in statute law. What does it mean to think of
+        legislation as data and how might open data thinking help lead us to good
+        law? John Sheridan, Head of Legislation Services at The National Archives,
+        guided us through legislation.gov.uk. Explaining what aspects of legislation
+        can be represented as data and why the statute book can perhaps be better
+        presented, understood and managed starting from a data perspective.</p>]]></description><thumbnail_url>http://imgv2-3.scribdassets.com/img/word_document/122989561/111x142/8e22ab3ba1/1366161332</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>59</page_count><when_uploaded>2013-01-30T17:13:09+00:00</when_uploaded><when_updated>2013-04-18T13:01:15+00:00</when_updated><reads>2081</reads></result><result><doc_id>123014246</doc_id><access_key>key-1z2ve2h4tgp299ajbstp</access_key><secret_password>29q9jr8yshzo8ru9gpno</secret_password><title><![CDATA[Data
+        as Culture]]></title><description><![CDATA[<p>Introducing Friday Lunchtime
+        Lectures at the Open Data Institute. 11 January 2013 For our first lecture...
+        Curators of the ODI Data as Culture art commission, TED Senior Fellow, Julie
+        Freeman, and MzTEK co-founder, Sophie McDonald, will provide a background
+        of the data-driven art movement, why this commission is so timely, and take
+        you on a tour of the art works installed at the ODI offices.</p>]]></description><thumbnail_url>http://imgv2-2.scribdassets.com/img/word_document/123014246/111x142/686d23b4f4/1366161332</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>11</page_count><when_uploaded>2013-01-30T19:36:42+00:00</when_uploaded><when_updated>2013-02-15T16:46:06+00:00</when_updated><reads>582</reads></result><result><doc_id>123365071</doc_id><access_key>key-an616x2gyqx4r5ex3ws</access_key><secret_password>xejpy5ftcwzn1l9g3z</secret_password><title><![CDATA[How
+        can Open Data Revolutionise your Rail Travel?]]></title><description><![CDATA[<p>Friday
+        Lunchtime Lectures at the Open Data Institute. For our fourth lecture... How
+        can open data revolutionise your rail travel? The release of open data on
+        public transport over the last year has laid bare the the secrets of cheap
+        fares, true timekeeping records and the best alternative routes the official
+        journey planners don&#39;t tell you. Jonathan Raper, digital geographer and
+        founder of Placr, will draw back the curtain on this new era and reveal how
+        you can make the most of it.</p>]]></description><thumbnail_url>http://imgv2-4.scribdassets.com/img/word_document/123365071/111x142/3e5ecad619/1366165810</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>25</page_count><when_uploaded>2013-02-01T17:27:47+00:00</when_uploaded><when_updated>2013-02-15T16:46:44+00:00</when_updated><reads>1145</reads></result><result><doc_id>124951288</doc_id><access_key>key-1l81o5zzldiems7bu2ty</access_key><secret_password>2lcsrkczp0w84wgaw49c</secret_password><title><![CDATA[The
+        business of Open Data, where''s the benefit?]]></title><description><![CDATA[<p>The
+        business of Open Data: where&#39;s the benefit? 8, February 2013 The passion
+        and excitement around Open Data is palpable across many sectors but what are
+        the benefits and value for business? Jeni Tennison, Technical Director at
+        the Open Data Institute, discussed business models that support publishing
+        open data and what further work is required.</p>]]></description><thumbnail_url>http://imgv2-2.scribdassets.com/img/word_document/124951288/111x142/fb8326bb70/1366171115</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>28</page_count><when_uploaded>2013-02-11T17:45:11+00:00</when_uploaded><when_updated>2013-03-27T21:40:55+00:00</when_updated><reads>2869</reads></result><result><doc_id>125638490</doc_id><access_key>key-2oc8ka2tta6k6aulwc9</access_key><secret_password>1nettz3kx5sgmm1i9nt2</secret_password><title><![CDATA[Getting
+        to grips with the National Pupil Database; personal data in an open data world]]></title><description><![CDATA[<p>The
+        National Pupil Database monitors over 400 variables, covering every year of
+        a child&rsquo;s education from nursery to A-levels. Anyone who attended a
+        state schoolin England since 1997 is included; data is taken automatically
+        from school systems and is never deleted. The data is currently used to support
+        decision-making, statistical analysis, targeted funding, performance monitoring
+        and educational research.The government now proposes to &#39;widen access&#39;
+        to the NPD, making information it contains available to a range of of organisations
+        including commercial enterprises and the media. Can such personal data be
+        treated as open data? Phil Booth, former national coordinator of NO2ID and
+        co-director of TRUTH2POWER, and Terri Dowty, former director of Action on
+        Rights for Children and also a director of TRUTH2POWER will introduce you
+        to the database, what data is collected and why everyone needs to know how
+        it operates.</p>]]></description><thumbnail_url>http://imgv2-4.scribdassets.com/img/word_document/125638490/111x142/45cd2e5718/1366173912</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>15</page_count><when_uploaded>2013-02-15T15:09:16+00:00</when_uploaded><when_updated>2013-02-15T15:23:48+00:00</when_updated><reads>1102</reads></result><result><doc_id>127528815</doc_id><access_key>key-1401sz8baavfgmq3ymok</access_key><secret_password>1ne1bim47yvaipd0swt2</secret_password><title><![CDATA[Introduction
+        to the ODI Postgraduate Certificate in Open Data Technologies]]></title><description><![CDATA[These
+        are the set of slides to go with a webinar run by Dr David Tarrant to introduce
+        the ODI Postgraduate Certificate in Open Data Technologies with the University
+        of Southampton.To listen to the webinar go to: https://soundcloud.com/<SOUNDCLOUD_USERNAME>/introduction-to-the-odiTo
+        understand more about the course go to: <SOUNDCLOUD_USERNAME>.org/excellence/pg_certificateor
+        contact training@<SOUNDCLOUD_USERNAME>.org]]></description><thumbnail_url>http://imgv2-3.scribdassets.com/img/word_document/127528815/111x142/117935102e/1366179585</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>12</page_count><when_uploaded>2013-02-27T10:24:07+00:00</when_uploaded><when_updated>2013-02-27T11:22:37+00:00</when_updated><reads>682</reads></result><result><doc_id>127750423</doc_id><access_key>key-dchahwrkswtwmyt6js8</access_key><secret_password>bl5yfuq3wifz1xkx5pr</secret_password><title><![CDATA[Telling
+        Stories with Data]]></title><description><![CDATA[Talk by Kathryn Corrick
+        of the Open Data Institute to BA Journalism students at City University, 28
+        February 2013. ]]></description><thumbnail_url>http://imgv2-1.scribdassets.com/img/word_document/127750423/111x142/461f185e3a/1366658613</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>18</page_count><when_uploaded>2013-02-28T10:04:36+00:00</when_uploaded><when_updated>2013-04-14T01:58:54+00:00</when_updated><reads>530</reads></result><result><doc_id>128356210</doc_id><access_key>key-w4pct1il6gmx5wr8yke</access_key><secret_password>2mk66d6k8m5sengzobss</secret_password><title><![CDATA[Business
+        considerations for privacy and open data: how not to get caught out]]></title><description><![CDATA[When
+        all around you seems to be going "open", what should you know and bear in
+        mind to avoid a privacy debacle. Unless your data is solely about inanimate
+        objects, there will be privacy considerations for your business or organisation.
+        Done properly, suitable consideration may be trivial; done badly, it can be
+        catastrophic, and hindsight is always better when the stories are about a
+        different organisation.With kittens and hopefully some humour, Sam Smith of
+        Privacy International covers how your organisation can avoid a future audience
+        laughing (uncomfortably) at the privacy choices you should have made for your
+        users, your customers and citizens.]]></description><thumbnail_url>http://imgv2-1.scribdassets.com/img/word_document/128356210/111x142/fa1f099270/1366183159</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>18</page_count><when_uploaded>2013-03-04T11:07:11+00:00</when_uploaded><when_updated>2013-03-28T22:09:36+00:00</when_updated><reads>1346</reads></result><result><doc_id>129365344</doc_id><access_key>key-a1vxeybz4srsaahj1v2</access_key><secret_password>2hjzq88hp0k17ya3f2rm</secret_password><title><![CDATA[Building
+        an open digital public space]]></title><description><![CDATA[The Victorians
+        built vast galleries and museums to house cultural and scientific collections;
+        they were opened to the public and used for educational research. But what
+        are their digital equivalents?Continuing our investigation into Data as Culture,
+        Bill Thompson, technology writer and current head of partnership development
+        for the BBC Archives, guides us through the BBC Archive and what it will take
+        to build an open digital public space and ensure our digital cultural heritage.]]></description><thumbnail_url>http://imgv2-2.scribdassets.com/img/word_document/129365344/111x142/7d4ed9173b/1366184667</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>21</page_count><when_uploaded>2013-03-08T22:30:25+00:00</when_uploaded><when_updated>2013-04-23T11:41:13+00:00</when_updated><reads>8557</reads></result><result><doc_id>132404337</doc_id><access_key>key-2lf2ul113wu7klpmgfgw</access_key><secret_password>t5q0ry374g4stzgdgau</secret_password><title><![CDATA[How
+        to create more value from government open data]]></title><description><![CDATA[Has
+        most of government data released openly so far been flytipping, little used
+        and of little value? David Mitton, of ListPoint, will discuss how more value
+        from government data can be realised. Using the national police database as
+        a case study, he will examine how this data was made more widely usable and
+        how IT implementation costs were reduced by 20%, just by surfacing and mapping
+        the data standards.]]></description><thumbnail_url>http://imgv2-4.scribdassets.com/img/word_document/132404337/111x142/7680ba43b6/1366198327</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>20</page_count><when_uploaded>2013-03-26T10:00:39+00:00</when_uploaded><when_updated>2013-03-28T22:07:56+00:00</when_updated><reads>953</reads></result><result><doc_id>137758343</doc_id><access_key>key-1iacgforvd7ouccf91el</access_key><secret_password>j3d4hcsfwp0oetksko5</secret_password><title><![CDATA[Introduction
+        to open data journalism: finding stories in data]]></title><description><![CDATA[A
+        one-day course which focused on how to find stories in data, run by the Open
+        Data Institute and Journalism.co.uk. The course was taught by Lisa Evans (School
+        of Data) and Kathryn Corrick (Open Data Institute) and took place on 23 April
+        2013,]]></description><thumbnail_url>http://imgv2-4.scribdassets.com/img/word_document/137758343/111x142/716f134b0c/1366820534</thumbnail_url><conversion_status><![CDATA[DONE]]></conversion_status><page_count>63</page_count><when_uploaded>2013-04-24T16:17:40+00:00</when_uploaded><when_updated>2013-04-24T16:31:16+00:00</when_updated><reads>165</reads></result></resultset></rsp>'
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:07 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--6681262252282187449\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n122981341\r\n--6681262252282187449\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--6681262252282187449\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--6681262252282187449\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--6681262252282187449\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n07849271a26fd44492c361dc21e468e4\r\n--6681262252282187449--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=6681262252282187449
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:09 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"17a3fa1fcb26bbac9879a00b69691a8f"'
+      x-runtime:
+      - 14ms
+      set-cookie:
+      - scribd_ubtc=u%3D4398ece0-8f38-0130-e229-0030487fb344%26h%3D%2B3buv%2FuvOg7ICFPvhgVKNQNuNvlD17fCESP4G67Aboo%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:09 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>1481</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:08 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--1709024064167146162117\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n122989561\r\n--1709024064167146162117\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--1709024064167146162117\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--1709024064167146162117\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--1709024064167146162117\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\nd051806501b96b0a7e13cea372f62ab1\r\n--1709024064167146162117--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=1709024064167146162117
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:10 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"edb45d76be6ab0b72c87791b5ceb3cc3"'
+      x-runtime:
+      - 27ms
+      set-cookie:
+      - scribd_ubtc=u%3D43fe84d0-8f38-0130-e228-0030487fb344%26h%3DpUWlzvhB1Sp%2FqBWqw893Ma47LYgmk%2BeAO1s9T4xA464%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:10 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>2081</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:09 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--111272381112164111237\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n123014246\r\n--111272381112164111237\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--111272381112164111237\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--111272381112164111237\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--111272381112164111237\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n4beb7a7929600ce534136857440b6c0a\r\n--111272381112164111237--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=111272381112164111237
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:11 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '77'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3D44825b30-8f38-0130-1928-003048c08206%26h%3DJ6gTVJCt8vZJlwRrhBeNYd98uDcDSe6vUe11tuFfP%2BA%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:11 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-runtime:
+      - 132ms
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"9a3c87344d0e0bcba74e3199fe3aae77"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>582</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:10 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--215101638524719618818\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n123365071\r\n--215101638524719618818\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--215101638524719618818\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--215101638524719618818\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--215101638524719618818\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n86f7d99a6ffa9274b4815ab520a18da8\r\n--215101638524719618818--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=215101638524719618818
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:12 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"8665db020f5a6f1e33c9e03ded1da057"'
+      x-runtime:
+      - 25ms
+      set-cookie:
+      - scribd_ubtc=u%3D44f89690-8f38-0130-e232-0030487fb344%26h%3Dz%2Fa%2F8S%2F%2F2V%2FaPtQsL7ZgyH%2BOUMS14gyhZwZuFbbXnJs%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:12 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>1145</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:11 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--1981728220414034179234\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n124951288\r\n--1981728220414034179234\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--1981728220414034179234\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--1981728220414034179234\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--1981728220414034179234\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n5a7054926893c03ff0bb1b8fa54c5074\r\n--1981728220414034179234--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=1981728220414034179234
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:12 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3D4560bc40-8f38-0130-3d07-003048c08202%26h%3DWQluCwBXiAlE2ahtzD7z%2BFQOSu7qEH5uuY7pnp1LjqM%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:12 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 26ms
+      etag:
+      - ! '"d0903cdd1eec61342fb127cb0d36ba45"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>2869</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:11 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--238664722764139159\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n125638490\r\n--238664722764139159\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--238664722764139159\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--238664722764139159\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--238664722764139159\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n35544081c688e2390237336307ccd3ab\r\n--238664722764139159--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=238664722764139159
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:13 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 15ms
+      etag:
+      - ! '"3122e89106c4d6a784018f0993d7987f"'
+      set-cookie:
+      - scribd_ubtc=u%3D45c81900-8f38-0130-af2e-003048c2b194%26h%3D1TaGnq729y3nmaFURdmuwAMjCBFpXJQZUWMVfjeJ4rc%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:13 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>1102</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:12 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--148169412361141916045\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n127528815\r\n--148169412361141916045\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--148169412361141916045\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--148169412361141916045\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--148169412361141916045\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n6d1877050dbbd3abbe04a35781b56aac\r\n--148169412361141916045--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=148169412361141916045
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:14 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '77'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"ab44b824acba06047c22bd16dbdf5c35"'
+      x-runtime:
+      - 17ms
+      set-cookie:
+      - scribd_ubtc=u%3D46bb4690-8f38-0130-e229-0030487fb344%26h%3DIsYpxVk8VrjHxgbb5ULk4Sfw1Yat1CQ%2BaTmKWiCF%2FgM%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:14 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>682</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:14 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--388321912428165126220\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n127750423\r\n--388321912428165126220\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--388321912428165126220\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--388321912428165126220\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--388321912428165126220\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n306dd70a08fc5c08d55887aa9c1d57fc\r\n--388321912428165126220--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=388321912428165126220
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:15 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '77'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 24ms
+      etag:
+      - ! '"60dc40c557abe6da93ae7c6e449567bb"'
+      set-cookie:
+      - scribd_ubtc=u%3D47444470-8f38-0130-af2e-003048c2b194%26h%3DgwJtCA8efayQh4MDlRfW%2FnRfuAMhraDBuvVCan8a6R0%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:15 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>530</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:15 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--24612857911522251460\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n128356210\r\n--24612857911522251460\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--24612857911522251460\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--24612857911522251460\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--24612857911522251460\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n56b167ced745d10b1b22ac6cc26c23c3\r\n--24612857911522251460--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=24612857911522251460
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:16 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 24ms
+      etag:
+      - ! '"5993916a97662bf5bee689e791e54733"'
+      set-cookie:
+      - scribd_ubtc=u%3D47b16c70-8f38-0130-af2e-003048c2b194%26h%3DEqrJdVqdfkMQvc%2F80vU6NK0OOl4RfgA2iidHJGpb4AQ%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:16 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>1346</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:15 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--172769519216420311916\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n129365344\r\n--172769519216420311916\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--172769519216420311916\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--172769519216420311916\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--172769519216420311916\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\ne2bd23358f6c466bf2858354d549fddf\r\n--172769519216420311916--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=172769519216420311916
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:17 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '78'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      etag:
+      - ! '"b696004eed0d77df6d0fe30a75ced02f"'
+      x-runtime:
+      - 16ms
+      cache-control:
+      - private, max-age=0, must-revalidate
+      set-cookie:
+      - scribd_ubtc=u%3D483706d0-8f38-0130-03d6-0030487fb288%26h%3DQizj%2FAopWRt%2FchRF8uh0QwyIp9Xcgyy1KuewiDth03s%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:17 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>8557</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:16 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--933160962421635333\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n132404337\r\n--933160962421635333\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--933160962421635333\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--933160962421635333\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--933160962421635333\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\n3c18d910f55ad45bfe69e95488eba126\r\n--933160962421635333--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=933160962421635333
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:18 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '77'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      set-cookie:
+      - scribd_ubtc=u%3D48a84b90-8f38-0130-3d07-003048c08202%26h%3DgEY0L%2F4RLdvxxj1OOqT00kL5xU4jP3RGrjngP3vvrnY%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:18 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      cache-control:
+      - private, max-age=0, must-revalidate
+      x-runtime:
+      - 39ms
+      etag:
+      - ! '"b2e640d500163c9b46eca081304609c0"'
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>953</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:17 GMT
+- request:
+    method: post
+    uri: http://api.scribd.com/api
+    body:
+      encoding: US-ASCII
+      string: ! "--10682011212552438187\r\nContent-Disposition: form-data; name=\"doc_id\"\r\n\r\n137758343\r\n--10682011212552438187\r\nContent-Disposition:
+        form-data; name=\"method\"\r\n\r\ndocs.getStats\r\n--10682011212552438187\r\nContent-Disposition:
+        form-data; name=\"api_key\"\r\n\r\n<SCRIBD_KEY>\r\n--10682011212552438187\r\nContent-Disposition:
+        form-data; name=\"session_key\"\r\n\r\nsess-2jn67kehul27hfd7pueo\r\n--10682011212552438187\r\nContent-Disposition:
+        form-data; name=\"api_sig\"\r\n\r\na292b9faa0dc7bd90060cc94969fe93f\r\n--10682011212552438187--\r\n"
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      content-type:
+      - multipart/form-data; boundary=10682011212552438187
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.2.7
+      date:
+      - Wed, 24 Apr 2013 18:11:18 GMT
+      content-type:
+      - application/xml; charset=utf-8
+      content-length:
+      - '77'
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      - X-Language-Locale
+      status:
+      - 200 OK
+      cache-control:
+      - private, max-age=0, must-revalidate
+      etag:
+      - ! '"4df57fae0753147c3165c4fd13e1f740"'
+      x-runtime:
+      - 15ms
+      set-cookie:
+      - scribd_ubtc=u%3D49153ce0-8f38-0130-e228-0030487fb344%26h%3Dn2bOB18it9RRa1zfSlFzCMuSZdbAlG9jYEkAW5i%2F5YA%3D;
+        domain=.scribd.com; path=/; expires=Mon, 24 Apr 2028 18:11:18 GMT
+      - _scribd_session=BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--fc7b6c3069b12443693a170a61dfab07795a4030;
+        domain=.scribd.com; path=/; expires=Fri, 01 Jan 2016 00:00:00 GMT; HttpOnly
+      x-served-by:
+      - backend-upload
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><rsp stat="ok"><reads>165</reads></rsp>
+    http_version: '1.1'
+  recorded_at: Wed, 24 Apr 2013 18:11:18 GMT
+recorded_with: VCR 2.4.0
