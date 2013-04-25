@@ -6,53 +6,7 @@ class LectureList
   
   def self.update
     
-    json = '
-{
-  "http://www.eventbrite.com/event/6339143549": {
-    "name": "Friday lunchtime lectures: Something something data",
-    "@type": "http://schema.org/EducationEvent",
-    "startDate": "2013-05-31T13:00:00+00:00",
-    "endDate": "2013-05-31T13:45:00+00:00",
-    "capacity": 45,
-    "additionalType": "http://linkedscience.org/teach/ns/#Lecture",
-    "location": {
-      "@type": "http://schema.org/Place",
-      "name": "The ODI"
-    },
-    "offers": [
-      {
-        "@type": "http://schema.org/Offer",
-        "name": "Guest",
-        "price": 0.0,
-        "priceCurrency": "GBP",
-        "validThrough": "2013-05-31T12:00:00+00:00",
-        "inventoryLevel": 40
-      }
-    ]
-  },
-  "http://www.eventbrite.com/event/6339320077": {
-    "name": "Friday lunchtime lectures: We heard you like data...",
-    "@type": "http://schema.org/EducationEvent",
-    "startDate": "2013-06-07T13:00:00+00:00",
-    "endDate": "2013-06-07T13:45:00+00:00",
-    "capacity": 45,
-    "additionalType": "http://linkedscience.org/teach/ns/#Lecture",
-    "location": {
-      "@type": "http://schema.org/Place",
-      "name": "The ODI"
-    },
-    "offers": [
-      {
-        "@type": "http://schema.org/Offer",
-        "name": "Guest",
-        "price": 0.0,
-        "priceCurrency": "GBP",
-        "validThrough": "2013-06-07T12:00:00+00:00",
-        "inventoryLevel": 42
-      }
-    ]
-  }
-}'
+    json = Net::HTTP.get URI.parse("http://95.138.173.103/lectures.json")
     lectures = JSON.parse(json)
     num = 0
 
