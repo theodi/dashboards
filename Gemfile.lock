@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/theodi/dashing.git
-  revision: 88bd4a6d8c8aea5d12df37606a3c4ac2565beec1
+  revision: e5f439bbc0621fa3fa12ccaab85b79e37acecb8a
   specs:
     dashing (1.0.4)
       coffee-script
@@ -25,7 +25,7 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
-    diff-lcs (1.2.3)
+    diff-lcs (1.2.4)
     dotenv (0.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
