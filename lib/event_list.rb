@@ -6,7 +6,7 @@ class EventList
   
   def self.update
     
-    json = Net::HTTP.get URI.parse("http://95.138.173.103/courses.json")
+    json = Net::HTTP.get URI.parse("http://theodi.org/courses.json")
     events = JSON.parse(json)
 
     event_list = events.map do |url, data|
