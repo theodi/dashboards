@@ -17,7 +17,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Wed, 24 Apr 2013 18:11:04 GMT
+      - Thu, 25 Apr 2013 13:49:13 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
@@ -25,9 +25,9 @@ http_interactions:
       connection:
       - close
       x-runtime:
-      - '27'
+      - '21'
       etag:
-      - ! '"8ace4f7abbf944bd40885694f94e73e3"'
+      - ! '"d39f959e7257f3b13a2a4c3d26c16be1"'
       cache-control:
       - private, max-age=0, must-revalidate
       access-control-allow-methods:
@@ -43,7 +43,7 @@ http_interactions:
       x-cacheable:
       - NO:Cache-Control=max-age=0
       x-varnish:
-      - '3250629462'
+      - '3574591118'
       age:
       - '0'
       via:
@@ -52,12 +52,12 @@ http_interactions:
       - MISS
     body:
       encoding: US-ASCII
-      string: ! '{"access_token":"1-39082-34504445-2a39793bdb004d9","expires_in":21599,"scope":"*","refresh_token":"95fe686cf5ba7dc71124e529b42806e8"}'
+      string: ! '{"access_token":"1-39082-34504445-a51fe637c70e354","expires_in":21599,"scope":"*","refresh_token":"77c3fe1c3dca7f20cb7733a44ec79d13"}'
     http_version: '1.1'
-  recorded_at: Wed, 24 Apr 2013 18:11:03 GMT
+  recorded_at: Thu, 25 Apr 2013 13:49:14 GMT
 - request:
     method: get
-    uri: https://api.soundcloud.com/me/tracks?format=json&oauth_token=1-39082-34504445-2a39793bdb004d9
+    uri: https://api.soundcloud.com/me/tracks?format=json&oauth_token=1-39082-34504445-a51fe637c70e354
     body:
       encoding: US-ASCII
       string: ''
@@ -72,7 +72,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Wed, 24 Apr 2013 18:11:04 GMT
+      - Thu, 25 Apr 2013 13:49:14 GMT
       content-type:
       - application/json; charset=utf-8
       content-length:
@@ -80,9 +80,9 @@ http_interactions:
       connection:
       - close
       x-runtime:
-      - '19'
+      - '114'
       etag:
-      - ! '"75c4e12bd4c6b90ec7a8fffca6767573"'
+      - ! '"869c333c66b248fcf4ac0ade51d32960"'
       cache-control:
       - private, max-age=0, must-revalidate
       access-control-allow-methods:
@@ -98,7 +98,7 @@ http_interactions:
       x-cacheable:
       - NO:Cache-Control=max-age=0
       x-varnish:
-      - '3250631948'
+      - '2436163534'
       age:
       - '0'
       via:
@@ -118,7 +118,7 @@ http_interactions:
         from government data can be realised. Using the national police database as
         a case study, he will examine how this data was made more widely usable and
         how IT implementation costs were reduced by 20%, just by surfacing and mapping
-        the data standards.","label_name":"","release":"","track_type":"spoken","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-sa","uri":"https://api.soundcloud.com/tracks/86031061","user":{"id":34504445,"kind":"user","permalink":"<SOUNDCLOUD_USERNAME>","username":"<SOUNDCLOUD_USERNAME>","uri":"https://api.soundcloud.com/users/34504445","permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>","avatar_url":"https://i1.sndcdn.com/avatars-000032468673-cjjahx-large.jpg?6462778"},"user_playback_count":1,"user_favorite":false,"permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>/how-to-create-more-value-from","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/1U41gB2PnCO1_m.png","stream_url":"https://api.soundcloud.com/tracks/86031061/stream","download_url":"https://api.soundcloud.com/tracks/86031061/download","playback_count":21,"download_count":6,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/86031061/attachments","secret_token":"s-d9Uzf","secret_uri":"https://api.soundcloud.com/tracks/86031061?secret_token=s-d9Uzf"},{"kind":"track","id":83773625,"created_at":"2013/03/18
+        the data standards.","label_name":"","release":"","track_type":"spoken","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-sa","uri":"https://api.soundcloud.com/tracks/86031061","user":{"id":34504445,"kind":"user","permalink":"<SOUNDCLOUD_USERNAME>","username":"<SOUNDCLOUD_USERNAME>","uri":"https://api.soundcloud.com/users/34504445","permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>","avatar_url":"https://i1.sndcdn.com/avatars-000032468673-cjjahx-large.jpg?6462778"},"user_playback_count":1,"user_favorite":false,"permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>/how-to-create-more-value-from","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/1U41gB2PnCO1_m.png","stream_url":"https://api.soundcloud.com/tracks/86031061/stream","download_url":"https://api.soundcloud.com/tracks/86031061/download","playback_count":22,"download_count":6,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/86031061/attachments","secret_token":"s-d9Uzf","secret_uri":"https://api.soundcloud.com/tracks/86031061?secret_token=s-d9Uzf"},{"kind":"track","id":83773625,"created_at":"2013/03/18
         11:12:38 +0000","user_id":34504445,"duration":1737775,"commentable":true,"state":"finished","original_content_size":27801569,"sharing":"public","tag_list":"\"national
         pupil database\" education data privacy \"personal data\" children \"phil
         booth\" \"terri dowty\" \" data institute\" odifridays lecture database open
@@ -211,5 +211,5 @@ http_interactions:
         a data perspective.\r\n\r\nThe slides for this lecture: http://www.scribd.com/doc/122989561/Friday-Lunchtime-Lectures-at-The-ODI-Legislation-as-Data
         ","label_name":"","release":"","track_type":"spoken","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by","uri":"https://api.soundcloud.com/tracks/77142915","user":{"id":34504445,"kind":"user","permalink":"<SOUNDCLOUD_USERNAME>","username":"<SOUNDCLOUD_USERNAME>","uri":"https://api.soundcloud.com/users/34504445","permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>","avatar_url":"https://i1.sndcdn.com/avatars-000032468673-cjjahx-large.jpg?6462778"},"user_playback_count":1,"user_favorite":false,"permalink_url":"http://soundcloud.com/<SOUNDCLOUD_USERNAME>/20130125odifridayslegislation","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qiuD2gpq88l1_m.png","stream_url":"https://api.soundcloud.com/tracks/77142915/stream","download_url":"https://api.soundcloud.com/tracks/77142915/download","playback_count":37,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/77142915/attachments","secret_token":"s-O91oH","secret_uri":"https://api.soundcloud.com/tracks/77142915?secret_token=s-O91oH"}]'
     http_version: '1.1'
-  recorded_at: Wed, 24 Apr 2013 18:11:03 GMT
+  recorded_at: Thu, 25 Apr 2013 13:49:14 GMT
 recorded_with: VCR 2.4.0

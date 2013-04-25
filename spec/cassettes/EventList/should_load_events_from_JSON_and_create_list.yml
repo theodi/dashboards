@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.<SOUNDCLOUD_USERNAME>.org/sites/default/files/courses.json
+    uri: http://theodi.org/courses.json
     body:
       encoding: US-ASCII
       string: ''

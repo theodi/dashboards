@@ -1,6 +1,7 @@
 class Dashing.Linklist extends Dashing.Widget
+  
   ready: ->
-    if @get('unordered')
-      $(@node).find('ol').remove()
-    else
-      $(@node).find('ul').remove()
+  
+  onData: (data) ->
+    if data.items.length == 0
+      @set 'empty', true
