@@ -5,6 +5,8 @@ class Dashing.Lecturelist extends Dashing.Widget
   onData: (data) ->
     i = 0
     node = $(@get('node'))
+    if data.items.length == 0
+      @set 'empty', true
     while i < data.items.length
       capacity = data.items[i].capacity
       tickets = data.items[i].tickets
