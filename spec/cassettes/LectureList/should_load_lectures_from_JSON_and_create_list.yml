@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://<SOUNDCLOUD_USERNAME>.org/lectures.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - Apache
+      content-type:
+      - application/json
+      date:
+      - Thu, 25 Apr 2013 13:51:45 GMT
+      set-cookie:
+      - X-Mapping-fjhppofk=1E9A891C7128BF878F7BA765F9E86CB1; path=/
+      - X-Mapping-fjhppofk=1E9A891C7128BF878F7BA765F9E86CB1; path=/
+      content-length:
+      - '3777'
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"http://www.eventbrite.com/event/6153638699\": {\n    \"name\":
+        \"Friday Lunchtime Lectures: Big Data Week Special - Data as Culture\",\n
+        \   \"@type\": \"http://schema.org/EducationEvent\",\n    \"startDate\": \"2013-04-26T13:00:00+00:00\",\n
+        \   \"endDate\": \"2013-04-26T14:00:00+00:00\",\n    \"capacity\": 100,\n
+        \   \"additionalType\": \"http://linkedscience.org/teach/ns/#Lecture\",\n
+        \   \"location\": {\n      \"@type\": \"http://schema.org/Place\",\n      \"name\":
+        \"The Churchill Rooms\"\n    },\n    \"offers\": [\n      {\n        \"@type\":
+        \"http://schema.org/Offer\",\n        \"name\": \"Guest\",\n        \"price\":
+        0.0,\n        \"priceCurrency\": \"GBP\",\n        \"validThrough\": \"2013-04-25T09:00:00+00:00\",\n
+        \       \"inventoryLevel\": 1,\n        \"validFrom\": \"2013-04-08T11:00:00+00:00\"\n
+        \     }\n    ]\n  },\n  \"http://www.eventbrite.com/event/6190416703\": {\n
+        \   \"name\": \"Friday Lunchtime Lectures: Democratic Data\",\n    \"@type\":
+        \"http://schema.org/EducationEvent\",\n    \"startDate\": \"2013-05-03T13:00:00+00:00\",\n
+        \   \"endDate\": \"2013-05-03T13:45:00+00:00\",\n    \"capacity\": 45,\n    \"additionalType\":
+        \"http://linkedscience.org/teach/ns/#Lecture\",\n    \"location\": {\n      \"@type\":
+        \"http://schema.org/Place\",\n      \"name\": \"Open Data Institute\"\n    },\n
+        \   \"offers\": [\n      {\n        \"@type\": \"http://schema.org/Offer\",\n
+        \       \"name\": \"Guest\",\n        \"price\": 0.0,\n        \"priceCurrency\":
+        \"GBP\",\n        \"validThrough\": \"2013-05-03T09:00:00+00:00\",\n        \"inventoryLevel\":
+        26,\n        \"validFrom\": \"2013-04-05T11:00:00+00:00\"\n      }\n    ]\n
+        \ },\n  \"http://www.eventbrite.com/event/6154358853\": {\n    \"name\": \"Friday
+        lunchtime lectures: Will androids dream of sheep data?\",\n    \"@type\":
+        \"http://schema.org/EducationEvent\",\n    \"startDate\": \"2013-05-10T13:00:00+00:00\",\n
+        \   \"endDate\": \"2013-05-10T13:45:00+00:00\",\n    \"capacity\": 35,\n    \"additionalType\":
+        \"http://linkedscience.org/teach/ns/#Lecture\",\n    \"location\": {\n      \"@type\":
+        \"http://schema.org/Place\",\n      \"name\": \"Open Data Institute\"\n    },\n
+        \   \"offers\": [\n      {\n        \"@type\": \"http://schema.org/Offer\",\n
+        \       \"name\": \"Guest\",\n        \"price\": 0.0,\n        \"priceCurrency\":
+        \"GBP\",\n        \"validThrough\": \"2013-05-10T09:00:00+00:00\",\n        \"inventoryLevel\":
+        12,\n        \"validFrom\": \"2013-04-05T11:00:00+00:00\"\n      }\n    ]\n
+        \ },\n  \"http://www.eventbrite.com/event/6208221959\": {\n    \"name\": \"Friday
+        lunchtime lectures: A story of polar archives and climate change\",\n    \"@type\":
+        \"http://schema.org/EducationEvent\",\n    \"startDate\": \"2013-05-17T13:00:00+00:00\",\n
+        \   \"endDate\": \"2013-05-17T13:45:00+00:00\",\n    \"capacity\": 45,\n    \"additionalType\":
+        \"http://linkedscience.org/teach/ns/#Lecture\",\n    \"location\": {\n      \"@type\":
+        \"http://schema.org/Place\",\n      \"name\": \"To be confirmed\"\n    },\n
+        \   \"offers\": [\n      {\n        \"@type\": \"http://schema.org/Offer\",\n
+        \       \"name\": \"Guest\",\n        \"price\": 0.0,\n        \"priceCurrency\":
+        \"GBP\",\n        \"validThrough\": \"2013-05-17T09:00:00+00:00\",\n        \"inventoryLevel\":
+        45,\n        \"validFrom\": \"2013-04-05T11:00:00+00:00\"\n      }\n    ]\n
+        \ },\n  \"http://www.eventbrite.com/event/6211220929\": {\n    \"name\": \"Friday
+        lunchtime lectures: Will open data give citizens super powers?\",\n    \"@type\":
+        \"http://schema.org/EducationEvent\",\n    \"startDate\": \"2013-05-24T13:00:00+00:00\",\n
+        \   \"endDate\": \"2013-05-24T13:45:00+00:00\",\n    \"capacity\": 45,\n    \"additionalType\":
+        \"http://linkedscience.org/teach/ns/#Lecture\",\n    \"location\": {\n      \"@type\":
+        \"http://schema.org/Place\",\n      \"name\": \"Open Data Institute\"\n    },\n
+        \   \"offers\": [\n      {\n        \"@type\": \"http://schema.org/Offer\",\n
+        \       \"name\": \"Guest\",\n        \"price\": 0.0,\n        \"priceCurrency\":
+        \"GBP\",\n        \"validThrough\": \"2013-05-24T09:00:00+00:00\",\n        \"inventoryLevel\":
+        34,\n        \"validFrom\": \"2013-04-05T11:00:00+00:00\"\n      }\n    ]\n
+        \ }\n}"
+    http_version: '1.1'
+  recorded_at: Thu, 25 Apr 2013 13:51:45 GMT
+recorded_with: VCR 2.4.0
