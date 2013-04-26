@@ -2,9 +2,9 @@
 
 <ul class="list-nostyle">
   <li data-foreach-item="items">
-    <p><a class='label' data-bind-href="item.url" data-bind='item.text'></a></p>
-    <p data-bind="item.date | prepend '(' | append ')'"></p>
-    <p data-bind="item.people | raw"></p>
+    <p class='label'><a data-bind-href="item.url" data-bind='item.text'></a></p>
+    <p class='label' data-bind="item.date | prepend '(' | append ')'"></p>
+    <p class='people' data-bind="item.people | raw"></p>
   </li>
 </ul>
 
