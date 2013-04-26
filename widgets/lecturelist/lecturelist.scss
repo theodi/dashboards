@@ -41,6 +41,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   .label {
     color: $label-color;
     text-align: center;
+    
+    &:active, &:hover {
+     text-decoration: underline; 
+    }
   }
 
   .value {
@@ -59,7 +63,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
   
   .icon-user {
-    font-size: 15px;
+    font-size: 12px;
   }
   
   .icon-user.available {
