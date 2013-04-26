@@ -10,7 +10,9 @@ class EventList
     events = JSON.parse(json)
 
     event_list = events.map do |url, data|
-      {url: url, text: "#{data['name']} (#{Date.parse(data['startDate']).to_formatted_s(:short)})" }
+      if Date.parse(data['startDate']) >= Date.today
+        {url: url, text: "#{data['name']} (#{Date.parse(data['startDate']).to_formatted_s(:short)})" }
+      end
     end
 
     { items: event_list }
