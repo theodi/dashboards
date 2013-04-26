@@ -23,7 +23,7 @@ class LectureList
       end
     end
     
-    { items: lecture_list }
+    { items: lecture_list.compact }
 
   end
   
