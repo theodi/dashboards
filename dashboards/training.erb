@@ -2,9 +2,8 @@
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
   Dashing.widget_base_dimensions = [370, 340]
-  Dashing.numColumns = 5
+  Dashing.numColumns = 3
   // Disable the layout drag
-  $(".gridster ul:first").gridster().data('gridster').disable()
 });
 </script>
 
@@ -14,13 +13,16 @@ $(function() {
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
       <div data-id="event-list" data-view="Linklist" data-unordered="true" data-title="Upcoming Courses"></div>
     </li>
-    <li data-row="1" data-col="2" data-sizex="1" data-sizey="2">
-      <div data-id="lecture-list" data-view="Lecturelist" data-unordered="true" data-title="Upcoming Lectures"></div>
-    </li>
     <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="upcoming-lectures" data-view="Lecturelist" data-unordered="true" data-title="Upcoming Lectures"></div>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="previous-lectures" data-view="Lecturelist" data-unordered="true" data-title="Previous Lectures"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="scribd-views" data-view="Number" data-unordered="true" data-title="Views on Scribd"></div>
     </li>
-    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="soundcloud-listens" data-view="Number" data-unordered="true" data-title="Listens on Soundcloud"></div>
     </li>
   </ul>
