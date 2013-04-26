@@ -262,7 +262,25 @@ h3 {
 .upcoming-lectures, .previous-lectures {
   vertical-align: top !important;
   
+  .progress {
+    position: absolute;
+    font-size: 8px;
+    left: 0;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    
+    span {
+      margin: 0 2px;
+      opacity: 0.5;
+    }
+    
+    span.active {
+      opacity: 1;
+    }
+  }
 }
+
 // ----------------------------------------------------------------------------
 // Clearfix
 // ----------------------------------------------------------------------------
