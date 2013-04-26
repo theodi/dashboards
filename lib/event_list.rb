@@ -15,7 +15,7 @@ class EventList
       end
     end
 
-    { items: event_list }
+    { items: event_list.compact }
 
   end
   
