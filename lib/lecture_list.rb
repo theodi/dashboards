@@ -23,7 +23,12 @@ class LectureList
       end
     end
     
-    { items: lecture_list.compact }
+    list = lecture_list.compact
+    
+    dots = ""
+    list.count.times { dots += "<span class='icon-circle'></span>" }
+          
+    { items: list, dots: dots }
 
   end
   

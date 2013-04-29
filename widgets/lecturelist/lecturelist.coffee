@@ -20,6 +20,13 @@ class Dashing.Lecturelist extends Dashing.Widget
     items = @get('items')
     if items
       $(items[@currentIndex]).fadeOut =>
+        $(@node).find(".progress span:last-child").removeClass('active')
+        $(@node).find(".progress span:nth-child(#{@currentIndex})").removeClass('active')
         @currentIndex = (@currentIndex + 1) % items.length
+        if @currentIndex == 0
+          $(@node).find(".progress span:last-child").addClass('active')
+        else
+          $(@node).find(".progress span:nth-child(#{@currentIndex})").addClass('active')
         $(items[@currentIndex]).fadeIn()
+        
     
