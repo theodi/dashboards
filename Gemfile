@@ -16,4 +16,5 @@ group :development, :test do
   gem 'simplecov-rcov'
   gem 'vcr'
   gem 'fakeweb'
+  gem 'timecop'
 end

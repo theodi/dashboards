@@ -97,6 +97,7 @@ GEM
       rack (>= 1.0.0)
     thor (0.18.1)
     tilt (1.4.0)
+    timecop (0.6.1)
     tzinfo (0.3.37)
     vcr (2.4.0)
 
@@ -114,4 +115,5 @@ DEPENDENCIES
   simplecov
   simplecov-rcov
   soundcloud
+  timecop
   vcr
