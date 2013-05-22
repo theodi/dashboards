@@ -100,7 +100,7 @@ GEM
     tilt (1.4.1)
     timecop (0.6.1)
     tzinfo (0.3.37)
-    vcr (2.4.0)
+    vcr (2.5.0)
 
 PLATFORMS
   ruby
