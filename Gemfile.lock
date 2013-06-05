@@ -35,7 +35,7 @@ GEM
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     hashie (2.0.5)
-    hike (1.2.2)
+    hike (1.2.3)
     httmultiparty (0.3.10)
       httparty (>= 0.7.3)
       multipart-post
@@ -45,8 +45,8 @@ GEM
     i18n (0.6.1)
     json (1.8.0)
     mime-types (1.23)
-    multi_json (1.7.4)
-    multi_xml (0.5.3)
+    multi_json (1.7.6)
+    multi_xml (0.5.4)
     multipart-post (1.2.0)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -99,7 +99,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     timecop (0.6.1)
-    tzinfo (0.3.37)
+    tzinfo (1.0.0)
     vcr (2.5.0)
 
 PLATFORMS
