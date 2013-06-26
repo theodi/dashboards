@@ -99,7 +99,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     timecop (0.6.1)
-    tzinfo (1.0.0)
+    tzinfo (1.0.1)
     vcr (2.5.0)
 
 PLATFORMS
