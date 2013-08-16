@@ -1,0 +1,69 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #12b0c5;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-jenkins styles
+// ----------------------------------------------------------------------------
+.widget-jenkins {
+
+  vertical-align: top !important;
+  padding: 0 !important;
+  
+  .title {
+    font-size: 1em;
+  }
+  
+  ul {
+    
+    li {
+      margin: 0 0 10px 0;
+      padding: 5px 0;
+    
+      &.success {
+        background-color: #0DBC37;
+      }
+    
+      &.failure {
+        background-color: #ff6700;
+      }
+    
+      &.disabled {
+        background-color: gray;
+      }
+    }
+    
+    .last-run {
+      font-size: 0.7em;
+      opacity: 0.6;
+    }
+  
+  }
+  
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  div.pass {
+    background-color: #0DBC37;
+  }
+  
+  div.fail {
+    background-color: #ff6700;
+  }
+  
+  #failboat {
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    background-color: #0DBC37;
+  }
+
+}
