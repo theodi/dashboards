@@ -297,3 +297,13 @@ h3 {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+// Custom
+
+#tech-header {
+  padding: 18px;
+  background-color: #dc5945;
+  
+  img {
+    margin: 10px 45px;
+  }
+}
