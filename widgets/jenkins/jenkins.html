@@ -1,0 +1,23 @@
+<h1 class="title" data-bind="title"></h1>
+
+<div class="builds">
+  <ul class="list-nostyle">
+    <li data-foreach-item="latest" data-bind-class="item.status">
+      <p data-bind='item.job'></p>
+      <p class='last-run'>(Last run at <span data-bind='item.date'></span>)</p>
+    </li>
+  </ul>
+</div>
+
+<div class="failboat">
+  <h1 class="title">Failboat</h1>
+
+  <ul class="list-nostyle">
+    <li data-foreach-item="failboat" data-bind-class="item.status">
+      <p data-bind='item.job'></p>
+      <p class='last-run'>(Last run at <span data-bind='item.date'></span>)</p>
+    </li>
+  </ul>
+
+  <p data-showif="failboatempty" id="failboat">No passengers aboard!</p>
+</div>

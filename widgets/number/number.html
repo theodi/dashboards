@@ -1,10 +1,13 @@
 <h1 class="title" data-bind="title"></h1>
 
-<h2 class="value" data-bind="current | shortenedNumber | prepend prefix"></h2>
-
-<p class="change-rate">
-  <i data-bind-class="arrow"></i><span data-bind="difference"></span>
-</p>
+<div class="number">
+  <h2 class="value">
+    <span data-bind="current | shortenedNumber | prepend prefix"></span>
+    <span class="change-rate"> 
+      <i data-bind-class="arrow"></i>
+    </span>
+  </h2>
+</div>
 
 <p class="more-info" data-bind="moreinfo | raw"></p>
 

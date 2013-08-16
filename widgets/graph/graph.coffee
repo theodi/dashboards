@@ -10,11 +10,14 @@ class Dashing.Graph extends Dashing.Widget
     container = $(@node).parent()
     # Gross hacks. Let's fix this.
     width = (Dashing.widget_base_dimensions[0] * container.data("sizex")) + Dashing.widget_margins[0] * 2 * (container.data("sizex") - 1)
-    height = (Dashing.widget_base_dimensions[1] * container.data("sizey"))
+    height = (Dashing.widget_base_dimensions[1] * container.data("sizey"))   
+    max = @get('max') + 50
     @graph = new Rickshaw.Graph(
       element: @node
+      renderer: 'line'
       width: width
       height: height
+      max: max
       series: [
         {
         color: "#fff",
@@ -22,7 +25,7 @@ class Dashing.Graph extends Dashing.Widget
         }
       ]
     )
-
+    
     @graph.series[0].data = @get('points') if @get('points')
 
     x_axis = new Rickshaw.Graph.Axis.Time(graph: @graph)
@@ -30,6 +33,7 @@ class Dashing.Graph extends Dashing.Widget
     @graph.render()
 
   onData: (data) ->
+    Dashing.debugMode = true
     if @graph
       @graph.series[0].data = data.points
       @graph.render()

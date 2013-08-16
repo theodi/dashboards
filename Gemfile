@@ -10,6 +10,11 @@ gem 'soundcloud'
 gem 'rscribd'
 gem 'dotenv'
 gem 'json'
+gem 'jenkins-remote-api'
+gem 'httparty'
+gem 'mongo_mapper'
+gem 'github_api'
+gem 'twitter'
 
 group :development, :test do
   gem 'rspec'

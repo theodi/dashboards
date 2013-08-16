@@ -13,7 +13,7 @@ $:.unshift File.dirname(__FILE__)+'../lib'
 
 VCR.configure do |c|
   # Automatically filter all secure details that are stored in the environment
-  ignore_env = %w{SHLVL RUNLEVEL GUARD_NOTIFY DRB COLUMNS USER LOGNAME LINES}
+  ignore_env = %w{SHLVL RUNLEVEL GUARD_NOTIFY DRB COLUMNS USER LOGNAME LINES TERM_PROGRAM_VERSION}
   (ENV.keys-ignore_env).select{|x| x =~ /\A[A-Z_]*\Z/}.each do |key|
     c.filter_sensitive_data("<#{key}>") { ENV[key] }
   end
