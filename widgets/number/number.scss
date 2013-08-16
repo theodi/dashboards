@@ -53,6 +53,15 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
   
   &.issues-graph {
     background-color: #dc5945;
+    
+    .title {
+      font-size: 60px;
+    }
+    
+    .value {
+      font-size: 100px;
+      line-height: 80px;
+    }
   }
 
 }
