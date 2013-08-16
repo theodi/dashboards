@@ -13,19 +13,29 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 .widget-number {
 
   background-color: $background-color;
+  padding: 15px 12px !important;
 
   .title {
     color: $title-color;
+    font-size: 20px;
+  }
+  
+  .number {
+    text-align: center;
   }
 
   .value {
     color: $value-color;
+    font-size: 35px;
+    line-height: 20px;
   }
 
   .change-rate {
     font-weight: 500;
     font-size: 30px;
     color: $value-color;
+    line-height: 40px;
+    vertical-align: middle;
   }
 
   .more-info {
@@ -34,6 +44,24 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
   .updated-at {
     color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+  }
+
+}
+
+.widget-number {
+  
+  &.issues-graph {
+    background-color: #dc5945;
+    
+    .title {
+      font-size: 60px;
+    }
+    
+    .value {
+      font-size: 100px;
+      line-height: 80px;
+    }
   }
 
 }
