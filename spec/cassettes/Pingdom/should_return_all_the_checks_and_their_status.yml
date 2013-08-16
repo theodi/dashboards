@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://jeni.tennison%40<SOUNDCLOUD_USERNAME>.org:Evm7y<TERM_PROGRAM_VERSION>Flxi@api.pingdom.com/api/2.0/checks
+    uri: https://jeni.tennison%40<SOUNDCLOUD_USERNAME>.org:<PINGDOM_PASSWORD>@api.pingdom.com/api/2.0/checks
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       server:
       - nginx
       date:
-      - Fri, 16 Aug 2013 13:17:33 GMT
+      - Fri, 16 Aug 2013 15:26:47 GMT
       content-type:
       - application/json
       content-length:
-      - '1742'
+      - '1745'
       connection:
       - close
       x-powered-by:
@@ -31,14 +31,14 @@ http_interactions:
       cache-control:
       - no-cache
       req-limit-short:
-      - ! 'Remaining: 3082 Time until reset: 2213'
+      - ! 'Remaining: 3081 Time until reset: 1691'
       req-limit-long:
-      - ! 'Remaining: 84863 Time until reset: 2583362'
+      - ! 'Remaining: 84773 Time until reset: 2575608'
       server-time:
-      - '1376659053'
+      - '1376666807'
     body:
       encoding: US-ASCII
-      string: ! '{"checks":[{"id":891146,"created":1373897984,"name":"www","hostname":"www.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1375721417,"lasttesttime":1376659037,"lastresponsetime":75,"status":"up","tags":[]},{"id":891166,"created":1373899434,"name":"certificates","hostname":"certificates.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376407425,"lasttesttime":1376658998,"lastresponsetime":548,"status":"up","tags":[]},{"id":891169,"created":1373899476,"name":"directory","hostname":"directory.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1375780460,"lasttesttime":1376659040,"lastresponsetime":171,"status":"up","tags":[]},{"id":891171,"created":1373899530,"name":"smtm","hostname":"smtm.labs.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376581569,"lasttesttime":1376659029,"lastresponsetime":249,"status":"up","tags":[]},{"id":891172,"created":1373899592,"name":"dashboard","hostname":"dashboards.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1374645994,"lasttesttime":1376659045,"lastresponsetime":40,"status":"up","tags":[]},{"id":891174,"created":1373899617,"name":"office-calendar","hostname":"office-calendar.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasttesttime":1376658985,"lastresponsetime":93,"status":"up","tags":[]},{"id":891182,"created":1373899766,"name":"services-manager","hostname":"services-manager.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1374737131,"lasttesttime":1376658991,"lastresponsetime":207,"status":"up","tags":[]},{"id":891183,"created":1373899810,"name":"git-viewer","hostname":"git-viewer.labs.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376591297,"lasttesttime":1376659037,"lastresponsetime":4859,"status":"up","tags":[]}]}'
+      string: ! '{"checks":[{"id":891146,"created":1373897984,"name":"www","hostname":"www.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1375721417,"lasttesttime":1376666778,"lastresponsetime":116,"status":"up","tags":[]},{"id":891166,"created":1373899434,"name":"certificates","hostname":"certificates.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376407425,"lasttesttime":1376666798,"lastresponsetime":509,"status":"up","tags":[]},{"id":891169,"created":1373899476,"name":"directory","hostname":"directory.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1375780460,"lasttesttime":1376666780,"lastresponsetime":598,"status":"up","tags":[]},{"id":891171,"created":1373899530,"name":"smtm","hostname":"smtm.labs.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376581569,"lasttesttime":1376666769,"lastresponsetime":416,"status":"up","tags":[]},{"id":891172,"created":1373899592,"name":"dashboard","hostname":"dashboards.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1374645994,"lasttesttime":1376666785,"lastresponsetime":231,"status":"up","tags":[]},{"id":891174,"created":1373899617,"name":"office-calendar","hostname":"office-calendar.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasttesttime":1376666785,"lastresponsetime":106,"status":"up","tags":[]},{"id":891182,"created":1373899766,"name":"services-manager","hostname":"services-manager.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1374737131,"lasttesttime":1376666791,"lastresponsetime":211,"status":"up","tags":[]},{"id":891183,"created":1373899810,"name":"git-viewer","hostname":"git-viewer.labs.<SOUNDCLOUD_USERNAME>.org","resolution":1,"type":"http","lasterrortime":1376665315,"lasttesttime":1376666777,"lastresponsetime":5009,"status":"up","tags":[]}]}'
     http_version: '1.1'
-  recorded_at: Fri, 16 Aug 2013 13:17:34 GMT
+  recorded_at: Fri, 16 Aug 2013 15:26:47 GMT
 recorded_with: VCR 2.5.0
