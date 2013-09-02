@@ -14,6 +14,7 @@ $meter-background:  darken($background-color, 15%);
 .widget-meter {
 
   background-color: $background-color;
+  padding: 20px 12px;
 
   input.meter {
     background-color: $meter-background;
