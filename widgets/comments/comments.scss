@@ -12,6 +12,11 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 .widget-comments {
 
   background-color: $background-color;
+  font-size: 0.8em;
+  
+  h1 {
+    font-size: 25px;
+  }
 
   .title {
     color: $title-color;
