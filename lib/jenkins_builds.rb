@@ -13,7 +13,7 @@ class JenkinsBuilds
       {
         :image => "https://buildmemes.herokuapp.com/f",
         :state => "fail",
-        :trombone => '<iframe src="http://www.sadtrombone.com/?play=true" width="0" height="0" />'
+        :trombone => '<audio src="/sadtrombone.mp3" autoplay />'
       }
     else
       {
