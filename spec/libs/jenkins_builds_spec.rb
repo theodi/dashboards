@@ -31,7 +31,7 @@ describe JenkinsBuilds do
     it "should return a fail image, a state and a sad trombone", :vcr do
       @result[:image].should == "https://buildmemes.herokuapp.com/f"
       @result[:state].should == "fail"
-      @result[:trombone].should == '<iframe src="http://www.sadtrombone.com/?play=true" width="0" height="0" />'
+      @result[:trombone].should == '<audio src="/sadtrombone.mp3" autoplay />'
     end
     
   end
