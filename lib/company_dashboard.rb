@@ -21,9 +21,9 @@ class CompanyDashboard
   def self.progress
     
     board_ids = {
-      :q1 => ENV['TRELLO_2013Q1'],
-      :q2 => ENV['TRELLO_2013Q2'],
-      :q3 => ENV['TRELLO_2013Q3']
+      :q1 => 'cEwY2JHh',
+      :q2 => 'm5Gxybf6',
+      :q3 => 'wkIzhRE3'
     }
     
     totals = {}
