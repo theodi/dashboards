@@ -57,6 +57,11 @@ class CompanyDashboard
   def self.value
      metrics_spreadsheet[3,2]
   end
+  
+  def self.kpis
+    metrics_spreadsheet[2,2]
+  end
+
   def self.get_board_progress(id)    
     progress = []
     board = Trello::Board.find(id)

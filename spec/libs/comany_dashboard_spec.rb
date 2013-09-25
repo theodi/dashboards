@@ -30,4 +30,9 @@ describe CompanyDashboard do
   it "should show the correct unlocked value", :vcr do
     CompanyDashboard.value.should == "3310000"
   end
+  
+  it "should show the corrct kpi percentage", :vcr do
+    CompanyDashboard.kpis.should == "95"
+  end
+  
 end
