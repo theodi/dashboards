@@ -17,7 +17,7 @@ gem 'github_api'
 gem 'twitter'
 gem 'ruby-trello'
 gem 'google_drive'
-gem 'capsulecrm', :github => 'theodi/capsulecrm'
+gem 'capsulecrm'
 
 group :development, :test do
   gem 'rspec'

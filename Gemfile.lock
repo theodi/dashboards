@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/theodi/capsulecrm.git
-  revision: b0cb7a9f167d8cd7bd7f79fd3d7bb4f7363a8391
-  specs:
-    capsulecrm (0.0.4)
-      activemodel (>= 3.0.5)
-      activesupport (>= 3.0.5)
-      httparty (>= 0.7.4)
-
-GIT
   remote: git://github.com/theodi/dashing.git
   revision: e5f439bbc0621fa3fa12ccaab85b79e37acecb8a
   specs:
@@ -35,6 +26,10 @@ GEM
     backports (3.3.3)
     bson (1.9.2)
     builder (3.0.4)
+    capsulecrm (0.0.3)
+      activemodel (>= 3.0.5)
+      activesupport (>= 3.0.5)
+      httparty (>= 0.7.4)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -183,7 +178,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  capsulecrm!
+  capsulecrm
   dashing!
   dotenv
   fakeweb
