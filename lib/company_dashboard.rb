@@ -27,7 +27,7 @@ class CompanyDashboard
     }
     
     totals = {}
-    
+     
     board_ids.each do |q, id|
       progress = get_board_progress(id)        
       totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
