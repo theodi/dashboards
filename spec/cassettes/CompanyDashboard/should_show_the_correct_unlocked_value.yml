@@ -1,0 +1,284 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.google.com/accounts/ClientLogin
+    body:
+      encoding: US-ASCII
+      string: accountType=HOSTED_OR_GOOGLE&Email=systems-robot%40<SOUNDCLOUD_USERNAME>.org&Passwd=<GAPPS_PASSWORD>&service=wise&source=Gimite-RubyGoogleDrive-1.00
+    headers:
+      content-type:
+      - application/x-www-form-urlencoded
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/plain
+      x-frame-options:
+      - DENY
+      cache-control:
+      - no-cache, no-store
+      pragma:
+      - no-cache
+      expires:
+      - Mon, 01-Jan-1990 00:00:00 GMT
+      date:
+      - Wed, 25 Sep 2013 12:23:48 GMT
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '1031'
+      server:
+      - GSE
+      alternate-protocol:
+      - 443:quic
+    body:
+      encoding: US-ASCII
+      string: ! 'SID=DQAAAO4AAAC0PDrc2DUFz_kcM-VHqZyB59EB3okL-xzOZpRgMSPq08caLkuGkjPk2TSDR0H26LKSvgATSKiXXU9Y-zJei_I77rWMtyKsKbrBVi5iww5ij3AZ9fMmDgw2b9XMa95IhwBD5XaadlIz-STR8mydrr-kmyl8Xnn65LzhBO0Df19b7NiNkaCbKWxnoVwBAy4P1jQYu-6UCbaArjtgFvX7OI2fwvHSb7kv21bm4-z7QOaLjbtrsx2zGLj-XkQqr3Wf6uwDQ_SfH6z76YC5k8Gh82A2UbtwyxeJTQY3aTCPxwtt_PZKAS2VnFX7lUSTNkl-vIo
+
+        LSID=DQAAAPEAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAPCZtEN2iveA6TmBf4JaJI4n9z5ob8gQEvTxYkTTo6Shx32VKCzZI7lWsiGg4L1QuA0VpUhVbyhldR3OlZV9uHJqvSXX8EVRITn51DB7gDTnVIeBC7_wwQXQ4Lm6Fp1LNHku5zmO5458AdTG4xCqod1Lo0OAxv7izSwfZ4JFWzah8n0Itt1uV2K5Ey_B5DfVDXMaFHt1_N7W4xfuO2OvMnrMjxLgWOv6lR0BrfVPxpwpyEZuB36IT36A4G9XGfVSn2Hz5BmHws4R8hFvukSrCzh
+
+        Auth=DQAAAPAAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAMqvY2i6RoH6NB20rB3yOgHgBMee4FVd8kNTw-5jkLGYs2UjxxoM7G774yqrPjRL3jJW0yhpSgtOrQuGJ4qPu-GV_krYZHN0eEedeDKVSxTkDFj3Lev__MyXb5HH37RYyTJkW0-LMCKs0f8yeJgccG72-zkr5O17tgTmiSWHN_fv553ODp_YIdtdHllNKHRdCmDyz_B0w7ear7FNX7SfsizmNrep8FGFZtxZHJO_seYhcFSh1TucZi83Ec-kE2D2rY
+
+'
+    http_version: '1.1'
+  recorded_at: Wed, 25 Sep 2013 12:23:48 GMT
+- request:
+    method: post
+    uri: https://www.google.com/accounts/ClientLogin
+    body:
+      encoding: US-ASCII
+      string: accountType=HOSTED_OR_GOOGLE&Email=systems-robot%40<SOUNDCLOUD_USERNAME>.org&Passwd=<GAPPS_PASSWORD>&service=writely&source=Gimite-RubyGoogleDrive-1.00
+    headers:
+      content-type:
+      - application/x-www-form-urlencoded
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - text/plain
+      x-frame-options:
+      - DENY
+      cache-control:
+      - no-cache, no-store
+      pragma:
+      - no-cache
+      expires:
+      - Mon, 01-Jan-1990 00:00:00 GMT
+      date:
+      - Wed, 25 Sep 2013 12:23:48 GMT
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '1031'
+      server:
+      - GSE
+      alternate-protocol:
+      - 443:quic
+    body:
+      encoding: US-ASCII
+      string: ! 'SID=DQAAAO8AAAC0PDrc2DUFz_kcM-VHqZyB59EB3okL-xzOZpRgMSPq08caLkuGkjPk2TSDR0H26LKSvgATSKiXXU9Y-zJei_I77rWMtyKsKbrBVi5iww5ij3AZ9fMmDgw2b9XMa95IhwBD5XaadlIz-STR8mydrr-kmyl8Xnn65LzhBO0Df19b7NiNkaCbKWxnoVwBAy4P1jQYu-6UCbaArjtgFvX7OI2fwvHSb7kv21bm4-z7QOaLjfW5lHxiJarrUgNLCy_wCr7mnGUkm01xFMHqbOm-DgTOeAaHe_f-WTdOHjWB3h_rh49xdBNV7tNxgp5-3YMKIp4
+
+        LSID=DQAAAPIAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAPCZtEN2iveA6TmBf4JaJI4n9z5ob8gQEvTxYkTTo6Shx32VKCzZI7lWsiGg4L1QuA0VpUhVbyhldR3OlZV9uHJqvSXX8EVRITn51DB7gDTnVIeBC7_wwQXQ4Lm6Fp1LNHku5zmO5458AdTG4xCqod1Lo0OAxv7izSwfZ4JFWzah8n0Itt1uV2K5Ey_B5DfVDXI9yqyrNuqfVUTeDtzUpzxsSwLrg9y0iQm-6hAnI30yWC0EdO68mqrYjPfpp75174sBKK_xMxEHw_S7mERkH18
+
+        Auth=DQAAAPAAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAOY1m6Pjb7u_JQtb0RzNmRmze_gYRdtUuFcX3n4RIv4TNqx_ad6sjGHB51xytc_1DkbDGrZl-4GGXIwqQrElzMOJTWZi9St0pGlp_jn41lVbRJ9ZUFH0relV2-aqwVugvoURTfmp1DY3feOf-F_ibh7cXREJbrt3b7h185N3_kZG3tEBHXqMnSbsb6WD6HZYY83yum17Psma_9GuPzEa1HdS2hB3oOXl8-UscNn7UJD_0yGBq8lq1YzzMGBu4vCxAE
+
+'
+    http_version: '1.1'
+  recorded_at: Wed, 25 Sep 2013 12:23:48 GMT
+- request:
+    method: get
+    uri: https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      authorization:
+      - GoogleLogin auth=DQAAAPAAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAMqvY2i6RoH6NB20rB3yOgHgBMee4FVd8kNTw-5jkLGYs2UjxxoM7G774yqrPjRL3jJW0yhpSgtOrQuGJ4qPu-GV_krYZHN0eEedeDKVSxTkDFj3Lev__MyXb5HH37RYyTJkW0-LMCKs0f8yeJgccG72-zkr5O17tgTmiSWHN_fv553ODp_YIdtdHllNKHRdCmDyz_B0w7ear7FNX7SfsizmNrep8FGFZtxZHJO_seYhcFSh1TucZi83Ec-kE2D2rY
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      expires:
+      - Wed, 25 Sep 2013 12:23:51 GMT
+      date:
+      - Wed, 25 Sep 2013 12:23:51 GMT
+      cache-control:
+      - private, max-age=0, must-revalidate, no-transform
+      vary:
+      - Accept, X-GData-Authorization, GData-Version
+      gdata-version:
+      - '1.0'
+      last-modified:
+      - Wed, 25 Sep 2013 10:58:59 GMT
+      set-cookie:
+      - NID=67=m1Xju0_P6n0SJwyv_8p2bIICPLwTguPp7Mw1F6Xw1FbyZR8a0DAHABlSg3xmxoyjoDQ5D1L2nicLj3H6gNRm9fSCGVRvHRrQshWT6MORKUW3zZOEOv3aLdXcMRxvC5WD;Domain=.google.com;Path=/;Expires=Thu,
+        27-Mar-2014 12:23:51 GMT;HttpOnly
+      p3p:
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
+        for more info."
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      server:
+      - GSE
+      alternate-protocol:
+      - 443:quic
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title
+        type='text'>Dashboard metrics</title><link rel='alternate' type='text/html'
+        href='https://spreadsheets.google.com/ccc?key=0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full/od6</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title
+        type='text'>Sheet1</title><content type='text'>Sheet1</content><link rel='http://schemas.google.com/spreadsheets/2006#listfeed'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full'/><link
+        rel='http://schemas.google.com/spreadsheets/2006#cellsfeed' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full'/><link
+        rel='http://schemas.google.com/visualization/2008#visualizationApi' type='application/atom+xml'
+        href='https://spreadsheets.google.com/tq?key=0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc&amp;sheet=od6'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full/od6'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/private/full/od6/0'/><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount></entry></feed>
+    http_version: '1.1'
+  recorded_at: Wed, 25 Sep 2013 12:23:52 GMT
+- request:
+    method: get
+    uri: https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      authorization:
+      - GoogleLogin auth=DQAAAPAAAACHgz4qjAcgPnfZGTFWpjnrJzVJYEA7sTpesGJNc6oolozE4lDGbU8MkAnXN2QTqAMqvY2i6RoH6NB20rB3yOgHgBMee4FVd8kNTw-5jkLGYs2UjxxoM7G774yqrPjRL3jJW0yhpSgtOrQuGJ4qPu-GV_krYZHN0eEedeDKVSxTkDFj3Lev__MyXb5HH37RYyTJkW0-LMCKs0f8yeJgccG72-zkr5O17tgTmiSWHN_fv553ODp_YIdtdHllNKHRdCmDyz_B0w7ear7FNX7SfsizmNrep8FGFZtxZHJO_seYhcFSh1TucZi83Ec-kE2D2rY
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      expires:
+      - Wed, 25 Sep 2013 12:24:15 GMT
+      date:
+      - Wed, 25 Sep 2013 12:24:15 GMT
+      cache-control:
+      - private, max-age=0, must-revalidate, no-transform
+      vary:
+      - Accept, X-GData-Authorization, GData-Version
+      gdata-version:
+      - '1.0'
+      last-modified:
+      - Wed, 25 Sep 2013 10:58:59 GMT
+      set-cookie:
+      - NID=67=bgWyo4wNGwg0_Z57pIjj1iMELB00RsqYeh56XC2Hw0hgD75R2j3ne0Bxgye2wLfGEH67ej1j7avOHFou1cdVgyfjcWZpGKqwefH_3ePGiboiUtLEq6mkxMZSYib4rAkN;Domain=.google.com;Path=/;Expires=Thu,
+        27-Mar-2014 12:24:15 GMT;HttpOnly
+      p3p:
+      - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
+        for more info."
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      server:
+      - GSE
+      alternate-protocol:
+      - 443:quic
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
+        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
+        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>Sheet1</title><link rel='alternate' type='text/html' href='https://spreadsheets.google.com/ccc?key=0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc'/><link
+        rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full'/><link
+        rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/batch'/><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>8</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C1</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A1</title><content type='text'>Total reach</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C1/qr0epj'/><gs:cell
+        row='1' col='1' inputValue='Total reach'>Total reach</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C2</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B1</title><content type='text'>117306</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R1C2/o9572a'/><gs:cell
+        row='1' col='2' inputValue='117306' numericValue='117306.0'>117306</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C1</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A2</title><content type='text'>KPI percentage</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C1/l5dz92'/><gs:cell
+        row='2' col='1' inputValue='KPI percentage'>KPI percentage</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C2</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B2</title><content type='text'>95</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R2C2/a11cs'/><gs:cell
+        row='2' col='2' inputValue='95' numericValue='95.0'>95</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C1</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A3</title><content type='text'>Value unlocked</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C1/t0hwwi'/><gs:cell
+        row='3' col='1' inputValue='Value unlocked'>Value unlocked</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C2</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B3</title><content type='text'>3310000</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R3C2/rdltg1'/><gs:cell
+        row='3' col='2' inputValue='=SUM(480000 + 1200000 + 750000 + 600000 + 280000
+        )' numericValue='3310000.0'>3310000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C1</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A4</title><content type='text'>Bookings</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C1/y8hopm'/><gs:cell
+        row='4' col='1' inputValue='Bookings'>Bookings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C2</id><updated>2013-09-25T10:58:59.172Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B4</title><content type='text'>621400</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/0Aon_avj5tPqbdElsdWp1eDA3bEtyZkZweWhjUllBMHc/od6/private/full/R4C2/qmup0f'/><gs:cell
+        row='4' col='2' inputValue='621400' numericValue='621400.0'>621400</gs:cell></entry></feed>
+    http_version: '1.1'
+  recorded_at: Wed, 25 Sep 2013 12:24:15 GMT
+recorded_with: VCR 2.5.0

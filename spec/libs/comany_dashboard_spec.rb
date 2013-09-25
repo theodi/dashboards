@@ -26,4 +26,8 @@ describe CompanyDashboard do
   it "should show the correct bookings value", :vcr do
     CompanyDashboard.bookings.should == "621400"
   end
+  
+  it "should show the correct unlocked value", :vcr do
+    CompanyDashboard.value.should == "3310000"
+  end
 end
