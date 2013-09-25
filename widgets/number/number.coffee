@@ -22,6 +22,8 @@ class Dashing.Number extends Dashing.Widget
         'icon-arrow-up'
       else
         'icon-arrow-down'
+    else
+      $(@node).find(".change-rate").addClass('hidden')
 
   onData: (data) ->
     if data.status
