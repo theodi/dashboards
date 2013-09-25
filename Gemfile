@@ -15,6 +15,7 @@ gem 'httparty'
 gem 'mongo_mapper'
 gem 'github_api'
 gem 'twitter'
+gem 'ruby-trello'
 
 group :development, :test do
   gem 'rspec'
