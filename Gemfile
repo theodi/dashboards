@@ -16,6 +16,7 @@ gem 'mongo_mapper'
 gem 'github_api'
 gem 'twitter'
 gem 'ruby-trello'
+gem 'google_drive'
 gem 'capsulecrm', :github => 'theodi/capsulecrm'
 
 group :development, :test do

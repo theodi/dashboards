@@ -2,6 +2,7 @@ require 'dotenv'
 require 'trello'
 require 'httparty'
 require 'csv'
+require 'google_drive'
 require 'capsulecrm'
 
 Dotenv.load
@@ -44,6 +45,10 @@ class CompanyDashboard
   def self.members    
     CapsuleCRM::Organisation.find_all(:tag => "Membership").count
   end
+  
+  def self.reach
+    metrics_spreadsheet[1,2]
+  end
   def self.get_board_progress(id)    
     progress = []
     board = Trello::Board.find(id)
@@ -60,6 +65,14 @@ class CompanyDashboard
     end
     
     progress
+  end
+  
+  def self.google_drive
+    GoogleDrive.login(ENV['GAPPS_USER_EMAIL'], ENV['GAPPS_PASSWORD'])
+  end
+  
+  def self.metrics_spreadsheet
+    google_drive.spreadsheet_by_key(ENV['GAPPS_METRICS_SPREADSHEET_ID']).worksheets[0]
   end
   
 end
