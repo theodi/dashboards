@@ -2,8 +2,13 @@ require 'dotenv'
 require 'trello'
 require 'httparty'
 require 'csv'
+require 'capsulecrm'
 
 Dotenv.load
+
+CapsuleCRM.account_name = ENV['CAPSULECRM_ACCOUNT_NAME']
+CapsuleCRM.api_token = ENV['CAPSULECRM_API_TOKEN']
+CapsuleCRM.initialize!
 
 Trello.configure do |config|
     config.developer_public_key = ENV['TRELLO_DEV_KEY']
@@ -34,6 +39,10 @@ class CompanyDashboard
     response = HTTParty.get("https://certificates.theodi.org/status.csv").body
     csv = CSV.parse(response)
     csv.last[4]
+  end
+  
+  def self.members    
+    CapsuleCRM::Organisation.find_all(:tag => "Membership").count
   end
   def self.get_board_progress(id)    
     progress = []
