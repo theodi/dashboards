@@ -22,4 +22,8 @@ describe CompanyDashboard do
   it "should show the correct reach", :vcr do
     CompanyDashboard.reach.should == "117306"
   end
+  
+  it "should show the correct bookings value", :vcr do
+    CompanyDashboard.bookings.should == "621400"
+  end
 end
