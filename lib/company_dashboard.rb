@@ -1,5 +1,7 @@
 require 'dotenv'
 require 'trello'
+require 'httparty'
+require 'csv'
 
 Dotenv.load
 
@@ -28,6 +30,11 @@ class CompanyDashboard
     totals
   end
   
+  def self.odcs
+    response = HTTParty.get("https://certificates.theodi.org/status.csv").body
+    csv = CSV.parse(response)
+    csv.last[4]
+  end
   def self.get_board_progress(id)    
     progress = []
     board = Trello::Board.find(id)

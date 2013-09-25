@@ -11,4 +11,7 @@ describe CompanyDashboard do
     progress[:q3].should == 54.7
   end
   
+  it "should show the correct number of published Open Data Certificates", :vcr do
+    CompanyDashboard.odcs.should == "20"
+  end
 end
