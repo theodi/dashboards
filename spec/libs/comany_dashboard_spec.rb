@@ -16,7 +16,7 @@ describe CompanyDashboard do
   end
   
   it "should show the correct member count", :vcr do
-    CompanyDashboard.members.should == 36
+    CompanyDashboard.members.should == 9
   end
   
   it "should show the correct reach", :vcr do
