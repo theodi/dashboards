@@ -1,0 +1,50 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [150, 140]
+  Dashing.numColumns = 8
+  // Disable the layout drag
+});
+</script>
+<% content_for(:title) { "ODI Company Dashboard" } %>
+<div class="gridster" id="company">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div id="company-header">
+        <img src="/assets/odi.png" />
+        <h1 class="title">Company Dashboard</h1>
+      </div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Q1 Progress" id="q1-progress"></div>
+    </li>
+    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Q2 Progress" id="q2-progress"></div>
+    </li>
+    <li data-row="4" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Q3 Progress" id="q3-progress"></div>
+    </li>
+    <li data-row="5" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Q4 Progress" id="q4-progress"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2" class="metric-row-1">
+      <div data-id="Reach" data-view="Number" data-unordered="true" data-title="Reach (#People)" id="reach"></div>
+    </li>
+    <li data-row="1" data-col="5" data-sizex="2" data-sizey="2" class="metric-row-1">
+      <div data-id="Bookings" data-view="Number" data-unordered="true" data-title="Bookings (£)" id="bookings"></div>
+    </li>
+    <li data-row="1" data-col="7" data-sizex="2" data-sizey="2" class="metric-row-1">
+      <div data-id="KPIs" data-view="Number" data-unordered="true" data-title="Y1 investor %KPIs" id="kpis"></div>
+    </li>
+    <li data-row="3" data-col="3" data-sizex="2" data-sizey="2" class="metric-row-2">
+      <div data-id="Value" data-view="Number" data-unordered="true" data-title="Value unlocked (£)" id="value"></div>
+    </li>
+    <li data-row="3" data-col="5" data-sizex="2" data-sizey="2" class="metric-row-2">
+      <div data-id="ODCs" data-view="Number" data-unordered="true" data-title="ODCs Published" id="odcs"></div>
+    </li>
+    <li data-row="3" data-col="7" data-sizex="2" data-sizey="2" class="metric-row-2">
+      <div data-id="Members" data-view="Number" data-unordered="true" data-title="Members" id="members"></div>
+    </li>
+  </ul>
+</div>
