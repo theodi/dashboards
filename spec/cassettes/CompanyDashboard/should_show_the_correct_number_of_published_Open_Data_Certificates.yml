@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://certificates.<SOUNDCLOUD_USERNAME>.org/status.csv
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      x-rack-cache:
+      - miss
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-type:
+      - text/csv; charset=utf-8
+      date:
+      - Thu, 26 Sep 2013 09:33:59 GMT
+      x-request-id:
+      - e6801fca5046b5916453fa6b0edea9d3
+      transfer-encoding:
+      - chunked
+      x-runtime:
+      - '0.120333'
+      etag:
+      - ! '"8f9d0dbe7c5eb0caa06ea1ec914d77c3"'
+      connection:
+      - close
+      set-cookie:
+      - X-Mapping-fjhppofk=F528028645954AC08F00D0727850807B; path=/
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+    body:
+      encoding: US-ASCII
+      string: ! 'Date,All surveys started,All Certificates,All Datasets,Published
+        Certificates,Published Datasets,Raw level Certificates,Pilot level Certificates,Standard
+        level Certificates,Expert level Certificates
+
+        2013-09-14,8285,607,500,19,16,8,5,6,0
+
+        2013-09-15,8275,597,500,19,16,8,5,6,0
+
+        2013-09-16,8274,596,500,19,16,8,5,6,0
+
+        2013-09-17,8279,601,501,19,16,8,5,6,0
+
+        2013-09-18,8280,602,501,20,16,8,6,6,0
+
+        2013-09-19,8276,598,501,20,16,8,6,6,0
+
+        2013-09-20,8283,605,502,20,16,8,6,6,0
+
+        2013-09-21,8275,597,502,20,16,8,6,6,0
+
+        2013-09-22,8274,596,502,20,16,8,6,6,0
+
+        2013-09-23,8278,600,503,20,16,8,6,6,0
+
+        2013-09-24,8279,601,503,20,16,8,6,6,0
+
+        2013-09-25,8297,619,507,20,16,8,6,6,0
+
+        2013-09-26,8298,620,511,20,16,8,6,6,0
+
+'
+    http_version: '1.1'
+  recorded_at: Thu, 26 Sep 2013 09:33:59 GMT
+recorded_with: VCR 2.5.0
