@@ -8,7 +8,7 @@ describe CompanyDashboard do
     
     progress[:q1].should == 97
     progress[:q2].should == 83.5
-    progress[:q3].should == 54.7
+    progress[:q3].should == 55.1
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
@@ -24,11 +24,11 @@ describe CompanyDashboard do
   end
   
   it "should show the correct bookings value", :vcr do
-    CompanyDashboard.bookings.should == "621400"
+    CompanyDashboard.bookings.should == "621000"
   end
   
   it "should show the correct unlocked value", :vcr do
-    CompanyDashboard.value.should == "3310000"
+    CompanyDashboard.value.should == "19027000"
   end
   
   it "should show the corrct kpi percentage", :vcr do
