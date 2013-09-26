@@ -21,19 +21,19 @@ http_interactions:
       content-type:
       - text/csv; charset=utf-8
       date:
-      - Wed, 25 Sep 2013 12:22:37 GMT
+      - Thu, 26 Sep 2013 09:33:59 GMT
       x-request-id:
-      - 1d81f54de375993397f98855fb4f3dbb
+      - e6801fca5046b5916453fa6b0edea9d3
       transfer-encoding:
       - chunked
       x-runtime:
-      - '0.415968'
+      - '0.120333'
       etag:
-      - ! '"7dbcc285199173b6dc2debb3d1715762"'
+      - ! '"8f9d0dbe7c5eb0caa06ea1ec914d77c3"'
       connection:
       - close
       set-cookie:
-      - X-Mapping-fjhppofk=105A1DF21C4FFB1BD2C9CBCEA47FE472; path=/
+      - X-Mapping-fjhppofk=F528028645954AC08F00D0727850807B; path=/
       x-ua-compatible:
       - IE=Edge,chrome=1
     body:
@@ -66,7 +66,9 @@ http_interactions:
 
         2013-09-25,8297,619,507,20,16,8,6,6,0
 
+        2013-09-26,8298,620,511,20,16,8,6,6,0
+
 '
     http_version: '1.1'
-  recorded_at: Wed, 25 Sep 2013 12:22:37 GMT
+  recorded_at: Thu, 26 Sep 2013 09:33:59 GMT
 recorded_with: VCR 2.5.0
