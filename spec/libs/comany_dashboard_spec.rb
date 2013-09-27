@@ -32,7 +32,7 @@ describe CompanyDashboard do
   end
   
   it "should show the corrct kpi percentage", :vcr do
-    CompanyDashboard.kpis.should == "95"
+    CompanyDashboard.kpis.should == 95
   end
   
 end
