@@ -12,7 +12,7 @@ describe CompanyDashboard do
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs.should == "20"
+    CompanyDashboard.odcs.should == "511"
   end
   
   it "should show the correct member count", :vcr do
