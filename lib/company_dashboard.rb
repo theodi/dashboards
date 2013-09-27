@@ -39,7 +39,7 @@ class CompanyDashboard
   def self.odcs
     response = HTTParty.get("https://certificates.theodi.org/status.csv").body
     csv = CSV.parse(response)
-    csv.last[4]
+    csv.last[3]
   end
   
   def self.members    
@@ -59,7 +59,7 @@ class CompanyDashboard
   end
   
   def self.kpis
-    metrics_spreadsheet[2,2]
+    metrics_spreadsheet[2,2].to_f.round(1)
   end
 
   def self.get_board_progress(id)    
