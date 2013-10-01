@@ -7,8 +7,9 @@ describe CompanyDashboard do
     progress = CompanyDashboard.progress
     
     progress[:q1].should == 97
-    progress[:q2].should == 83.5
-    progress[:q3].should == 55.1
+    progress[:q2].should == 83.8
+    progress[:q3].should == 66.6
+    progress[:q4].should == 0.6
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
