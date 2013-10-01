@@ -13,7 +13,7 @@ describe CompanyDashboard do
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs.should == "511"
+    CompanyDashboard.odcs.should == "515"
   end
   
   it "should show the correct member count", :vcr do
@@ -29,11 +29,11 @@ describe CompanyDashboard do
   end
   
   it "should show the correct unlocked value", :vcr do
-    CompanyDashboard.value.should == "19027000"
+    CompanyDashboard.value.should == "19087000"
   end
   
   it "should show the corrct kpi percentage", :vcr do
-    CompanyDashboard.kpis.should == 95
+    CompanyDashboard.kpis.should == 94.0
   end
   
 end
