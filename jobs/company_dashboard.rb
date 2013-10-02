@@ -14,6 +14,6 @@ SCHEDULER.every '5m', :first_at => Time.now do
   send_event('Bookings', { current: CompanyDashboard.bookings, prefix: "£" })
   send_event('Members', { current: CompanyDashboard.members, link: "http://directory.theodi.org/members" })
   send_event('Value', { current: CompanyDashboard.value, prefix: "£" })
-  send_event('ODCs', { current: CompanyDashboard.odcs })
+  send_event('ODCs', { current: CompanyDashboard.odcs, link: "https://certificates.theodi.org/status" })
   send_event('KPIs', { current: CompanyDashboard.kpis, suffix: "%" })
 end
