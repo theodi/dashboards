@@ -18,6 +18,7 @@ gem 'twitter'
 gem 'ruby-trello'
 gem 'google_drive'
 gem 'capsulecrm'
+gem 'rufus-scheduler', '< 3.0.0'
 
 group :development, :test do
   gem 'rspec'
