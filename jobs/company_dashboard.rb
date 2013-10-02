@@ -6,7 +6,7 @@ SCHEDULER.every '1h', :first_at => Time.now do
   send_event('q1-progress', { min: 0, max: 100, value: progress[:q1] })
   send_event('q2-progress', { min: 0, max: 100, value: progress[:q2] })
   send_event('q3-progress', { min: 0, max: 100, value: progress[:q3] })
-  send_event('q4-progress', { min: 0, max: 100, value: 0 })
+  send_event('q4-progress', { min: 0, max: 100, value: progress[:q4] })
 end
 
 SCHEDULER.every '5m', :first_at => Time.now do

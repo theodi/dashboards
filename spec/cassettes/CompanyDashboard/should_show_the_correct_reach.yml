@@ -29,28 +29,28 @@ http_interactions:
       expires:
       - Mon, 01-Jan-1990 00:00:00 GMT
       date:
-      - Thu, 26 Sep 2013 09:37:34 GMT
+      - Tue, 01 Oct 2013 11:26:48 GMT
       x-content-type-options:
       - nosniff
       x-xss-protection:
       - 1; mode=block
       content-length:
-      - '1010'
+      - '1031'
       server:
       - GSE
       alternate-protocol:
       - 443:quic
     body:
       encoding: US-ASCII
-      string: ! 'SID=DQAAAO4AAADLHvwmoumZV6r-AxyrRgN8PTZ9tkH-yGbonq1W0DJJvk4F2_b2VNnycyEmi-rd85YkIJxLEFJvNlMLTEyi9oI65Ai5wQ0ITbH3LlGi3phJgVTXm3bHJSiIEJ6H8Z8u4oUELLxxiO2xrCWvYlpiJyW9fgaMKSwk_HKx5NKMKMqFQvVrGY6ZQyTCEKUuHObEwz-qN8uWIH5Fh8_XhG2P4eiIZklTy85j05jK44JQFubddeex5IKWaMHiyIgLsf2sTkFgnbjmUZZrV3ABaTrR4LIMgb9W3DVdymAQkDPwBSWDHAOkXIrg8esq506jjaFMMaQ
+      string: ! 'SID=DQAAAO0AAACPU00e7y1_aSrKp_UwL1yOyV4DHOSga6rnhY9UMTPxDEcsml1_NavDsDIsRBXNtMgjA1LliyrfczLLshfc6IH0R3BC3AwMqO_sYwNWR7TickilOKc5cVrYQmqkFTyW4J6MhEoi8RvSnK-ifUYKcMhiSoiv5VQtSnNBRFIAMpZ6wTLzvQ8Tu9SygubyBOmHlhVuAiTAw-wTKLMLRhZqpMGgCREjDV3oE1bHuuOI2o7iT9scvjH_OI7dqnQLge8ZCmGvHD2fWAAq5b99HsbNIpuboD-oIZW4PlRCBmpZuCTvyqYzoabAxDZbP7LyNZi_mIs
 
-        LSID=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_VxcRLYiLguRZT4z2hiK9V8S64pg4fhCA83yFWSyetnUI6TNiATN8kwAWOp0gOSVT3kzv4afT0sYPilpfaFeiCbcmy41KdQK2wzJEv3HihZNWrz75hzQ8Lb9z4WzPwIMmuN1X98xN2m_2PUQJJu80zQG_LPP82hZiFV29GfI2qjV-_Yz1wasbJZ4xXQvc1D2MQpnRMTLdcaqlmSI4qWqA-_DFPFOezhoSZybjmFXx5qXWvbP-VmGaTVyxfsEiQy8bo1E
+        LSID=DQAAAPAAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GAKBv7qeYm_KsfQ7CgZTiiGLQG--vo1RPBJnFhY_3mCS6inXE-i2bS8PPM7BirOlF8tVj49HuqSJo0iGew-cuRJ5XaOB1UxafR2SE-aqoHTmQsOYYHXsg_iPvoPWeXJBSyRLOHuRE6uugxPaEvgPzPYmW6ZnBygMnle-kbphwrT2wz5ByzzIFeEbLPzR_GdkL8qNKJvwOsocM1jbGqWGRdb7QE6heQnLKL5lJiL7avxvb5SWayPAmsG6Qualwu-TxOQ
 
-        Auth=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_Vxck3WlZAK6BPpSZfsrlEs1n79h6ZrmqH5E45jrx4xKsslFWvQ3c7ctTE4x2_ih9ZftSw5d3jAzYLKO4H6RxJxD_Tm7zVEWQRU7A8NKkWwzEplB_eUVUVAhaARKQAfuzCV_Q97U46AE6rph4E0EdkMDb9yhld-ZZw2-4N8EgEB3bG0VF87nDcxRmbnTm8UBWsSxHcQywf2QhqGUwWV8VaZq3Xtu7RIBEwSsNkSvqYd4JzymoGBDdiY41aUiKUjnrheY
+        Auth=DQAAAPEAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GAKOUMP9P0Ulea9GmMqRz2DoJYsgH2lN13s39sWSyokHhPHVDc_qin0jG6_TMpTXpLs3KOk_WFXrF_IlSHNz3UUGeYQFvmmOgoIuFBi4wfRf8WqYe0_J10J5PtnLblQMki0VSFrAy4EQjOjxrkT5xKOpUO2SkF2PEHSX-e-kjbjxlQ4RNSz143Q85ixibKisAdKShyRCDQb-229tmE-sB2LyAbdPxIe0T79QkhMqHI1P06l5d2V2RVtTHUQqtPyoJQ2JEQx-7UydT1ii8m-60s-S
 
 '
     http_version: '1.1'
-  recorded_at: Thu, 26 Sep 2013 09:37:34 GMT
+  recorded_at: Tue, 01 Oct 2013 11:26:51 GMT
 - request:
     method: post
     uri: https://www.google.com/accounts/ClientLogin
@@ -80,28 +80,28 @@ http_interactions:
       expires:
       - Mon, 01-Jan-1990 00:00:00 GMT
       date:
-      - Thu, 26 Sep 2013 09:37:34 GMT
+      - Tue, 01 Oct 2013 11:26:48 GMT
       x-content-type-options:
       - nosniff
       x-xss-protection:
       - 1; mode=block
       content-length:
-      - '1010'
+      - '1031'
       server:
       - GSE
       alternate-protocol:
       - 443:quic
     body:
       encoding: US-ASCII
-      string: ! 'SID=DQAAAO4AAADLHvwmoumZV6r-AxyrRgN8PTZ9tkH-yGbonq1W0DJJvk4F2_b2VNnycyEmi-rd85YkIJxLEFJvNlMLTEyi9oI65Ai5wQ0ITbH3LlGi3phJgVTXm3bHJSiIEJ6H8Z8u4oUELLxxiO2xrCWvYlpiJyW9fgaMKSwk_HKx5NKMKMqFQvVrGY6ZQyTCEKUuHObEwz-qN8uWIH5Fh8_XhG2P4eiIZklTy85j05jK44JQFubddeex5IKWaMHiyIgLsf2sTkFCXKKRe1c-25kw-Ia8VYuN28Q75wt34CZFv8tgqf3lEQicxfqHh-xEO-5GOZwl3co
+      string: ! 'SID=DQAAAO8AAACPU00e7y1_aSrKp_UwL1yOyV4DHOSga6rnhY9UMTPxDEcsml1_NavDsDIsRBXNtMgjA1LliyrfczLLshfc6IH0R3BC3AwMqO_sYwNWR7TickilOKc5cVrYQmqkFTyW4J6MhEoi8RvSnK-ifUYKcMhiSoiv5VQtSnNBRFIAMpZ6wTLzvQ8Tu9SygubyBOmHlhVuAiTAw-wTKLMLRhZqpMGgCREjDV3oE1bHuuOI2o7iT7n2cD1xk87kHNDOO8UhgUbLKbQOJBzmXcXky4pdAHPfBPSAtq3HjTMsZ12oCcpqYIZO34H7kvixpv4VUPuErp4
 
-        LSID=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_VxcRLYiLguRZT4z2hiK9V8S64pg4fhCA83yFWSyetnUI6TNiATN8kwAWOp0gOSVT3kzv4afT0sYPilpfaFeiCbcmy41KdQK2wzJEv3HihZNWrz75hzQ8Lb9z4WzPwIMmuN1X98xN2m_2PUQJJu80zQG_LPP82hZiFV29GfI2qjV-_Yz1wasbJZ4xXQvc1D2MQpmNHTAwBA-G9TnYsf83anK8jdXYCSWq8DSUGn-9RHsGMEkRQ0wO32md1baRH_OdWlA
+        LSID=DQAAAPIAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GAKBv7qeYm_KsfQ7CgZTiiGLQG--vo1RPBJnFhY_3mCS6inXE-i2bS8PPM7BirOlF8tVj49HuqSJo0iGew-cuRJ5XaOB1UxafR2SE-aqoHTmQsOYYHXsg_iPvoPWeXJBSyRLOHuRE6uugxPaEvgPzPYmW6ZnBygMnle-kbphwrT2wz5ByzzIFeEbLPzR_GdkL8qMP2IZpVTslQRGe2gNKPJvnlvRlGQyguugLf_YOK7ttp9F0VtcFIojUAn60g_vKyav_ATZ6TpCxZ-oGV3YcrZ6
 
-        Auth=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_VxfdrprKqELklyJpSp4rp3TlhZ3svbTASBaFL0LGn3P3HyyiXWMP50qs6-aSb7lJ9TJast3OVlBtMMf6kknVqnk7ra5359SI9cIWXFbsJfyzfxkzA4vi3NerZrtq9qwYDbtq9gusGDma4-kmr1xlJ41PHgC72-0LvTdCJdTB7qgvtvQCC11IDc47YzgW09XIzevcl_cEK1_iSYmpuRTUWh5fEtTcnPw_DCiHLj_VNgViy3-nt3BDUC6ntdrTcNYthm4
+        Auth=DQAAAPAAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GALiyu2bZXFEiPBrf8bA-2upSxnRyzXcJEgGhpqXs89dL4jRh79DjoaQxirXF-VKuIbCYztmovCwUiyedFkEnGzmp-qlIUdKCoVYlJtMlwCajxVt9UegNHPPj1WfGWRG7ZPZ1CjIhMmhoROllQiUYL-bcpkV9ZgqewWXtgGcVGMIREsQAEhfmeXEnp75T6DSHkna_f3A9ugBhzgq4Eky78yha566RveQuMR2H21L-zn3KGc2P9Kypau3OpqD4kqaIm4
 
 '
     http_version: '1.1'
-  recorded_at: Thu, 26 Sep 2013 09:37:34 GMT
+  recorded_at: Tue, 01 Oct 2013 11:26:51 GMT
 - request:
     method: get
     uri: https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full
@@ -110,7 +110,7 @@ http_interactions:
       string: ''
     headers:
       authorization:
-      - GoogleLogin auth=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_Vxck3WlZAK6BPpSZfsrlEs1n79h6ZrmqH5E45jrx4xKsslFWvQ3c7ctTE4x2_ih9ZftSw5d3jAzYLKO4H6RxJxD_Tm7zVEWQRU7A8NKkWwzEplB_eUVUVAhaARKQAfuzCV_Q97U46AE6rph4E0EdkMDb9yhld-ZZw2-4N8EgEB3bG0VF87nDcxRmbnTm8UBWsSxHcQywf2QhqGUwWV8VaZq3Xtu7RIBEwSsNkSvqYd4JzymoGBDdiY41aUiKUjnrheY
+      - GoogleLogin auth=DQAAAPEAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GAKOUMP9P0Ulea9GmMqRz2DoJYsgH2lN13s39sWSyokHhPHVDc_qin0jG6_TMpTXpLs3KOk_WFXrF_IlSHNz3UUGeYQFvmmOgoIuFBi4wfRf8WqYe0_J10J5PtnLblQMki0VSFrAy4EQjOjxrkT5xKOpUO2SkF2PEHSX-e-kjbjxlQ4RNSz143Q85ixibKisAdKShyRCDQb-229tmE-sB2LyAbdPxIe0T79QkhMqHI1P06l5d2V2RVtTHUQqtPyoJQ2JEQx-7UydT1ii8m-60s-S
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept:
@@ -125,9 +125,9 @@ http_interactions:
       content-type:
       - application/atom+xml; charset=UTF-8
       expires:
-      - Thu, 26 Sep 2013 09:37:35 GMT
+      - Tue, 01 Oct 2013 11:26:48 GMT
       date:
-      - Thu, 26 Sep 2013 09:37:35 GMT
+      - Tue, 01 Oct 2013 11:26:48 GMT
       cache-control:
       - private, max-age=0, must-revalidate, no-transform
       vary:
@@ -135,10 +135,10 @@ http_interactions:
       gdata-version:
       - '1.0'
       last-modified:
-      - Wed, 25 Sep 2013 16:56:58 GMT
+      - Mon, 30 Sep 2013 16:44:51 GMT
       set-cookie:
-      - NID=67=sNGWnJC4RiU6uU0DbCSR2CfIjTzj1CM3UlpqfF8n3jqi3a4ociLBTCYSqfGw5VBjJjAUc2r3WfG36dN8yKYYWoM8ppCqswtlElzxfAMSgHU04TrAn0GzRdqMlt7reij-;Domain=.google.com;Path=/;Expires=Fri,
-        28-Mar-2014 09:37:35 GMT;HttpOnly
+      - NID=67=UbnfuJ_0pTzOEevzquGf6xHCyQbds_XpIZv5WB2EJ8YRLnogS7ZM6oH8OZEHgUzu5AIK-CRmyr37qPkm-eKJWtdfMnxN8tfDmSmMHKpSX8VL24lzHeS0yCHg7wRNt_K8;Domain=.google.com;Path=/;Expires=Wed,
+        02-Apr-2014 11:26:48 GMT;HttpOnly
       p3p:
       - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
         for more info."
@@ -157,13 +157,13 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
-        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'><id>https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full</id><updated>2013-09-30T16:44:51.281Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title
         type='text'>ODI Dashboard metrics</title><link rel='alternate' type='text/html'
         href='https://spreadsheets.google.com/ccc?key=<GAPPS_METRICS_SPREADSHEET_ID>'/><link
         rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full'/><link
         rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full'/><link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full/od6</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full/od6</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#worksheet'/><title
         type='text'>Sheet1</title><content type='text'>Sheet1</content><link rel='http://schemas.google.com/spreadsheets/2006#listfeed'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full'/><link
@@ -172,9 +172,9 @@ http_interactions:
         rel='http://schemas.google.com/visualization/2008#visualizationApi' type='application/atom+xml'
         href='https://spreadsheets.google.com/tq?key=<GAPPS_METRICS_SPREADSHEET_ID>&amp;sheet=od6'/><link
         rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full/od6'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full/od6/dl7q5fgooo'/><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount></entry></feed>
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/worksheets/<GAPPS_METRICS_SPREADSHEET_ID>/private/full/od6/dlcztq5q08'/><gs:rowCount>100</gs:rowCount><gs:colCount>19</gs:colCount></entry></feed>
     http_version: '1.1'
-  recorded_at: Thu, 26 Sep 2013 09:37:34 GMT
+  recorded_at: Tue, 01 Oct 2013 11:26:53 GMT
 - request:
     method: get
     uri: https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full
@@ -183,7 +183,7 @@ http_interactions:
       string: ''
     headers:
       authorization:
-      - GoogleLogin auth=DQAAAPAAAAAzAtKqlV_pdytY8sexHP4J808mazhFN6rWDSgEObmRuD9u_L7OiPs-cpF-jP3_Vxck3WlZAK6BPpSZfsrlEs1n79h6ZrmqH5E45jrx4xKsslFWvQ3c7ctTE4x2_ih9ZftSw5d3jAzYLKO4H6RxJxD_Tm7zVEWQRU7A8NKkWwzEplB_eUVUVAhaARKQAfuzCV_Q97U46AE6rph4E0EdkMDb9yhld-ZZw2-4N8EgEB3bG0VF87nDcxRmbnTm8UBWsSxHcQywf2QhqGUwWV8VaZq3Xtu7RIBEwSsNkSvqYd4JzymoGBDdiY41aUiKUjnrheY
+      - GoogleLogin auth=DQAAAPEAAABbrrasVGUaHApmNwKe_NQKgpNNTFPhzFLdRV6JTEPf42DX-8pnf4PiCfpaftS5GAKOUMP9P0Ulea9GmMqRz2DoJYsgH2lN13s39sWSyokHhPHVDc_qin0jG6_TMpTXpLs3KOk_WFXrF_IlSHNz3UUGeYQFvmmOgoIuFBi4wfRf8WqYe0_J10J5PtnLblQMki0VSFrAy4EQjOjxrkT5xKOpUO2SkF2PEHSX-e-kjbjxlQ4RNSz143Q85ixibKisAdKShyRCDQb-229tmE-sB2LyAbdPxIe0T79QkhMqHI1P06l5d2V2RVtTHUQqtPyoJQ2JEQx-7UydT1ii8m-60s-S
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept:
@@ -198,9 +198,9 @@ http_interactions:
       content-type:
       - application/atom+xml; charset=UTF-8
       expires:
-      - Thu, 26 Sep 2013 09:37:35 GMT
+      - Tue, 01 Oct 2013 11:26:50 GMT
       date:
-      - Thu, 26 Sep 2013 09:37:35 GMT
+      - Tue, 01 Oct 2013 11:26:50 GMT
       cache-control:
       - private, max-age=0, must-revalidate, no-transform
       vary:
@@ -208,10 +208,10 @@ http_interactions:
       gdata-version:
       - '1.0'
       last-modified:
-      - Wed, 25 Sep 2013 16:56:58 GMT
+      - Mon, 30 Sep 2013 11:38:19 GMT
       set-cookie:
-      - NID=67=KZyMpW34shAwQHDWBq-xFr9Z2zkCDTRh0p8B9O7n0F_nWb1AcOmkqS2iK7MFa_oTE0zdM7nhbXlxMIuhWYJ8KbpeWFm76KmoX-6aJMQyC3HZFfCTHiDVxBtSyKaCZXWT;Domain=.google.com;Path=/;Expires=Fri,
-        28-Mar-2014 09:37:35 GMT;HttpOnly
+      - NID=67=uU3iPuwcMi3ZPDneFilJA6XWkZ-FHslF8_Uocz5YrMBpV4IS9pjPllyuOhDDoP75Y_JTl2Zty2IieDSwBrqjbU0mqtXVpxsFdKEODANXk6mmlo30HVq9o3fOLLAe67F4;Domain=.google.com;Path=/;Expires=Wed,
+        02-Apr-2014 11:26:50 GMT;HttpOnly
       p3p:
       - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
         for more info."
@@ -231,208 +231,437 @@ http_interactions:
       encoding: US-ASCII
       string: <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom'
         xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gs='http://schemas.google.com/spreadsheets/2006'
-        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        xmlns:batch='http://schemas.google.com/gdata/batch'><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>Sheet1</title><link rel='alternate' type='text/html' href='https://spreadsheets.google.com/ccc?key=<GAPPS_METRICS_SPREADSHEET_ID>'/><link
         rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full'/><link
         rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full'/><link
         rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/batch'/><link
-        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>39</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C1</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full'/><author><name>stuart.harrison</name><email>stuart.harrison@<SOUNDCLOUD_USERNAME>.org</email></author><openSearch:totalResults>84</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>100</gs:rowCount><gs:colCount>19</gs:colCount><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>A1</title><content type='text'>Total reach</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C1'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C1/qr0epj'/><gs:cell
-        row='1' col='1' inputValue='Total reach'>Total reach</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C2</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='1' col='1' inputValue='Total reach'>Total reach</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>B1</title><content type='text'>117306</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C2'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C2/o9572a'/><gs:cell
-        row='1' col='2' inputValue='117306' numericValue='117306.0'>117306</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C6</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='1' col='2' inputValue='117306' numericValue='117306.0'>117306</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C6</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>F1</title><content type='text'>workings</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C6'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C6/1z27vm'/><gs:cell
-        row='1' col='6' inputValue='workings'>workings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='1' col='6' inputValue='workings'>workings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G1</title><content type='text'>value unlocked</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C7/9ilp6a'/><gs:cell
-        row='1' col='7' inputValue='value unlocked'>value unlocked</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='1' col='7' inputValue='value unlocked'>value unlocked</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>H1</title><content type='text'>19027000</content><link rel='self'
+        type='text'>H1</title><content type='text'>19087000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C8'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C8/xlvf7n'/><gs:cell
-        row='1' col='8' inputValue='=SUM(R[1]C:R[19]C)' numericValue='1.9027E7'>19027000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C10</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C8/xp66rt'/><gs:cell
+        row='1' col='8' inputValue='=SUM(R[1]C:R[19]C)' numericValue='1.9087E7'>19087000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>J1</title><content type='text'>investor KPIs</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C10'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C10/3gu03b'/><gs:cell
-        row='1' col='10' inputValue='investor KPIs'>investor KPIs</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C1</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='1' col='10' inputValue='investor KPIs'>investor KPIs</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L1</title><content type='text'>target</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C12/hw7mhd'/><gs:cell
+        row='1' col='12' inputValue='target'>target</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M1</title><content type='text'>actual</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C13/avf43y'/><gs:cell
+        row='1' col='13' inputValue='actual'>actual</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N1</title><content type='text'>performance against targert</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C14/9iwpyu'/><gs:cell
+        row='1' col='14' inputValue='performance against targert'>performance against
+        targert</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O1</title><content type='text'>normalised to "targets hit"</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R1C15/oj95ve'/><gs:cell
+        row='1' col='15' inputValue='normalised to &quot;targets hit&quot;'>normalised
+        to "targets hit"</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>A2</title><content type='text'>KPI percentage</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C1'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C1/l5dz92'/><gs:cell
-        row='2' col='1' inputValue='KPI percentage'>KPI percentage</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C2</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='2' col='1' inputValue='KPI percentage'>KPI percentage</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>B2</title><content type='text'>95</content><link rel='self' type='application/atom+xml'
+        type='text'>B2</title><content type='text'>94</content><link rel='self' type='application/atom+xml'
         href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C2'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C2/a11cs'/><gs:cell
-        row='2' col='2' inputValue='95' numericValue='95.0'>95</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C2/a11cr'/><gs:cell
+        row='2' col='2' inputValue='=round(R[6]C[13];2)*100' numericValue='94.0'>94</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G2</title><content type='text'>TSB vouchers</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C7/t38j1e'/><gs:cell
-        row='2' col='7' inputValue='TSB vouchers'>TSB vouchers</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='2' col='7' inputValue='TSB vouchers'>TSB vouchers</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H2</title><content type='text'>750000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C8/stdqe6'/><gs:cell
-        row='2' col='8' inputValue='750000' numericValue='750000.0'>750000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C10</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='2' col='8' inputValue='750000' numericValue='750000.0'>750000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>J2</title><content type='text'>reach</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C10'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C10/4ae1kj'/><gs:cell
-        row='2' col='10' inputValue='reach'>reach</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='2' col='10' inputValue='reach'>reach</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K2</title><content type='text'>supply</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C11/i05srz'/><gs:cell
-        row='2' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C1</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='2' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L2</title><content type='text'>200</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C12/31y01e'/><gs:cell
+        row='2' col='12' inputValue='200' numericValue='200.0'>200</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M2</title><content type='text'>7337</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C13/3ctxds'/><gs:cell
+        row='2' col='13' inputValue='7337' numericValue='7337.0'>7337</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N2</title><content type='text'>3668.5%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C14/slrcft'/><gs:cell
+        row='2' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='36.685'>3668.5%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O2</title><content type='text'>100%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R2C15/46otas'/><gs:cell
+        row='2' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='1.0'>100%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>A3</title><content type='text'>Value unlocked</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C1'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C1/t0hwwi'/><gs:cell
-        row='3' col='1' inputValue='Value unlocked'>Value unlocked</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C2</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='3' col='1' inputValue='Value unlocked'>Value unlocked</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>B3</title><content type='text'>19027000</content><link rel='self'
+        type='text'>B3</title><content type='text'>19087000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C2'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C2/z9q6df'/><gs:cell
-        row='3' col='2' inputValue='=R[-2]C[6]' numericValue='1.9027E7'>19027000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C2/zd6k7d'/><gs:cell
+        row='3' col='2' inputValue='=R[-2]C[6]' numericValue='1.9087E7'>19087000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G3</title><content type='text'>OD-CS</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C7/orre0'/><gs:cell
-        row='3' col='7' inputValue='OD-CS'>OD-CS</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='3' col='7' inputValue='OD-CS'>OD-CS</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H3</title><content type='text'>1200000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C8/z9om27'/><gs:cell
-        row='3' col='8' inputValue='1200000' numericValue='1200000.0'>1200000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='3' col='8' inputValue='1200000' numericValue='1200000.0'>1200000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K3</title><content type='text'>demand</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C11/g7a79n'/><gs:cell
-        row='3' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C1</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='3' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L3</title><content type='text'>10</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C12/31ydjz'/><gs:cell
+        row='3' col='12' inputValue='10' numericValue='10.0'>10</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M3</title><content type='text'>11</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C13/3bxyxs'/><gs:cell
+        row='3' col='13' inputValue='11' numericValue='11.0'>11</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N3</title><content type='text'>110%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C14/3wnu39'/><gs:cell
+        row='3' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='1.1'>110%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O3</title><content type='text'>100%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R3C15/46neqc'/><gs:cell
+        row='3' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='1.0'>100%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>A4</title><content type='text'>Commercial bookings</content><link
         rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C1'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C1/onpiy8'/><gs:cell
-        row='4' col='1' inputValue='Commercial bookings'>Commercial bookings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C2</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='4' col='1' inputValue='Commercial bookings'>Commercial bookings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>B4</title><content type='text'>621000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C2'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C2/qmum1n'/><gs:cell
-        row='4' col='2' inputValue='=R[4]C[6]' numericValue='621000.0'>621000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='4' col='2' inputValue='=R[4]C[6]' numericValue='621000.0'>621000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>G4</title><content type='text'>ON</content><link rel='self' type='application/atom+xml'
-        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7/1o1ty7'/><gs:cell
-        row='4' col='7' inputValue='ON'>ON</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        type='text'>G4</title><content type='text'>ON ($750k)</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C7/65s1rn'/><gs:cell
+        row='4' col='7' inputValue='ON ($750k)'>ON ($750k)</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H4</title><content type='text'>480000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C8/prvvk4'/><gs:cell
-        row='4' col='8' inputValue='480000' numericValue='480000.0'>480000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C10</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='4' col='8' inputValue='480000' numericValue='480000.0'>480000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>J4</title><content type='text'>engagement</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C10'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C10/c4zbcv'/><gs:cell
-        row='4' col='10' inputValue='engagement'>engagement</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='4' col='10' inputValue='engagement'>engagement</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K4</title><content type='text'>supply</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C11/i02zn3'/><gs:cell
-        row='4' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='4' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>G5</title><content type='text'>WB</content><link rel='self' type='application/atom+xml'
-        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7/1o38p7'/><gs:cell
-        row='5' col='7' inputValue='WB'>WB</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        type='text'>L4</title><content type='text'>200</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C12/320t6a'/><gs:cell
+        row='4' col='12' inputValue='200' numericValue='200.0'>200</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M4</title><content type='text'>128</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C13/3c0dvb'/><gs:cell
+        row='4' col='13' inputValue='128' numericValue='128.0'>128</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N4</title><content type='text'>64%</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C14/3vzodj'/><gs:cell
+        row='4' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='0.64'>64%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O4</title><content type='text'>64%</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C15/45z9rb'/><gs:cell
+        row='4' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='0.64'>64%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C16</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>P4</title><content type='text'>&lt;-- M4 = people trained - check
+        with KC+AC on update</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C16'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R4C16/nvnr36'/><gs:cell
+        row='4' col='16' inputValue='&lt;-- M4 = people trained - check with KC+AC
+        on update'>&lt;-- M4 = people trained - check with KC+AC on update</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A5</title><content type='text'>Nodes</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C1/18rc7l'/><gs:cell
+        row='5' col='1' inputValue='Nodes'>Nodes</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B5</title><content type='text'>0</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C2/a57ow'/><gs:cell
+        row='5' col='2' inputValue='0' numericValue='0.0'>0</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>G5</title><content type='text'>WB (3yr @$1.25m*3/2)</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C7/w2fyqj'/><gs:cell
+        row='5' col='7' inputValue='WB (3yr @$1.25m*3/2)'>WB (3yr @$1.25m*3/2)</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H5</title><content type='text'>1210000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C8/za5lio'/><gs:cell
-        row='5' col='8' inputValue='1210000' numericValue='1210000.0'>1210000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='5' col='8' inputValue='1210000' numericValue='1210000.0'>1210000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K5</title><content type='text'>demand</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C11/g77e4r'/><gs:cell
-        row='5' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='5' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L5</title><content type='text'>15</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C12/3216p0'/><gs:cell
+        row='5' col='12' inputValue='15' numericValue='15.0'>15</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M5</title><content type='text'>32</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C13/3c0s4f'/><gs:cell
+        row='5' col='13' inputValue='32' numericValue='32.0'>32</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N5</title><content type='text'>213.333333333333%</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C14/rxcxu3'/><gs:cell
+        row='5' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='2.1333333333333333'>213.333333333333%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O5</title><content type='text'>100%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R5C15/46kllg'/><gs:cell
+        row='5' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='1.0'>100%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C1</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>A6</title><content type='text'>Sales pipeline</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C1'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C1/jqcl06'/><gs:cell
+        row='6' col='1' inputValue='Sales pipeline'>Sales pipeline</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C2</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>B6</title><content type='text'>1540320</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C2'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C2/yizr4h'/><gs:cell
+        row='6' col='2' inputValue='1540320' numericValue='1540320.0'>1540320</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G6</title><content type='text'>startup invest</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C7/xpbc3c'/><gs:cell
-        row='6' col='7' inputValue='startup invest'>startup invest</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='6' col='7' inputValue='startup invest'>startup invest</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H6</title><content type='text'>3900000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C8/tnb5vu'/><gs:cell
-        row='6' col='8' inputValue='3900000' numericValue='3900000.0'>3900000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C10</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='6' col='8' inputValue='3900000' numericValue='3900000.0'>3900000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>J6</title><content type='text'>impact</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C10'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C10/dfdb9i'/><gs:cell
-        row='6' col='10' inputValue='impact'>impact</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='6' col='10' inputValue='impact'>impact</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K6</title><content type='text'>supply</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C11/i0bf1r'/><gs:cell
-        row='6' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='6' col='11' inputValue='supply'>supply</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L6</title><content type='text'>25</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C12/322lab'/><gs:cell
+        row='6' col='12' inputValue='25' numericValue='25.0'>25</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M6</title><content type='text'>500</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C13/3c39x1'/><gs:cell
+        row='6' col='13' inputValue='500' numericValue='500.0'>500</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N6</title><content type='text'>2000%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C14/3k2asn'/><gs:cell
+        row='6' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='20.0'>2000%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O6</title><content type='text'>100%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R6C15/46j710'/><gs:cell
+        row='6' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='1.0'>100%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G7</title><content type='text'>startup contracts</content><link
         rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C7/jk94n2'/><gs:cell
-        row='7' col='7' inputValue='startup contracts'>startup contracts</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='7' col='7' inputValue='startup contracts'>startup contracts</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H7</title><content type='text'>466000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C8/pqrwl8'/><gs:cell
-        row='7' col='8' inputValue='466000' numericValue='466000.0'>466000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C11</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='7' col='8' inputValue='466000' numericValue='466000.0'>466000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>K7</title><content type='text'>demand</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C11'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C11/g74kzv'/><gs:cell
-        row='7' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='7' col='11' inputValue='demand'>demand</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L7</title><content type='text'>5</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C12/323ynp'/><gs:cell
+        row='7' col='12' inputValue='5' numericValue='5.0'>5</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C13</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>M7</title><content type='text'>12</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C13'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C13/3c3l7l'/><gs:cell
+        row='7' col='13' inputValue='12' numericValue='12.0'>12</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N7</title><content type='text'>240%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C14/3wix13'/><gs:cell
+        row='7' col='14' inputValue='=RC[-1]/RC[-2]' numericValue='2.4'>240%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O7</title><content type='text'>100%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R7C15/46hsgk'/><gs:cell
+        row='7' col='15' inputValue='=IF(RC[-1]&gt;1;100%;RC[-1])' numericValue='1.0'>100%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G8</title><content type='text'>commercial bookings</content><link
         rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C7/29r3gw'/><gs:cell
-        row='8' col='7' inputValue='commercial bookings'>commercial bookings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='8' col='7' inputValue='commercial bookings'>commercial bookings</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H8</title><content type='text'>621000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C8/oyrfh7'/><gs:cell
-        row='8' col='8' inputValue='621000' numericValue='621000.0'>621000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='8' col='8' inputValue='621000' numericValue='621000.0'>621000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C14</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>N8</title><content type='text'>1049.30555555556%</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C14'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C14/9ww4ra'/><gs:cell
+        row='8' col='14' inputValue='=SUM(R[-6]C:R[-1]C)/6' numericValue='10.493055555555555'>1049.30555555556%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C15</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>O8</title><content type='text'>94%</content><link rel='self' type='application/atom+xml'
+        href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C15'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R8C15/464y96'/><gs:cell
+        row='8' col='15' inputValue='=SUM(R[-6]C:R[-1]C)/6' numericValue='0.9400000000000001'>94%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>G9</title><content type='text'>research bids</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C7'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C7/89aa2j'/><gs:cell
-        row='9' col='7' inputValue='research bids'>research bids</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='9' col='7' inputValue='research bids'>research bids</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H9</title><content type='text'>400000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R9C8/pnwz24'/><gs:cell
-        row='9' col='8' inputValue='400000' numericValue='400000.0'>400000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        row='9' col='8' inputValue='400000' numericValue='400000.0'>400000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
-        type='text'>G10</title><content type='text'>TSB invest</content><link rel='self'
-        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7'/><link
-        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7/q8x1ci'/><gs:cell
-        row='10' col='7' inputValue='TSB invest'>TSB invest</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C8</id><updated>2013-09-25T16:56:58.539Z</updated><category
+        type='text'>G10</title><content type='text'>TSB invest (5yr)</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C7/ia6a9h'/><gs:cell
+        row='10' col='7' inputValue='TSB invest (5yr)'>TSB invest (5yr)</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
         scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
         type='text'>H10</title><content type='text'>10000000</content><link rel='self'
         type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C8'/><link
         rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C8/asczxb'/><gs:cell
-        row='10' col='8' inputValue='10000000' numericValue='1.0E7'>10000000</gs:cell></entry></feed>
+        row='10' col='8' inputValue='10000000' numericValue='1.0E7'>10000000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>J10</title><content type='text'>coverage</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C10'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C10/r6y9d4'/><gs:cell
+        row='10' col='10' inputValue='coverage'>coverage</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>K10</title><content type='text'>400</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C11'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C11/2s9ook'/><gs:cell
+        row='10' col='11' inputValue='400' numericValue='400.0'>400</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C12</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>L10</title><content type='text'>pieces</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C12'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R10C12/lo8thh'/><gs:cell
+        row='10' col='12' inputValue='pieces'>pieces</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>G11</title><content type='text'>projects</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C7/ifqvei'/><gs:cell
+        row='11' col='7' inputValue='projects'>projects</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C8</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>H11</title><content type='text'>60000</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C8'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C8/1463w6'/><gs:cell
+        row='11' col='8' inputValue='60000' numericValue='60000.0'>60000</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>J11</title><content type='text'>inc every broadsheet</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C10'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R11C10/lwudz8'/><gs:cell
+        row='11' col='10' inputValue='inc every broadsheet'>inc every broadsheet</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C10</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>J12</title><content type='text'>positive</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C10'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C10/afkqgp'/><gs:cell
+        row='12' col='10' inputValue='positive'>positive</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C11</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>K12</title><content type='text'>98%</content><link rel='self'
+        type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C11'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R12C11/2sclpi'/><gs:cell
+        row='12' col='11' inputValue='98%' numericValue='0.98'>98%</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R13C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>G13</title><content type='text'>View output at</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R13C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R13C7/xg43rr'/><gs:cell
+        row='13' col='7' inputValue='View output at'>View output at</gs:cell></entry><entry><id>https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R14C7</id><updated>2013-09-30T11:38:19.553Z</updated><category
+        scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#cell'/><title
+        type='text'>G14</title><content type='text'>http://dashboards.<SOUNDCLOUD_USERNAME>.org/company</content><link
+        rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R14C7'/><link
+        rel='edit' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/cells/<GAPPS_METRICS_SPREADSHEET_ID>/od6/private/full/R14C7/almpes'/><gs:cell
+        row='14' col='7' inputValue='http://dashboards.<SOUNDCLOUD_USERNAME>.org/company'>http://dashboards.<SOUNDCLOUD_USERNAME>.org/company</gs:cell></entry></feed>
     http_version: '1.1'
-  recorded_at: Thu, 26 Sep 2013 09:37:35 GMT
+  recorded_at: Tue, 01 Oct 2013 11:26:53 GMT
 recorded_with: VCR 2.5.0
