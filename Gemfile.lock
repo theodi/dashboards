@@ -128,8 +128,8 @@ GEM
       json
       oauth (~> 0.4.5)
       rest-client (~> 1.6.7)
-    rufus-scheduler (3.0.0)
-      tzinfo
+    rufus-scheduler (2.0.24)
+      tzinfo (>= 0.3.22)
     sass (3.2.11)
     simple_oauth (0.2.0)
     simplecov (0.7.1)
@@ -195,6 +195,7 @@ DEPENDENCIES
   rscribd
   rspec
   ruby-trello
+  rufus-scheduler (< 3.0.0)
   simplecov
   simplecov-rcov
   soundcloud
