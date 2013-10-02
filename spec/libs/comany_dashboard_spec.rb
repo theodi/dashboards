@@ -7,12 +7,13 @@ describe CompanyDashboard do
     progress = CompanyDashboard.progress
     
     progress[:q1].should == 97
-    progress[:q2].should == 83.5
-    progress[:q3].should == 55.1
+    progress[:q2].should == 83.8
+    progress[:q3].should == 66.6
+    progress[:q4].should == 0.6
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs.should == "511"
+    CompanyDashboard.odcs.should == "515"
   end
   
   it "should show the correct member count", :vcr do
@@ -28,11 +29,11 @@ describe CompanyDashboard do
   end
   
   it "should show the correct unlocked value", :vcr do
-    CompanyDashboard.value.should == "19027000"
+    CompanyDashboard.value.should == "19087000"
   end
   
   it "should show the corrct kpi percentage", :vcr do
-    CompanyDashboard.kpis.should == 95
+    CompanyDashboard.kpis.should == 94.0
   end
   
 end

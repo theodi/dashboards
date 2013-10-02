@@ -23,7 +23,8 @@ class CompanyDashboard
     board_ids = {
       :q1 => 'cEwY2JHh',
       :q2 => 'm5Gxybf6',
-      :q3 => 'wkIzhRE3'
+      :q3 => 'wkIzhRE3',
+      :q4 => '5IZH6yGG'
     }
     
     totals = {}
