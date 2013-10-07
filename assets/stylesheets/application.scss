@@ -313,68 +313,80 @@ h3 {
   }
 }
 
-#company-header {
-  background-color: #0DBC37;
-  width: 100%;
-  height: 100%;
+#company {
+
+  #company-header {
+    position: relative;
   
-  img {
-    margin: 0 auto;
-    padding: 20px 0 10px 0;
-    display: block;
-  }
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 195px;
+    }
   
-  h1.title {
-    margin-bottom: 0;
-    font-size: 25px;  
+    h1.title {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      font-size: 55px;
+      font-weight: bold; 
+      padding: 0;
+      margin: 0; 
+      color: #666;
+    }
   }
-}
 
-.metric-row-1 {
-  height: 360px !important;
-}
+  #q4-progress {
+    background-color: #2254F4;
+  }
 
-.metric-row-2 {
-  height: 370px !important;
-  top: 375px !important;
-}
+  #q3-progress {
+    background-color: #1DD3A7;
+  }
 
-#q4-progress {
-  background-color: #2254F4;
-}
+  #q2-progress {
+    background-color: #08DEF9;
+  }
 
-#q3-progress {
-  background-color: #1DD3A7;
-}
+  #q1-progress {
+    background-color: #00B7FF;
+  }
 
-#q2-progress {
-  background-color: #08DEF9;
-}
+  #reach {
+    background-color: #F9BC26;
+  }
 
-#q1-progress {
-  background-color: #00B7FF;
-}
+  #bookings {
+    background-color: #FF6700;
+  }
 
-#reach {
-  background-color: #F9BC26;
-}
+  #kpis {
+    background-color: #D60303;
+  }
 
-#bookings {
-  background-color: #FF6700;
-}
+  #value {
+    background-color: #EF3AAB;
+  }
 
-#kpis {
-  background-color: #D60303;
-}
+  #odcs {
+    background-color: #E6007C;
+  }
 
-#value {
-  background-color: #EF3AAB;
-}
+  #members {
+    background-color: #B13198;
+  }
 
-#odcs {
-  background-color: #E6007C;
-}
-
-#members {
-  background-color: #B13198;
+  .title-wrapper {
+    height: 72px;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 10px;
+  
+    h1 {
+      margin-bottom: 0;
+    }
+  }
 }
