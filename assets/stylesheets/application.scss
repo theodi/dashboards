@@ -374,3 +374,16 @@ h3 {
 #members {
   background-color: #B13198;
 }
+
+.title-wrapper {
+  height: 72px;
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+  width: 300px;
+  padding-bottom: 10px;
+  
+  h1 {
+    margin-bottom: 0;
+  }
+}
