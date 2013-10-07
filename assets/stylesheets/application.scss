@@ -313,77 +313,80 @@ h3 {
   }
 }
 
-#company-header {
-  position: relative;
+#company {
+
+  #company-header {
+    position: relative;
   
-  img {
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    width: 195px;
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 195px;
+    }
+  
+    h1.title {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      font-size: 55px;
+      font-weight: bold; 
+      padding: 0;
+      margin: 0; 
+      color: #666;
+    }
   }
-  
-  h1.title {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    font-size: 55px;
-    font-weight: bold; 
-    padding: 0;
-    margin: 0; 
-    color: #666;
+
+  #q4-progress {
+    background-color: #2254F4;
   }
-}
 
-#q4-progress {
-  background-color: #2254F4;
-}
+  #q3-progress {
+    background-color: #1DD3A7;
+  }
 
-#q3-progress {
-  background-color: #1DD3A7;
-}
+  #q2-progress {
+    background-color: #08DEF9;
+  }
 
-#q2-progress {
-  background-color: #08DEF9;
-}
+  #q1-progress {
+    background-color: #00B7FF;
+  }
 
-#q1-progress {
-  background-color: #00B7FF;
-}
+  #reach {
+    background-color: #F9BC26;
+  }
 
-#reach {
-  background-color: #F9BC26;
-}
+  #bookings {
+    background-color: #FF6700;
+  }
 
-#bookings {
-  background-color: #FF6700;
-}
+  #kpis {
+    background-color: #D60303;
+  }
 
-#kpis {
-  background-color: #D60303;
-}
+  #value {
+    background-color: #EF3AAB;
+  }
 
-#value {
-  background-color: #EF3AAB;
-}
+  #odcs {
+    background-color: #E6007C;
+  }
 
-#odcs {
-  background-color: #E6007C;
-}
+  #members {
+    background-color: #B13198;
+  }
 
-#members {
-  background-color: #B13198;
-}
-
-.title-wrapper {
-  height: 72px;
-  display: table-cell;
-  vertical-align: bottom;
-  text-align: center;
-  width: 300px;
-  padding-bottom: 10px;
+  .title-wrapper {
+    height: 72px;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 10px;
   
-  h1 {
-    margin-bottom: 0;
+    h1 {
+      margin-bottom: 0;
+    }
   }
 }
