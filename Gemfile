@@ -13,7 +13,7 @@ gem 'json'
 gem 'jenkins-remote-api'
 gem 'httparty'
 gem 'github_api'
-gem 'twitter'
+gem 'twitter', "~> 4.8"
 gem 'ruby-trello'
 gem 'google_drive'
 gem 'capsulecrm'
