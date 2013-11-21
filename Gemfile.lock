@@ -195,5 +195,5 @@ DEPENDENCIES
   simplecov-rcov
   soundcloud
   timecop
-  twitter
+  twitter (~> 4.8)
   vcr
