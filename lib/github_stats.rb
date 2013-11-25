@@ -64,11 +64,18 @@ class GithubDashboard
   # end
   
   def self.milestone
-    milestone = connection.issues.milestones.list(ENV['GITHUB_ORGANISATION'], 'shared', state: 'open', order: 'desc', sort: 'due_date').first
-    open = milestone["open_issues"]
-    closed = milestone["closed_issues"]
-    total = open + closed
-    { min: 0, max: 100, value: (closed.to_f / total.to_f * 100).to_i, title: milestone["title"] }
+    # Loop through open milestones
+    connection.issues.milestones.list(ENV['GITHUB_ORGANISATION'], 'shared', state: 'open', order: 'desc', sort: 'due_date').each do |milestone|
+      # Do this when we first hit a milestone with open issues
+      unless milestone["open_issues"] == 0 && milestone["closed_issues"] == 0
+        @title = milestone["title"]
+        @open = milestone["open_issues"]
+        @closed = milestone["closed_issues"]
+        @total = @open + @closed
+        break
+      end
+    end
+    { min: 0, max: 100, value: (@closed.to_f / @total.to_f * 100).to_i, title: @title }
   end
   
   # def self.get_stats(type)
