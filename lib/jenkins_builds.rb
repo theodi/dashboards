@@ -15,7 +15,7 @@ class JenkinsBuilds
         :state => "fail",
         :trombone => '<audio autoplay> 
                         <source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">
-                        <source src="/sadtrombone.oga" type="audio/ogg; codecs=\'vorbis\'">
+                        <source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">
                       </audio>'
       }
     else
