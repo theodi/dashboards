@@ -10,7 +10,6 @@ gem 'soundcloud'
 gem 'rscribd'
 gem 'dotenv'
 gem 'json'
-gem 'jenkins-remote-api'
 gem 'httparty'
 gem 'github_api'
 gem 'twitter', "~> 4.8"
