@@ -13,7 +13,10 @@ class JenkinsBuilds
       {
         :image => "https://buildmemes.herokuapp.com/f",
         :state => "fail",
-        :trombone => '<audio src="/sadtrombone.mp3" autoplay />'
+        :trombone => '<audio autoplay> 
+                        <source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">
+                        <source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">
+                      </audio>'
       }
     else
       {
