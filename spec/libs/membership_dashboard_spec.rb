@@ -9,4 +9,13 @@ describe MembershipDashboard do
     count.should == 10
   end
   
+  it "should show the members by level", :vcr do
+    members = MembershipDashboard.by_level
+    
+    members['member'].should == 3
+    members['partner'].should == 1
+    members['sponsor'].should == 2
+    members['supporter'].should == 4
+  end
+  
 end
