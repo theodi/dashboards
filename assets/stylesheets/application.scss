@@ -16,6 +16,30 @@ $background-danger-color-1: #eeae32;
 $background-danger-color-2: #ff9618;
 $text-danger-color: #fff;
 
+$odiBlue: #00b7ff;
+$odiBlueDark: #2254f4;
+$odiBlueLight: #08def9;
+$odiOrange: #ff6700;
+$odiYellow: #F9BC26;
+$odiRed: #d60303;
+$odiGrey: #888888;
+$odiGreyDark: #333333;
+$odiGreyLight: #BBBBBB;
+
+// Colour variables, primarily for home modules
+$odiColour1: #D60303; // red
+$odiColour2: $odiOrange; // orange
+$odiColour3: $odiYellow; // yellow
+$odiColour4: #67EF67; //light green
+$odiColour5: #0DBC37; // med green
+$odiColour6: #1dd3a7; // turquoise
+$odiColour7: $odiBlueDark; // dark blue
+$odiColour8: $odiBlue;
+$odiColour9: $odiBlueLight; // light blue
+$odiColour10: #ef3aab; // pink
+$odiColour11: #e6007c; // magenta
+$odiColour12: #b13198; // purple
+
 @-webkit-keyframes status-warning-background {
   0%   { background-color: $background-warning-color-1; }
   50%  { background-color: $background-warning-color-2; }
@@ -342,43 +366,43 @@ h3 {
 #company {
 
   #q4-progress {
-    background-color: #2254F4;
+    background-color: $odiColour7;
   }
 
   #q3-progress {
-    background-color: #1DD3A7;
+    background-color: $odiColour6;
   }
 
   #q2-progress {
-    background-color: #08DEF9;
+    background-color: $odiColour9;
   }
 
   #q1-progress {
-    background-color: #00B7FF;
+    background-color: $odiColour8;
   }
 
   #reach {
-    background-color: #F9BC26;
+    background-color: $odiColour3;
   }
 
   #bookings {
-    background-color: #FF6700;
+    background-color: $odiColour2;
   }
 
   #kpis {
-    background-color: #D60303;
+    background-color: $odiColour1;
   }
 
   #value {
-    background-color: #EF3AAB;
+    background-color: $odiColour10;
   }
 
   #odcs {
-    background-color: #E6007C;
+    background-color: $odiColour11;
   }
 
   #members {
-    background-color: #B13198;
+    background-color: $odiColour12;
   }
 
   .title-wrapper {
@@ -398,19 +422,19 @@ h3 {
 #membership {
   
   #total-members {
-    background-color: #2254F4;
+    background-color: $odiColour7;
   }
   
   #member-members {
-    background-color: #F9BC26;
+    background-color: $odiColour3;
   }
   
   #partner-members {
-    background-color: #FF6700;
+    background-color: $odiColour2;
   }
   
   #sponsor-members {
-    background-color: #D60303;
+    background-color: $odiColour1;
   }
   
   .widget-number {
