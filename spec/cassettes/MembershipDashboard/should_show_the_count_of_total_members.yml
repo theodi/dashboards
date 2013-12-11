@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: <METRICS_API_BASE_URL>metrics/membership-count
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 11 Dec 2013 13:14:27 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '178'
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52a85ff760aa27c688000001","name":"membership-count","time":"2013-12-11T12:51:32+00:00","value":{"total":10,"by_level":{"member":3,"partner":1,"sponsor":2,"supporter":4}}}'
+    http_version: '1.1'
+  recorded_at: Wed, 11 Dec 2013 13:14:27 GMT
+recorded_with: VCR 2.8.0
