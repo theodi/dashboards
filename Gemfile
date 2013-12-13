@@ -25,4 +25,5 @@ group :development, :test do
   gem 'vcr'
   gem 'fakeweb'
   gem 'timecop'
+  gem 'pry'
 end
