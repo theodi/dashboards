@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/membership-renewals
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 13 Dec 2013 13:31:59 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '276'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52ab01faef922c6e57000003","name":"membership-renewals","time":"2013-12-13T12:47:54+00:00","value":{"4":{"supporter":0,"sponsor":0,"partner":0,"member":0},"13":{"supporter":3,"sponsor":0,"partner":0,"member":0},"26":{"supporter":11,"sponsor":0,"partner":0,"member":2}}}'
+    http_version: '1.1'
+  recorded_at: Fri, 13 Dec 2013 13:31:59 GMT
+recorded_with: VCR 2.8.0

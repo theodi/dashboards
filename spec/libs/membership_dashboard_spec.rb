@@ -18,4 +18,12 @@ describe MembershipDashboard do
     members['supporter'].should == 4
   end
   
+  it "should show upcoming renewals", :vcr do
+    renewals = MembershipDashboard.renewals
+             
+    renewals[0].should == {:title => "Next month", :items => [{:label=>"Supporters", :value=>0}, {:label=>"Sponsors", :value=>0}, {:label=>"Partners", :value=>0}, {:label=>"Members", :value=>0}]}
+    renewals[1].should == {:title => "Next quarter", :items => [{:label=>"Supporters", :value=>3}, {:label=>"Sponsors", :value=>0}, {:label=>"Partners", :value=>0}, {:label=>"Members", :value=>0}]}
+    renewals[2].should == {:title => "Next six months", :items => [{:label=>"Supporters", :value=>11}, {:label=>"Sponsors", :value=>0}, {:label=>"Partners", :value=>0}, {:label=>"Members", :value=>2}]}
+  end
+  
 end

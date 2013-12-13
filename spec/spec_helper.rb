@@ -3,6 +3,7 @@ require 'simplecov'
 require 'simplecov-rcov'
 require 'dotenv'
 require 'timecop'
+require 'pry'
 
 Dotenv.load
 

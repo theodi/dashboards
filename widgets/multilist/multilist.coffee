@@ -1,0 +1,1 @@
+class Dashing.Multilist extends Dashing.Widget
