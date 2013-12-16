@@ -12,10 +12,10 @@ describe MembershipDashboard do
   it "should show the members by level", :vcr do
     members = MembershipDashboard.by_level
     
-    members['member'].should == 3
-    members['partner'].should == 1
-    members['sponsor'].should == 2
-    members['supporter'].should == 4
+    members['member'].should == "30"
+    members['partner'].should == "10"
+    members['sponsor'].should == "20"
+    members['supporter'].should == "40"
   end
   
   it "should show upcoming renewals", :vcr do
