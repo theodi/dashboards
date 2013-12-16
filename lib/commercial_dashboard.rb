@@ -7,10 +7,7 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.weighted
-    response = load_metric("weighted-pipeline")
-    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year, 12, 31).to_s
-    binding.pry
-    response["value"][start_end]
+    pipelines("weighted")
   end
   
   def self.three_year
@@ -42,6 +39,12 @@ class CommercialDashboard < MetricsHelper
   def self.old_opportunities
     response = load_metric("old-opportunity-count")
     response["value"]
+  end
+  
+  def self.pipelines(type)
+    response = load_metric("#{type}-pipeline")
+    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year, 12, 31).to_s
+    response["value"][start_end]
   end
   
 end
