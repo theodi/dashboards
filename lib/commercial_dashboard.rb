@@ -32,7 +32,8 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.age
-    
+    response = load_metric("average-opportunity-age")
+    response["value"]
   end
   
   def self.old_opportunities

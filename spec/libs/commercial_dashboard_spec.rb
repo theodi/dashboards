@@ -7,4 +7,8 @@ describe CommercialDashboard do
     CommercialDashboard.members.should == 52
   end
   
+  it "should show the average age of opportunities", :vcr do
+    CommercialDashboard.age.should == 156
+  end
+  
 end
