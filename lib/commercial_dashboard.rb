@@ -11,7 +11,7 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.three_year
-    
+    pipelines("total", 2)
   end
   
   def self.bookings
@@ -41,9 +41,9 @@ class CommercialDashboard < MetricsHelper
     response["value"]
   end
   
-  def self.pipelines(type)
+  def self.pipelines(type, years = 0)
     response = load_metric("#{type}-pipeline")
-    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year, 12, 31).to_s
+    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year + years, 12, 31).to_s
     response["value"][start_end]
   end
   

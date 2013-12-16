@@ -11,6 +11,10 @@ describe CommercialDashboard do
     CommercialDashboard.weighted.should == 735580
   end  
   
+  it "should show the pipeline for the next three years", :vcr do
+    CommercialDashboard.three_year.should == 2665145
+  end
+  
   it "should show the number of members", :vcr do
     CommercialDashboard.members.should == 52
   end
