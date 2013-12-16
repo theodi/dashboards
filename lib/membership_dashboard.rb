@@ -12,7 +12,7 @@ class MembershipDashboard
     response = load_metric("membership-count")
     
     levels = {}
-    response["value"]["by_level"].each { |k,v| levels[k] = ((v.to_i / response["value"]["total"].to_f)*100).to_i.to_s + '%' }
+    response["value"]["by_level"].each { |k,v| levels[k] = ((v.to_i / response["value"]["total"].to_f)*100).to_i.to_s }
     
     levels
   end
