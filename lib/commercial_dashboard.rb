@@ -10,7 +10,10 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.weighted
-    
+    response = load_metric("weighted-pipeline")
+    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year, 12, 31).to_s
+    binding.pry
+    response["value"][start_end]
   end
   
   def self.three_year
