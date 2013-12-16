@@ -337,7 +337,7 @@ h3 {
   }
 }
 
-#company, #membership {
+#company, #membership, #commercial {
 
   #company-header {
     position: relative;
@@ -492,6 +492,20 @@ h3 {
     }
     h2.value {
       font-size: 50px;
+    }
+  }
+
+}
+
+#commercial {
+
+  .widget-number {
+    .title {
+      font-size: 30px;
+    }
+    h2.value {
+      font-size: 76px;
+      line-height: 1em;
     }
   }
 
