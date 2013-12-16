@@ -37,7 +37,8 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.old_opportunities
-    
+    response = load_metric("old-opportunity-count")
+    response["value"]
   end
   
 end

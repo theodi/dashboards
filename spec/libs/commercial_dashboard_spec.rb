@@ -11,4 +11,8 @@ describe CommercialDashboard do
     CommercialDashboard.age.should == 156
   end
   
+  it "should show a count of old opportunities", :vcr do
+    CommercialDashboard.old_opportunities.should == 107
+  end
+  
 end
