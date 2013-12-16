@@ -3,6 +3,10 @@ require 'commercial_dashboard'
 
 describe CommercialDashboard do
   
+  it "should show the pipeline for the current year", :vcr do
+    CommercialDashboard.pipeline.should == 2569025
+  end
+  
   it "should show the number of members", :vcr do
     CommercialDashboard.members.should == 52
   end
