@@ -3,10 +3,7 @@ require_relative 'metrics_helper'
 class CommercialDashboard < MetricsHelper
     
   def self.pipeline
-    response = load_metric("total-pipeline")
-    start_end = Date.civil(Date.today.year, 1, 1).to_s + "/" +  Date.civil(Date.today.year, 12, 31).to_s
-    binding.pry
-    response["value"][start_end]
+    pipelines("total")
   end
   
   def self.weighted
