@@ -1,5 +1,5 @@
 require 'active_support/inflector'
-require 'metrics_helper'
+require_relative 'metrics_helper'
 
 class MembershipDashboard < MetricsHelper
     

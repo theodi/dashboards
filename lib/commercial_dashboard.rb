@@ -1,4 +1,4 @@
-require 'metrics_helper'
+require_relative 'metrics_helper'
 
 class CommercialDashboard < MetricsHelper
     
@@ -27,7 +27,8 @@ class CommercialDashboard < MetricsHelper
   end
   
   def self.members
-
+    response = load_metric("membership-count")
+    response["value"]["total"]
   end
   
   def self.age
