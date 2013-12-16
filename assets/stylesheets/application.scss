@@ -498,14 +498,47 @@ h3 {
 }
 
 #commercial {
+  
+  #members {
+    background-color: $odiColour10;
+  }
+
+  #weighted-pipeline {
+    background-color: $odiColour2;
+  }
+
+  #old-opportunities {
+    background-color: $odiColour1;
+  }
+
+  #bookings {
+    background-color: $odiColour3;
+  }
+
+  #revenue {
+    background-color: $odiColour11;
+  }
+
+  #backlog {
+    background-color: $odiColour12;
+  }
+  
+  #pipeline {
+    background-color: $odiColour9;
+  }
+
+  #weighted-pipeline {
+    background-color: $odiColour8;
+  }
 
   .widget-number {
     .title {
-      font-size: 30px;
+      font-size: 22px;
     }
     h2.value {
-      font-size: 76px;
+      font-size: 60px;
       line-height: 1em;
+      text-transform: none;
     }
   }
 
