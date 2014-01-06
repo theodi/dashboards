@@ -1,8 +1,8 @@
-require 'httparty'
 require 'active_support/inflector'
+require_relative 'metrics_helper'
 
-class MembershipDashboard
-  
+class MembershipDashboard < MetricsHelper
+    
   def self.count
     response = load_metric("membership-count")
     response["value"]["total"]
@@ -41,11 +41,6 @@ class MembershipDashboard
       {:title => "Next quarter", :items => quarter.compact },
       {:title => "Next six months", :items => six_months.compact }
     ]
-  end
-  
-  def self.load_metric(type)
-    JSON.parse HTTParty.get("#{ENV['METRICS_API_BASE_URL']}metrics/#{type}", 
-                            :headers => { 'Accept' => 'application/json' } ).body
   end
   
 end
