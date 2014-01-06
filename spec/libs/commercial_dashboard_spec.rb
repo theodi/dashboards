@@ -4,15 +4,15 @@ require 'commercial_dashboard'
 describe CommercialDashboard do
   
   it "should show the pipeline for the current year", :vcr do
-    CommercialDashboard.pipeline.should == 2569025
+    CommercialDashboard.pipeline.should == 470825
   end
   
   it "should show the weighted pipeline for the current year", :vcr do
-    CommercialDashboard.weighted.should == 735580
+    CommercialDashboard.weighted.should == 78026
   end  
   
   it "should show the pipeline for the next three years", :vcr do
-    CommercialDashboard.three_year.should == 2665145
+    CommercialDashboard.three_year.should == 470825
   end
   
   it "should show the number of members", :vcr do
