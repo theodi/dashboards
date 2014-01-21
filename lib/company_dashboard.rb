@@ -86,7 +86,7 @@ class CompanyDashboard
   end
   
   def self.metrics_spreadsheet
-    google_drive.spreadsheet_by_key(ENV['GAPPS_METRICS_SPREADSHEET_ID']).worksheets[0]
+    google_drive.spreadsheet_by_key(ENV['GAPPS_METRICS_SPREADSHEET_ID']).worksheet_by_title '2013'
   end
   
 end
