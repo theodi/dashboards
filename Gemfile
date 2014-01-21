@@ -20,10 +20,13 @@ gem 'rufus-scheduler', '< 3.0.0'
 
 group :development, :test do
   gem 'rspec'
+  gem 'cucumber'
+  gem 'capybara'
   gem 'simplecov'
   gem 'simplecov-rcov'
   gem 'vcr'
   gem 'fakeweb'
+  gem 'webmock'
   gem 'timecop'
   gem 'pry'
 end
