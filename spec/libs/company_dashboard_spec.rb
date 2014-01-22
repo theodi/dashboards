@@ -9,11 +9,11 @@ describe CompanyDashboard do
     progress[:q1].should == 97
     progress[:q2].should == 90.2
     progress[:q3].should == 93.1
-    progress[:q4].should == 87.2
+    progress[:q4].should == 87.3
   end
   
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs.should == "628"
+    CompanyDashboard.odcs.should == "629"
   end
   
   it "should show the correct member count", :vcr do
