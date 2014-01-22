@@ -21,15 +21,23 @@ class CompanyDashboard
   def self.progress(year)
     
     board_ids = {
-      :q1 => 'cEwY2JHh',
-      :q2 => 'm5Gxybf6',
-      :q3 => 'wkIzhRE3',
-      :q4 => '5IZH6yGG'
+      2013 => {
+        :q1 => 'cEwY2JHh',
+        :q2 => 'm5Gxybf6',
+        :q3 => 'wkIzhRE3',
+        :q4 => '5IZH6yGG',
+      },
+      2014 => {
+        :q1 => '8P2Hgzlh',
+        :q2 => nil,
+        :q3 => nil,
+        :q4 => nil,
+      },
     }
     
     totals = {}
      
-    board_ids.each do |q, id|
+    board_ids[year].each do |q, id|
       progress = get_board_progress(id)        
       totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
     end
@@ -64,9 +72,11 @@ class CompanyDashboard
   end
 
   def self.get_board_progress(id)    
+    return 0 if id.nil?
+    
     progress = []
     board = Trello::Board.find(id)
-    
+
     board.cards.each do |card|
       card.checklists.each do |checklist|
         total = checklist.check_items.count
