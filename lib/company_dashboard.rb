@@ -18,55 +18,70 @@ end
 
 class CompanyDashboard
   
-  def self.progress
+  def self.progress(year)
     
     board_ids = {
-      :q1 => 'cEwY2JHh',
-      :q2 => 'm5Gxybf6',
-      :q3 => 'wkIzhRE3',
-      :q4 => '5IZH6yGG'
+      2013 => {
+        :q1 => 'cEwY2JHh',
+        :q2 => 'm5Gxybf6',
+        :q3 => 'wkIzhRE3',
+        :q4 => '5IZH6yGG',
+      },
+      2014 => {
+        :q1 => '8P2Hgzlh',
+        :q2 => nil,
+        :q3 => nil,
+        :q4 => nil,
+      },
     }
     
     totals = {}
      
-    board_ids.each do |q, id|
-      progress = get_board_progress(id)        
-      totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
+    board_ids[year].each do |q, id|
+      progress = get_board_progress(id)
+      if progress.empty?
+        totals[q] = 0
+      else      
+        totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
+      end
     end
     
     totals
   end
   
-  def self.odcs
+  def self.odcs(year)
     response = HTTParty.get("https://certificates.theodi.org/status.csv").body
     csv = CSV.parse(response)
     csv.last[3]
   end
   
-  def self.members    
-    CapsuleCRM::Organisation.find_all(:tag => "Membership").count
+  def self.members(year)  
+    json = JSON.parse(HTTParty.get("https://metrics.theodi.org/metrics/membership-count/#{year}-12-12T23:59:59", headers:  { 'Accept' => 'application/json'}).body)
+    json['value']['total']
   end
   
-  def self.reach
-    metrics_spreadsheet[1,2]
+  def self.reach(year)
+    metrics_spreadsheet(year)[1,2]
   end
   
-  def self.bookings
-    metrics_spreadsheet[4,2]
+  def self.bookings(year)
+    metrics_spreadsheet(year)[4,2]
   end
   
-  def self.value
-     metrics_spreadsheet[3,2]
+  def self.value(year)
+     metrics_spreadsheet(year)[3,2]
   end
   
-  def self.kpis
-    metrics_spreadsheet[2,2].to_f.round(1)
+  def self.kpis(year)
+    metrics_spreadsheet(year)[2,2].to_f.round(1)
   end
 
   def self.get_board_progress(id)    
+    return [] if id.nil?
+    
     progress = []
     board = Trello::Board.find(id)
-    
+
     board.cards.each do |card|
       card.checklists.each do |checklist|
         total = checklist.check_items.count
@@ -85,8 +100,8 @@ class CompanyDashboard
     GoogleDrive.login(ENV['GAPPS_USER_EMAIL'], ENV['GAPPS_PASSWORD'])
   end
   
-  def self.metrics_spreadsheet
-    google_drive.spreadsheet_by_key(ENV['GAPPS_METRICS_SPREADSHEET_ID']).worksheet_by_title '2013'
+  def self.metrics_spreadsheet(year)
+    google_drive.spreadsheet_by_key(ENV['GAPPS_METRICS_SPREADSHEET_ID']).worksheet_by_title year.to_s
   end
   
 end
