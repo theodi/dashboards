@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 #ruby=1.9.3
 #ruby-gemset=dashboards
 
+gem 'rake'
 gem 'dashing' #, :git => 'git://github.com/theodi/dashing.git'
 gem 'foreman'
 gem 'activesupport'
