@@ -1,18 +1,3 @@
-GIT
-  remote: git://github.com/theodi/dashing.git
-  revision: e5f439bbc0621fa3fa12ccaab85b79e37acecb8a
-  specs:
-    dashing (1.0.4)
-      coffee-script
-      rack
-      rufus-scheduler
-      sass
-      sinatra
-      sinatra-contrib
-      sprockets
-      thin
-      thor
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +35,17 @@ GEM
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.0.2)
     daemons (1.1.9)
+    dashing (1.3.2)
+      coffee-script (>= 1.6.2)
+      execjs (>= 2.0.0)
+      rack
+      rufus-scheduler (~> 2.0)
+      sass
+      sinatra
+      sinatra-contrib
+      sprockets
+      thin
+      thor
     descendants_tracker (0.0.3)
     diff-lcs (1.2.5)
     docile (1.1.2)
@@ -111,7 +107,7 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
-    rack-protection (1.5.1)
+    rack-protection (1.5.2)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -195,7 +191,7 @@ DEPENDENCIES
   capsulecrm
   capybara
   cucumber
-  dashing!
+  dashing
   dotenv
   fakeweb
   foreman
