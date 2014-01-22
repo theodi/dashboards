@@ -38,8 +38,12 @@ class CompanyDashboard
     totals = {}
      
     board_ids[year].each do |q, id|
-      progress = get_board_progress(id)        
-      totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
+      progress = get_board_progress(id)
+      if progress.empty?
+        totals[q] = 0
+      else      
+        totals[q] = (100 * (progress.inject{ |sum,element| sum += element } / progress.size )).round(1)
+      end
     end
     
     totals
@@ -73,7 +77,7 @@ class CompanyDashboard
   end
 
   def self.get_board_progress(id)    
-    return 0 if id.nil?
+    return [] if id.nil?
     
     progress = []
     board = Trello::Board.find(id)
