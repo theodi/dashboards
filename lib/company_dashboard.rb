@@ -55,21 +55,41 @@ class CompanyDashboard
     csv.last[3].to_i
   end
   
-  def self.members(year)  
-    json = JSON.parse(HTTParty.get("https://metrics.theodi.org/metrics/membership-count/#{year}-12-12T23:59:59", headers:  { 'Accept' => 'application/json'}).body)
+
+  def self.members(year = nil)
+    url = "https://metrics.theodi.org/metrics/membership-count"
+    if year
+      url = "%s/%s-12-12T23:59:59" % [
+          url,
+          year
+      ]
+    end
+    json = JSON.parse(HTTParty.get(url, headers: { 'Accept' => 'application/json' }).body)
     json['value']['total']
   end
-  
-  def self.reach(year)
-    metrics_spreadsheet(year)[1,2]
+
+  def self.reach(year = nil)
+    if year.nil?
+      years.inject(0) { |total, year| total += reach(year) }
+    else
+      metrics_spreadsheet(year)[1, 2].to_i
+    end
   end
-  
-  def self.bookings(year)
-    metrics_spreadsheet(year)[4,2]
+
+  def self.bookings(year = nil)
+    if year.nil?
+      years.inject(0) { |total, year| total += bookings(year) }
+    else
+      metrics_spreadsheet(year)[4, 2].to_i
+    end
   end
-  
-  def self.value(year)
-     metrics_spreadsheet(year)[3,2]
+
+  def self.value(year = nil)
+    if year.nil?
+      years.inject(0) { |total, year| total += value(year) }
+    else
+      metrics_spreadsheet(year)[3, 2].to_i
+    end
   end
   
   def self.kpis(year)
