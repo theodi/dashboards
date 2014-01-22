@@ -29,4 +29,10 @@ SCHEDULER.every '5m', :first_at => Time.now do
   send_event('2014-Value', { current: CompanyDashboard.value(2014), prefix: "£" })
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
   send_event('2014-KPIs', { current: CompanyDashboard.kpis(2014), suffix: "%" })
+  # Lifetime
+  send_event('Lifetime-Reach', { current: CompanyDashboard.reach })
+  send_event('Lifetime-Bookings', { current: CompanyDashboard.bookings, prefix: "£" })
+  send_event('Lifetime-Members', { current: CompanyDashboard.members, link: "http://directory.theodi.org/members" })
+  send_event('Lifetime-Value', { current: CompanyDashboard.value, prefix: "£" })
+  send_event('Lifetime-ODCs', { current: CompanyDashboard.odcs, link: "https://certificates.theodi.org/status" })
 end
