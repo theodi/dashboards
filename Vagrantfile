@@ -8,11 +8,13 @@ Vagrant.configure("2") do |config|
 
   config.butcher.knife_config_file = '.chef/knife.rb'
 
-  1.times do |num|
+  2.times do |num|
+
+    index = "%02d" % [ num + 1 ]
     
-    config.vm.define :"dashboards_theodi_org_#{num}" do |config|
+    config.vm.define :"dashboards_theodi_org_#{index}" do |config|
       config.vm.box      = "dummy"
-      config.vm.hostname = "dashboards-#{num}"
+      config.vm.hostname = "dashboards-#{index}"
 
       config.ssh.private_key_path = "./.chef/id_rsa"
       config.ssh.username         = "root"
@@ -20,7 +22,7 @@ Vagrant.configure("2") do |config|
       config.vm.provider :rackspace do |rs|
         rs.username        = y["username"]
         rs.api_key         = y["api_key"]
-        rs.flavor          = /512MB/
+        rs.flavor          = /1GB/
         rs.image           = /Precise/
         rs.public_key_path = "./.chef/id_rsa.pub"
         rs.endpoint        = "https://lon.servers.api.rackspacecloud.com/v2"
@@ -30,7 +32,7 @@ Vagrant.configure("2") do |config|
       config.vm.provision :shell, :inline => "curl -L https://www.opscode.com/chef/install.sh | bash"
 
       config.vm.provision :chef_client do |chef|
-        chef.node_name              = "dashboards-#{num}"
+        chef.node_name              = "dashboards-#{index}"
         chef.environment            = "production"
         chef.chef_server_url        = "https://chef.theodi.org"
         chef.validation_client_name = "chef-validator"

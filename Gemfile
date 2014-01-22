@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 #ruby=1.9.3
 #ruby-gemset=dashboards
 
-gem 'dashing', :git => 'git://github.com/theodi/dashing.git'
+gem 'rake'
+gem 'dashing' #, :git => 'git://github.com/theodi/dashing.git'
 gem 'foreman'
 gem 'activesupport'
 gem 'soundcloud'
@@ -21,10 +22,15 @@ gem 'faraday', '< 0.9'
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-pride'
+  gem 'cucumber'
+  gem 'capybara'
   gem 'simplecov'
   gem 'simplecov-rcov'
   gem 'vcr'
   gem 'fakeweb'
+  gem 'webmock'
   gem 'timecop'
   gem 'pry'
+  gem 'travis', '~> 1.6'
 end
