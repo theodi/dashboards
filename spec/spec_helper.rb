@@ -17,7 +17,7 @@ VCR.configure do |c|
     c.filter_sensitive_data("<#{key}>") { ENV[key] }
   end
   c.cassette_library_dir = 'spec/cassettes'
-  c.default_cassette_options = { :record => :new_episodes }
+  c.default_cassette_options = { :record => :once }
   c.hook_into :fakeweb
   c.configure_rspec_metadata!
 end
