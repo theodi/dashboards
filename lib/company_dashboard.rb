@@ -52,7 +52,8 @@ class CompanyDashboard
   end
   
   def self.members(year)  
-    CapsuleCRM::Organisation.find_all(:tag => "Membership").count
+    json = JSON.parse(HTTParty.get("https://metrics.theodi.org/metrics/membership-count/#{year}-12-12T23:59:59", headers:  { 'Accept' => 'application/json'}).body)
+    json['value']['total']
   end
   
   def self.reach(year)
