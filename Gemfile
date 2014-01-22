@@ -31,4 +31,5 @@ group :development, :test do
   gem 'webmock'
   gem 'timecop'
   gem 'pry'
+  gem 'travis', '~> 1.6'
 end
