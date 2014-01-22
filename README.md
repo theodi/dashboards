@@ -1,7 +1,7 @@
 ODI Dashboards
 --------------
 
-[![Build Status](http://jenkins.theodi.org/job/dashboards-build-master/badge/icon)](http://jenkins.theodi.org/job/dashboards-build-master/)
+[![Build Status](https://travis-ci.org/theodi/dashboards.png?branch=master)](https://travis-ci.org/theodi/dashboards)
 [![Dependency Status](https://gemnasium.com/theodi/dashboards.png)](https://gemnasium.com/theodi/dashboards)
 [![Code Climate](https://codeclimate.com/github/theodi/dashboards.png)](https://codeclimate.com/github/theodi/dashboards)
 
