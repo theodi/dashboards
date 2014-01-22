@@ -5,7 +5,7 @@
 .chef
 .idea
 .vagrant
-.env
+.env*
 /tmp/
 /.powrc
 
