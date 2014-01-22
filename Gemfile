@@ -20,6 +20,7 @@ gem 'rufus-scheduler', '< 3.0.0'
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-pride'
   gem 'cucumber'
   gem 'capybara'
   gem 'simplecov'
