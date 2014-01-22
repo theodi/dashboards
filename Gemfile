@@ -17,6 +17,7 @@ gem 'ruby-trello'
 gem 'google_drive'
 gem 'capsulecrm'
 gem 'rufus-scheduler', '< 3.0.0'
+gem 'faraday', '< 0.9'
 
 group :development, :test do
   gem 'rspec'
