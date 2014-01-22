@@ -7,8 +7,8 @@ require 'pry'
 
 Dotenv.load
 
-SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
-SimpleCov.start
+require 'coveralls'
+Coveralls.wear_merged!
 
 $:.unshift File.dirname(__FILE__)+'../lib'
 
