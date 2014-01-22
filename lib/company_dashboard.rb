@@ -51,8 +51,8 @@ class CompanyDashboard
   
   def self.odcs(year)
     response = HTTParty.get("https://certificates.theodi.org/status.csv").body
-    csv = CSV.parse(response)
-    csv.last[3]
+    csv      = CSV.parse(response)
+    csv.last[3].to_i
   end
   
   def self.members(year)  
