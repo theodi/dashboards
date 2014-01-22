@@ -25,8 +25,7 @@ group :development, :test do
   gem 'rspec-pride'
   gem 'cucumber'
   gem 'capybara'
-  gem 'simplecov'
-  gem 'simplecov-rcov'
+  gem 'coveralls', require: false
   gem 'vcr'
   gem 'fakeweb'
   gem 'webmock'
