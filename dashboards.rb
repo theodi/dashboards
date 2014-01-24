@@ -15,4 +15,4 @@ configure do
   end
 end
 
-
+$start_time = Time.now+10.seconds
