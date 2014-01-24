@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 #ruby-gemset=dashboards
 
 gem 'rake'
-gem 'dashing' #, :git => 'git://github.com/theodi/dashing.git'
+gem 'dashing' , github: 'theodi/dashing', branch: 'dashboard-subdirectories'
 gem 'foreman'
 gem 'activesupport'
 gem 'soundcloud'
@@ -17,7 +17,7 @@ gem 'twitter', "~> 4.8"
 gem 'ruby-trello'
 gem 'google_drive'
 gem 'capsulecrm'
-gem 'rufus-scheduler', '< 3.0.0'
+gem 'rufus-scheduler'
 gem 'faraday', '< 0.9'
 
 group :development, :test do
