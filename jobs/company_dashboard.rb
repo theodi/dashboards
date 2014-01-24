@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-SCHEDULER.every '1h', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => Time.now do
   progress = CompanyDashboard.progress(2013)
   send_event('2013-q1-progress', { min: 0, max: 100, value: progress[:q1] })
   send_event('2013-q2-progress', { min: 0, max: 100, value: progress[:q2] })
@@ -14,7 +14,7 @@ SCHEDULER.every '1h', :first_at => $start_time do
   send_event('2014-q4-progress', { min: 0, max: 100, value: progress[:q4] })
 end
 
-SCHEDULER.every '5m', :first_at => $start_time do
+SCHEDULER.every '5m', :first_at => Time.now do
   # 2013
   send_event('2013-Reach', { current: CompanyDashboard.reach(2013) })
   send_event('2013-Bookings', { current: CompanyDashboard.bookings(2013), prefix: "£" })
