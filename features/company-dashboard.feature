@@ -1,7 +1,11 @@
 Feature: Company Dashboard
 
-  Scenario: 2013 Company dashboard should appear at '/'
+  Scenario: root should redirect to 2013 company dashboard
     When I visit "/"
+    Then I should see "2013 Company Dashboard"
+
+  Scenario: '/company' should redirect to 2013 company dashboard
+    When I visit "/company"
     Then I should see "2013 Company Dashboard"
 
   Scenario: 2013 Company dashboard should appear at '/company/2013'
