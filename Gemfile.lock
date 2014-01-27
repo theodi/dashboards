@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/theodi/dashing.git
-  revision: 3b5c635980f26fb91a35b96c28c6602aca3bdee5
+  revision: 1f3c833dfcdec6a4c06f243027cb783d423eb277
   branch: dashboard-subdirectories
   specs:
     dashing (1.3.2)
