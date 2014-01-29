@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-kpi-performance/20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-kpi-performance/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -15,26 +15,26 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:<QUIRKAFLEEG_SEARCH_DISABLE>8:45
+      - Wed, 29 Jan 2014 11:18:45
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE>2<QUIRKAFLEEG_SEARCH_DISABLE>
+      - 121
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8ceb3ef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>9","name":"current-year-kpi-performance","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00","value":<QUIRKAFLEEG_SEARCH_DISABLE>00.0}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8ceb3ef922c6e57000119","name":"current-year-kpi-performance","time":"2013-12-31T23:59:59+00:00","value":100.0}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:18:45 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-kpi-performance/20<QUIRKAFLEEG_SEARCH_DISABLE>4-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-kpi-performance/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -47,21 +47,21 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:<QUIRKAFLEEG_SEARCH_DISABLE>8:45
+      - Wed, 29 Jan 2014 11:18:45
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>9
+      - 119
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5bbef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE>2<QUIRKAFLEEG_SEARCH_DISABLE>","name":"current-year-kpi-performance","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-0<QUIRKAFLEEG_SEARCH_DISABLE>-29T<QUIRKAFLEEG_SEARCH_DISABLE>0:<QUIRKAFLEEG_SEARCH_DISABLE>9:38+00:00","value":<QUIRKAFLEEG_SEARCH_DISABLE>.0}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8d5bbef922c6e57000121","name":"current-year-kpi-performance","time":"2014-01-29T10:19:38+00:00","value":1.0}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:18:45 GMT
 recorded_with: VCR 2.8.0

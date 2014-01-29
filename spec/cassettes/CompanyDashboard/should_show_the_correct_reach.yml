@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -15,26 +15,26 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:02:27
+      - Wed, 29 Jan 2014 11:02:27
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>2
+      - 112
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8ceacef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>3","name":"current-year-reach","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00","value":303396}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8ceacef922c6e57000113","name":"current-year-reach","time":"2013-12-31T23:59:59+00:00","value":303396}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:02:27 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/20<QUIRKAFLEEG_SEARCH_DISABLE>4-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -47,22 +47,22 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:02:27
+      - Wed, 29 Jan 2014 11:02:27
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE>07
+      - 107
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5b5ef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>b","name":"current-year-reach","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-0<QUIRKAFLEEG_SEARCH_DISABLE>-29T<QUIRKAFLEEG_SEARCH_DISABLE>0:<QUIRKAFLEEG_SEARCH_DISABLE>9:3<QUIRKAFLEEG_SEARCH_DISABLE>+00:00","value":0}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8d5b5ef922c6e5700011b","name":"current-year-reach","time":"2014-01-29T10:19:31+00:00","value":0}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:02:27 GMT
 - request:
     method: get
@@ -79,21 +79,21 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:02:27
+      - Wed, 29 Jan 2014 11:02:27
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>0
+      - 110
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5b6ef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>c","name":"cumulative-reach","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-0<QUIRKAFLEEG_SEARCH_DISABLE>-29T<QUIRKAFLEEG_SEARCH_DISABLE>0:<QUIRKAFLEEG_SEARCH_DISABLE>9:33+00:00","value":303396}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8d5b6ef922c6e5700011c","name":"cumulative-reach","time":"2014-01-29T10:19:33+00:00","value":303396}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:02:27 GMT
 recorded_with: VCR 2.8.0

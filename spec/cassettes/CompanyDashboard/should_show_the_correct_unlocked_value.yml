@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -15,26 +15,26 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:<QUIRKAFLEEG_SEARCH_DISABLE>6:46
+      - Wed, 29 Jan 2014 11:16:46
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE>23
+      - 123
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8ceb<QUIRKAFLEEG_SEARCH_DISABLE>ef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>7","name":"current-year-value-unlocked","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>3-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00","value":<QUIRKAFLEEG_SEARCH_DISABLE>6924307}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8ceb1ef922c6e57000117","name":"current-year-value-unlocked","time":"2013-12-31T23:59:59+00:00","value":16924307}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/20<QUIRKAFLEEG_SEARCH_DISABLE>4-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -47,22 +47,22 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:<QUIRKAFLEEG_SEARCH_DISABLE>6:46
+      - Wed, 29 Jan 2014 11:16:46
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>6
+      - 116
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5b9ef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>f","name":"current-year-value-unlocked","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-0<QUIRKAFLEEG_SEARCH_DISABLE>-29T<QUIRKAFLEEG_SEARCH_DISABLE>0:<QUIRKAFLEEG_SEARCH_DISABLE>9:36+00:00","value":0}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8d5b9ef922c6e5700011f","name":"current-year-value-unlocked","time":"2014-01-29T10:19:36+00:00","value":0}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
 - request:
     method: get
@@ -79,21 +79,21 @@ http_interactions:
       message: OK
     headers:
       server:
-      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      - nginx/1.1.19
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:<QUIRKAFLEEG_SEARCH_DISABLE>6:46
+      - Wed, 29 Jan 2014 11:16:46
         GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - <QUIRKAFLEEG_SEARCH_DISABLE>2<QUIRKAFLEEG_SEARCH_DISABLE>
+      - 121
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5baef922c6e57000<QUIRKAFLEEG_SEARCH_DISABLE>20","name":"cumulative-value-unlocked","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-0<QUIRKAFLEEG_SEARCH_DISABLE>-29T<QUIRKAFLEEG_SEARCH_DISABLE>0:<QUIRKAFLEEG_SEARCH_DISABLE>9:37+00:00","value":<QUIRKAFLEEG_SEARCH_DISABLE>6924307}'
-    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+      string: ! '{"_id":"52e8d5baef922c6e57000120","name":"cumulative-value-unlocked","time":"2014-01-29T10:19:37+00:00","value":16924307}'
+    http_version: 1.1
   recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
 recorded_with: VCR 2.8.0
