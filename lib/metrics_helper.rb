@@ -15,8 +15,16 @@ class MetricsHelper
       ]
     end
 
-    JSON.parse HTTParty.get(url,
-                            :headers => { 'Accept' => 'application/json' }).body
+    JSON.parse HTTParty.get(url, :headers => { 'Accept' => 'application/json' }).body
   end
 
+  def self.year_to_time year = nil
+    year ? DateTime.new(year).end_of_year : nil
+  end
+
+  def self.select_metric metric, year = nil
+    metric = year ? "current-year-#{metric}" : "cumulative-#{metric}"
+    time   = year_to_time year
+    (load_metric metric, time)['value']
+  end
 end

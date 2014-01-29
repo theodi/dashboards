@@ -51,7 +51,7 @@ describe CompanyDashboard do
 
   it "should show the correct kpi percentage", :vcr do
     CompanyDashboard.kpis(2013).should == 100.0
-    CompanyDashboard.kpis(2014).should == 0
+    CompanyDashboard.kpis(2014).should == 1.0
   end
 
 end

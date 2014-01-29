@@ -51,44 +51,33 @@ class CompanyDashboard < MetricsHelper
     end
 
     totals
+
   end
 
   def self.odcs(year = nil)
-    time = year ? DateTime.new(year).end_of_year : nil
+    time = year_to_time year
     (load_metric 'certificated-datasets', time)['value']
   end
 
   def self.members(year = nil)
-    time = year ? DateTime.new(year).end_of_year : nil
+    time = year_to_time year
     (load_metric 'membership-count', time)['value']['total']
   end
 
   def self.reach(year = nil)
-    if year.nil?
-      years.inject(0) { |total, year| total += reach(year) }
-    else
-      metrics_spreadsheet(year)[1, 2].to_i
-    end
+    select_metric 'reach', year
   end
 
   def self.bookings(year = nil)
-    if year.nil?
-      years.inject(0) { |total, year| total += bookings(year) }
-    else
-      metrics_spreadsheet(year)[4, 2].to_i
-    end
+    select_metric 'bookings', year
   end
 
   def self.value(year = nil)
-    if year.nil?
-      years.inject(0) { |total, year| total += value(year) }
-    else
-      metrics_spreadsheet(year)[3, 2].to_i
-    end
+    select_metric 'value-unlocked', year
   end
 
   def self.kpis(year)
-    metrics_spreadsheet(year)[2, 2].to_f.round(1)
+    select_metric 'kpi-performance', year if year # year should never be nil for this
   end
 
   def self.get_board_progress(id)
