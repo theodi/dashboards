@@ -20,9 +20,9 @@ describe CompanyDashboard do
   end
 
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs(2013).should == 629 # this is currently non-rewindable and WRONG!
-    CompanyDashboard.odcs(2014).should == 629
-    CompanyDashboard.odcs.should == 629
+    CompanyDashboard.odcs(2013).should == 599
+    CompanyDashboard.odcs(2014).should == 640
+    CompanyDashboard.odcs.should == 640
   end
 
   it "should show the correct member count", :vcr do

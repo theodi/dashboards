@@ -54,9 +54,8 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.odcs(year = nil)
-    response = HTTParty.get("https://certificates.theodi.org/status.csv").body
-    csv      = CSV.parse(response)
-    csv.last[3].to_i
+    time = year ? DateTime.new(year).end_of_year : nil
+    (load_metric 'certificated-datasets', time)['value']
   end
 
   def self.members(year = nil)
