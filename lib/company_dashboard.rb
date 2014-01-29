@@ -5,6 +5,9 @@ require 'csv'
 require 'google_drive'
 require 'capsulecrm'
 require 'date'
+require 'active_support/core_ext/date/calculations'
+
+require_relative 'metrics_helper'
 
 Dotenv.load
 
@@ -17,7 +20,7 @@ Trello.configure do |config|
   config.member_token         = ENV['TRELLO_MEMBER_KEY']
 end
 
-class CompanyDashboard
+class CompanyDashboard < MetricsHelper
 
   def self.progress(year)
 
@@ -57,15 +60,8 @@ class CompanyDashboard
   end
 
   def self.members(year = nil)
-    url = "https://metrics.theodi.org/metrics/membership-count"
-    if year
-      url = "%s/%s-12-12T23:59:59" % [
-          url,
-          year
-      ]
-    end
-    json = JSON.parse(HTTParty.get(url, headers: { 'Accept' => 'application/json' }).body)
-    json['value']['total']
+    time = year ? DateTime.new(year).end_of_year : nil
+    (load_metric 'membership-count', time)['value']['total']
   end
 
   def self.reach(year = nil)
