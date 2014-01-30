@@ -5,7 +5,7 @@ Dotenv.load
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
-  set :default_dashboard, 'company/2013'
+  set :default_dashboard, 'company'
 
   helpers do
     def protected!
@@ -13,6 +13,10 @@ configure do
      # This method is run before accessing any resource.
     end
   end
+end
+
+before '/company' do
+  redirect to '/company/2013'
 end
 
 $start_time = Time.now+10.seconds
