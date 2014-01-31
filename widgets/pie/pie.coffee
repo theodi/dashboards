@@ -1,86 +1,62 @@
 class Dashing.Pie extends Dashing.Widget
   @accessor 'value'
-
+ 
   onData: (data) ->
+    $(@node).fadeOut().fadeIn()
     @render(data.value)
   
   render: (data) ->
-    if(!data)
+    if !data
       data = @get("value")
-    if(!data)
-        return
-
-    width = 225
-    height = 225
-    radius = 112
-    label_radius = 110
-    color = d3.scale.category20()
-
+    if !data
+       return
+    #console.log "FullPie new"
+# this is a fix because data binding seems otherwise not work 
+    $(@node).children(".title").text($(@node).attr("data-title"))
+    $(@node).children(".more-info").text($(@node).attr("data-moreinfo"))
+    $(@node).children(".updated-at").text(@get('updatedAtMessage'))
+ 
+    width = 260 #width
+    height = 260 #height
+    radius = 130 #radius
+ 
+    color = d3.scale.ordinal()
+      .domain([1,10])
+      #.range( ['#222222','#555555','#777777','#999999','#bbbbbb','#dddddd','#ffffff'] )
+      .range( ['#222222','#333333','#444444','#555555','#666666','#777777','#888888','#999999','#aaaaaa'] )
+ 
     $(@node).children("svg").remove();
-
-    chart = d3.select(@node).append("svg:svg")
-        .data([data])
+ 
+    vis = d3.select(@node).append("svg:svg")
+      .data([data])
         .attr("width", width)
         .attr("height", height)
       .append("svg:g")
-        .attr("transform", "translate(#{radius} , #{radius})")
-
-    #
-    # Center label
-    #
-    label_group = chart.append("svg:g")
-      .attr("dy", ".35em")
-
-    center_label = label_group.append("svg:text")
-      .attr("class", "chart_label")
-      .attr("text-anchor", "middle")
-      .text(@get("title"))
-    
-    arc = d3.svg.arc().innerRadius(radius * .6).outerRadius(radius)
+        .attr("transform", "translate(" + radius + "," + radius + ")") 
+ 
+    arc = d3.svg.arc().outerRadius(radius)
     pie = d3.layout.pie().value((d) -> d.value)
-
-    arcs = chart.selectAll("g.slice")
+ 
+    arcs = vis.selectAll("g.slice")
       .data(pie)
-      .enter()
-      .append("svg:g")
-      .attr("class", "slice")
-
-    arcs.append("svg:path")
-      .attr("fill", (d, i) -> color(i))
-      .attr("d", arc)
-
-    #
-    # Legend
-    #
-    legend = d3.select(@node).append("svg:svg")
-      .attr("class", "legend")
-      .attr("x", 0)
-      .attr("y", 0)
-      .attr("height", 60)
-      .attr("width", 100)
-    
-    legend.selectAll("g").data(data)
-      .enter()
-      .append("g")
-      .each((d, i) ->
-        g = d3.select(this)
-
-        row = i % 4
-        col = parseInt(i / 4)
-
-        g.append("rect")
-          .attr("x", col * 50)
-          .attr("y", row * 15)
-          .attr("width", 10)
-          .attr("height", 10)
-          .attr("fill", color(i))
-
-        console.log "wat"
-        g.append("text")
-          .attr("x", (col * 50) + 15)
-          .attr("y", (row + 1) * 15 - 6)
-          .attr("font-size", "10px")
-          .attr("height", 30)
-          .attr("width", 75)
-          .text(data[i].label)
-      )
+      .enter().append("svg:g").attr("class", "slice") 
+ 
+    arcs.append("svg:path").attr("fill", (d, i) -> color i)
+      .attr("fill-opacity", 0.4).attr("d", arc)
+ 
+    sum=0
+    for val in data  
+      sum += val.value
+ 
+    arcs.append("svg:text").attr("transform", (d, i) -> 
+      procent_val = Math.round(data[i].value/sum * 100)
+      d.innerRadius = (radius * (100-procent_val)/100) - 45  #45=max text size/2
+      d.outerRadius = radius
+      "translate(" + arc.centroid(d) + ")")
+      .attr('fill', "#fff")
+      .attr("text-anchor", "middle").text((d, i) -> data[i].label)
+      .append('svg:tspan')
+      .attr('x', 0)
+      .attr('dy', 15)
+      .attr('font-size', '70%')
+      .text((d,i) -> Math.round(data[i].value/sum * 100) + '%')
