@@ -16,6 +16,7 @@ end
 
 SCHEDULER.every '5m', :first_at => $start_time do
   income_by_sector = CompanyDashboard.income_by_sector(2014)
+  
   # 2013
   send_event('2013-Reach', { current: CompanyDashboard.reach(2013) })
   send_event('2013-Bookings', { current: CompanyDashboard.bookings(2013), prefix: "£" })
@@ -25,6 +26,8 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('2013-KPIs', { current: CompanyDashboard.kpis(2013), suffix: "%" })
   # 2014
   send_event('2014-Reach', { current: CompanyDashboard.reach(2014) })
+  send_event('2014-Active-reach', { current: CompanyDashboard.active_reach(2014) })
+  send_event('2014-Passive-reach', { current: CompanyDashboard.passive_reach(2014) })
   send_event('2014-Bookings', { current: CompanyDashboard.bookings(2014), prefix: "£" })
   send_event('2014-non-commercial-bookings', { current: CompanyDashboard.noncommercial_bookings(2014)["actual"], prefix: "£" })
   send_event('2014-Members', { current: CompanyDashboard.members(2014), link: "http://directory.theodi.org/members" })
@@ -35,12 +38,12 @@ SCHEDULER.every '5m', :first_at => $start_time do
   income_by_sector.each { |k,v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
   send_event('2014-revenue-by-sector', { value: data })
 
-  send_event('2014-Commercial-research', {value: income_by_sector['research']['commercial']['actual]']})
-  send_event('2014-Commercial-training', {value: income_by_sector['training']['commercial']['actual]']})
-  send_event('2014-Commercial-projects', {value: income_by_sector['projects']['commercial']['actual]']})
-  send_event('2014-Non-commercial-research', {value: income_by_sector['research']['non_commercial']['actual]']})
-  send_event('2014-Non-commercial-training', {value: income_by_sector['training']['non_commercial']['actual]']})
-  send_event('2014-Non-commercial-projects', {value: income_by_sector['projects']['non_commercial']['actual]']})
+  send_event('2014-Commercial-research', {current: income_by_sector['research']['commercial']['actual']})
+  send_event('2014-Commercial-training', {current: income_by_sector['training']['commercial']['actual']})
+  send_event('2014-Commercial-projects', {current: income_by_sector['projects']['commercial']['actual']})
+  send_event('2014-Non-commercial-research', {current: income_by_sector['research']['non_commercial']['actual']})
+  send_event('2014-Non-commercial-training', {current: income_by_sector['training']['non_commercial']['actual']})
+  send_event('2014-Non-commercial-projects', {current: income_by_sector['projects']['non_commercial']['actual']})
 
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })

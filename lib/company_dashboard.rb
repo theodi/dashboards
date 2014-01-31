@@ -19,6 +19,14 @@ class CompanyDashboard < MetricsHelper
   def self.reach(year = nil)
     select_metric 'reach', year
   end
+  
+  def self.active_reach(year = nil)
+    select_metric 'active-reach', year
+  end
+  
+  def self.passive_reach(year = nil)
+    select_metric 'passive-reach', year
+  end
 
   def self.bookings(year = nil)
     select_metric 'bookings', year
