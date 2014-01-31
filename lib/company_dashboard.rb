@@ -27,6 +27,10 @@ class CompanyDashboard < MetricsHelper
   def self.noncommercial_bookings(year = nil)
     select_metric 'non-commercial-bookings', year
   end
+  
+  def self.income_by_sector(year = nil)
+    select_metric 'income-by-sector', year
+  end
 
   def self.value(year = nil)
     select_metric 'value-unlocked', year

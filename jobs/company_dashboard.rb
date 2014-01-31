@@ -30,6 +30,9 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('2014-Value', { current: CompanyDashboard.value(2014), prefix: "£" })
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
   send_event('2014-KPIs', { current: CompanyDashboard.kpis(2014), suffix: "%" })
+  data = []
+  CompanyDashboard.income_by_sector(2014).each { |k,v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
+  send_event('2014-revenue-by-sector', { value: data })
   
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })
