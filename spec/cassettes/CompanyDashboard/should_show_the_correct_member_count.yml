@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2013-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/membership-count/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 22 Jan 2014 14:50:20 GMT
+      - Fri, 31 Jan 2014 11:57:55 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -27,13 +27,13 @@ http_interactions:
       content-length:
       - '179'
     body:
-      encoding: UTF-8
-      string: ! '{"_id":"52a9c459ef922cf2a2000001","name":"membership-count","time":"2013-12-31T14:12:41+00:00","value":{"total":52,"by_level":{"supporter":38,"sponsor":6,"partner":4,"member":4}}}'
+      encoding: US-ASCII
+      string: ! '{"_id":"52c1ea9def922c6e5700006b","name":"membership-count","time":"2013-12-30T21:50:21+00:00","value":{"total":54,"by_level":{"supporter":39,"sponsor":6,"partner":5,"member":4}}}'
     http_version: '1.1'
-  recorded_at: Wed, 22 Jan 2014 14:50:20 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:55 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/membership-count/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -50,7 +50,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 22 Jan 2014 14:50:20 GMT
+      - Fri, 31 Jan 2014 11:57:56 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -58,13 +58,13 @@ http_interactions:
       content-length:
       - '179'
     body:
-      encoding: UTF-8
-      string: ! '{"_id":"52de6492ef922c6e570000e8","name":"membership-count","time":"2014-01-21T12:14:10+00:00","value":{"total":56,"by_level":{"supporter":41,"sponsor":6,"partner":5,"member":4}}}'
+      encoding: US-ASCII
+      string: ! '{"_id":"52ea2c13ef922c6e570001d0","name":"membership-count","time":"2014-01-30T10:40:19+00:00","value":{"total":59,"by_level":{"supporter":44,"sponsor":6,"partner":5,"member":4}}}'
     http_version: '1.1'
-  recorded_at: Wed, 22 Jan 2014 14:50:20 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/membership-count
     body:
       encoding: US-ASCII
       string: ''
@@ -81,7 +81,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 22 Jan 2014 16:06:32 GMT
+      - Fri, 31 Jan 2014 11:57:56 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -90,7 +90,7 @@ http_interactions:
       - '179'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52de6492ef922c6e570000e8","name":"membership-count","time":"2014-01-21T12:14:10+00:00","value":{"total":56,"by_level":{"supporter":41,"sponsor":6,"partner":5,"member":4}}}'
+      string: ! '{"_id":"52ea2c13ef922c6e570001d0","name":"membership-count","time":"2014-01-30T10:40:19+00:00","value":{"total":59,"by_level":{"supporter":44,"sponsor":6,"partner":5,"member":4}}}'
     http_version: '1.1'
-  recorded_at: Wed, 22 Jan 2014 16:06:32 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
 recorded_with: VCR 2.8.0

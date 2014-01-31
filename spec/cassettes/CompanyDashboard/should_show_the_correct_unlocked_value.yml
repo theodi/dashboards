@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/2013-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-value-unlocked/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 11:16:46
-        GMT
+      - Fri, 31 Jan 2014 11:57:56 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - 123
+      - '123'
     body:
       encoding: US-ASCII
       string: ! '{"_id":"52e8ceb1ef922c6e57000117","name":"current-year-value-unlocked","time":"2013-12-31T23:59:59+00:00","value":16924307}'
-    http_version: 1.1
-  recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
+    http_version: '1.1'
+  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-value-unlocked/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-value-unlocked/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -51,22 +50,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 11:16:46
-        GMT
+      - Fri, 31 Jan 2014 11:57:57 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - 116
+      - '116'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5b9ef922c6e5700011f","name":"current-year-value-unlocked","time":"2014-01-29T10:19:36+00:00","value":0}'
-    http_version: 1.1
-  recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
+      string: ! '{"_id":"52eb8308ef922c6e5700027a","name":"current-year-value-unlocked","time":"2014-01-31T11:03:35+00:00","value":0}'
+    http_version: '1.1'
+  recorded_at: Fri, 31 Jan 2014 11:57:57 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-value-unlocked
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-value-unlocked
     body:
       encoding: US-ASCII
       string: ''
@@ -83,17 +81,16 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 11:16:46
-        GMT
+      - Fri, 31 Jan 2014 11:57:57 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - 121
+      - '121'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8d5baef922c6e57000120","name":"cumulative-value-unlocked","time":"2014-01-29T10:19:37+00:00","value":16924307}'
-    http_version: 1.1
-  recorded_at: Wed, 29 Jan 2014 11:16:46 GMT
+      string: ! '{"_id":"52eb8309ef922c6e5700027b","name":"cumulative-value-unlocked","time":"2014-01-31T11:03:36+00:00","value":16924307}'
+    http_version: '1.1'
+  recorded_at: Fri, 31 Jan 2014 11:57:57 GMT
 recorded_with: VCR 2.8.0

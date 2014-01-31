@@ -19,14 +19,14 @@ describe CompanyDashboard do
 
   it "should show the correct number of published Open Data Certificates", :vcr do
     CompanyDashboard.odcs(2013).should == 599
-    CompanyDashboard.odcs(2014).should == 640
-    CompanyDashboard.odcs.should == 640
+    CompanyDashboard.odcs(2014).should == 641
+    CompanyDashboard.odcs.should == 641
   end
 
   it "should show the correct member count", :vcr do
-    CompanyDashboard.members(2013).should == 52
-    CompanyDashboard.members(2014).should == 56
-    CompanyDashboard.members.should == 56
+    CompanyDashboard.members(2013).should == 54
+    CompanyDashboard.members(2014).should == 59
+    CompanyDashboard.members.should == 59
   end
 
   it "should show the correct reach", :vcr do
