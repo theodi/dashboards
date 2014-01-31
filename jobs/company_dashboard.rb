@@ -25,10 +25,12 @@ SCHEDULER.every '5m', :first_at => $start_time do
   # 2014
   send_event('2014-Reach', { current: CompanyDashboard.reach(2014) })
   send_event('2014-Bookings', { current: CompanyDashboard.bookings(2014), prefix: "£" })
+  send_event('2014-non-commercial-bookings', { current: CompanyDashboard.noncommercial_bookings(2014)["actual"], prefix: "£" })
   send_event('2014-Members', { current: CompanyDashboard.members(2014), link: "http://directory.theodi.org/members" })
   send_event('2014-Value', { current: CompanyDashboard.value(2014), prefix: "£" })
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
   send_event('2014-KPIs', { current: CompanyDashboard.kpis(2014), suffix: "%" })
+  
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })
   send_event('Lifetime-Bookings', { current: CompanyDashboard.bookings, prefix: "£" })
