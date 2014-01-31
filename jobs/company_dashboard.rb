@@ -44,6 +44,10 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('2014-Non-commercial-research', {current: income_by_sector['research']['non_commercial']['actual']})
   send_event('2014-Non-commercial-training', {current: income_by_sector['training']['non_commercial']['actual']})
   send_event('2014-Non-commercial-projects', {current: income_by_sector['projects']['non_commercial']['actual']})
+  
+  send_event('2014-Headcount', {current: CompanyDashboard.headcount(2014)['actual']})
+  send_event('2014-Burn', {current: CompanyDashboard.burn(2014)['actual']})
+
 
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })

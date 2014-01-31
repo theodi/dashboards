@@ -32,6 +32,14 @@ class CompanyDashboard < MetricsHelper
     select_metric 'bookings', year
   end
   
+  def self.headcount(year = nil)
+    select_metric 'headcount', year
+  end
+  
+  def self.burn(year = nil)
+    select_metric 'burn', year
+  end
+  
   def self.noncommercial_bookings(year = nil)
     select_metric 'non-commercial-bookings', year
   end
