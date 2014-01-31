@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2013-12-12T23:59:59
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -28,12 +28,12 @@ http_interactions:
       - '179'
     body:
       encoding: UTF-8
-      string: ! '{"_id":"52a9c459ef922cf2a2000001","name":"membership-count","time":"2013-12-12T14:12:41+00:00","value":{"total":52,"by_level":{"supporter":38,"sponsor":6,"partner":4,"member":4}}}'
+      string: ! '{"_id":"52a9c459ef922cf2a2000001","name":"membership-count","time":"2013-12-31T14:12:41+00:00","value":{"total":52,"by_level":{"supporter":38,"sponsor":6,"partner":4,"member":4}}}'
     http_version: '1.1'
   recorded_at: Wed, 22 Jan 2014 14:50:20 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2014-12-12T23:59:59
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -62,37 +62,6 @@ http_interactions:
       string: ! '{"_id":"52de6492ef922c6e570000e8","name":"membership-count","time":"2014-01-21T12:14:10+00:00","value":{"total":56,"by_level":{"supporter":41,"sponsor":6,"partner":5,"member":4}}}'
     http_version: '1.1'
   recorded_at: Wed, 22 Jan 2014 14:50:20 GMT
-- request:
-    method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count/-12-12T23:59:59
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      server:
-      - nginx/1.1.19
-      content-type:
-      - application/json;charset=utf-8
-      date:
-      - Wed, 22 Jan 2014 15:51:54 GMT
-      x-content-type-options:
-      - nosniff
-      connection:
-      - close
-      content-length:
-      - '179'
-    body:
-      encoding: US-ASCII
-      string: ! '{"_id":"52d227dfef922c6e570000a7","name":"membership-count","time":"2014-01-12T05:27:59+00:00","value":{"total":55,"by_level":{"supporter":40,"sponsor":6,"partner":5,"member":4}}}'
-    http_version: '1.1'
-  recorded_at: Wed, 22 Jan 2014 15:51:54 GMT
 - request:
     method: get
     uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/membership-count
