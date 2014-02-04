@@ -40,9 +40,9 @@ describe CompanyDashboard do
     CompanyDashboard.bookings(2014).should == 0
     CompanyDashboard.bookings.should == 2191064
   end
-  
+
   it "should show the correct non-commercial bookings value", :vcr do
-    CompanyDashboard.noncommercial_bookings(2014).should == {"actual" => 0.0, "target" => 45.2 }
+    CompanyDashboard.noncommercial_bookings(2014).should == { "actual" => 0.0, "target" => 45.2 }
   end
 
   it "should show the correct unlocked value", :vcr do
@@ -56,4 +56,7 @@ describe CompanyDashboard do
     CompanyDashboard.kpis(2014).should == 1.0
   end
 
+  it "should show the correct grant funding", :vcr do
+    CompanyDashboard.grant_funding(2014).should == { "actual" => 0.0, "target" => 3354.6176046176 }
+  end
 end

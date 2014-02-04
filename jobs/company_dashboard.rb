@@ -16,7 +16,7 @@ end
 
 SCHEDULER.every '5m', :first_at => $start_time do
   income_by_sector = CompanyDashboard.income_by_sector(2014)
-  
+
   # 2013
   send_event('2013-Reach', { current: CompanyDashboard.reach(2013) })
   send_event('2013-Bookings', { current: CompanyDashboard.bookings(2013), prefix: "£" })
@@ -35,19 +35,20 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
   send_event('2014-KPIs', { current: CompanyDashboard.kpis(2014), suffix: "%" })
   data = []
-  income_by_sector.each { |k,v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
+  income_by_sector.each { |k, v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
   send_event('2014-revenue-by-sector', { value: data })
 
-  send_event('2014-Commercial-research', {current: income_by_sector['research']['commercial']['actual']})
-  send_event('2014-Commercial-training', {current: income_by_sector['training']['commercial']['actual']})
-  send_event('2014-Commercial-projects', {current: income_by_sector['projects']['commercial']['actual']})
-  send_event('2014-Non-commercial-research', {current: income_by_sector['research']['non_commercial']['actual']})
-  send_event('2014-Non-commercial-training', {current: income_by_sector['training']['non_commercial']['actual']})
-  send_event('2014-Non-commercial-projects', {current: income_by_sector['projects']['non_commercial']['actual']})
-  
-  send_event('2014-Headcount', {current: CompanyDashboard.headcount(2014)['actual']})
-  send_event('2014-Burn', {current: CompanyDashboard.burn(2014)['actual']})
+  send_event('2014-Commercial-research', { current: income_by_sector['research']['commercial']['actual'] })
+  send_event('2014-Commercial-training', { current: income_by_sector['training']['commercial']['actual'] })
+  send_event('2014-Commercial-projects', { current: income_by_sector['projects']['commercial']['actual'] })
+  send_event('2014-Non-commercial-research', { current: income_by_sector['research']['non_commercial']['actual'] })
+  send_event('2014-Non-commercial-training', { current: income_by_sector['training']['non_commercial']['actual'] })
+  send_event('2014-Non-commercial-projects', { current: income_by_sector['projects']['non_commercial']['actual'] })
 
+  send_event('2014-Headcount', { current: CompanyDashboard.headcount(2014)['actual'] })
+  send_event('2014-Burn', { current: CompanyDashboard.burn(2014)['actual'] })
+
+  send_event('2014-grant-funding', { current: CompanyDashboard.grant_funding(2014)['actual'] })
 
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })
@@ -55,4 +56,5 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('Lifetime-Members', { current: CompanyDashboard.members, link: "http://directory.theodi.org/members" })
   send_event('Lifetime-Value', { current: CompanyDashboard.value, prefix: "£" })
   send_event('Lifetime-ODCs', { current: CompanyDashboard.odcs, link: "https://certificates.theodi.org/status" })
+
 end

@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-grant-funding/20<QUIRKAFLEEG_SEARCH_DISABLE>4-<QUIRKAFLEEG_SEARCH_DISABLE>2-3<QUIRKAFLEEG_SEARCH_DISABLE>T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>9
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 04 Feb 20<QUIRKAFLEEG_SEARCH_DISABLE>4 <QUIRKAFLEEG_SEARCH_DISABLE><QUIRKAFLEEG_SEARCH_DISABLE>:43:34
+        GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - <QUIRKAFLEEG_SEARCH_DISABLE>53
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52f0c2d<QUIRKAFLEEG_SEARCH_DISABLE>ef922c6e570008a4","name":"current-year-grant-funding","time":"20<QUIRKAFLEEG_SEARCH_DISABLE>4-02-04T<QUIRKAFLEEG_SEARCH_DISABLE>0:37:03+00:00","value":{"actual":0.0,"target":3354.6<QUIRKAFLEEG_SEARCH_DISABLE>76046<QUIRKAFLEEG_SEARCH_DISABLE>76}}'
+    http_version: <QUIRKAFLEEG_SEARCH_DISABLE>.<QUIRKAFLEEG_SEARCH_DISABLE>
+  recorded_at: Tue, 04 Feb 2014 11:43:34 GMT
+recorded_with: VCR 2.8.0

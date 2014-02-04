@@ -55,4 +55,8 @@ class CompanyDashboard < MetricsHelper
   def self.kpis(year)
     select_metric 'kpi-performance', year if year # year should never be nil for this
   end
+
+  def self.grant_funding(year)
+    select_metric 'grant-funding', year
+  end
 end
