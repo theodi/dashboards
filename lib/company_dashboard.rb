@@ -59,4 +59,13 @@ class CompanyDashboard < MetricsHelper
   def self.grant_funding(year)
     select_metric 'grant-funding', year
   end
+
+  def self.pipeline(year)
+    time   = year_to_time year
+    key =  "%s/%s" % [
+        time.to_date.beginning_of_year,
+        time.to_date.end_of_year
+    ]
+    (load_metric 'weighted-pipeline', time)['value'][key]
+  end
 end

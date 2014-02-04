@@ -59,4 +59,8 @@ describe CompanyDashboard do
   it "should show the correct grant funding", :vcr do
     CompanyDashboard.grant_funding(2014).should == { "actual" => 0.0, "target" => 3354.6176046176 }
   end
+
+  it "should show the correct pipeline", :vcr do
+    CompanyDashboard.pipeline(2014).should == 228603
+  end
 end
