@@ -14,7 +14,7 @@ SCHEDULER.every '1h', :first_at => $start_time do
   send_event('2014-q4-progress', { min: 0, max: 100, value: progress[:q4] })
 end
 
-SCHEDULER.every '5m', :first_at => $start_time do
+SCHEDULER.every '10s', :first_at => $start_time do
   income_by_sector = CompanyDashboard.income_by_sector(2014)
 
   # 2013
@@ -39,7 +39,7 @@ SCHEDULER.every '5m', :first_at => $start_time do
   send_event('2014-revenue-by-sector', { value: data })
 
   send_event('2014-Commercial-research', { current: income_by_sector['research']['commercial']['actual'] })
-  send_event('2014-Commercial-training', { current: income_by_sector['training']['commercial']['actual'] })
+  send_event('2014-Commercial-training', { current: income_by_sector['training']['commercial']['actual'], target: income_by_sector['training']['commercial']['target']})
   send_event('2014-Commercial-projects', { current: income_by_sector['projects']['commercial']['actual'] })
   send_event('2014-Non-commercial-research', { current: income_by_sector['research']['non_commercial']['actual'] })
   send_event('2014-Non-commercial-training', { current: income_by_sector['training']['non_commercial']['actual'] })

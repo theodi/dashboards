@@ -1,0 +1,20 @@
+<a data-bind-href="link">
+  <div class="title-wrapper">
+    <h1 class="title" data-bind="title"></h1>
+  </div>
+
+  <div class="number-with-target">
+    <h2 class="value">
+        <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span>
+        <span class="change-rate"> 
+          <i data-bind-class="arrow"></i>
+        </span>
+        <br/>
+        <span data-bind="target | shortenedNumber | prepend prefix | append suffix"></span>
+    </h2>
+  </div>
+
+  <p class="more-info" data-bind="moreinfo | raw"></p>
+
+  <p class="updated-at" data-bind="updatedAtMessage"></p>
+</a>
