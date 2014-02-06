@@ -1,6 +1,7 @@
 class Dashing.NumberWithTarget extends Dashing.Widget
   @accessor 'current', Dashing.AnimatedValue
-  @accessor 'target', Dashing.AnimatedValue
+  @accessor 'annual_target', Dashing.AnimatedValue
+  @accessor 'ytd_target', Dashing.AnimatedValue
 
   @accessor 'difference', ->
     if @get('last')

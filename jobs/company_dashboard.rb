@@ -1,6 +1,10 @@
 #!/bin/env ruby
 # encoding: utf-8
 
+def send_metric_with_targets event, data
+  send_event(event, { current: data['actual'], annual_target: data['annual_target'], ytd_target: data['ytd_target']})
+end
+
 SCHEDULER.every '1h', :first_at => $start_time do
   progress = CompanyDashboard.progress(2013)
   send_event('2013-q1-progress', { min: 0, max: 100, value: progress[:q1] })
@@ -39,7 +43,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-revenue-by-sector', { value: data })
 
   send_event('2014-Commercial-research', { current: income_by_sector['research']['commercial']['actual'] })
-  send_event('2014-Commercial-training', { current: income_by_sector['training']['commercial']['actual'], target: income_by_sector['training']['commercial']['target']})
+  send_metric_with_targets '2014-Commercial-training', income_by_sector['training']['commercial']
   send_event('2014-Commercial-projects', { current: income_by_sector['projects']['commercial']['actual'] })
   send_event('2014-Non-commercial-research', { current: income_by_sector['research']['non_commercial']['actual'] })
   send_event('2014-Non-commercial-training', { current: income_by_sector['training']['non_commercial']['actual'] })
