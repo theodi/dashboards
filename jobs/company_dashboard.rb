@@ -19,7 +19,7 @@ SCHEDULER.every '1h', :first_at => $start_time do
 end
 
 SCHEDULER.every '10s', :first_at => $start_time do
-  income_by_sector = CompanyDashboard.income_by_sector(2014)
+  bookings_by_sector = CompanyDashboard.bookings_by_sector(2014)
 
   # 2013
   send_event('2013-Reach', { current: CompanyDashboard.reach(2013) })
@@ -39,15 +39,15 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
   send_event('2014-KPIs', { current: CompanyDashboard.kpis(2014), suffix: "%" })
   data = []
-  income_by_sector.each { |k, v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
+  bookings_by_sector.each { |k, v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
   send_event('2014-revenue-by-sector', { value: data })
 
-  send_metric_with_targets '2014-Commercial-research', income_by_sector['research']['commercial']
-  send_metric_with_targets '2014-Commercial-training', income_by_sector['training']['commercial']
-  send_metric_with_targets '2014-Commercial-projects', income_by_sector['projects']['commercial']
-  send_metric_with_targets '2014-Non-commercial-research', income_by_sector['research']['non_commercial']
-  send_metric_with_targets '2014-Non-commercial-training', income_by_sector['training']['non_commercial']
-  send_metric_with_targets '2014-Non-commercial-projects', income_by_sector['projects']['non_commercial']
+  send_metric_with_targets '2014-Commercial-research', bookings_by_sector['research']['commercial']
+  send_metric_with_targets '2014-Commercial-training', bookings_by_sector['training']['commercial']
+  send_metric_with_targets '2014-Commercial-projects', bookings_by_sector['projects']['commercial']
+  send_metric_with_targets '2014-Non-commercial-research', bookings_by_sector['research']['non_commercial']
+  send_metric_with_targets '2014-Non-commercial-training', bookings_by_sector['training']['non_commercial']
+  send_metric_with_targets '2014-Non-commercial-projects', bookings_by_sector['projects']['non_commercial']
 
 
   send_event('2014-grant-funding', { current: CompanyDashboard.grant_funding(2014)['actual'] })
