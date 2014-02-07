@@ -42,12 +42,12 @@ SCHEDULER.every '10s', :first_at => $start_time do
   income_by_sector.each { |k, v| data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] } }
   send_event('2014-revenue-by-sector', { value: data })
 
-  send_event('2014-Commercial-research', { current: income_by_sector['research']['commercial']['actual'] })
+  send_metric_with_targets '2014-Commercial-research', income_by_sector['research']['commercial']
   send_metric_with_targets '2014-Commercial-training', income_by_sector['training']['commercial']
-  send_event('2014-Commercial-projects', { current: income_by_sector['projects']['commercial']['actual'] })
-  send_event('2014-Non-commercial-research', { current: income_by_sector['research']['non_commercial']['actual'] })
-  send_event('2014-Non-commercial-training', { current: income_by_sector['training']['non_commercial']['actual'] })
-  send_event('2014-Non-commercial-projects', { current: income_by_sector['projects']['non_commercial']['actual'] })
+  send_metric_with_targets '2014-Commercial-projects', income_by_sector['projects']['commercial']
+  send_metric_with_targets '2014-Non-commercial-research', income_by_sector['research']['non_commercial']
+  send_metric_with_targets '2014-Non-commercial-training', income_by_sector['training']['non_commercial']
+  send_metric_with_targets '2014-Non-commercial-projects', income_by_sector['projects']['non_commercial']
 
   send_event('2014-Headcount', { current: CompanyDashboard.headcount(2014)['actual'] })
   send_event('2014-Burn', { current: CompanyDashboard.burn(2014)['actual'] })
