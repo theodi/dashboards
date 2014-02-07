@@ -33,6 +33,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-Active-reach', { current: CompanyDashboard.active_reach(2014) })
   send_event('2014-Passive-reach', { current: CompanyDashboard.passive_reach(2014) })
   send_event('2014-Articles', { current: CompanyDashboard.articles(2014) })
+  send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 
   send_event('2014-Bookings', { current: CompanyDashboard.bookings(2014), prefix: "£" })
   send_event('2014-non-commercial-bookings', { current: CompanyDashboard.noncommercial_bookings(2014)["actual"], prefix: "£" })

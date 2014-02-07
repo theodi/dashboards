@@ -79,4 +79,12 @@ describe CompanyDashboard do
     CompanyDashboard.articles(2014).should == 0
   end
   
+  it "should get number of people trained", :vcr do
+    CompanyDashboard.people_trained(2014).should == {
+      'actual' => 0,
+      'annual_target' => 396,
+      'ytd_target' => 51
+    }
+  end
+
 end

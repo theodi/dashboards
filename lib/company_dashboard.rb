@@ -88,4 +88,15 @@ class CompanyDashboard < MetricsHelper
     select_metric 'pr-pieces', year
   end
 
+  def self.people_trained(year)
+    data = select_metric 'people-trained', year
+    data.inject({}) do |acc, values| 
+      values[1].each_pair do |k,v|
+        acc[k] ||= 0
+        acc[k] += v
+      end
+      acc
+    end
+  end
+
 end
