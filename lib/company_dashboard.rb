@@ -31,11 +31,24 @@ class CompanyDashboard < MetricsHelper
   def self.bookings(year = nil)
     select_metric 'bookings', year
   end
-  
+
   def self.headcount(year = nil)
     select_metric 'headcount', year
   end
-  
+
+  def self.ebitda(year = nil)
+    select_metric 'ebitda', year
+  end
+
+  def self.total_costs(year = nil)
+    select_metric 'total-costs', year
+  end
+
+  def self.cost_breakdown(year = nil)
+    c = total_costs year
+    c['breakdown']['fixed']
+  end
+
   def self.burn(year = nil)
     select_metric 'burn', year
   end

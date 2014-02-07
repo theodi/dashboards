@@ -49,8 +49,6 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_metric_with_targets '2014-Non-commercial-training', income_by_sector['training']['non_commercial']
   send_metric_with_targets '2014-Non-commercial-projects', income_by_sector['projects']['non_commercial']
 
-  send_event('2014-Headcount', { current: CompanyDashboard.headcount(2014)['actual'] })
-  send_event('2014-Burn', { current: CompanyDashboard.burn(2014)['actual'] })
 
   send_event('2014-grant-funding', { current: CompanyDashboard.grant_funding(2014)['actual'] })
 
@@ -61,4 +59,10 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('Lifetime-Value', { current: CompanyDashboard.value, prefix: "£" })
   send_event('Lifetime-ODCs', { current: CompanyDashboard.odcs, link: "https://certificates.theodi.org/status" })
 
+  #Opex
+  send_metric_with_targets('2014-Headcount', CompanyDashboard.headcount(2014))
+  send_event('2014-Burn', { current: CompanyDashboard.burn(2014) })
+  send_metric_with_targets('2014-EBITDA', CompanyDashboard.ebitda(2014))
+  send_metric_with_targets('2014-Total-Costs', CompanyDashboard.total_costs(2014))
+  send_event('2014-Cost-breakdown', )
 end
