@@ -44,9 +44,11 @@ class CompanyDashboard < MetricsHelper
     select_metric 'total-costs', year
   end
 
-  def self.cost_breakdown(year = nil)
+  def self.fixed_cost_breakdown(year = nil)
     c = total_costs year
-    c['breakdown']['fixed']
+    Hash[c['breakdown']['fixed'].map { |x|
+      [x[0], x[1]['actual']]
+    }]
   end
 
   def self.burn(year = nil)

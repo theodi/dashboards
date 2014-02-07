@@ -64,5 +64,8 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-Burn', { current: CompanyDashboard.burn(2014) })
   send_metric_with_targets('2014-EBITDA', CompanyDashboard.ebitda(2014))
   send_metric_with_targets('2014-Total-Costs', CompanyDashboard.total_costs(2014))
-  send_event('2014-Cost-breakdown', )
+  pie = CompanyDashboard.fixed_cost_breakdown(2014).map do |key, value|
+    {label: key.humanize, value: value}
+  end
+  send_event('2014-Fixed-cost-breakdown', { value: pie })
 end

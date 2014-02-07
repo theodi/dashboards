@@ -63,4 +63,17 @@ describe CompanyDashboard do
   it "should show the correct pipeline", :vcr do
     CompanyDashboard.pipeline(2014).should == 228603
   end
+  
+  it "should get fixed costs", :vcr do
+    CompanyDashboard.fixed_cost_breakdown(2014).should == {
+      "staff" => 0,
+      "associates" => 0,
+      "office_and_operational" => 0,
+      "delivery" => 0,
+      "communications" => 0,
+      "professional_fees" => 0,
+      "software" => 0,
+    }
+  end
+  
 end
