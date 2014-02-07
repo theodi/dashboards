@@ -30,7 +30,6 @@ describe CompanyDashboard do
   end
 
   it "should show the correct reach", :vcr do
-    CompanyDashboard.reach(2013).should == 303396
     CompanyDashboard.reach(2014).should == 0
     CompanyDashboard.reach.should == 303396
   end

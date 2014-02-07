@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-reach/2013-12-31T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,21 +19,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:56 GMT
+      - Fri, 07 Feb 2014 17:27:11 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '112'
+      - '154'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8ceacef922c6e57000113","name":"current-year-reach","time":"2013-12-31T23:59:59+00:00","value":303396}'
+      string: ! '{"_id":"52f50ef2ef922c6e57000d73","name":"current-year-reach","time":"2014-02-07T16:50:58+00:00","value":{"total":0,"breakdown":{"active":0,"passive":0}}}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
+  recorded_at: Fri, 07 Feb 2014 17:27:11 GMT
 - request:
     method: get
-    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-reach/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-reach
     body:
       encoding: US-ASCII
       string: ''
@@ -50,47 +50,16 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:56 GMT
+      - Fri, 07 Feb 2014 17:27:11 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '107'
+      - '166'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52eb8302ef922c6e57000274","name":"current-year-reach","time":"2014-01-31T11:03:28+00:00","value":0}'
+      string: ! '{"_id":"52f50ef3ef922c6e57000d74","name":"cumulative-reach","time":"2014-02-07T16:50:58+00:00","value":{"total":303396,"breakdown":{"active":10526,"passive":292870}}}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
-- request:
-    method: get
-    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-reach
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      server:
-      - nginx/1.1.19
-      content-type:
-      - application/json;charset=utf-8
-      date:
-      - Fri, 31 Jan 2014 11:57:56 GMT
-      x-content-type-options:
-      - nosniff
-      connection:
-      - close
-      content-length:
-      - '110'
-    body:
-      encoding: US-ASCII
-      string: ! '{"_id":"52eb8303ef922c6e57000275","name":"cumulative-reach","time":"2014-01-31T11:03:30+00:00","value":303396}'
-    http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
+  recorded_at: Fri, 07 Feb 2014 17:27:11 GMT
 recorded_with: VCR 2.8.0
