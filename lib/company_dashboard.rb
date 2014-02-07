@@ -83,4 +83,9 @@ class CompanyDashboard < MetricsHelper
     ]
     (load_metric 'weighted-pipeline', time)['value'][key]
   end
+
+  def self.articles(year)
+    select_metric 'pr-pieces', year
+  end
+
 end

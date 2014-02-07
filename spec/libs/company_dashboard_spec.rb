@@ -75,4 +75,8 @@ describe CompanyDashboard do
     }
   end
   
+  it "should get number of articles published", :vcr do
+    CompanyDashboard.articles(2014).should == 0
+  end
+  
 end

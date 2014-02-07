@@ -32,6 +32,8 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-Reach', { current: CompanyDashboard.reach(2014) })
   send_event('2014-Active-reach', { current: CompanyDashboard.active_reach(2014) })
   send_event('2014-Passive-reach', { current: CompanyDashboard.passive_reach(2014) })
+  send_event('2014-Articles', { current: CompanyDashboard.articles(2014) })
+
   send_event('2014-Bookings', { current: CompanyDashboard.bookings(2014), prefix: "£" })
   send_event('2014-non-commercial-bookings', { current: CompanyDashboard.noncommercial_bookings(2014)["actual"], prefix: "£" })
   send_event('2014-Members', { current: CompanyDashboard.members(2014), link: "http://directory.theodi.org/members" })

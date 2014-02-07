@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-pr-pieces/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 07 Feb 2014 17:33:04 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '111'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52f50ef3ef922c6e57000d75","name":"current-year-pr-pieces","time":"2014-02-07T16:50:59+00:00","value":0}'
+    http_version: '1.1'
+  recorded_at: Fri, 07 Feb 2014 17:33:03 GMT
+recorded_with: VCR 2.8.0
