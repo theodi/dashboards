@@ -47,6 +47,17 @@ SCHEDULER.every '10s', :first_at => $start_time do
 end
 
 SCHEDULER.every '10s', :first_at => $start_time do
+  # 2014 Reach
+  send_metric_with_targets '2014-Active-members',    CompanyDashboard.network_size(2014, [:partners, :supporters, :sponsors])
+  send_metric_with_targets '2014-Partners',          CompanyDashboard.network_size(2014, [:partners])
+  send_metric_with_targets '2014-Sponsors',          CompanyDashboard.network_size(2014, [:sponsors])
+  send_metric_with_targets '2014-Supporters',        CompanyDashboard.network_size(2014, [:supporters])
+  send_metric_with_targets '2014-Nodes',             CompanyDashboard.network_size(2014, [:nodes])
+  send_metric_with_targets '2014-Startups',          CompanyDashboard.network_size(2014, [:startups])
+  send_event               '2014-Pipeline', current: CommercialDashboard.weighted
+end
+
+SCHEDULER.every '10s', :first_at => $start_time do
   # 2014 Research, Projects & Training board
   bookings_by_sector = CompanyDashboard.bookings_by_sector(2014)
   send_metric_with_targets '2014-Commercial-research',     bookings_by_sector['research']['commercial']
