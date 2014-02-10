@@ -38,6 +38,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_metric_with_targets '2014-commercial-bookings', CompanyDashboard.commercial_bookings(2014)
   send_metric_with_targets '2014-non-commercial-bookings', CompanyDashboard.noncommercial_bookings(2014)
   send_metric_with_targets '2014-grant-funding', CompanyDashboard.grant_funding(2014)
+  send_metric_with_targets '2014-network-size', CompanyDashboard.network_size(2014)
 
   send_event('2014-Members', { current: CompanyDashboard.members(2014), link: "http://directory.theodi.org/members" })
   send_event('2014-Value', { current: CompanyDashboard.value(2014), prefix: "£" })

@@ -116,4 +116,9 @@ class CompanyDashboard < MetricsHelper
     data.sum
   end
 
+  def self.network_size(year)
+    data = select_metric 'network-size', year
+    data.sum
+  end
+  
 end
