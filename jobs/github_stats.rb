@@ -1,4 +1,4 @@
-SCHEDULER.every '1h', :first_at => $start_time do
+SCHEDULER.every '1h', :first_in => 0 do
   
   issues = GithubDashboard.issues
   external_pulls = GithubDashboard.externalpulls

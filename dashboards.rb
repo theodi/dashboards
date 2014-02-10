@@ -18,5 +18,3 @@ end
 before '/company' do
   redirect to '/company/2013'
 end
-
-$start_time = Time.now+10.seconds

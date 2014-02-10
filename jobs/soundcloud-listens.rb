@@ -1,4 +1,4 @@
-SCHEDULER.every '30m', :first_at => $start_time do
+SCHEDULER.every '30m', :first_in => 0 do
   
   send_event('soundcloud-listens', SoundcloudListens.update )
 
