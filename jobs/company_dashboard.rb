@@ -80,7 +80,7 @@ SCHEDULER.every '1h', :first_in => 0 do
   send_event '2014-Fixed-cost-breakdown', value: pie
 end
 
-SCHEDULER.every '10s', :first_in => 0 do
+SCHEDULER.every '1h', :first_in => 0 do
   # Lifetime
   send_event 'Lifetime-Reach',        current: CompanyDashboard.reach
   send_event 'Lifetime-Value',        current: CompanyDashboard.value,   prefix: "£"
