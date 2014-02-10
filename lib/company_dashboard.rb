@@ -1,5 +1,17 @@
 require_relative 'metrics_helper'
 
+class Hash
+  def sum
+    inject({}) do |acc, values| 
+      values[1].each_pair do |k,v|
+        acc[k] ||= 0
+        acc[k] += v
+      end
+      acc
+    end
+  end
+end
+
 class CompanyDashboard < MetricsHelper
 
   def self.progress(year)
@@ -101,13 +113,7 @@ class CompanyDashboard < MetricsHelper
 
   def self.people_trained(year)
     data = select_metric 'people-trained', year
-    data.inject({}) do |acc, values| 
-      values[1].each_pair do |k,v|
-        acc[k] ||= 0
-        acc[k] += v
-      end
-      acc
-    end
+    data.sum
   end
 
 end
