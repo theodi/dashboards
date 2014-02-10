@@ -21,7 +21,7 @@ SCHEDULER.every '1h', :first_at => $start_time do
   send_event '2013-q4-progress', min: 0, max: 100, value: progress[:q4]
 end
   
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # 2014 Company
   send_event '2014-Reach', current: CompanyDashboard.reach(2014), link: "/reach/2014"
   send_event '2014-Value', current: CompanyDashboard.value(2014), prefix: "£"
@@ -37,7 +37,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
 
 end
 
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # 2014 Reach
   send_event '2014-Reach',         current:       CompanyDashboard.reach(2014)
   send_event '2014-Active-reach',  current:       CompanyDashboard.active_reach(2014)
@@ -46,7 +46,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 end
 
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # 2014 Reach
   send_metric_with_targets '2014-Active-members',    CompanyDashboard.network_size(2014, [:partners, :supporters, :sponsors])
   send_metric_with_targets '2014-Partners',          CompanyDashboard.network_size(2014, [:partners])
@@ -57,7 +57,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event               '2014-Pipeline', current: CommercialDashboard.weighted
 end
 
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # 2014 Research, Projects & Training board
   bookings_by_sector = CompanyDashboard.bookings_by_sector(2014)
   send_metric_with_targets '2014-Commercial-research',     bookings_by_sector['research']['commercial']
@@ -68,7 +68,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_metric_with_targets '2014-Non-commercial-projects', bookings_by_sector['projects']['non_commercial']
 end
 
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # 2014 OpExs
   send_metric_with_targets '2014-Headcount',   CompanyDashboard.headcount(2014)
   send_metric_with_targets '2014-EBITDA',      CompanyDashboard.ebitda(2014)
@@ -80,7 +80,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event '2014-Fixed-cost-breakdown', value: pie
 end
 
-SCHEDULER.every '10s', :first_at => $start_time do
+SCHEDULER.every '1h', :first_at => $start_time do
   # Lifetime
   send_event 'Lifetime-Reach',        current: CompanyDashboard.reach
   send_event 'Lifetime-Value',        current: CompanyDashboard.value,   prefix: "£"
