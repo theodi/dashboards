@@ -337,7 +337,7 @@ h3 {
   }
 }
 
-#company, #membership, #commercial {
+#company, #membership, #commercial, #research, #opex {
 
   #company-header {
     position: relative;
@@ -361,6 +361,17 @@ h3 {
     }
   }
   
+  .widget-number-with-target {
+    .title {
+      font-size: 22px;
+    }
+    h2.value {
+      font-size: 30px;
+      line-height: 1em;
+      text-transform: none;
+    }
+  }
+
 }
 
 #company {
@@ -389,7 +400,7 @@ h3 {
     background-color: $odiColour2;
   }
 
-  #kpis {
+  #kpis, #non-commercial-bookings {
     background-color: $odiColour1;
   }
 
@@ -401,7 +412,7 @@ h3 {
     background-color: $odiColour11;
   }
 
-  #members {
+  #members, #revenue-by-sector {
     background-color: $odiColour12;
   }
 
@@ -410,7 +421,7 @@ h3 {
     display: table-cell;
     vertical-align: bottom;
     text-align: center;
-    width: 300px;
+    width: 400px;
     padding-bottom: 10px;
   
     h1 {
@@ -497,37 +508,37 @@ h3 {
 
 }
 
-#commercial {
+#commercial, #research, #opex {
   
-  #members {
+  #members, #tile-10 {
     background-color: $odiColour10;
   }
 
-  #weighted-pipeline {
+  #weighted-pipeline, #tile-2 {
     background-color: $odiColour2;
   }
 
-  #old-opportunities {
+  #old-opportunities, #tile-1 {
     background-color: $odiColour1;
   }
 
-  #bookings {
+  #bookings, #tile-3 {
     background-color: $odiColour3;
   }
 
-  #revenue {
+  #revenue, #tile-11 {
     background-color: $odiColour11;
   }
 
-  #backlog {
+  #backlog, #tile-12 {
     background-color: $odiColour12;
   }
   
-  #pipeline {
+  #pipeline, #tile-9 {
     background-color: $odiColour9;
   }
 
-  #weighted-pipeline {
+  #weighted-pipeline, #tile-8 {
     background-color: $odiColour8;
   }
 

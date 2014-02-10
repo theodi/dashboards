@@ -1,8 +1,8 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [150, 140]
-  Dashing.numColumns = 8
+  Dashing.widget_base_dimensions = [180, 140]
+  Dashing.numColumns = 6
   // Disable the layout drag
 });
 </script>
@@ -14,20 +14,24 @@ $(function() {
         <h1 class="title">Lifetime Company Dashboard</h1>
     </li>
 
-    <li data-row="2" data-col="3" data-sizex="2" data-sizey="2">
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="Lifetime-Reach" data-view="Number" data-unordered="true" data-title="Number of people reached" id="reach"></div>
     </li>
+    <li data-row="2" data-col="3" data-sizex="2" data-sizey="2">
+      <div data-id="Lifetime-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value"></div>
+    </li>
     <li data-row="2" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="Lifetime-Bookings" data-view="Number" data-unordered="true" data-title="Commercial bookings" id="bookings"></div>
+      <div data-id="Lifetime-network-size" data-view="Number" data-unordered="true" data-title="Network size" id="network"></div>
+    </li>
+    <li data-row="4" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="Lifetime-people-trained" data-view="Number" data-unordered="true" data-title="People trained" id="trained"></div>
     </li>
     <li data-row="4" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="Lifetime-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value"></div>
+      <div data-id="Lifetime-income" data-view="Number" data-unordered="true" data-title="Income" id="income"></div>
     </li>
     <li data-row="4" data-col="5" data-sizex="2" data-sizey="2">
       <div data-id="Lifetime-ODCs" data-view="Number" data-unordered="true" data-title="Datasets on Open Data Certificates" id="odcs"></div>
     </li>
-    <li data-row="4" data-col="7" data-sizex="2" data-sizey="2">
-      <div data-id="Lifetime-Members" data-view="Number" data-unordered="true" data-title="Members" id="members"></div>
-    </li>
+
   </ul>
 </div>

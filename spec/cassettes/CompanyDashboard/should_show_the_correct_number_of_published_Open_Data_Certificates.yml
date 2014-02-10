@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/certificated-datasets/2013-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/certificated-datasets/2013-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 10:21:52 GMT
+      - Fri, 31 Jan 2014 11:57:58 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -30,10 +30,10 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"_id":"52e8d06cef922c6e5700011a","name":"certificated-datasets","time":"2013-12-31T23:59:59+00:00","value":599}'
     http_version: '1.1'
-  recorded_at: Wed, 29 Jan 2014 10:21:52 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:58 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/certificated-datasets/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/certificated-datasets/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -50,7 +50,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 10:21:52 GMT
+      - Fri, 31 Jan 2014 11:57:58 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -59,12 +59,12 @@ http_interactions:
       - '112'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8cb39ef922c6e5700010a","name":"certificated-datasets","time":"2014-01-29T09:34:49+00:00","value":640}'
+      string: ! '{"_id":"52ea2bfbef922c6e570001cc","name":"certificated-datasets","time":"2014-01-30T10:39:55+00:00","value":641}'
     http_version: '1.1'
-  recorded_at: Wed, 29 Jan 2014 10:21:52 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:58 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/certificated-datasets
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/certificated-datasets
     body:
       encoding: US-ASCII
       string: ''
@@ -81,7 +81,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 29 Jan 2014 10:21:52 GMT
+      - Fri, 31 Jan 2014 11:57:58 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -90,7 +90,7 @@ http_interactions:
       - '112'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52e8cb39ef922c6e5700010a","name":"certificated-datasets","time":"2014-01-29T09:34:49+00:00","value":640}'
+      string: ! '{"_id":"52ea2bfbef922c6e570001cc","name":"certificated-datasets","time":"2014-01-30T10:39:55+00:00","value":641}'
     http_version: '1.1'
-  recorded_at: Wed, 29 Jan 2014 10:21:52 GMT
+  recorded_at: Fri, 31 Jan 2014 11:57:58 GMT
 recorded_with: VCR 2.8.0

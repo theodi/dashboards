@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-people-trained/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 07 Feb 2014 17:38:29 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '244'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52f50ef3ef922c6e57000d76","name":"current-year-people-trained","time":"2014-02-07T16:50:59+00:00","value":{"commercial":{"actual":0,"annual_target":190,"ytd_target":25},"non_commercial":{"actual":0,"annual_target":206,"ytd_target":26}}}'
+    http_version: '1.1'
+  recorded_at: Fri, 07 Feb 2014 17:38:29 GMT
+recorded_with: VCR 2.8.0

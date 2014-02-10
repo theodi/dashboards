@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-bookings-by-sector/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 10 Feb 2014 07:08:47
+        GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '772'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52f8771cef922c6e5700113b","name":"current-year-bookings-by-sector","time":"2014-02-10T06:52:12+00:00","value":{"research":{"commercial":{"actual":0.0,"annual_target":1500000.0,"ytd_target":0.0},"non_commercial":{"actual":0.0,"annual_target":750000.0,"ytd_target":0.0}},"training":{"commercial":{"actual":14000.0,"annual_target":128120.0,"ytd_target":17360.0},"non_commercial":{"actual":0.0,"annual_target":180780.0,"ytd_target":14580.0}},"projects":{"commercial":{"actual":0.0,"annual_target":450000.0,"ytd_target":0.0},"non_commercial":{"actual":0.0,"annual_target":500000.0,"ytd_target":50000.0}},"network":{"commercial":{"actual":0.0,"annual_target":874480.0,"ytd_target":141440.0},"non_commercial":{"actual":0.0,"annual_target":45200.0,"ytd_target":25200.0}}}}'
+    http_version: 1.1
+  recorded_at: Mon, 10 Feb 2014 07:08:47 GMT
+recorded_with: VCR 2.8.0

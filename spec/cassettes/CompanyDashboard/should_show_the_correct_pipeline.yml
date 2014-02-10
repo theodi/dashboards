@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/weighted-pipeline/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 04 Feb 2014 11:53:28
+        GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - 168
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"52efa9a5ef922c6e57000762","name":"weighted-pipeline","time":"2014-02-03T14:37:25+00:00","value":{"2014-01-01/2014-12-31":228603,"2014-01-01/2016-12-31":228603}}'
+    http_version: 1.1
+  recorded_at: Tue, 04 Feb 2014 11:53:28 GMT
+recorded_with: VCR 2.8.0
