@@ -28,10 +28,6 @@ class CompanyDashboard < MetricsHelper
     select_metric('reach', year)['breakdown']['passive']
   end
 
-  def self.bookings(year = nil)
-    select_metric 'bookings', year
-  end
-
   def self.headcount(year = nil)
     select_metric 'headcount', year
   end
@@ -55,8 +51,23 @@ class CompanyDashboard < MetricsHelper
     select_metric 'burn', year
   end
   
+  def self.commercial_bookings(year = nil)
+    bookings(:commercial, year)
+  end
+
   def self.noncommercial_bookings(year = nil)
-    select_metric 'non-commercial-bookings', year
+    bookings(:non_commercial, year)
+  end
+  
+  def self.bookings type, year = nil
+    bookings = bookings_by_sector(year)
+    bookings.inject({}) do |acc, values| 
+      values[1][type.to_s].each_pair do |k,v|
+        acc[k] ||= 0
+        acc[k] += v
+      end
+      acc
+    end
   end
   
   def self.bookings_by_sector(year = nil)

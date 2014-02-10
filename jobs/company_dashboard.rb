@@ -23,7 +23,7 @@ SCHEDULER.every '10s', :first_at => $start_time do
 
   # 2013
   send_event('2013-Reach', { current: CompanyDashboard.reach(2013) })
-  send_event('2013-Bookings', { current: CompanyDashboard.bookings(2013), prefix: "£" })
+  #send_event('2013-Bookings', { current: CompanyDashboard.bookings(2013), prefix: "£" })
   send_event('2013-Members', { current: CompanyDashboard.members(2013), link: "http://directory.theodi.org/members" })
   send_event('2013-Value', { current: CompanyDashboard.value(2013), prefix: "£" })
   send_event('2013-ODCs', { current: CompanyDashboard.odcs(2013), link: "https://certificates.theodi.org/status" })
@@ -35,8 +35,10 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_event('2014-Articles', { current: CompanyDashboard.articles(2014) })
   send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 
-  send_event('2014-Bookings', { current: CompanyDashboard.bookings(2014), prefix: "£" })
-  send_event('2014-non-commercial-bookings', { current: CompanyDashboard.noncommercial_bookings(2014)["actual"], prefix: "£" })
+  send_metric_with_targets '2014-commercial-bookings', CompanyDashboard.commercial_bookings(2014)
+  send_metric_with_targets '2014-non-commercial-bookings', CompanyDashboard.noncommercial_bookings(2014)
+  send_metric_with_targets '2014-grant-funding', CompanyDashboard.grant_funding(2014)
+
   send_event('2014-Members', { current: CompanyDashboard.members(2014), link: "http://directory.theodi.org/members" })
   send_event('2014-Value', { current: CompanyDashboard.value(2014), prefix: "£" })
   send_event('2014-ODCs', { current: CompanyDashboard.odcs(2014), link: "https://certificates.theodi.org/status" })
@@ -53,7 +55,6 @@ SCHEDULER.every '10s', :first_at => $start_time do
   send_metric_with_targets '2014-Non-commercial-projects', bookings_by_sector['projects']['non_commercial']
 
 
-  send_event('2014-grant-funding', { current: CompanyDashboard.grant_funding(2014)['actual'] })
 
   # Lifetime
   send_event('Lifetime-Reach', { current: CompanyDashboard.reach })

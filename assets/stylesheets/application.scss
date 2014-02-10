@@ -361,6 +361,17 @@ h3 {
     }
   }
   
+  .widget-number-with-target {
+    .title {
+      font-size: 22px;
+    }
+    h2.value {
+      font-size: 30px;
+      line-height: 1em;
+      text-transform: none;
+    }
+  }
+
 }
 
 #company {
@@ -537,17 +548,6 @@ h3 {
     }
     h2.value {
       font-size: 60px;
-      line-height: 1em;
-      text-transform: none;
-    }
-  }
-
-  .widget-number-with-target {
-    .title {
-      font-size: 22px;
-    }
-    h2.value {
-      font-size: 30px;
       line-height: 1em;
       text-transform: none;
     }

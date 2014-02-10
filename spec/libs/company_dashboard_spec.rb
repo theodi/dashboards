@@ -34,16 +34,6 @@ describe CompanyDashboard do
     CompanyDashboard.reach.should == 303396
   end
 
-  it "should show the correct bookings value", :vcr do
-    CompanyDashboard.bookings(2013).should == 2191064
-    CompanyDashboard.bookings(2014).should == 0
-    CompanyDashboard.bookings.should == 2191064
-  end
-
-  it "should show the correct non-commercial bookings value", :vcr do
-    CompanyDashboard.noncommercial_bookings(2014).should == { "actual" => 0.0, "target" => 45.2 }
-  end
-
   it "should show the correct unlocked value", :vcr do
     CompanyDashboard.value(2013).should == 16924307
     CompanyDashboard.value(2014).should == 0
@@ -56,7 +46,11 @@ describe CompanyDashboard do
   end
 
   it "should show the correct grant funding", :vcr do
-    CompanyDashboard.grant_funding(2014).should == { "actual" => 0.0, "target" => 3354.6176046176 }
+    CompanyDashboard.grant_funding(2014).should == { 
+      "actual" => 0.0, 
+      "annual_target" => 3354617.6046176003,
+      "ytd_target" => 373917.748917748
+    }
   end
 
   it "should show the correct pipeline", :vcr do
@@ -84,6 +78,22 @@ describe CompanyDashboard do
       'actual' => 0,
       'annual_target' => 396,
       'ytd_target' => 51
+    }
+  end
+
+  it "should show the correct commercial bookings value", :vcr do
+    CompanyDashboard.commercial_bookings(2014).should == {
+      'actual' => 14000.0,
+      'annual_target' => 2952600.0,
+      'ytd_target' => 158800
+    }
+  end
+
+  it "should show the correct non-commercial bookings value", :vcr do
+    CompanyDashboard.noncommercial_bookings(2014).should == { 
+      "actual" => 0.0, 
+      "annual_target" => 1475980.0,
+      "ytd_target" => 89780.0
     }
   end
 
