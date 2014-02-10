@@ -90,6 +90,10 @@ class CompanyDashboard < MetricsHelper
     select_metric 'value-unlocked', year
   end
 
+  def self.income(year = nil)
+    select_metric 'income', year
+  end
+
   def self.kpis(year)
     select_metric 'kpi-performance', year if year # year should never be nil for this
   end

@@ -83,9 +83,9 @@ end
 SCHEDULER.every '10s', :first_at => $start_time do
   # Lifetime
   send_event 'Lifetime-Reach',        current: CompanyDashboard.reach
-  send_event 'Lifetime-Members',      current: CompanyDashboard.members, link: "http://directory.theodi.org/members"
   send_event 'Lifetime-Value',        current: CompanyDashboard.value,   prefix: "£"
   send_event 'Lifetime-ODCs',         current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size', current: CompanyDashboard.network_size(Date.today.year)['actual']
-  #send_event 'Lifetime-Bookings',     current: CompanyDashboard.bookings, prefix: "£"
+  send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained(2014)['actual']
+  send_event 'Lifetime-income', current: CompanyDashboard.income(2014)['actual']
 end
