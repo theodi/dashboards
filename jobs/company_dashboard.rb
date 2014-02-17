@@ -12,7 +12,7 @@ SCHEDULER.every '1h', :first_in => 0 do
   send_event '2013-Value',    current: CompanyDashboard.value(2013),   prefix: "£"
   send_event '2013-ODCs',     current: CompanyDashboard.odcs(2013),    link: "https://certificates.theodi.org/status"
   send_event '2013-KPIs',     current: CompanyDashboard.kpis(2013),    suffix: "%"
-  #send_event '2013-Bookings', current: CompanyDashboard.bookings(2013), prefix: "£"
+  send_event '2013-Bookings', current: CompanyDashboard.old_bookings(2013), prefix: "£" # derprecated metric
   # Trello gubbins
   progress = CompanyDashboard.progress(2013)
   send_event '2013-q1-progress', min: 0, max: 100, value: progress[:q1]
