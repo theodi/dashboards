@@ -63,6 +63,10 @@ class CompanyDashboard < MetricsHelper
     select_metric 'burn', year
   end
   
+  def self.old_bookings(year = nil)
+    select_metric 'bookings', year
+  end
+  
   def self.commercial_bookings(year = nil)
     bookings(:commercial, year)
   end
