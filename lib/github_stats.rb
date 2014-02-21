@@ -1,4 +1,7 @@
 require 'github_api'
+require 'dotenv'
+
+Dotenv.load
 
 class GithubDashboard
   
