@@ -119,17 +119,17 @@ class CompanyDashboard < MetricsHelper
     select_metric 'pr-pieces', year
   end
 
-  def self.people_trained(year)
+  def self.people_trained(year = nil)
     data = select_metric 'people-trained', year
-    data.sum
+    year ? data.sum : data
   end
 
-  def self.network_size(year, sections = nil)
+  def self.network_size(year = nil, sections = nil)
     data = select_metric 'network-size', year
     if sections
       data.select!{|k,v| sections.include? k.to_sym }
     end
-    data.sum
+    year ? data.sum : data
   end
   
 end

@@ -75,10 +75,29 @@ describe CompanyDashboard do
   
   it "should get number of people trained", :vcr do
     CompanyDashboard.people_trained(2014).should == {
-      'actual' => 0,
+      'actual' => 16,
       'annual_target' => 396,
-      'ytd_target' => 51
+      'ytd_target' => 93
     }
+    CompanyDashboard.people_trained.should == 234
+  end
+
+  it "should get network size", :vcr do
+    CompanyDashboard.network_size(2014).should == {
+      "actual" => 5,
+      "annual_target" => 75,
+      "ytd_target" => 13
+    }
+    CompanyDashboard.network_size.should == 80
+  end
+
+  it "should get income", :vcr do
+    CompanyDashboard.income(2014).should == {
+      "actual" => 88468.0,
+      "annual_target" => 2935183.33333333,
+      "ytd_target" => 280543.3333333333
+    }
+    CompanyDashboard.income.should == 91123
   end
 
   it "should show the correct commercial bookings value", :vcr do
