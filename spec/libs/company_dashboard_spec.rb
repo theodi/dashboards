@@ -91,6 +91,13 @@ describe CompanyDashboard do
     CompanyDashboard.network_size.should == 80
   end
 
+  it "should get income", :vcr do
+    CompanyDashboard.income(2014).should == {
+      "actual" => 88468.0,
+      "annual_target" => 2935183.33333333,
+      "ytd_target" => 280543.3333333333
+    }
+    CompanyDashboard.income.should == 91123
   end
 
   it "should show the correct commercial bookings value", :vcr do
