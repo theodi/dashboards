@@ -28,13 +28,15 @@ describe GithubDashboard do
         @result = GithubDashboard.externalpulls
       end
     end
+
+    # EXTERNAL PRS ARE DISABLED CURRENTLY. SEE #106
     
     it "should return the correct number of total external pull requests", :vcr do
-      @result[:total_pulls].should == 43
+      @result[:total_pulls].should == 0 #43
     end
     
     it "should return the correct number of merged external pull requests", :vcr do
-      @result[:merged_pulls].should == 24
+      @result[:merged_pulls].should == 0 #24
     end
     
   end

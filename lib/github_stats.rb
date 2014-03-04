@@ -34,7 +34,7 @@ class GithubDashboard
     merged_pulls = 0
     
     # ALL THIS CODE IS COMMENTED BECAUSE IT'S JUST TOO MEMORY-INTENSIVE.
-    # WE NEED A BETTER WAY
+    # WE NEED A BETTER WAY. SEE #106
     
     # github.repos.list(user: ENV['GITHUB_ORGANISATION'], :auto_pagination => true) do |repo|
     #   if repo.fork
