@@ -79,6 +79,15 @@ describe CompanyDashboard do
       'annual_target' => 396,
       'ytd_target' => 51
     }
+  it "should get network size", :vcr do
+    CompanyDashboard.network_size(2014).should == {
+      "actual" => 5,
+      "annual_target" => 75,
+      "ytd_target" => 13
+    }
+    CompanyDashboard.network_size.should == 80
+  end
+
   end
 
   it "should show the correct commercial bookings value", :vcr do

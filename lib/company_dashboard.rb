@@ -124,12 +124,12 @@ class CompanyDashboard < MetricsHelper
     data.sum
   end
 
-  def self.network_size(year, sections = nil)
+  def self.network_size(year = nil, sections = nil)
     data = select_metric 'network-size', year
     if sections
       data.select!{|k,v| sections.include? k.to_sym }
     end
-    data.sum
+    year ? data.sum : data
   end
   
 end
