@@ -82,10 +82,10 @@ end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # Lifetime
-  send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained(2014)['actual']
   send_event 'Lifetime-income', current: CompanyDashboard.income(2014)['actual']
   send_event 'Lifetime-Reach',          current: CompanyDashboard.reach
   send_event 'Lifetime-Value',          current: CompanyDashboard.value,   prefix: "£"
   send_event 'Lifetime-ODCs',           current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
+  send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
 end
