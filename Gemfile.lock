@@ -250,6 +250,7 @@ DEPENDENCIES
   github_api
   google_drive
   httparty
+  i18n
   json
   pry
   rake

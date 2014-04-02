@@ -19,6 +19,7 @@ gem 'google_drive'
 gem 'capsulecrm'
 gem 'rufus-scheduler'
 gem 'faraday', '< 0.9'
+gem 'i18n'
 
 group :development, :test do
   gem 'rspec'

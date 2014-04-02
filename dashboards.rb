@@ -1,5 +1,7 @@
 require 'dashing'
 require 'dotenv'
+require 'i18n'
+require 'i18n/backend/fallbacks'
 
 Dotenv.load
 
@@ -12,7 +14,17 @@ configure do
      # Put any authentication code you want in here.
      # This method is run before accessing any resource.
     end
+
+    def page_title
+      I18n.t params["splat"][0].gsub('/','_')
+    end
+
   end
+
+  I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)
+  I18n.load_path = Dir[File.join(settings.root, 'locales', '*.yml')]
+  I18n.backend.load_translations
+
 end
 
 before '/company' do
