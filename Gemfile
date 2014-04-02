@@ -20,6 +20,7 @@ gem 'capsulecrm'
 gem 'rufus-scheduler'
 gem 'faraday', '< 0.9'
 gem 'i18n'
+gem 'sinatra-partial'
 
 group :development, :test do
   gem 'rspec'

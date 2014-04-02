@@ -2,12 +2,16 @@ require 'dashing'
 require 'dotenv'
 require 'i18n'
 require 'i18n/backend/fallbacks'
+require 'sinatra/partial'
 
 Dotenv.load
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'company'
+
+  set :partial_template_engine, :erb
+  enable :partial_underscores
 
   helpers do
     def protected!
