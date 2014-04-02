@@ -357,18 +357,25 @@ h3 {
 
     ul#nav {
       position: absolute;
-      right: 10px;
+      right: 5px;
       z-index: 100;
       background: #666;
       color: white;
       border: 1px solid black;
       list-style: none;
       text-align: left;
-      padding: 20px;
       font-size: 16px;
       line-height: 20px;
       font-weight: normal;
       display: none;
+
+      li {
+        padding: 10px 20px;
+      }
+
+      li:nth-child(even) {
+        background: #555;
+      }
     }
   }
 
