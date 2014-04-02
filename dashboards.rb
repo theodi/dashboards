@@ -23,6 +23,10 @@ configure do
       I18n.t params["splat"][0].gsub('/','_')
     end
 
+    def navigation_tree
+      $nav ||= YAML.load_file('navigation.yml')
+    end
+
   end
 
   I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)

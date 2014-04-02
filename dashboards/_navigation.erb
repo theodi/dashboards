@@ -1,0 +1,5 @@
+<ul>
+  <% navigation_tree.each do |item| %>
+    <li><a href='/<%= item %>'><%= I18n.t item.gsub('/','_') %></a>
+  <% end %>
+</ul>
