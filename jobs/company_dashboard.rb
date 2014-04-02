@@ -20,7 +20,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2013-q3-progress', min: 0, max: 100, value: progress[:q3]
   send_event '2013-q4-progress', min: 0, max: 100, value: progress[:q4]
 end
-  
+
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 Company
   send_event '2014-Reach', current: CompanyDashboard.reach(2014), link: "/reach/2014"
@@ -30,7 +30,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_metric_with_targets '2014-grant-funding',           CompanyDashboard.grant_funding(2014)
   send_metric_with_targets '2014-network-size',            CompanyDashboard.network_size(2014),           link: "/network/2014"
   data = []
-  CompanyDashboard.bookings_by_sector(2014).each do |k, v| 
+  CompanyDashboard.bookings_by_sector(2014).each do |k, v|
     data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] }
   end
   send_event '2014-revenue-by-sector', value: data
@@ -54,7 +54,6 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_metric_with_targets '2014-Supporters',        CompanyDashboard.network_size(2014, [:supporters])
   send_metric_with_targets '2014-Nodes',             CompanyDashboard.network_size(2014, [:nodes])
   send_metric_with_targets '2014-Startups',          CompanyDashboard.network_size(2014, [:startups])
-  send_event               '2014-Pipeline', current: CommercialDashboard.weighted
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
