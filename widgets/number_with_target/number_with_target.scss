@@ -13,59 +13,34 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 .widget-number-with-target {
 
   background-color: $background-color;
-  padding: 15px 12px !important;
+  position: relative;
 
   .title {
     color: $title-color;
     font-size: 15px;
   }
-  
-  .number {
-    text-align: center;
+
+  .annual-bar {
+    height: 50px;
+    width: 100%;
+    background: lightgray;
+    position: absolute;
+    z-index: 0;
   }
 
-  .value {
-    color: $value-color;
-    font-size: 30px;
-    line-height: 15px;
+  .ytd-bar {
+    height: 70px;
+    border-right: 5px solid blue;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
   }
 
-  .change-rate {
-    font-weight: 500;
-    font-size: 30px;
-    color: $value-color;
-    line-height: 40px;
-    vertical-align: middle;
-    
-    &.hidden {
-      display:none;
-    }
-  }
-
-  .more-info {
-    color: $moreinfo-color;
-  }
-
-  .updated-at {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 12px;
-  }
-
-}
-
-.widget-number-with-target {
-  
-  &.issues-graph {
-    background-color: #dc5945;
-    
-    .title {
-      font-size: 60px;
-    }
-    
-    .value {
-      font-size: 100px;
-      line-height: 80px;
-    }
+  .value-bar {
+    height: 50px;
+    background: green;
+    position: absolute;
+    z-index: 1;
   }
 
 }

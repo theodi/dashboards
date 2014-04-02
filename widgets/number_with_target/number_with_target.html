@@ -4,17 +4,23 @@
   </div>
 
   <div class="number-with-target">
-    <h2 class="value">
-      <!--<p>
-        YTD: 
-        <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> / 
-        <span data-bind="ytd_target | shortenedNumber | prepend prefix | append suffix"></span>
-      </p>--><p>
-        <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> / 
-        <span data-bind="annual_target | shortenedNumber | prepend prefix | append suffix"></span>
-      </p>
-    </h2>
+
+    <div class='annual-bar'></div>
+    <div class='ytd-bar' data-bind-width='ytd_percent'></div>
+    <div class='value-bar' data-bind-width='value_percent'></div>
+
   </div>
+
+  <p>
+    YTD:
+    <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> /
+    <span data-bind="ytd_target | shortenedNumber | prepend prefix | append suffix"></span>
+  </p>
+  <p>
+    ANN:
+    <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> /
+    <span data-bind="annual_target | shortenedNumber | prepend prefix | append suffix"></span>
+  </p>
 
   <p class="more-info" data-bind="moreinfo | raw"></p>
 
