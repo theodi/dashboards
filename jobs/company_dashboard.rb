@@ -54,7 +54,6 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_metric_with_targets '2014-Supporters',        CompanyDashboard.network_size(2014, [:supporters])
   send_metric_with_targets '2014-Nodes',             CompanyDashboard.network_size(2014, [:nodes])
   send_metric_with_targets '2014-Startups',          CompanyDashboard.network_size(2014, [:startups])
-  send_event               '2014-Pipeline', current: CommercialDashboard.weighted
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
