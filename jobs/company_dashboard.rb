@@ -69,8 +69,9 @@ end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 OpExs
-  send_metric_with_targets '2014-Headcount',   CompanyDashboard.headcount(2014)
-  send_metric_with_targets '2014-EBITDA',      CompanyDashboard.ebitda(2014), prefix: "£"
+  send_metric_with_targets '2014-Income',      CompanyDashboard.income(2014),  prefix: "£"
+  send_event '2014-Headcount',        current: CompanyDashboard.headcount(2014)['actual']
+  send_event '2014-EBITDA-YTD',       current: CompanyDashboard.ebitda(2014)['actual'], prefix: "£"
   send_metric_with_targets '2014-Total-Costs', CompanyDashboard.total_costs(2014), prefix: "£"
   send_event '2014-Burn',  current:            CompanyDashboard.burn(2014), prefix: "£"
   pie = CompanyDashboard.fixed_cost_breakdown(2014).map do |key, value|
