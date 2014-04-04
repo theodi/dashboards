@@ -36,5 +36,5 @@ configure do
 end
 
 before '/company' do
-  redirect to '/company/2014'
+  redirect to '/company/2013'
 end
