@@ -1,6 +1,11 @@
 .widget-pie {
   h1 {
-    color: #000;
+    color: #fff;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
   }
 
   .chart_label {
