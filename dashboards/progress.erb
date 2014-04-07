@@ -1,24 +1,36 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [150, 140]
-  Dashing.numColumns = 8
+  Dashing.widget_base_dimensions = [105, 140]
+  Dashing.numColumns = 11
   // Disable the layout drag
 });
 </script>
 <div class="gridster" id="progress">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="<%= @year %>-q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Q4 progress" id="q4-progress"></div>
     </li>
-    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="2" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="<%= @year %>-q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Q3 progress" id="q3-progress"></div>
     </li>
-    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="<%= @year %>-q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Q2 progress" id="q2-progress"></div>
     </li>
-    <li data-row="4" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="4" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="<%= @year %>-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Q1 progress" id="q1-progress"></div>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="2" data-sizey="4">
+      <div data-id="<%= @year %>-<%= @quarter %>-current-month" data-view="List" data-unordered="true" data-title="Tasks this month" id="<%= @year %>-<%= @quarter %>-current-month"></div>
+    </li>
+    <li data-row="1" data-col="6" data-sizex="2" data-sizey="4">
+      <div data-id="<%= @year %>-<%= @quarter %>-rest-of-month" data-view="List" data-unordered="true" data-title="Rest of quarter" id="<%= @year %>-<%= @quarter %>-current-month"></div>
+    </li>
+    <li data-row="1" data-col="8" data-sizex="2" data-sizey="4">
+      <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="List" data-unordered="true" data-title="To discuss" id="<%= @year %>-<%= @quarter %>-discuss"></div>
+    </li>
+    <li data-row="1" data-col="10" data-sizex="2" data-sizey="4">
+      <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="List" data-unordered="true" data-title="Done" id="<%= @year %>-<%= @quarter %>-done"></div>
     </li>
   </ul>
 </div>
