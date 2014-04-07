@@ -23,3 +23,27 @@ Dashing.on 'ready', ->
       draggable:
         stop: Dashing.showGridsterInstructions
         start: -> Dashing.currentWidgetPositions = Dashing.getWidgetPositions()
+
+
+  # Let's replace shortenedNumber
+  # Dashing's version has bad negative number handling
+  # and shoves the prefix in front of the minus sign
+  Batman.Filters.formatNumber = (num, prefix) ->
+    return num if isNaN(num)
+    num = num.toPrecision(3)
+    negative = num < 0.0
+    num = Math.abs(num)
+    if num >= 1000000000
+      num = (num / 1000000000).toFixed(1) + 'B'
+    else if num >= 1000000
+      num = (num / 1000000).toFixed(1) + 'M'
+    else if num >= 1000
+      num = (num / 1000).toFixed(1) + 'K'
+    if negative
+      str = "-"
+    else
+      str = ""
+    if prefix
+      str += prefix
+    str += num
+    str
