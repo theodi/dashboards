@@ -123,6 +123,10 @@ class CompanyDashboard < MetricsHelper
     select_metric 'pr-pieces', year
   end
 
+  def self.events_hosted(year)
+    select_metric 'events-hosted', year
+  end
+
   def self.people_trained(year = nil)
     data = select_metric 'people-trained', year
     year ? data.sum : data
