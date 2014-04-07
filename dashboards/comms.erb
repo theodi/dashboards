@@ -1,18 +1,21 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [450, 180]
+  Dashing.widget_base_dimensions = [450, 81]
   Dashing.numColumns = 3
   // Disable the layout drag
 });
 </script>
 <div class="gridster" id="commercial">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="4">
       <div data-id="comms-spokespeople" data-view="List" data-ordered="true" data-title="Spokespeople" id="tile-1"></div>
     </li>
-    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="5" data-col="1" data-sizex="1" data-sizey="2">
       <div data-id="comms-sectors" data-view="List" data-ordered="true" data-title="Sector Spread" id="tile-2"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="7">
+      <div data-id="comms-geographies" data-view="List" data-ordered="true" data-title="Geographical Spread" id="tile-3"></div>
     </li>
   </ul>
 </div>
