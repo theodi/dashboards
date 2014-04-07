@@ -22,7 +22,7 @@ class Dashing.Pie extends Dashing.Widget
     height = 260 #height
     radius = 130 #radius
 
-    colours = ['#D60303','#ff6700','#F9BC26','#67EF67','#0DBC37','#1dd3a7','#2254f4','#ef3aab','#b13198']
+    colours =  @get("colours") || ['#D60303','#ff6700','#F9BC26','#67EF67','#0DBC37','#1dd3a7','#2254f4','#ef3aab','#b13198']
 
     $(@node).children("svg").remove();
 
