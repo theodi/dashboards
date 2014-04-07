@@ -73,6 +73,10 @@ describe CompanyDashboard do
     CompanyDashboard.articles(2014).should == 0
   end
 
+  it "should get number of events hosted", :vcr do
+    CompanyDashboard.events_hosted(2014).should == 2
+  end
+
   it "should get number of people trained", :vcr do
     CompanyDashboard.people_trained(2014).should == {
       'actual' => 16,
