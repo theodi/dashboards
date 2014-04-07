@@ -1,10 +1,10 @@
 require 'spec_helper'
 require 'comms_dashboard'
 
-describe CommsDashboard, :vcr do
+describe NewsArticlesDashboard, :vcr do
 
   it "should list spokespeople" do
-    CommsDashboard.spokespeople(2014).should == [
+    NewsArticlesDashboard.spokespeople(2014).should == [
       {label: "Tim Berners-Lee", value: 18},
       {label: "Nigel Shadbolt", value: 16},
       {label: "Gavin Starks", value: 15},
@@ -18,7 +18,7 @@ describe CommsDashboard, :vcr do
   end
 
   it "should list sectors" do
-    CommsDashboard.sectors(2014).should == [
+    NewsArticlesDashboard.sectors(2014).should == [
       {label: "Technology", value: 332},
       {label: "Government", value: 328},
       {label: "Corporate", value: 136},
@@ -29,7 +29,7 @@ describe CommsDashboard, :vcr do
   end
 
   it "should list geographies" do
-    CommsDashboard.geographies(2014).should == [
+    NewsArticlesDashboard.geographies(2014).should == [
       {label: "UK", value: 522},
       {label: "Unspecified", value: 88},
       {label: "USA", value: 53},
@@ -55,7 +55,7 @@ describe CommsDashboard, :vcr do
   end
 
   it "should list sentiment" do
-    CommsDashboard.sentiment(2014).should == [
+    NewsArticlesDashboard.sentiment(2014).should == [
       {label: "positive", value: 412},
       {label: "neutral", value: 15},
       {label: "balanced", value: 14},
@@ -64,18 +64,18 @@ describe CommsDashboard, :vcr do
   end
 
   it "should get total volume for a term" do
-    CommsDashboard.volume(2014, "ODI").should == 440
-    CommsDashboard.volume(2014, "OpenData").should == 72
+    NewsArticlesDashboard.volume(2014, "ODI").should == 440
+    NewsArticlesDashboard.volume(2014, "OpenData").should == 72
   end
 
   it "should get total value for a term" do
-    CommsDashboard.value(2014, "ODI").should == 1495674
-    CommsDashboard.value(2014, "OpenData").should == 417652
+    NewsArticlesDashboard.value(2014, "ODI").should == 1495674
+    NewsArticlesDashboard.value(2014, "OpenData").should == 417652
   end
 
   it "should get total reach for a term" do
-    CommsDashboard.reach(2014, "ODI").should == 57628683
-    CommsDashboard.reach(2014, "OpenData").should == 23181210
+    NewsArticlesDashboard.reach(2014, "ODI").should == 57628683
+    NewsArticlesDashboard.reach(2014, "OpenData").should == 23181210
   end
 
 end

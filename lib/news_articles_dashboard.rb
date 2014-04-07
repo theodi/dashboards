@@ -1,6 +1,6 @@
 require_relative 'metrics_helper'
 
-class CommsDashboard < MetricsHelper
+class NewsArticlesDashboard < MetricsHelper
 
   def self.spokespeople(year = nil)
     select_metric('press-spokespeople', year).map do |person|
