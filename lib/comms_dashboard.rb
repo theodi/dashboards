@@ -26,5 +26,16 @@ class CommsDashboard < MetricsHelper
     end
   end
 
+  def self.volume(year, term)
+    select_metric('press-totals', year)[term]["volume"]
+  end
+
+  def self.value(year, term)
+    select_metric('press-totals', year)[term]["value"]
+  end
+
+  def self.reach(year, term)
+    select_metric('press-totals', year)[term]["reach"]
+  end
 
 end

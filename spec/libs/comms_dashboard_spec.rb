@@ -63,4 +63,19 @@ describe CommsDashboard, :vcr do
     ]
   end
 
+  it "should get total volume for a term" do
+    CommsDashboard.volume(2014, "ODI").should == 440
+    CommsDashboard.volume(2014, "OpenData").should == 72
+  end
+
+  it "should get total value for a term" do
+    CommsDashboard.value(2014, "ODI").should == 1495674
+    CommsDashboard.value(2014, "OpenData").should == 417652
+  end
+
+  it "should get total reach for a term" do
+    CommsDashboard.reach(2014, "ODI").should == 57628683
+    CommsDashboard.reach(2014, "OpenData").should == 23181210
+  end
+
 end
