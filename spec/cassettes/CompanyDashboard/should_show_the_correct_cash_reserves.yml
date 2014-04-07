@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cash-reserves
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 07 Apr 2014 12:41:22 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '111'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"53429c87ef922c9c55003896","name":"cash-reserves","time":"2014-04-07T12:39:35+00:00","value":1015006.28}'
+    http_version: '1.1'
+  recorded_at: Mon, 07 Apr 2014 12:41:22 GMT
+recorded_with: VCR 2.8.0
