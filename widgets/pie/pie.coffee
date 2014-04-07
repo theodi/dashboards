@@ -18,9 +18,9 @@ class Dashing.Pie extends Dashing.Widget
     $(@node).children(".more-info").text($(@node).attr("data-moreinfo"))
     $(@node).children(".updated-at").text(@get('updatedAtMessage'))
 
-    width = 260 #width
-    height = 260 #height
-    radius = 130 #radius
+    width = @get("width") || 260 #width
+    height = @get("height") || 260 #height
+    radius = @get("radius") || 130 #radius
 
     colours =  @get("colours") || ['#D60303','#ff6700','#F9BC26','#67EF67','#0DBC37','#1dd3a7','#2254f4','#ef3aab','#b13198']
 
