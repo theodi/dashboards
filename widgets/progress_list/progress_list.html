@@ -2,8 +2,10 @@
 
 <ul>
   <li data-foreach-item="items">
-    <span class="label" data-bind="item.title"></span>
-    <progress data-bind-max="0" data-bind-data-min="1" data-bind-value="item.progress"></progress>
+    <div class="item">
+      <span class="label" data-bind="item.title"></span>
+      <progress data-bind-max="0" data-bind-data-min="1" data-bind-value="item.progress"></progress>
+    </div>
   </li>
 </ul>
 

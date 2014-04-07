@@ -8,6 +8,8 @@ $title-color:       rgba(255, 255, 255, 0.7);
 $label-color:       rgba(255, 255, 255, 0.7);
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
+$meter-background:  darken($background-color, 15%);
+
 // ----------------------------------------------------------------------------
 // widget-progress-list styles
 // ----------------------------------------------------------------------------
@@ -39,9 +41,34 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     list-style: none;
   }
 
-  .label {
-    color: $label-color;
-    font-size: 12px;
+  .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 7px;
+
+    .label {
+      color: $label-color;
+      font-size: 12px;
+      width: 77%;
+      margin-right: 2%;
+      float: left;
+    }
+
+    progress {
+      width: 20%;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      appearance: none;
+    }
+
+    progress[value]::-webkit-progress-bar {
+      background-color: #eee;
+    }
+
+    progress[value]::-webkit-progress-value {
+      background-color: $meter-background;
+    }
   }
 
   .updated-at {
