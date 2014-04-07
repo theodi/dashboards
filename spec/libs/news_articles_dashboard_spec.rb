@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'comms_dashboard'
+require 'news_articles_dashboard'
 
 describe NewsArticlesDashboard, :vcr do
 
