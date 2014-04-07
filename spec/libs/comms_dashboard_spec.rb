@@ -54,4 +54,13 @@ describe CommsDashboard, :vcr do
     ]
   end
 
+  it "should list sentiment" do
+    CommsDashboard.sentiment(2014).should == [
+      {label: "positive", value: 412},
+      {label: "neutral", value: 15},
+      {label: "balanced", value: 14},
+      {label: "negative", value: 1},
+    ]
+  end
+
 end

@@ -20,5 +20,11 @@ class CommsDashboard < MetricsHelper
     end
   end
 
+  def self.sentiment(year = nil)
+    select_metric('press-sentiment', year).map do |sentiment|
+      {label: sentiment[0], value: sentiment[1]}
+    end
+  end
+
 
 end
