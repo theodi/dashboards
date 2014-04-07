@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 #ruby-gemset=dashboards
 
 gem 'rake'
-gem 'dashing' , github: 'theodi/dashing', branch: 'dashboard-subdirectories'
+gem 'dashing' , path: '../dashing'#, branch: 'dashboard-subdirectories'
 gem 'foreman'
 gem 'activesupport'
 gem 'soundcloud'
