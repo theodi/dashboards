@@ -40,6 +40,10 @@ describe CompanyDashboard do
     CompanyDashboard.value.should == 16924307
   end
 
+  it "should show the correct cash reserves", :vcr do
+    CompanyDashboard.cash_reserves.should == 1015006.28
+  end
+
   it "should show the correct kpi percentage", :vcr do
     CompanyDashboard.kpis(2013).should == 100.0
     CompanyDashboard.kpis(2014).should == 1.0
