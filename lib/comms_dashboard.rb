@@ -8,5 +8,11 @@ class CommsDashboard < MetricsHelper
     end
   end
 
+def self.sectors(year = nil)
+  select_metric('press-sector-spread', year).map do |sector|
+    {label: sector[0], value: sector[1]}
+  end
+end
+
 
 end

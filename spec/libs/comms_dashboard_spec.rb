@@ -17,4 +17,15 @@ describe CommsDashboard, :vcr do
     ]
   end
 
+  it "should list sectors" do
+    CommsDashboard.sectors(2014).should == [
+      {label: "Technology", value: 332},
+      {label: "Government", value: 328},
+      {label: "Corporate", value: 136},
+      {label: "Cultural", value: 53},
+      {label: "Financial", value: 14},
+      {label: "Retail", value: 5},
+    ]
+  end
+
 end
