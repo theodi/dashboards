@@ -75,6 +75,10 @@ class CompanyDashboard < MetricsHelper
     bookings(:non_commercial, year)
   end
 
+  def self.cumulative_bookings
+    select_metric 'bookings',  nil
+  end
+
   def self.bookings type, year = nil
     bookings = bookings_by_sector(year)
     bookings.inject({}) do |acc, values|

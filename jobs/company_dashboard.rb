@@ -90,5 +90,5 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event 'Lifetime-ODCs',           current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
   send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
-  send_event 'Lifetime-income',         current: CompanyDashboard.income,  prefix: "£"
+  send_event 'Lifetime-bookings',       current: CompanyDashboard.cumulative_bookings, prefix: "£"
 end

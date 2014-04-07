@@ -126,6 +126,10 @@ describe CompanyDashboard do
     CompanyDashboard.income.should == 91123
   end
 
+  it "should get cumulative bookings value", :vcr do
+    CompanyDashboard.cumulative_bookings.should == 686000
+  end
+
   it "should show the correct commercial bookings value", :vcr do
     CompanyDashboard.commercial_bookings(2014).should == {
       'actual' => 14000.0,
