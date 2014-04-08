@@ -8,18 +8,18 @@ class Dashing.NumberWithTarget extends Dashing.Widget
     annual = parseInt(@get('annual_target'))
     diff = ytd / annual * 100
     if diff < 100
-      "#{diff}%"
+      "width: #{diff}%"
     else
-      "100%"
+      "width: 100%"
 
   @accessor 'value_percent', ->
     current = parseInt(@get('current'))
     annual = parseInt(@get('annual_target'))
     diff = current / annual * 100
     if diff < 100
-      "#{diff}%"
+      "width: #{diff}%"
     else
-      "100%"
+      "width: 100%"
 
   @accessor 'difference', ->
     if @get('last')
