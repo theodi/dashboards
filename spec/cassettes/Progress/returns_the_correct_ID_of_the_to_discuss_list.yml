@@ -31,7 +31,7 @@ http_interactions:
       x-frame-options:
       - DENY
       x-server-time:
-      - '1396951417844'
+      - '1396963509509'
       expires:
       - Thu, 01 Jan 1970 00:00:00
       content-type:
@@ -45,12 +45,12 @@ http_interactions:
       vary:
       - Accept-Enc<METRICS_API_USERNAME>ng
       date:
-      - Tue, 08 Apr 2014 10:03:37 GMT
+      - Tue, 08 Apr 2014 13:25:09 GMT
     body:
       encoding: US-ASCII
       string: ! '[{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384,"subscribed":false},{"id":"5343be8b0876eb6e19c59ba9","name":"Internal
         outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768,"subscribed":false},{"id":"5343be8b0876eb6e19c59baa","name":"To
         discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152,"subscribed":false},{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688,"subscribed":false}]'
     http_version: '1.1'
-  recorded_at: Tue, 08 Apr 2014 10:03:40 GMT
+  recorded_at: Mon, 31 Mar 2014 23:00:09 GMT
 recorded_with: VCR 2.8.0

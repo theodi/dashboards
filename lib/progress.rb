@@ -81,8 +81,9 @@ class Progress
       end
     end
     progress = complete.to_f / total.to_f
+    no_checklist = progress.nan?
     progress = 0 if progress.nan?
-    {title: card.name, progress: progress}
+    {title: card.name, progress: progress, no_checklist: no_checklist}
   end
 
 end

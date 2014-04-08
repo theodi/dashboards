@@ -56,6 +56,15 @@ $meter-background:  darken($background-color, 15%);
       float: left;
     }
 
+    .missing {
+      font-size: 12px;
+      width: 20%;
+      color: red !important;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+    }
+
     progress {
       width: 20%;
       -webkit-appearance: none;
