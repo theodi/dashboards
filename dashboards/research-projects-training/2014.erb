@@ -1,30 +1,33 @@
 <script type='text/javascript'>
 $(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [180, 140]
-  Dashing.numColumns = 6
-  // Disable the layout drag
+  Dashing.setSize(16,3) // rows, cols
 });
 </script>
 <div class="gridster" id="research">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Commercial-research" data-view="NumberWithTarget" data-unordered="true" data-title="Commercial research" id="tile-1"></div>
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div style='text-align: center'>Commercial</div>
     </li>
-    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Commercial-training" data-view="NumberWithTarget" data-unordered="true" data-title="Commercial training" id="tile-2"></div>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Commercial-research" data-view="NumberWithTarget" data-unordered="true" data-title="Research" id="tile-1"></div>
     </li>
-    <li data-row="1" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Commercial-projects" data-view="NumberWithTarget" data-unordered="true" data-title="Commercial projects" id="tile-3"></div>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Commercial-training" data-view="NumberWithTarget" data-unordered="true" data-title="Training" id="tile-2"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Commercial-projects" data-view="NumberWithTarget" data-unordered="true" data-title="Projects" id="tile-3"></div>
     </li>
 
-    <li data-row="3" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Non-commercial-research" data-view="NumberWithTarget" data-unordered="true" data-title="Non-commercial research" id="tile-10"></div>
+    <li data-row="8" data-col="1" data-sizex="3" data-sizey="1">
+      <div style='text-align: center'>Non-Commercial</div>
     </li>
-    <li data-row="3" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Non-commercial-training" data-view="NumberWithTarget" data-unordered="true" data-title="Non-commercial training" id="tile-11"></div>
+    <li data-row="9" data-col="1" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Non-commercial-research" data-view="NumberWithTarget" data-unordered="true" data-title="Research" id="tile-10"></div>
     </li>
-    <li data-row="3" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Non-commercial-projects" data-view="NumberWithTarget" data-unordered="true" data-title="Non-commercial projects" id="tile-12"></div>
+    <li data-row="9" data-col="2" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Non-commercial-training" data-view="NumberWithTarget" data-unordered="true" data-title="Training" id="tile-11"></div>
+    </li>
+    <li data-row="9" data-col="3" data-sizex="1" data-sizey="6">
+      <div data-id="2014-Non-commercial-projects" data-view="NumberWithTarget" data-unordered="true" data-title="Projects" id="tile-12"></div>
     </li>
 </div>

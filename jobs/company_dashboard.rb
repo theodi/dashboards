@@ -20,17 +20,17 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2013-q3-progress', min: 0, max: 100, value: progress[:q3]
   send_event '2013-q4-progress', min: 0, max: 100, value: progress[:q4]
 end
-  
+
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 Company
   send_event '2014-Reach', current: CompanyDashboard.reach(2014), link: "/reach/2014"
   send_event '2014-Value', current: CompanyDashboard.value(2014), prefix: "£"
-  send_metric_with_targets '2014-commercial-bookings',     CompanyDashboard.commercial_bookings(2014),    link: "/research-projects-training/2014"
-  send_metric_with_targets '2014-non-commercial-bookings', CompanyDashboard.noncommercial_bookings(2014), link: "/research-projects-training/2014"
-  send_metric_with_targets '2014-grant-funding',           CompanyDashboard.grant_funding(2014)
+  send_metric_with_targets '2014-commercial-bookings',     CompanyDashboard.commercial_bookings(2014),    link: "/research-projects-training/2014", prefix: "£"
+  send_metric_with_targets '2014-non-commercial-bookings', CompanyDashboard.noncommercial_bookings(2014), link: "/research-projects-training/2014", prefix: "£"
+  send_metric_with_targets '2014-grant-funding',           CompanyDashboard.grant_funding(2014),          prefix: "£"
   send_metric_with_targets '2014-network-size',            CompanyDashboard.network_size(2014),           link: "/network/2014"
   data = []
-  CompanyDashboard.bookings_by_sector(2014).each do |k, v| 
+  CompanyDashboard.bookings_by_sector(2014).each do |k, v|
     data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] }
   end
   send_event '2014-revenue-by-sector', value: data
@@ -43,6 +43,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2014-Active-reach',  current:       CompanyDashboard.active_reach(2014)
   send_event '2014-Passive-reach', current:       CompanyDashboard.passive_reach(2014)
   send_event '2014-Articles',      current:       CompanyDashboard.articles(2014)
+  send_event '2014-Events',        current:       CompanyDashboard.events_hosted(2014)
   send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 end
 
@@ -54,26 +55,28 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_metric_with_targets '2014-Supporters',        CompanyDashboard.network_size(2014, [:supporters])
   send_metric_with_targets '2014-Nodes',             CompanyDashboard.network_size(2014, [:nodes])
   send_metric_with_targets '2014-Startups',          CompanyDashboard.network_size(2014, [:startups])
-  send_event               '2014-Pipeline', current: CommercialDashboard.weighted
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 Research, Projects & Training board
   bookings_by_sector = CompanyDashboard.bookings_by_sector(2014)
-  send_metric_with_targets '2014-Commercial-research',     bookings_by_sector['research']['commercial']
-  send_metric_with_targets '2014-Commercial-training',     bookings_by_sector['training']['commercial']
-  send_metric_with_targets '2014-Commercial-projects',     bookings_by_sector['projects']['commercial']
-  send_metric_with_targets '2014-Non-commercial-research', bookings_by_sector['research']['non_commercial']
-  send_metric_with_targets '2014-Non-commercial-training', bookings_by_sector['training']['non_commercial']
-  send_metric_with_targets '2014-Non-commercial-projects', bookings_by_sector['projects']['non_commercial']
+  send_metric_with_targets '2014-Commercial-research',     bookings_by_sector['research']['commercial'], prefix: "£"
+  send_metric_with_targets '2014-Commercial-training',     bookings_by_sector['training']['commercial'], prefix: "£"
+  send_metric_with_targets '2014-Commercial-projects',     bookings_by_sector['projects']['commercial'], prefix: "£"
+  send_metric_with_targets '2014-Non-commercial-research', bookings_by_sector['research']['non_commercial'], prefix: "£"
+  send_metric_with_targets '2014-Non-commercial-training', bookings_by_sector['training']['non_commercial'], prefix: "£"
+  send_metric_with_targets '2014-Non-commercial-projects', bookings_by_sector['projects']['non_commercial'], prefix: "£"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 OpExs
-  send_metric_with_targets '2014-Headcount',   CompanyDashboard.headcount(2014)
-  send_metric_with_targets '2014-EBITDA',      CompanyDashboard.ebitda(2014)
-  send_metric_with_targets '2014-Total-Costs', CompanyDashboard.total_costs(2014)
-  send_event '2014-Burn',  current:            CompanyDashboard.burn(2014)
+  send_metric_with_targets '2014-Income',      CompanyDashboard.income(2014),  prefix: "£"
+  send_event '2014-Headcount',        current: CompanyDashboard.headcount(2014)['actual']
+  send_event '2014-EBITDA-YTD',       current: CompanyDashboard.ebitda(2014)['actual'], prefix: "£"
+  send_event '2014-EBITDA',           current: CompanyDashboard.ebitda(2014)['latest'], prefix: "£"
+  send_metric_with_targets '2014-Total-Costs', CompanyDashboard.total_costs(2014), prefix: "£"
+  send_event '2014-Burn',  current:            CompanyDashboard.burn(2014), prefix: "£"
+  send_event '2014-Cash-Reserves',  current:   CompanyDashboard.cash_reserves, prefix: "£"
   pie = CompanyDashboard.fixed_cost_breakdown(2014).map do |key, value|
     {label: key.humanize, value: value}
   end
@@ -87,5 +90,5 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event 'Lifetime-ODCs',           current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
   send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
-  send_event 'Lifetime-income',         current: CompanyDashboard.income
+  send_event 'Lifetime-bookings',       current: CompanyDashboard.cumulative_bookings, prefix: "£"
 end

@@ -2,7 +2,7 @@ require_relative 'metrics_helper'
 
 class Hash
   def sum
-    inject({}) do |acc, values| 
+    inject({}) do |acc, values|
       values[1].each_pair do |k,v|
         acc[k] ||= 0
         acc[k] += v
@@ -31,11 +31,11 @@ class CompanyDashboard < MetricsHelper
   def self.reach(year = nil)
     select_metric('reach', year)['total'] rescue select_metric('reach', year)
   end
-  
+
   def self.active_reach(year = nil)
     select_metric('reach', year)['breakdown']['active']
   end
-  
+
   def self.passive_reach(year = nil)
     select_metric('reach', year)['breakdown']['passive']
   end
@@ -62,11 +62,11 @@ class CompanyDashboard < MetricsHelper
   def self.burn(year = nil)
     select_metric 'burn', year
   end
-  
+
   def self.old_bookings(year = nil)
     select_metric 'bookings', year
   end
-  
+
   def self.commercial_bookings(year = nil)
     bookings(:commercial, year)
   end
@@ -74,10 +74,14 @@ class CompanyDashboard < MetricsHelper
   def self.noncommercial_bookings(year = nil)
     bookings(:non_commercial, year)
   end
-  
+
+  def self.cumulative_bookings
+    select_metric 'bookings',  nil
+  end
+
   def self.bookings type, year = nil
     bookings = bookings_by_sector(year)
-    bookings.inject({}) do |acc, values| 
+    bookings.inject({}) do |acc, values|
       values[1][type.to_s].each_pair do |k,v|
         acc[k] ||= 0
         acc[k] += v
@@ -85,7 +89,7 @@ class CompanyDashboard < MetricsHelper
       acc
     end
   end
-  
+
   def self.bookings_by_sector(year = nil)
     select_metric 'bookings-by-sector', year
   end
@@ -106,6 +110,10 @@ class CompanyDashboard < MetricsHelper
     select_metric 'grant-funding', year
   end
 
+  def self.cash_reserves
+    load_metric('cash-reserves')["value"]
+  end
+
   def self.pipeline(year)
     time   = year_to_time year
     key =  "%s/%s" % [
@@ -117,6 +125,10 @@ class CompanyDashboard < MetricsHelper
 
   def self.articles(year)
     select_metric 'pr-pieces', year
+  end
+
+  def self.events_hosted(year)
+    select_metric 'events-hosted', year
   end
 
   def self.people_trained(year = nil)
@@ -131,5 +143,5 @@ class CompanyDashboard < MetricsHelper
     end
     year ? data.sum : data
   end
-  
+
 end

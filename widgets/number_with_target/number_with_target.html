@@ -13,13 +13,13 @@
 
   <p>
     YTD:
-    <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> /
-    <span data-bind="ytd_target | shortenedNumber | prepend prefix | append suffix"></span>
+    <span data-bind="current | formatNumber prefix | append suffix"></span> /
+    <span data-bind="ytd_target | formatNumber prefix | append suffix"></span>
   </p>
   <p>
     ANN:
-    <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span> /
-    <span data-bind="annual_target | shortenedNumber | prepend prefix | append suffix"></span>
+    <span data-bind="current | formatNumber prefix | append suffix"></span> /
+    <span data-bind="annual_target | formatNumber prefixprefix | append suffix"></span>
   </p>
 
   <p class="more-info" data-bind="moreinfo | raw"></p>

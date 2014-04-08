@@ -1,27 +1,33 @@
 <script type='text/javascript'>
 $(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [150, 140]
-  Dashing.numColumns = 8
-  // Disable the layout drag
+  Dashing.setSize(4,4) // rows, cols
 });
 </script>
 <div class="gridster" id="opex">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
-      <div data-id="2014-Headcount" data-view="NumberWithTarget" data-unordered="true" data-title="Headcount" id="tile-1"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="2014-Income" data-view="NumberWithTarget" data-unordered="true" data-title="Income" id="tile-8"></div>
     </li>
-    <li data-row="1" data-col="4" data-sizex="3" data-sizey="2">
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="2014-Total-Costs" data-view="NumberWithTarget" data-unordered="true" data-title="Total costs" id="tile-3"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="2">
+      <div data-id="2014-Headcount" data-view="Number" data-unordered="true" data-title="Headcount" id="tile-1"></div>
+    </li>
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="2014-EBITDA-YTD" data-view="Number" data-unordered="true" data-title="EBITDA (YTD)" id="tile-11"></div>
+    </li>
+    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="2014-EBITDA" data-view="Number" data-unordered="true" data-title="EBITDA (This Month)" id="tile-10"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="2">
       <div data-id="2014-Burn" data-view="Number" data-unordered="true" data-title="Burn Rate" id="tile-2"></div>
     </li>
-    <li data-row="3" data-col="1" data-sizex="3" data-sizey="2">
-      <div data-id="2014-EBITDA" data-view="NumberWithTarget" data-unordered="true" data-title="EBITDA"></div>
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="2">
+      <div data-id="2014-Cash-Reserves" data-view="Number" data-unordered="true" data-title="Cash Reserves" id="tile-9"></div>
     </li>
-    <li data-row="3" data-col="4" data-sizex="3" data-sizey="2">
-      <div data-id="2014-Total-Costs" data-view="NumberWithTarget" data-unordered="true" data-title="Total costs"></div>
-    </li>
-    <li data-row="1" data-col="4" data-sizex="2" data-sizey="4">
-      <div data-id="2014-Fixed-cost-breakdown" data-view="Pie" data-title="Costs breakdown"></div>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="4">
+      <div data-id="2014-Fixed-cost-breakdown" data-view="Pie" data-title="Costs breakdown" id="tile-12"></div>
     </li>
 
   </ul>
