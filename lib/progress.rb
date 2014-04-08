@@ -7,29 +7,50 @@ end
 
 class Progress
 
-  def self.current_month(board_id)
+  def initialize(board_id)
+    @board = Trello::Board.find(board_id)
+    @discuss_list = discuss_list
+    @done_list = done_list
+  end
+
+  def current_month
     cards = []
-    board = Trello::Board.find(board_id)
-    board.cards.each do |card|
-      if current_month?(card)
+    @board.cards.each do |card|
+      if current_month?(card) && card.closed == false && card.list.id != @discuss_list
         cards << get_progress(card)
       end
     end
     cards
   end
 
-  def self.rest_of_quarter(board_id)
+  def rest_of_quarter
     cards = []
-    board = Trello::Board.find(board_id)
-    board.cards.each do |card|
+    @board.cards.each do |card|
       unless current_month?(card)
-        cards << get_progress(card)
+        cards << get_progress(card) if (card.list.id != @done_list && card.list.id != @discuss_list)
       end
     end
     cards
   end
 
-  def self.get_progress(card)
+  def discuss_list
+    get_list("to discuss")
+  end
+
+  def done_list
+    get_list("done")
+  end
+
+  def get_list(name)
+    @board.lists.select { |l| l.name.downcase == name.downcase }.first.id
+  end
+
+  def current_month?(card)
+    return false if card.due.nil?
+    card.due.month == DateTime.now.month && card.due.year == DateTime.now.year
+  end
+
+  def get_progress(card)
     progress = []
     total = 0
     complete = 0
@@ -42,11 +63,6 @@ class Progress
     progress = complete.to_f / total.to_f
     progress = 0 if progress.nan?
     {title: card.name, progress: progress}
-  end
-
-  def self.current_month?(card)
-    return false if card.due.nil?
-    card.due.month == DateTime.now.month && card.due.year == DateTime.now.year
   end
 
 end

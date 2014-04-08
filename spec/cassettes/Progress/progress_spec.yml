@@ -1,0 +1,266 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5343be8b0876eb6e19c59ba7/lists?filter=open&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396951396386'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '558'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 10:03:16 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384,"subscribed":false},{"id":"5343be8b0876eb6e19c59ba9","name":"Internal
+        outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768,"subscribed":false},{"id":"5343be8b0876eb6e19c59baa","name":"To
+        discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152,"subscribed":false},{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688,"subscribed":false}]'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 10:03:18 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5343be8b0876eb6e19c59ba7/lists?filter=open&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396951397232'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '558'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 10:03:17 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384,"subscribed":false},{"id":"5343be8b0876eb6e19c59ba9","name":"Internal
+        outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768,"subscribed":false},{"id":"5343be8b0876eb6e19c59baa","name":"To
+        discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152,"subscribed":false},{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688,"subscribed":false}]'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 10:03:19 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/B5MnBDfR?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396951408261'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '730'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 10:03:28 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59ba7","name":"Tech team test board","desc":"","descData":null,"closed":false,"idOrganization":"50ffbc0438d1503436000edc","pinned":false,"url":"https://trello.com/b/B5MnBDfR/tech-team-test-board","shortUrl":"https://trello.com/b/B5MnBDfR","prefs":{"permissionLevel":"org","voting":"disabled","comments":"members","invitations":"members","selfJoin":false,"cardCovers":true,"cardAging":"regular","background":"blue","backgroundColor":"#23719F","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"unknown","canBePublic":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"red":"","orange":"","yellow":"","green":"","blue":"","purple":""}}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 10:03:30 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5343be8b0876eb6e19c59ba7/lists?filter=open&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396951408935'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '558'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 10:03:28 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384,"subscribed":false},{"id":"5343be8b0876eb6e19c59ba9","name":"Internal
+        outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768,"subscribed":false},{"id":"5343be8b0876eb6e19c59baa","name":"To
+        discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152,"subscribed":false},{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688,"subscribed":false}]'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 10:03:31 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5343be8b0876eb6e19c59ba7/lists?filter=open&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396951409991'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '558'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 10:03:29 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384,"subscribed":false},{"id":"5343be8b0876eb6e19c59ba9","name":"Internal
+        outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768,"subscribed":false},{"id":"5343be8b0876eb6e19c59baa","name":"To
+        discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152,"subscribed":false},{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688,"subscribed":false}]'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 10:03:32 GMT
+recorded_with: VCR 2.8.0
