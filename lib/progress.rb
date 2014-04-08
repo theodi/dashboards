@@ -33,6 +33,26 @@ class Progress
     cards
   end
 
+  def to_discuss
+    cards = []
+    @board.cards.each do |card|
+      if card.list.id == @discuss_list
+        cards << get_progress(card)
+      end
+    end
+    cards
+  end
+
+  def done
+    cards = []
+    @board.cards.each do |card|
+      if card.list.id == @done_list
+        cards << get_progress(card)
+      end
+    end
+    cards
+  end
+
   def discuss_list
     get_list("to discuss")
   end

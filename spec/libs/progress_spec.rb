@@ -26,6 +26,18 @@ describe Progress do
     Timecop.return
   end
 
+  it "returns the correct to discuss cards", :vcr do
+    to_discuss = @progress.to_discuss
+    to_discuss.count.should == 1
+    to_discuss[0].should == {:title => "Let's have a chat about this one", :progress => 0.0}
+  end
+
+  it "returns the correct done cards", :vcr do
+    done = @progress.done
+    done.count.should == 1
+    done[0].should == {:title => "We've done this one", :progress => 1.0}
+  end
+
   it "returns the correct ID of the 'to discuss' list", :vcr do
     @progress.discuss_list.should == "5343be8b0876eb6e19c59baa"
   end
