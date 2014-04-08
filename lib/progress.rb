@@ -18,6 +18,17 @@ class Progress
     cards
   end
 
+  def self.rest_of_quarter(board_id)
+    cards = []
+    board = Trello::Board.find(board_id)
+    board.cards.each do |card|
+      unless current_month?(card)
+        cards << get_progress(card)
+      end
+    end
+    cards
+  end
+
   def self.get_progress(card)
     progress = []
     total = 0
@@ -29,6 +40,7 @@ class Progress
       end
     end
     progress = complete.to_f / total.to_f
+    progress = 0 if progress.nan?
     {title: card.name, progress: progress}
   end
 
