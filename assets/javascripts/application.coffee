@@ -47,3 +47,10 @@ Dashing.on 'ready', ->
       str += prefix
     str += num
     str
+
+Dashing.setSize = (rows, cols) ->
+  Dashing.widget_margins = [5, 5]
+  Dashing.numColumns = cols
+  total_width = 1280 - (Dashing.widget_margins[0] * 2 * Dashing.numColumns)
+  total_height = 720.0 - 86.0 #header height
+  Dashing.widget_base_dimensions ||= [total_width/cols, total_height/rows]

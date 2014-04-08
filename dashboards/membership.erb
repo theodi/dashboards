@@ -1,35 +1,32 @@
 <script type='text/javascript'>
 $(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [150, 140]
-  Dashing.numColumns = 8
-  // Disable the layout drag
+  Dashing.setSize(4,4) // rows, cols
 });
 </script>
 <div class="gridster" id="membership">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="4" data-sizey="2">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="total-members" data-view="Number" data-unordered="true" data-title="Total Members" id="total-members"></div>
     </li>
-    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="sponsor-members" data-view="Number" data-unordered="true" data-title="Sponsors" id="sponsor-members" class="by-level"></div>
     </li>
-    <li data-row="3" data-col="3" data-sizex="2" data-sizey="1">
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="partner-members" data-view="Number" data-unordered="true" data-title="Partners" id="partner-members" class="by-level"></div>
     </li>
-    <li data-row="4" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="member-members" data-view="Number" data-unordered="true" data-title="Members" id="member-members" class="by-level"></div>
     </li>
-    <li data-row="4" data-col="3" data-sizex="2" data-sizey="1">
+    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="supporter-members" data-view="Number" data-unordered="true" data-title="Supporters" id="supporter-members" class="by-level"></div>
     </li>
-    <li data-row="1" data-col="4" data-sizex="4" data-sizey="2">
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
       <div data-id="renewals" data-view="Multilist" data-unordered="true" data-title="Renewals Due" id="renewals"></div>
     </li>
-    <li data-row="2" data-col="2" data-sizex="2" data-sizey="2">
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="2">
       <div data-id="income" data-view="Number" data-unordered="true" data-title="Income ratio" id="income"></div>
     </li>
-    <li data-row="2" data-col="4" data-sizex="2" data-sizey="2">
+    <li data-row="3" data-col="4" data-sizex="1" data-sizey="2">
       <div data-id="ranking" data-view="Number" data-unordered="true" data-title="Ranking against whitespace" id="ranking"></div>
     </li>
   </ul>
