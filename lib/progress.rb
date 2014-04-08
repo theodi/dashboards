@@ -62,7 +62,7 @@ class Progress
   end
 
   def get_list(name)
-    @board.lists.select { |l| l.name.downcase == name.downcase }.first.id
+    @board.lists.select { |l| l.name.downcase == name.downcase }.first.id rescue nil
   end
 
   def current_month?(card)
