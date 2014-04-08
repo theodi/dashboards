@@ -54,6 +54,10 @@ before '/progress/*' do
   else
     @year = p[0]
     @quarter = p[1]
-    @dashboard = "progress"
+    if @quarter == current_quarter
+      @dashboard = "current_progress"
+    else
+      @dashboard = "progress"
+    end
   end
 end
