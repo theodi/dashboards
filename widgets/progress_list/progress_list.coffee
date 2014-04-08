@@ -7,7 +7,7 @@ class Dashing.ProgressList extends Dashing.Widget
        plugins: [ListPagination({ innerWindow: 10 })]
     )
 
-    @pages = Math.round(@list.items.length / 10)
+    @pages = Math.ceil(@list.items.length / 10)
 
     autopaginator = setInterval(@nextPage, 5000)
 
