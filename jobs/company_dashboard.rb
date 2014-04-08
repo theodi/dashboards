@@ -49,6 +49,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2014-Active-reach',  current:       CompanyDashboard.active_reach(2014)
   send_event '2014-Passive-reach', current:       CompanyDashboard.passive_reach(2014)
   send_event '2014-Articles',      current:       CompanyDashboard.articles(2014)
+  send_event '2014-Events',        current:       CompanyDashboard.events_hosted(2014)
   send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 end
 
@@ -75,10 +76,13 @@ end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2014 OpExs
-  send_metric_with_targets '2014-Headcount',   CompanyDashboard.headcount(2014)
-  send_metric_with_targets '2014-EBITDA',      CompanyDashboard.ebitda(2014), prefix: "£"
+  send_metric_with_targets '2014-Income',      CompanyDashboard.income(2014),  prefix: "£"
+  send_event '2014-Headcount',        current: CompanyDashboard.headcount(2014)['actual']
+  send_event '2014-EBITDA-YTD',       current: CompanyDashboard.ebitda(2014)['actual'], prefix: "£"
+  send_event '2014-EBITDA',           current: CompanyDashboard.ebitda(2014)['latest'], prefix: "£"
   send_metric_with_targets '2014-Total-Costs', CompanyDashboard.total_costs(2014), prefix: "£"
   send_event '2014-Burn',  current:            CompanyDashboard.burn(2014), prefix: "£"
+  send_event '2014-Cash-Reserves',  current:   CompanyDashboard.cash_reserves, prefix: "£"
   pie = CompanyDashboard.fixed_cost_breakdown(2014).map do |key, value|
     {label: key.humanize, value: value}
   end
@@ -92,5 +96,5 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event 'Lifetime-ODCs',           current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
   send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
-  send_event 'Lifetime-income',         current: CompanyDashboard.income,  prefix: "£"
+  send_event 'Lifetime-bookings',       current: CompanyDashboard.cumulative_bookings, prefix: "£"
 end

@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-bookings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 07 Apr 2014 12:52:29 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '115'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"53429c87ef922c9c5500389b","name":"cumulative-bookings","time":"2014-04-07T12:39:35+00:00","value":686000.0}'
+    http_version: '1.1'
+  recorded_at: Mon, 07 Apr 2014 12:52:29 GMT
+recorded_with: VCR 2.8.0
