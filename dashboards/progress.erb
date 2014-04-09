@@ -21,13 +21,13 @@ $(function() {
       <div data-id="<%= @year %>-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Q1 progress" id="q1-progress"></div>
     </li>
     <li data-row="1" data-col="4" data-sizex="4" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="Outstanding Tasks" id="<%= @year %>-<%= @quarter %>-rest-of-quarter"></div>
+      <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="Outstanding Tasks" id="<%= @year %>-<%= @quarter %>-rest-of-quarter" class="rest-of-quarter"></div>
     </li>
     <li data-row="1" data-col="8" data-sizex="2" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="ProgressList" data-title="To discuss" id="<%= @year %>-<%= @quarter %>-discuss"></div>
+      <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="ProgressList" data-title="To discuss" id="<%= @year %>-<%= @quarter %>-discuss" class="discuss"></div>
     </li>
     <li data-row="1" data-col="10" data-sizex="2" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="ProgressList" data-title="Done" id="<%= @year %>-<%= @quarter %>-done"></div>
+      <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="ProgressList" data-title="Done" id="<%= @year %>-<%= @quarter %>-done" class="done"></div>
     </li>
   </ul>
 </div>
