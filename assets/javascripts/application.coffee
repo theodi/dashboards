@@ -75,3 +75,13 @@ Dashing.setSize = (rows, cols) ->
   total_width = 1280 - (Dashing.widget_margins[0] * 2 * Dashing.numColumns)
   total_height = 720.0 - 86.0 #header height
   Dashing.widget_base_dimensions ||= [total_width/cols, total_height/rows]
+
+Dashing.setCurrency = (currency) ->
+  Dashing.currentCurrency = currency
+  Dashing.refreshAllWidgets()
+
+Dashing.refreshAllWidgets = () ->
+  keys = Object.keys(Dashing.widgets)
+  for key in keys
+    Dashing.widgets[key][0]._rendered = false
+    Dashing.widgets[key][0].render()
