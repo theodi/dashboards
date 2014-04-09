@@ -19,6 +19,15 @@ configure do
      # This method is run before accessing any resource.
     end
 
+    def get_navigation(item)
+      title = I18n.t item.gsub('/','.')
+      if title.class == Hash
+        I18n.t item.gsub('/','.') + ".main"
+      else
+        title
+      end
+    end
+
     def page_title
       I18n.t params["splat"][0].gsub('/','.')
     end
@@ -50,7 +59,11 @@ end
 before '/progress/*' do
   p = params["splat"].first.split("/")
   if p.count == 1
-    redirect to "/progress/#{p.first}/#{current_quarter}"
+    if p.first == Time.now.year.to_s
+      redirect to "/progress/#{p.first}/#{current_quarter}"
+    else
+      redirect to "/progress/#{p.first}/q1"
+    end
   else
     @year = p[0]
     @quarter = p[1]

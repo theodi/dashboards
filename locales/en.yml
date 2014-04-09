@@ -17,11 +17,13 @@ en:
   tech: Tech Team
   progress:
     "2013":
+      main: Progress 2013
       q1: Progress 2013 Q1
       q2: Progress 2013 Q2
       q3: Progress 2013 Q3
       q4: Progress 2013 Q4
     "2014":
+      main: Progress 2014
       q1: Progress 2014 Q1
       q2: Progress 2014 Q2
       q3: Progress 2014 Q3
