@@ -15,33 +15,37 @@ $meter-background:  darken($background-color, 15%);
 
   background-color: $background-color;
   padding: 0 12px;
-  
+
   h1 {
     margin: 0;
   }
-  
+
   progress[value] {
     -webkit-appearance: none;
      appearance: none;
   }
-  
+
   progress[value]::-webkit-progress-bar {
-    background-color: #eee;
+    background: rgba(153, 153, 153, 0.5);
+    padding: 2px;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.5);
   }
-  
+
   progress[value]::-webkit-progress-value {
-    background-color: $meter-background;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
   }
-  
+
   .meter-container {
     width: 280px;
     margin: 0 auto;
     position: relative;
-    
+
     progress {
       width: 170px;
     }
-  
+
     .percentage {
       text-align: left;
       position: absolute;
@@ -51,9 +55,9 @@ $meter-background:  darken($background-color, 15%);
       color: #eee;
       font-size: 15px;
     }
-  
+
   }
-  
+
   .title {
     color: $title-color;
   }

@@ -575,3 +575,39 @@ h3 {
   }
 
 }
+
+#progress {
+
+  #q1-progress {
+    background-color: $odiColour3;
+  }
+
+  #q2-progress {
+    background-color: $odiColour2;
+  }
+
+  #q3-progress {
+    background-color: $odiColour1;
+  }
+
+  #q4-progress {
+    background-color: $odiColour10;
+  }
+
+  .this-month {
+    background-color: $odiColour7;
+  }
+
+  .rest-of-quarter {
+    background-color: $odiColour6;
+  }
+
+  .discuss {
+    background-color: $odiColour9;
+  }
+
+  .done {
+    background-color: $odiColour8;
+  }
+
+}
