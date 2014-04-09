@@ -34,11 +34,11 @@ Dashing.on 'ready', ->
     negative = num < 0.0
     num = Math.abs(num)
     if num >= 1000000000
-      num = (num / 1000000000).toFixed(1) + 'B'
+      num = (num / 1000000000) + 'B'
     else if num >= 1000000
-      num = (num / 1000000).toFixed(1) + 'M'
+      num = (num / 1000000) + 'M'
     else if num >= 1000
-      num = (num / 1000).toFixed(1) + 'K'
+      num = (num / 1000) + 'K'
     if negative
       str = "-"
     else
