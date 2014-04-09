@@ -15,16 +15,16 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2013-Bookings', current: CompanyDashboard.old_bookings(2013), prefix: "£" # derprecated metric
   # Trello gubbins
   progress_2013 = CompanyDashboard.progress(2013)
-  send_event '2013-q1-progress', min: 0, max: 100, value: progress_2013[:q1]
-  send_event '2013-q2-progress', min: 0, max: 100, value: progress_2013[:q2]
-  send_event '2013-q3-progress', min: 0, max: 100, value: progress_2013[:q3]
-  send_event '2013-q4-progress', min: 0, max: 100, value: progress_2013[:q4]
+  send_event '2013-q1-progress', min: 0, max: 100, value: progress_2013[:q1], link: "/progress/2013/q1"
+  send_event '2013-q2-progress', min: 0, max: 100, value: progress_2013[:q2], link: "/progress/2013/q2"
+  send_event '2013-q3-progress', min: 0, max: 100, value: progress_2013[:q3], link: "/progress/2013/q3"
+  send_event '2013-q4-progress', min: 0, max: 100, value: progress_2013[:q4], link: "/progress/2013/q4"
 
   progress_2014 = CompanyDashboard.progress(2014)
-  send_event '2014-q1-progress', min: 0, max: 100, value: progress_2014[:q1]
-  send_event '2014-q2-progress', min: 0, max: 100, value: progress_2014[:q2]
-  send_event '2014-q3-progress', min: 0, max: 100, value: progress_2014[:q3]
-  send_event '2014-q4-progress', min: 0, max: 100, value: progress_2014[:q4]
+  send_event '2014-q1-progress', min: 0, max: 100, value: progress_2014[:q1], link: "/progress/2014/q1"
+  send_event '2014-q2-progress', min: 0, max: 100, value: progress_2014[:q2], link: "/progress/2014/q2"
+  send_event '2014-q3-progress', min: 0, max: 100, value: progress_2014[:q3], link: "/progress/2014/q3"
+  send_event '2014-q4-progress', min: 0, max: 100, value: progress_2014[:q4], link: "/progress/2014/q4"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
