@@ -7,10 +7,29 @@
 
 console.log("Yeah! The dashboard has started!")
 
+convertCurrency = (currency, value) ->
+  # Assume currency is "GBP" for now
+  if Dashing.currentCurrency == "EUR"
+    value * 1.21365
+  else if Dashing.currentCurrency == "USD"
+    value * 1.67459
+  else
+    value
+
+currencySymbol = (currency) ->
+  switch(currency)
+    when "GBP"
+      "£"
+    when "EUR"
+      "€"
+    when "USD"
+      "$"
+
 Dashing.on 'ready', ->
   Dashing.widget_margins ||= [5, 5]
   Dashing.widget_base_dimensions ||= [300, 360]
   Dashing.numColumns ||= 4
+  Dashing.currentCurrency ||= "GBP"
 
   contentWidth = (Dashing.widget_base_dimensions[0] + Dashing.widget_margins[0] * 2) * Dashing.numColumns
 
@@ -28,8 +47,10 @@ Dashing.on 'ready', ->
   # Let's replace shortenedNumber
   # Dashing's version has bad negative number handling
   # and shoves the prefix in front of the minus sign
-  Batman.Filters.formatNumber = (num, prefix) ->
+  Batman.Filters.formatNumber = (num, currency) ->
     return num if isNaN(num)
+    if currency
+      num = convertCurrency(currency, num)
     num = num.toPrecision(3)
     negative = num < 0.0
     num = Math.abs(num)
@@ -43,8 +64,8 @@ Dashing.on 'ready', ->
       str = "-"
     else
       str = ""
-    if prefix
-      str += prefix
+    if currency
+      str += currencySymbol Dashing.currentCurrency
     str += num
     str
 
