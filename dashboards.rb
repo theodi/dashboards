@@ -54,7 +54,7 @@ before '/progress/*' do
   else
     @year = p[0]
     @quarter = p[1]
-    if @quarter == current_quarter
+    if @quarter == current_quarter && @year == Time.now.year.to_s
       @dashboard = "current_progress"
     else
       @dashboard = "progress"
