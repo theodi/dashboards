@@ -19,6 +19,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   background-color: $background-color;
 
   .number-with-target {
+    margin-top: 10px;
     position: relative;
     height: 130px;
   }
@@ -54,16 +55,16 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .ytd-bar {
-    height: 70px;
+    height: 100px;
     border-right: 5px solid black;
     background: transparent;
     position: absolute;
-    top: 30px;
+    top: 0px;
     z-index: 2;
 
     .label {
       position: relative;
-      top: -27px;
+      top: 3px;
       right: -5px;
       text-align: right;
 
