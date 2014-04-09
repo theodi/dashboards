@@ -47,7 +47,7 @@ Dashing.on 'ready', ->
   # Let's replace shortenedNumber
   # Dashing's version has bad negative number handling
   # and shoves the prefix in front of the minus sign
-  Batman.Filters.formatNumber = (num, currency) ->
+  Batman.Filters.numberWithCurrency = (num, currency) ->
     return num if isNaN(num)
     if currency
       num = convertCurrency(currency, num)
