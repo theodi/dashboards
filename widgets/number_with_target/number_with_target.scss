@@ -4,68 +4,104 @@
 $background-color:  #47bbb3;
 $value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);;
-$moreinfo-color:    rgba(255, 255, 255, 0.7);;
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
 // Widget-number-with-target styles
 // ----------------------------------------------------------------------------
 .widget-number-with-target {
 
+  h1.title {
+    font-size: 22px;
+  }
+
   background-color: $background-color;
-  padding: 15px 12px !important;
+
+  .number-with-target {
+    position: relative;
+    height: 130px;
+  }
 
   .title {
     color: $title-color;
     font-size: 15px;
   }
-  
-  .number {
-    text-align: center;
-  }
 
-  .value {
-    color: $value-color;
-    font-size: 30px;
-    line-height: 15px;
-  }
+  .annual-bar {
+    height: 40px;
+    width: 100%;
+    margin: auto 0px;
+    background: rgba(153, 153, 153, 0.5);
+    position: absolute;
+    top: 60px;
+    z-index: 0;
+    border-radius: 3px 0px 3px 3px;
 
-  .change-rate {
-    font-weight: 500;
-    font-size: 30px;
-    color: $value-color;
-    line-height: 40px;
-    vertical-align: middle;
-    
-    &.hidden {
-      display:none;
+    .label {
+      position: absolute;
+      top: -24px;
+      right: 0px;
+
+      span {
+        background: rgba(153, 153, 153, 0.5);
+        padding: 5px 5px 0px 5px;
+        border-radius: 3px 3px 0px 0px;
+      }
+
     }
+
   }
 
-  .more-info {
-    color: $moreinfo-color;
-  }
+  .ytd-bar {
+    height: 70px;
+    border-right: 5px solid black;
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    z-index: 2;
 
-  .updated-at {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 12px;
-  }
+    .label {
+      position: relative;
+      top: -27px;
+      right: -5px;
+      text-align: right;
 
-}
+      span {
+        background-color: black;
+        padding: 5px;
+        border-radius: 3px;
+      }
 
-.widget-number-with-target {
-  
-  &.issues-graph {
-    background-color: #dc5945;
-    
-    .title {
-      font-size: 60px;
     }
-    
-    .value {
-      font-size: 100px;
-      line-height: 80px;
+
+  }
+
+  .value-bar {
+    height: 40px;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    border-radius: 3px;
+  }
+
+  .value-label {
+    z-index: 3;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+
+    span {
+      background-color: white;
+      padding: 5px;
+      border-radius: 3px;
     }
+
   }
 
 }
