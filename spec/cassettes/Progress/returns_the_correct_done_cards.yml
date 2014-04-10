@@ -1,0 +1,438 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5343be8b0876eb6e19c59ba7/cards?filter=open&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963489709'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      etag:
+      - ! '"-1724040176"'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:49 GMT
+      content-enc<METRICS_API_USERNAME>ng:
+      - gzip
+      transfer-enc<METRICS_API_USERNAME>ng:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA81X227bRhD9FZUveRGlvXJ3+eamQVvAiYHabpoaftgbLSIU
+        aZArGU7gf++sZNpMKkdR5EsAPiyJOeRwzjmzs2efk9IlecIpoxZjzhFiheGK
+        K4Ww1y4ZJ3bm7cc/g58fBx18l+RnEfO6f3oHZpQyZawgGXG+oMggAHcRAyG2
+        mV9WHpY34wfQ3Ge8EE44rCxnBouN6HPIp2o6DzkXuur8OHEQcqi7cGBDuSzD
+        NYQThFmK4JInSOUU5ZROqEL/whud7yxE3K5+00Eneb2oqjEk9Wuj274WxkuD
+        pMi8yXxMSBkdEyrdYdmFh2PkKuatnxvfdn83IeZ5dh6fHc+aFoA4rg9C0HY2
+        93V43Sx922cw1/VCV6tH9xF3/1nreSzFUe1HNuY5Ti4bICPjnHKoVHz9YVl/
+        hJDT3+XBIrQMQox2F5Gyz8myWXGHxsmy9FdlfbFO8jbH2290C9PZtjSDR0Vz
+        YRYXn9Y1u5MCvIkNb1d8RhQZR7Ji4uuP6bsfWd/HqrflZSib+p7BhR+QhtEJ
+        xjlCcE0QAtJutkaMe0VVQE4UaK8pLDjyllFOnPOSWJWcD/hZU1Np46vb9aqK
+        p20FH5uFcNnl02lofVU1E/ipqZ0OKruhVIvtwClOm9qnKwLXTrj3nkRYCppx
+        RCWlRVGojd77AQMQmXM1UfynMADZ1wAnV83KAF3vAEwxEvhLC5yEg3b5R+mf
+        1gJkowXQj1ogFuFmsH5I1hwXXiCKSKy4dZzaPWU9qNZusu6BU5KGqyZd0/KV
+        rgmmRlAH20nmHJGuMDvsKZlEzEtrPCWWEWEke8RdAeNJhrJnMIXaZgq6rykO
+        6ibMfLttZzj6x9X12+v3L2EL/NS2yDARFGVUGwYNFP5+324/qNZutuiBU5rq
+        NTEbOn4hkVECS6aVERZb7Fj2KB0f05yQHKsJVOFnEHe2r7jfQcPv+f7lW12/
+        O/20QFm7eFp5o2fu+vuJeFCT3UTcA6dZWkNr7zP6X3v3MF1pbEyR2YL7QuBH
+        G1vgEhNC5TOIWG8TMdtXxIc+vOpGM730Iw1y1mGkTbMIozAruxHMhN/o2vbN
+        ovpwXf71tLKmLzPMwFAAPdARjGBGJ0was2fXHlRrN8H3wClLYapIuzSSleo0
+        kpWuyEojWXGA/9oEksLhAhXUEmKdNFgXO8w4UjBOPfUFAzDFROFdzs1SOaep
+        4EJzJRHP+G5ocK4jDjHGVaGlXh34vx9tkJYm04gzaygp6OZv77yBxZNdjsmE
+        CPX43i80LuBg6LnCijLOyNYNjO/r/ff+FdjegXC+x+7Hb46u2nftyUsc39lT
+        211myrrMogysTqxAYt8hbVCt3ezeA6c8vfIpOD3yM3D4+X8QPD2ZGxMAAA==
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:52 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343be8b0876eb6e19c59ba8?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963490352'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '124'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:50 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:53 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343be8b0876eb6e19c59ba8?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963490973'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '124'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:50 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59ba8","name":"External outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":16384}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:54 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343be8b0876eb6e19c59ba9?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963491614'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '124'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:51 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59ba9","name":"Internal outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:54 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343be8b0876eb6e19c59ba9?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963492263'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '124'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:52 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59ba9","name":"Internal outcomes","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":32768}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:55 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343be8b0876eb6e19c59baa?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963492914'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '117'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:52 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343be8b0876eb6e19c59baa","name":"To discuss","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":49152}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:56 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5343befa1f417e5919345429?key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963493612'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '112'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:53 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"5343befa1f417e5919345429","name":"Done","closed":false,"idBoard":"5343be8b0876eb6e19c59ba7","pos":114688}'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:56 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/cards/5343c18382c0f3c22cd8b1af/checklists?filter=all&key=<TRELLO_DEV_KEY>&token=<TRELLO_MEMBER_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      user-agent:
+      - Ruby
+      accept-enc<METRICS_API_USERNAME>ng:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-powered-by:
+      - Express
+      cache-control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=15768000
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - DENY
+      x-server-time:
+      - '1396963494277'
+      expires:
+      - Thu, 01 Jan 1970 00:00:00
+      content-type:
+      - application/json
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE
+      content-length:
+      - '532'
+      vary:
+      - Accept-Enc<METRICS_API_USERNAME>ng
+      date:
+      - Tue, 08 Apr 2014 13:24:54 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"5343c1869cd6c062482c7079","name":"Checklist","idBoard":"5343be8b0876eb6e19c59ba7","idCard":"5343c18382c0f3c22cd8b1af","pos":16384,"checkItems":[{"state":"complete","id":"5343c187453e3ef42cd31291","name":"Do","nameData":null,"pos":16776},{"state":"complete","id":"5343c189dda3757a59805651","name":"All","nameData":null,"pos":33411},{"state":"complete","id":"5343c18a1bd2d04459fa8aad","name":"The","nameData":null,"pos":50670},{"state":"complete","id":"5343c18b0a8b6a054cb32f31","name":"Things","nameData":null,"pos":67689}]}]'
+    http_version: '1.1'
+  recorded_at: Tue, 08 Apr 2014 13:24:57 GMT
+recorded_with: VCR 2.8.0
