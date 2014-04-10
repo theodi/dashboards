@@ -579,19 +579,19 @@ h3 {
 #progress {
 
   #q1-progress {
-    background-color: $odiColour3;
+    background-color: $odiColour5;
   }
 
   #q2-progress {
-    background-color: $odiColour7;
-  }
-
-  #q3-progress {
     background-color: $odiColour2;
   }
 
+  #q3-progress {
+    background-color: $odiColour7;
+  }
+
   #q4-progress {
-    background-color: $odiColour10;
+    background-color: $odiColour3;
   }
 
   .this-month {
@@ -599,11 +599,11 @@ h3 {
   }
 
   .rest-of-quarter {
-    background-color: $odiColour7;
+    background-color: $odiColour5;
   }
 
   .discuss {
-    background-color: $odiColour10;
+    background-color: $odiColour7;
   }
 
   .done {
