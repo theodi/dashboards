@@ -40,14 +40,18 @@ describe CompanyDashboard do
     CompanyDashboard.value.should == 16924307
   end
 
+  it "should show the correct cash reserves", :vcr do
+    CompanyDashboard.cash_reserves.should == 1015006.28
+  end
+
   it "should show the correct kpi percentage", :vcr do
     CompanyDashboard.kpis(2013).should == 100.0
     CompanyDashboard.kpis(2014).should == 1.0
   end
 
   it "should show the correct grant funding", :vcr do
-    CompanyDashboard.grant_funding(2014).should == { 
-      "actual" => 0.0, 
+    CompanyDashboard.grant_funding(2014).should == {
+      "actual" => 0.0,
       "annual_target" => 3354617.6046176003,
       "ytd_target" => 373917.748917748
     }
@@ -56,7 +60,7 @@ describe CompanyDashboard do
   it "should show the correct pipeline", :vcr do
     CompanyDashboard.pipeline(2014).should == 228603
   end
-  
+
   it "should get fixed costs", :vcr do
     CompanyDashboard.fixed_cost_breakdown(2014).should == {
       "staff" => 0,
@@ -68,17 +72,62 @@ describe CompanyDashboard do
       "software" => 0,
     }
   end
-  
+
   it "should get number of articles published", :vcr do
     CompanyDashboard.articles(2014).should == 0
   end
-  
+
+  it "should get number of events hosted", :vcr do
+    CompanyDashboard.events_hosted(2014).should == 2
+  end
+
   it "should get number of people trained", :vcr do
     CompanyDashboard.people_trained(2014).should == {
-      'actual' => 0,
+      'actual' => 16,
       'annual_target' => 396,
-      'ytd_target' => 51
+      'ytd_target' => 93
     }
+    CompanyDashboard.people_trained.should == 234
+  end
+
+  it "should get network size", :vcr do
+    CompanyDashboard.network_size(2014).should == {
+      "actual" => 5,
+      "annual_target" => 75,
+      "ytd_target" => 13
+    }
+    CompanyDashboard.network_size.should == 80
+  end
+
+  it "should get network size for just one level", :vcr do
+    CompanyDashboard.network_size(2014, [:supporters]).should == {
+      "actual" => 17,
+      "annual_target" => 34,
+      "ytd_target" => 6
+    }
+    CompanyDashboard.network_size.should == 80
+  end
+
+  it "should get network size for three levels", :vcr do
+    CompanyDashboard.network_size(2014, [:partners, :supporters, :sponsors]).should == {
+      "actual" => 19,
+      "annual_target" => 49,
+      "ytd_target" => 11
+    }
+    CompanyDashboard.network_size.should == 80
+  end
+
+  it "should get income", :vcr do
+    CompanyDashboard.income(2014).should == {
+      "actual" => 88468.0,
+      "annual_target" => 2935183.33333333,
+      "ytd_target" => 280543.3333333333
+    }
+    CompanyDashboard.income.should == 91123
+  end
+
+  it "should get cumulative bookings value", :vcr do
+    CompanyDashboard.cumulative_bookings.should == 686000
   end
 
   it "should show the correct commercial bookings value", :vcr do
@@ -90,8 +139,8 @@ describe CompanyDashboard do
   end
 
   it "should show the correct non-commercial bookings value", :vcr do
-    CompanyDashboard.noncommercial_bookings(2014).should == { 
-      "actual" => 0.0, 
+    CompanyDashboard.noncommercial_bookings(2014).should == {
+      "actual" => 0.0,
       "annual_target" => 1475980.0,
       "ytd_target" => 89780.0
     }

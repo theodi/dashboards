@@ -1,36 +1,27 @@
 <script type='text/javascript'>
 $(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [180, 140]
-  Dashing.numColumns = 6
-  // Disable the layout drag
+  Dashing.setSize(2,3) // rows, cols
 });
 </script>
-<% content_for(:title) { "Reach" } %>
 <div class="gridster" id="research">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="8" data-sizey="1" id="company-header">
-        <a href="http://theodi.org/"><img src="/assets/companylogo.png" /></a>
-        <h1 class="title">Reach</h1>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="2014-Reach" data-view="Number" data-unordered="true" data-title="Total reach" id="tile-1"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="2014-Active-reach" data-view="Number" data-unordered="true" data-title="Active reach" id="tile-2"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="2014-Passive-reach" data-view="Number" data-unordered="true" data-title="Passive reach" id="tile-3"></div>
     </li>
 
-    <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Reach" data-view="Number" data-unordered="true" data-title="Total Reach" id="tile-1"></div>
-    </li>
-    <li data-row="2" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Active-reach" data-view="Number" data-unordered="true" data-title="Active Reach" id="tile-2"></div>
-    </li>
-    <li data-row="2" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="2014-Passive-reach" data-view="Number" data-unordered="true" data-title="Passive Reach" id="tile-3"></div>
-    </li>
-
-    <li data-row="4" data-col="1" data-sizex="2" data-sizey="2">
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="2014-Articles" data-view="Number" data-unordered="true" data-title="Articles" id="tile-11"></div>
     </li>
-    <li data-row="4" data-col="3" data-sizex="2" data-sizey="2">
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="2014-Events" data-view="Number" data-unordered="true" data-title="Events"></div>
     </li>
-    <li data-row="4" data-col="5" data-sizex="2" data-sizey="2">
-      <div data-id="2014-People-trained" data-view="NumberWithTarget" data-unordered="true" data-title="People Trained" id="tile-10"></div>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="2014-People-trained" data-view="NumberWithTarget" data-unordered="true" data-title="People trained" id="tile-10"></div>
     </li>
 </div>

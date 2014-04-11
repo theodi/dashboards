@@ -1,4 +1,7 @@
 require 'github_api'
+require 'dotenv'
+
+Dotenv.load
 
 class GithubDashboard
   
@@ -29,21 +32,25 @@ class GithubDashboard
     # Count up stats across all repositories
     total_pulls = 0
     merged_pulls = 0
-    github.repos.list(user: ENV['GITHUB_ORGANISATION'], :auto_pagination => true) do |repo|
-      if repo.fork
-        r = github.repos.find(ENV['GITHUB_ORGANISATION'], repo.name)
-        open_pulls = github.pulls.list(r[:parent][:owner][:login], r[:parent][:name], state: 'open', :auto_pagination => true)
-        closed_pulls = github.pulls.list(r[:parent][:owner][:login], r[:parent][:name], state: 'closed', :auto_pagination => true)
-        # Total PRs
-        total = 0
-        total += open_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION']}.count rescue 0
-        total += closed_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION']}.count rescue 0
-        total_pulls += total
-        # Merged PRs
-        closed = closed_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION'] && !x[:merged_at].nil?}.count rescue 0
-        merged_pulls += closed
-      end
-    end
+    
+    # ALL THIS CODE IS COMMENTED BECAUSE IT'S JUST TOO MEMORY-INTENSIVE.
+    # WE NEED A BETTER WAY. SEE #106
+    
+    # github.repos.list(user: ENV['GITHUB_ORGANISATION'], :auto_pagination => true) do |repo|
+    #   if repo.fork
+    #     r = github.repos.find(ENV['GITHUB_ORGANISATION'], repo.name)
+    #     open_pulls = github.pulls.list(r[:parent][:owner][:login], r[:parent][:name], state: 'open', :auto_pagination => true)
+    #     closed_pulls = github.pulls.list(r[:parent][:owner][:login], r[:parent][:name], state: 'closed', :auto_pagination => true)
+    #     # Total PRs
+    #     total = 0
+    #     total += open_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION']}.count rescue 0
+    #     total += closed_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION']}.count rescue 0
+    #     total_pulls += total
+    #     # Merged PRs
+    #     closed = closed_pulls.select{|x| x[:head][:repo] && x[:head][:repo][:owner][:login] == ENV['GITHUB_ORGANISATION'] && !x[:merged_at].nil?}.count rescue 0
+    #     merged_pulls += closed
+    #   end
+    # end
     {
       :total_pulls => total_pulls,
       :merged_pulls => merged_pulls

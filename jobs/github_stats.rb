@@ -1,5 +1,5 @@
-SCHEDULER.every '1h', :first_in => 0 do
-  
+SCHEDULER.every '1h', :first_in => Time.now + 10 do
+    
   issues = GithubDashboard.issues
   external_pulls = GithubDashboard.externalpulls
   

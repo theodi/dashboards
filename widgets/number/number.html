@@ -5,8 +5,8 @@
 
   <div class="number">
     <h2 class="value">
-        <span data-bind="current | shortenedNumber | prepend prefix | append suffix"></span>
-        <span class="change-rate"> 
+        <span data-bind="current | numberWithCurrency currency | prepend prefix | append suffix"></span>
+        <span class="change-rate">
           <i data-bind-class="arrow"></i>
         </span>
     </h2>

@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title><%= yield_content(:title) %></title>
+  <title>ODI Dashboards | <%= page_title %></title>
 
   <!-- The javascript and css are managed by sprockets. The files can be found in the /assets folder-->
   <script type="text/javascript" src="/assets/application.js"></script>
   <link rel="stylesheet" href="/assets/application.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="icon" href="http://static.theodi.org/assets/favicon.ico">
 
 </head>
   <body>
     <div id="container">
+      <div id='company-header'>
+        <a href="http://theodi.org/"><img src="/assets/odi_dashboard_logo.svg" /></a>
+        <%= partial :currency %>
+        <h1 class="title">
+          <%= page_title %>
+          <small id='dropdown'>&#x25BC;</small>
+          <%= partial :navigation %>
+        </h1>
+      </div>
       <%= yield %>
     </div>
-  
-    <% if development? %>
-      <div id="saving-instructions">
-        <p>Paste the following at the top of <i><%= params[:dashboard] %>.erb</i></p>
-        <textarea id="gridster-code"></textarea>
-      </div>
-      <a href="#saving-instructions" id="save-gridster">Save this layout</a>
-    <% end %>
   </body>
 </html>

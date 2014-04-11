@@ -1,0 +1,7 @@
+<ul id='nav'>
+  <% navigation_tree.each do |item| %>
+    <li>
+      <a href='/<%= item %>'><%= get_navigation(item) %></a>
+    </li>
+  <% end %>
+</ul>

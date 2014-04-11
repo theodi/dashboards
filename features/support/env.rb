@@ -6,6 +6,7 @@ require 'coveralls'
 Coveralls.wear_merged!
 
 require 'dotenv'
+require 'timecop'
 
 require 'vcr'
 require 'webmock/cucumber'

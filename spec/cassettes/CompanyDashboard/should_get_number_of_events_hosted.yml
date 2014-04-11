@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-events-hosted/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 07 Apr 2014 12:34:53 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '115'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"5342967cef922c9c55003876","name":"current-year-events-hosted","time":"2014-04-07T12:13:48+00:00","value":2}'
+    http_version: '1.1'
+  recorded_at: Mon, 07 Apr 2014 12:34:53 GMT
+recorded_with: VCR 2.8.0

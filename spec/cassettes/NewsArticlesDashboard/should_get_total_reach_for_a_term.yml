@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-press-totals/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 07 Apr 2014 15:15:51 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '225'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"5342b808ef922c9c550038c1","name":"current-year-press-totals","time":"2014-04-07T14:36:56+00:00","value":{"ODI":{"volume":440,"value":1495674,"reach":57628683},"OpenData":{"volume":72,"value":417652,"reach":23181210}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 07 Apr 2014 15:15:51 GMT
+- request:
+    method: get
+    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-press-totals/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Mon, 07 Apr 2014 15:15:51 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '225'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"5342b808ef922c9c550038c1","name":"current-year-press-totals","time":"2014-04-07T14:36:56+00:00","value":{"ODI":{"volume":440,"value":1495674,"reach":57628683},"OpenData":{"volume":72,"value":417652,"reach":23181210}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 07 Apr 2014 15:15:51 GMT
+recorded_with: VCR 2.8.0
