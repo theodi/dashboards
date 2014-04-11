@@ -324,6 +324,14 @@ h3 {
 
 // Custom
 
+.widget h1 {
+  text-transform: lowercase;
+}
+
+.widget h1:first-letter {
+  text-transform: uppercase;
+}
+
 #tech-header {
   padding: 10px 18px;
   background-color: #dc5945;
