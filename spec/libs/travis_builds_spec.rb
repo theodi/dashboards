@@ -5,9 +5,9 @@ require 'dotenv'
 Dotenv.load
 
 describe TravisBuilds do
-  
+
   before :all do
-    @json = [  
+    @json = [
       {
         "id"                     => 877145,
         "slug"                   => "theodi/dashboards",
@@ -50,13 +50,13 @@ describe TravisBuilds do
     ].to_json
     FakeWeb.register_uri(:get, "https://api.travis-ci.org/repos/#{ENV['JENKINS_ORG']}.json", :body => @json)
   end
-  
+
   describe "update" do
-    
+
     before :all do
       @result = TravisBuilds.update
     end
-    
+
     it "should return the five latest builds and create a list" do
       @result[:latest].count.should == 3
       @result[:latest][0][:job].should == "theodi/dashboards"
@@ -69,42 +69,42 @@ describe TravisBuilds do
       @result[:latest][2][:date].should == "2014-02-21T10:22:53Z"
       @result[:latest][2][:status].should == "disabled"
     end
-    
+
     it "should return failing builds" do
       @result[:failboat].count.should == 1
       @result[:failboat][0][:job].should == "theodi/breasal"
       @result[:failboat][0][:date].should == "2014-02-21T12:17:53Z"
       @result[:failboat][0][:status].should == "failure"
     end
-    
+
   end
-  
+
   describe "build_images" do
-    
+
     before :all do
       @result = TravisBuilds.build_images
     end
-    
+
     it "should return a fail image, a state and a sad trombone" do
       result = TravisBuilds.build_images
-      result[:image].should == "https://buildmemes.herokuapp.com/f"
+      result[:image].should match /https:\/\/buildmemes.herokuapp.com\/f\?[0-9]+/
       result[:state].should == "fail"
       result[:trombone].should include('<source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">')
       result[:trombone].should include('<source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
-    
+
     it "should return a success image, a state and EVERYTHING IS AWESOME" do
       json = JSON.parse(@json)
       json[1]['last_build_status'] = 0
       json[1]['last_build_result'] = 0
       FakeWeb.register_uri(:get, "https://api.travis-ci.org/repos/#{ENV['JENKINS_ORG']}.json", :body => json.to_json)
       result = TravisBuilds.build_images
-      result[:image].should == "https://buildmemes.herokuapp.com/p"
+      result[:image].should match /https:\/\/buildmemes.herokuapp.com\/p\?[0-9]+/
       result[:state].should == "pass"
       result[:trombone].should include('<source src="/awesome.mp3" type="audio/mpeg; codecs=\'mp3\'">')
       result[:trombone].should include('<source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
-    
+
   end
-  
+
 end
