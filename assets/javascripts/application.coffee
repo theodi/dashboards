@@ -29,6 +29,10 @@ Dashing.on 'ready', ->
   Dashing.widget_margins ||= [5, 5]
   Dashing.numColumns ||= 4
   Dashing.currentCurrency ||= "GBP"
+
+  $(window).bind 'resize', (event) =>
+    Dashing.resize()
+
   Dashing.resize()
 
 Dashing.resize = () ->
