@@ -53,30 +53,30 @@ Dashing.resize = () ->
         start: -> Dashing.currentWidgetPositions = Dashing.getWidgetPositions()
 
 
-  # Let's replace shortenedNumber
-  # Dashing's version has bad negative number handling
-  # and shoves the prefix in front of the minus sign
-  Batman.Filters.numberWithCurrency = (num, currency) ->
-    return num if isNaN(num)
-    if currency
-      num = convertCurrency(currency, num)
-    num = num.toPrecision(3)
-    negative = num < 0.0
-    num = Math.abs(num)
-    if num >= 1000000000
-      num = (num / 1000000000) + 'B'
-    else if num >= 1000000
-      num = (num / 1000000) + 'M'
-    else if num >= 1000
-      num = (num / 1000) + 'K'
-    if negative
-      str = "-"
-    else
-      str = ""
-    if currency
-      str += currencySymbol Dashing.currentCurrency
-    str += num
-    str
+# Let's replace shortenedNumber
+# Dashing's version has bad negative number handling
+# and shoves the prefix in front of the minus sign
+Batman.Filters.numberWithCurrency = (num, currency) ->
+  return num if isNaN(num)
+  if currency
+    num = convertCurrency(currency, num)
+  num = num.toPrecision(3)
+  negative = num < 0.0
+  num = Math.abs(num)
+  if num >= 1000000000
+    num = (num / 1000000000) + 'B'
+  else if num >= 1000000
+    num = (num / 1000000) + 'M'
+  else if num >= 1000
+    num = (num / 1000) + 'K'
+  if negative
+    str = "-"
+  else
+    str = ""
+  if currency
+    str += currencySymbol Dashing.currentCurrency
+  str += num
+  str
 
 Dashing.setSize = (rows, cols) ->
   Dashing.widget_margins = [5, 5]
