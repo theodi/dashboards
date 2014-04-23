@@ -17,98 +17,48 @@ ul.grid {
 
 }
 
-ul.rows-2 {
+@for $i from 1 through 20 {
 
-  li {
-    height: 50%;
+  $ratio: 100.0 / $i;
+
+  ul.rows-#{$i} {
+
+    li {
+      height: 1.0% * $ratio;
+    }
+
+    @for $r from 1 through $i {
+
+      li.row-#{$r} {
+        top: 1.0% * $ratio * ($r - 1);
+      }
+
+      li.height-#{$r} {
+        height: 1.0% * $ratio* $r;
+      }
+
+    }
+
   }
 
-  li.row-1 {
-    top: 0%;
-  }
+  ul.cols-#{$i} {
 
-  li.row-2 {
-    top: 50%;
-  }
+    li {
+      width: 1.0% * $ratio;
+    }
 
-  li.height-2 {
-    height: 100%;
-  }
+    @for $r from 1 through $i {
 
-}
+      li.col-#{$r} {
+        left: 1.0% * $ratio * ($r - 1);
+      }
 
-ul.rows-4 {
+      li.width-#{$r} {
+        width: 1.0% * $ratio* $r;
+      }
 
-  li {
-    height: 25%;
-  }
+    }
 
-  li.row-1 {
-    top: 0%;
-  }
-
-  li.row-2 {
-    top: 25%;
-  }
-
-  li.row-3 {
-    top: 50%;
-  }
-
-  li.row-4 {
-    top: 75%;
-  }
-
-  li.height-2 {
-    height: 50%;
-  }
-
-  li.height-4 {
-    height: 100%;
-  }
-
-}
-
-ul.cols-3 {
-
-  li {
-    width: 33.333333%;
-  }
-
-  li.col-1 {
-    left: 0%;
-  }
-
-  li.col-2 {
-    left: 33.33333333%;
-  }
-
-  li.col-3 {
-    left: 66.66666666%;
-  }
-
-}
-
-ul.cols-4 {
-
-  li {
-    width: 25%;
-  }
-
-  li.col-1 {
-    left: 0%;
-  }
-
-  li.col-2 {
-    left: 25%;
-  }
-
-  li.col-3 {
-    left: 50%;
-  }
-
-  li.col-4 {
-    left: 75%;
   }
 
 }
