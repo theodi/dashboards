@@ -23,17 +23,17 @@ ul.grid {
 
   ul.rows-#{$i} {
 
-    li {
+    > li {
       height: 1.0% * $ratio;
     }
 
     @for $r from 1 through $i {
 
-      li.row-#{$r} {
+      > li.row-#{$r} {
         top: 1.0% * $ratio * ($r - 1);
       }
 
-      li.height-#{$r} {
+      > li.height-#{$r} {
         height: 1.0% * $ratio* $r;
       }
 
@@ -43,17 +43,17 @@ ul.grid {
 
   ul.cols-#{$i} {
 
-    li {
+    > li {
       width: 1.0% * $ratio;
     }
 
     @for $r from 1 through $i {
 
-      li.col-#{$r} {
+      > li.col-#{$r} {
         left: 1.0% * $ratio * ($r - 1);
       }
 
-      li.width-#{$r} {
+      > li.width-#{$r} {
         width: 1.0% * $ratio* $r;
       }
 
