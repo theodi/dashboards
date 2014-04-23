@@ -4,13 +4,15 @@ ul.grid {
 
   > li {
     position: absolute;
-    display: block;
+    display: table;
     border: 3px solid black;
     box-sizing: border-box;
     overflow: hidden;
 
     > div {
       height: 100%;
+      display: table-cell;
+      vertical-align: middle;
     }
 
   }
