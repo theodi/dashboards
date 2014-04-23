@@ -1,0 +1,82 @@
+#company {
+
+  .title-wrapper {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 10px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#membership {
+
+  #renewals {
+
+    h2 {
+      font-size: 25px;
+      text-transform: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+
+    .list {
+      width: 32%;
+      float: left;
+      margin-right: 1%;
+
+      li {
+        width: 76%;
+        margin-left: 13%;
+        text-align: left;
+        position: relative;
+
+        .value {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .widget-number {
+    .title {
+      font-size: 30px;
+    }
+    h2.value {
+      font-size: 76px;
+      line-height: 1em;
+    }
+  }
+
+  .by-level {
+    .title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    h2.value {
+      font-size: 50px;
+    }
+  }
+
+}
+
+#commercial, #research, #opex {
+
+  .widget-number {
+    .title {
+      font-size: 22px;
+    }
+    h2.value {
+      font-size: 60px;
+      line-height: 1em;
+      text-transform: none;
+    }
+  }
+
+}

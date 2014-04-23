@@ -1,0 +1,171 @@
+$odiBlue: #00b7ff;
+$odiBlueDark: #2254f4;
+$odiBlueLight: #08def9;
+$odiOrange: #ff6700;
+$odiYellow: #F9BC26;
+$odiRed: #d60303;
+$odiGrey: #888888;
+$odiGreyDark: #333333;
+$odiGreyLight: #BBBBBB;
+
+// Colour variables, primarily for home modules
+$odiColour1: #D60303; // red
+$odiColour2: $odiOrange; // orange
+$odiColour3: $odiYellow; // yellow
+$odiColour4: #67EF67; //light green
+$odiColour5: #0DBC37; // med green
+$odiColour6: #1dd3a7; // turquoise
+$odiColour7: $odiBlueDark; // dark blue
+$odiColour8: $odiBlue;
+$odiColour9: $odiBlueLight; // light blue
+$odiColour10: #ef3aab; // pink
+$odiColour11: #e6007c; // magenta
+$odiColour12: #b13198; // purple
+
+#company {
+
+  #q4-progress {
+    background-color: $odiColour7;
+  }
+
+  #q3-progress {
+    background-color: $odiColour6;
+  }
+
+  #q2-progress {
+    background-color: $odiColour9;
+  }
+
+  #q1-progress {
+    background-color: $odiColour8;
+  }
+
+  #reach {
+    background-color: $odiColour3;
+  }
+
+  #bookings {
+    background-color: $odiColour2;
+  }
+
+  #kpis, #non-commercial-bookings {
+    background-color: $odiColour1;
+  }
+
+  #value {
+    background-color: $odiColour10;
+  }
+
+  #odcs {
+    background-color: $odiColour11;
+  }
+
+  #members, #revenue-by-sector {
+    background-color: $odiColour12;
+  }
+
+}
+
+#membership {
+
+  #total-members {
+    background-color: $odiColour7;
+  }
+
+  #member-members {
+    background-color: $odiColour3;
+  }
+
+  #partner-members {
+    background-color: $odiColour2;
+  }
+
+  #sponsor-members {
+    background-color: $odiColour1;
+  }
+
+  #renewals {
+    background-color: $odiColour5;
+  }
+
+  #income {
+    background-color: $odiColour6;
+  }
+
+  #ranking {
+    background-color: $odiColour8;
+  }
+
+}
+
+#commercial, #research, #opex {
+
+  #members, #tile-10 {
+    background-color: $odiColour10;
+  }
+
+  #weighted-pipeline, #tile-2 {
+    background-color: $odiColour2;
+  }
+
+  #old-opportunities, #tile-1 {
+    background-color: $odiColour1;
+  }
+
+  #bookings, #tile-3 {
+    background-color: $odiColour3;
+  }
+
+  #revenue, #tile-11 {
+    background-color: $odiColour11;
+  }
+
+  #backlog, #tile-12 {
+    background-color: $odiColour12;
+  }
+
+  #pipeline, #tile-9 {
+    background-color: $odiColour9;
+  }
+
+  #weighted-pipeline, #tile-8 {
+    background-color: $odiColour8;
+  }
+
+}
+
+#progress {
+
+  #q1-progress {
+    background-color: $odiColour5;
+  }
+
+  #q2-progress {
+    background-color: $odiColour2;
+  }
+
+  #q3-progress {
+    background-color: $odiColour7;
+  }
+
+  #q4-progress {
+    background-color: $odiColour3;
+  }
+
+  .this-month {
+    background-color: $odiColour1;
+  }
+
+  .rest-of-quarter {
+    background-color: $odiColour5;
+  }
+
+  .discuss {
+    background-color: $odiColour7;
+  }
+
+  .done {
+    background-color: $odiColour8;
+  }
+
+}
