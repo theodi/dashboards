@@ -2,7 +2,7 @@ ul.grid {
 
   position: relative;
 
-  li {
+  > li {
     position: absolute;
     display: block;
     border: 3px solid black;

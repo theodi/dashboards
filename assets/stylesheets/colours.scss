@@ -23,7 +23,7 @@ $odiColour11: #e6007c; // magenta
 $odiColour12: #b13198; // purple
 
 ul.grid {
-  li {
+  > li {
     background-color: #47BBB3;
   }
 }
