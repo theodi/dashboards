@@ -1,0 +1,55 @@
+ul.grid {
+
+  position: relative;
+  min-height: 500px;
+
+  li {
+    position: absolute;
+    display: block;
+    border: 5px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    > div {
+      height: 100%;
+    }
+
+  }
+
+}
+
+ul.rows-2 {
+
+  li {
+    height: 50%;
+  }
+
+  li.row-1 {
+    top: 0%;
+  }
+
+  li.row-2 {
+    top: 50%;
+  }
+
+}
+
+ul.cols-3 {
+
+  li {
+    width: 33.333333%;
+  }
+
+  li.col-1 {
+    left: 0%;
+  }
+
+  li.col-2 {
+    left: 33.33333333%;
+  }
+
+  li.col-3 {
+    left: 66.66666666%;
+  }
+
+}
