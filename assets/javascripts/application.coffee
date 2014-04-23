@@ -26,8 +26,6 @@ currencySymbol = (currency) ->
       "$"
 
 Dashing.on 'ready', ->
-  Dashing.widget_margins ||= [5, 5]
-  Dashing.numColumns ||= 4
   Dashing.currentCurrency ||= "GBP"
 
   $(window).bind 'resize', (event) =>
@@ -36,22 +34,8 @@ Dashing.on 'ready', ->
   Dashing.resize()
 
 Dashing.resize = () ->
-  total_width = window.innerWidth - (Dashing.widget_margins[0] * 2 * Dashing.numColumns)
-  total_height = window.innerHeight - 86.0
-  Dashing.widget_base_dimensions = [total_width/Dashing.numColumns, total_height/Dashing.numRows]
-
-  contentWidth = (Dashing.widget_base_dimensions[0] + Dashing.widget_margins[0] * 2) * Dashing.numColumns
-
-  Batman.setImmediate ->
-    $('.gridster').width(contentWidth)
-    $('.gridster ul:first').gridster
-      widget_margins: Dashing.widget_margins
-      widget_base_dimensions: Dashing.widget_base_dimensions
-      avoid_overlapped_widgets: !Dashing.customGridsterLayout
-      draggable:
-        stop: Dashing.showGridsterInstructions
-        start: -> Dashing.currentWidgetPositions = Dashing.getWidgetPositions()
-
+  grid_height = window.innerHeight - $('#company-header').height()
+  $('ul.grid').height(grid_height)
 
 # Let's replace shortenedNumber
 # Dashing's version has bad negative number handling
@@ -77,12 +61,6 @@ Batman.Filters.numberWithCurrency = (num, currency) ->
     str += currencySymbol Dashing.currentCurrency
   str += num
   str
-
-Dashing.setSize = (rows, cols) ->
-  Dashing.widget_margins = [5, 5]
-  Dashing.numColumns = cols
-  Dashing.numRows = rows
-  Dashing.resize()
 
 Dashing.setCurrency = (currency) ->
   Dashing.currentCurrency = currency
