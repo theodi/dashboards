@@ -1,33 +1,23 @@
-<script type='text/javascript'>
-$(function() {
-  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [105, 140]
-  Dashing.numColumns = 11
-  // Disable the layout drag
-});
-</script>
-<div class="gridster" id="progress">
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
-      <div data-id="<%= @year %>-q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Q4 progress" id="q4-progress"></div>
-    </li>
-    <li data-row="2" data-col="1" data-sizex="3" data-sizey="1">
-      <div data-id="<%= @year %>-q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Q3 progress" id="q3-progress"></div>
-    </li>
-    <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
-      <div data-id="<%= @year %>-q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Q2 progress" id="q2-progress"></div>
-    </li>
-    <li data-row="4" data-col="1" data-sizex="3" data-sizey="1">
-      <div data-id="<%= @year %>-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Q1 progress" id="q1-progress"></div>
-    </li>
-    <li data-row="1" data-col="4" data-sizex="4" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="Outstanding Tasks" id="<%= @year %>-<%= @quarter %>-rest-of-quarter" class="rest-of-quarter"></div>
-    </li>
-    <li data-row="1" data-col="8" data-sizex="2" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="ProgressList" data-title="To discuss" id="<%= @year %>-<%= @quarter %>-discuss" class="discuss"></div>
-    </li>
-    <li data-row="1" data-col="10" data-sizex="2" data-sizey="4">
-      <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="ProgressList" data-title="Done" id="<%= @year %>-<%= @quarter %>-done" class="done"></div>
-    </li>
-  </ul>
-</div>
+<ul class="grid rows-4 cols-11" id="progress">
+  <li class="row-1 col-1 width-3">
+    <div data-id="<%= @year %>-q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Q4 progress" id="q4-progress"></div>
+  </li>
+  <li class="row-2 col-1 width-3">
+    <div data-id="<%= @year %>-q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Q3 progress" id="q3-progress"></div>
+  </li>
+  <li class="row-3 col-1 width-3">
+    <div data-id="<%= @year %>-q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Q2 progress" id="q2-progress"></div>
+  </li>
+  <li class="row-4 col-1 width-3">
+    <div data-id="<%= @year %>-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Q1 progress" id="q1-progress"></div>
+  </li>
+  <li class="row-1 col-4 width-4 height-4">
+    <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="Outstanding Tasks" id="<%= @year %>-<%= @quarter %>-rest-of-quarter" class="rest-of-quarter"></div>
+  </li>
+  <li class="row-1 col-8 width-2 height-4">
+    <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="ProgressList" data-title="To discuss" id="<%= @year %>-<%= @quarter %>-discuss" class="discuss"></div>
+  </li>
+  <li class="row-1 col-10 width-2 height-4">
+    <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="ProgressList" data-title="Done" id="<%= @year %>-<%= @quarter %>-done" class="done"></div>
+  </li>
+</ul>
