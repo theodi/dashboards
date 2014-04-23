@@ -1,36 +1,29 @@
-<script type='text/javascript'>
-$(function() {
-  Dashing.setSize(6,8) // rows, cols
-});
-</script>
-<div class="gridster" data-id>
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="3">
-      <div data-id="twitter_mentions" data-view="Comments" data-title="@UKODITech Mentions" style="background-color: #71388a"></div>
-    </li>
-    <li data-row="4" data-col="1" data-sizex="2" data-sizey="3">
-      <div data-id="pingdom-status" data-view="List" data-title="Pingdom status"></div>
-    </li>
-    <li data-row="1" data-col="3" data-sizex="3" data-sizey="4">
-      <div data-id="jenkins-builds" data-view="Jenkins" data-unordered="true" data-title="Jenkins Builds"></div>
-    </li>
-    <li data-row="5" data-col="3" data-sizex="3" data-sizey="2">
-      <div data-id="jenkins-build-image" data-view="Image" data-unordered="true"></div>
-    </li>
-    <li data-row="1" data-col="6" data-sizex="3" data-sizey="2" style="background-color: #dc5945">
-      <div data-id="issues-graph" data-view="Number" data-title="Issues"></div>
-    </li>
-    <li data-row="2" data-col="6" data-sizex="1" data-sizey="1">
-      <div data-id="pull-requests" data-view="Number" data-title="Open Pull Requests"></div>
-    </li>
-    <li data-row="2" data-col="7" data-sizex="1" data-sizey="1">
-      <div data-id="external-pulls" data-view="Number" data-title="External Pull Requests"></div>
-    </li>
-    <li data-row="2" data-col="8" data-sizex="1" data-sizey="1">
-      <div data-id="external-pulls-merged" data-view="Number" data-title="External Pull Requests Merged"></div>
-    </li>
-    <li data-row="3" data-col="6" data-sizex="3" data-sizey="2">
-      <div data-id="milestone" data-view="Meter"></div>
-    </li>
-  </ul>
-</div>
+<ul class="grid rows-6 cols-8">
+  <li class='row-1 col-1 width-2 height-3'>
+    <div data-id="twitter_mentions" data-view="Comments" data-title="@UKODITech Mentions" style="background-color: #71388a"></div>
+  </li>
+  <li class='row-4 col-1 width-2 height-3'>
+    <div data-id="pingdom-status" data-view="List" data-title="Pingdom status"></div>
+  </li>
+  <li class='row-1 col-3 width-3 height-4'>
+    <div data-id="jenkins-builds" data-view="Jenkins" data-unordered="true" data-title="Jenkins Builds"></div>
+  </li>
+  <li class='row-5 col-3 width-3 height-2'>
+    <div data-id="jenkins-build-image" data-view="Image" data-unordered="true"></div>
+  </li>
+  <li class='row-1 col-6 width-3 height-2' style="background-color: #dc5945">
+    <div data-id="issues-graph" data-view="Number" data-title="Issues"></div>
+  </li>
+  <li class='row-3 col-6'>
+    <div data-id="pull-requests" data-view="Number" data-title="Open PRs"></div>
+  </li>
+  <li class='row-3 col-7'>
+    <div data-id="external-pulls" data-view="Number" data-title="External PRs"></div>
+  </li>
+  <li class='row-3 col-8'>
+    <div data-id="external-pulls-merged" data-view="Number" data-title="Ex. PRs Merged"></div>
+  </li>
+  <li class='row-4 col-6 width-3 height-3'>
+    <div data-id="milestone" data-view="Meter"></div>
+  </li>
+</ul>
