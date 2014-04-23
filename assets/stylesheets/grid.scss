@@ -5,7 +5,7 @@ ul.grid {
   li {
     position: absolute;
     display: block;
-    border: 5px solid black;
+    border: 3px solid black;
     box-sizing: border-box;
     overflow: hidden;
 
@@ -31,6 +31,38 @@ ul.rows-2 {
     top: 50%;
   }
 
+  li.height-2 {
+    height: 100%;
+  }
+
+}
+
+ul.rows-4 {
+
+  li {
+    height: 25%;
+  }
+
+  li.row-1 {
+    top: 0%;
+  }
+
+  li.row-2 {
+    top: 25%;
+  }
+
+  li.row-3 {
+    top: 50%;
+  }
+
+  li.row-4 {
+    top: 75%;
+  }
+
+  li.height-2 {
+    height: 50%;
+  }
+
 }
 
 ul.cols-3 {
@@ -49,6 +81,30 @@ ul.cols-3 {
 
   li.col-3 {
     left: 66.66666666%;
+  }
+
+}
+
+ul.cols-4 {
+
+  li {
+    width: 25%;
+  }
+
+  li.col-1 {
+    left: 0%;
+  }
+
+  li.col-2 {
+    left: 25%;
+  }
+
+  li.col-3 {
+    left: 50%;
+  }
+
+  li.col-4 {
+    left: 75%;
   }
 
 }

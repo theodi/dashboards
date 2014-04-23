@@ -1,30 +1,23 @@
-<script type='text/javascript'>
-$(function() {
-  Dashing.setSize(2,4) // rows, cols
-});
-</script>
-<div class="gridster" id="company">
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="2014-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="reach"></div>
-    </li>
-    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="2014-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value"></div>
-    </li>
-    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="2014-network-size" data-view="NumberWithTarget" data-unordered="true" data-title="Network size" id="network"></div>
-    </li>
-    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="2014-commercial-bookings" data-view="NumberWithTarget" data-unordered="true" data-title="Commercial bookings" id="bookings"></div>
-    </li>
-    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="2014-non-commercial-bookings" data-view="NumberWithTarget" data-unordered="true" data-title="Non-commercial bookings" id="non-commercial-bookings"></div>
-    </li>
-    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="2014-grant-funding" data-view="NumberWithTarget" data-unordered="true" data-title="Grant Funding" id="grant-funding"></div>
-    </li>
-    <li data-row="1" data-col="4" data-sizex="1" data-sizey="2">
-      <div data-id="2014-revenue-by-sector" data-view="Pie" data-title="Income Split" id="revenue-by-sector"></div>
-    </li>
-  </ul>
-</div>
+<ul class="grid rows-2 cols-4" id="company">
+  <li class="row-1 col-1">
+    <div data-id="2014-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="reach"></div>
+  </li>
+  <li class="row-1 col-2">
+    <div data-id="2014-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value"></div>
+  </li>
+  <li class="row-1 col-3">
+    <div data-id="2014-network-size" data-view="NumberWithTarget" data-unordered="true" data-title="Network size" id="network"></div>
+  </li>
+  <li class="row-2 col-1">
+    <div data-id="2014-commercial-bookings" data-view="NumberWithTarget" data-unordered="true" data-title="Commercial bookings" id="bookings"></div>
+  </li>
+  <li class="row-2 col-2">
+    <div data-id="2014-non-commercial-bookings" data-view="NumberWithTarget" data-unordered="true" data-title="Non-commercial bookings" id="non-commercial-bookings"></div>
+  </li>
+  <li class="row-2 col-3">
+    <div data-id="2014-grant-funding" data-view="NumberWithTarget" data-unordered="true" data-title="Grant Funding" id="grant-funding"></div>
+  </li>
+  <li class="row-1 col-4 height-2">
+    <div data-id="2014-revenue-by-sector" data-view="Pie" data-title="Income Split" id="revenue-by-sector"></div>
+  </li>
+</ul>
