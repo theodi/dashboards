@@ -50,8 +50,10 @@ describe GithubDashboard do
     end
     
     it "should return correct information about the current milestone", :vcr do
-      @result[:value].should == 0
-      @result[:title].should == "Sprint #13"
+      Timecop.freeze(2014,04,24)
+      @result[:value].should == 36
+      @result[:title].should == "Sprint #25"
+      Timecop.return
     end
   
   end
