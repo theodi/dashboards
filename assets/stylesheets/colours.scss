@@ -44,26 +44,34 @@ ul.grid > li > div {
   background-color: $odiBlue;
 }
 
-// Number displays
-
-#reach {
-  background-color: $odiYellow;
-}
+// Company
 
 #bookings {
   background-color: $odiOrange;
 }
 
-#kpis, #non-commercial-bookings {
-  background-color: $odiRed;
+#value-unlocked {
+  background-color: $odiBlue;
 }
 
-#value {
-  background-color: $odiPink;
+#network-size {
+  background-color: $odiGreen;
 }
 
 #odcs {
   background-color: $odiMagenta;
+}
+
+#grant-funding {
+  background-color: $odiYellow;
+}
+
+#non-commercial-bookings {
+  background-color: $odiPink;
+}
+
+#kpis {
+  background-color: $odiRed;
 }
 
 #members, #revenue-by-sector {
@@ -98,35 +106,31 @@ ul.grid > li > div {
   background-color: $odiBlue;
 }
 
-#members, #tile-10 {
+#members {
   background-color: $odiPink;
 }
 
-#weighted-pipeline, #tile-2 {
+#weighted-pipeline {
   background-color: $odiOrange;
 }
 
-#old-opportunities, #tile-1 {
+#old-opportunities {
   background-color: $odiRed;
 }
 
-#bookings, #tile-3 {
-  background-color: $odiYellow;
-}
-
-#revenue, #tile-11 {
+#revenue {
   background-color: $odiMagenta;
 }
 
-#backlog, #tile-12 {
+#backlog {
   background-color: $odiPurple;
 }
 
-#pipeline, #tile-9 {
+#pipeline {
   background-color: $odiBlueLight;
 }
 
-#weighted-pipeline, #tile-8 {
+#weighted-pipeline {
   background-color: $odiBlue;
 }
 
