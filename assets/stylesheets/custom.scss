@@ -29,16 +29,6 @@
     }
   }
 
-  .widget-number {
-    .title {
-      font-size: 30px;
-    }
-    h2.value {
-      font-size: 76px;
-      line-height: 1em;
-    }
-  }
-
   .by-level {
     .title {
       font-size: 25px;
@@ -46,21 +36,6 @@
     }
     h2.value {
       font-size: 50px;
-    }
-  }
-
-}
-
-#commercial, #research, #opex {
-
-  .widget-number {
-    .title {
-      font-size: 22px;
-    }
-    h2.value {
-      font-size: 60px;
-      line-height: 1em;
-      text-transform: none;
     }
   }
 
