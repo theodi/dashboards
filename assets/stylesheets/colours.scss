@@ -179,3 +179,37 @@ ul.grid > li > div {
 .done {
   background-color: $green;
 }
+
+// Tech
+
+#twitter-mentions {
+  background-color: $purple;
+}
+
+#pingdom {
+  background-color: $lightblue;
+}
+
+#build-status {
+  background-color: $yellow;
+}
+
+#issues {
+  background-color: $red;
+}
+
+#open-prs {
+  background-color: $orange;
+}
+
+#external-prs {
+  background-color: $yellow;
+}
+
+#external-merged {
+  background-color: $green;
+}
+
+#milestone {
+  background-color: $blue;
+}
