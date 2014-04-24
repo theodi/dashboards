@@ -1,177 +1,325 @@
-$odiBlue: #00b7ff;
-$odiBlueDark: #2254f4;
-$odiBlueLight: #08def9;
-$odiOrange: #ff6700;
-$odiYellow: #F9BC26;
-$odiRed: #d60303;
-$odiGrey: #888888;
-$odiGreyDark: #333333;
-$odiGreyLight: #BBBBBB;
+// Primary brand colours
 
-// Colour variables, primarily for home modules
-$odiColour1: #D60303; // red
-$odiColour2: $odiOrange; // orange
-$odiColour3: $odiYellow; // yellow
-$odiColour4: #67EF67; //light green
-$odiColour5: #0DBC37; // med green
-$odiColour6: #1dd3a7; // turquoise
-$odiColour7: $odiBlueDark; // dark blue
-$odiColour8: $odiBlue;
-$odiColour9: $odiBlueLight; // light blue
-$odiColour10: #ef3aab; // pink
-$odiColour11: #e6007c; // magenta
-$odiColour12: #b13198; // purple
+$blue:       #2254F4;
+$lightblue:  #00B7FF;
+$cyan:       #08DEF9;
+$turquoise:  #1DD3A7;
+$green:      #0DBC37;
+$lightgreen: #67EF67;
+$yellow:     #F9BC26;
+$orange:     #FF6700;
+$red:        #D60303;
+$pink:       #EF3AAB;
+$magenta:    #E6007C;
+$purple:     #B13198;
 
-ul.grid {
-  > li {
-    background-color: #47BBB3;
-  }
+// Secondary brand colours
+
+$black:      #000000;
+$darkgrey:   #333333;
+$lightgrey:  #999999;
+$darkblue:   #2F529F;
+$midblue:    #00ACE8;
+$teal:       #7DC5EA;
+
+// Default widget colour
+
+ul.grid > li > div {
+  background-color: $darkgrey;
 }
 
-#company {
+// Quarterly progress bars
 
-  #q4-progress {
-    background-color: $odiColour7;
-  }
-
-  #q3-progress {
-    background-color: $odiColour6;
-  }
-
-  #q2-progress {
-    background-color: $odiColour9;
-  }
-
-  #q1-progress {
-    background-color: $odiColour8;
-  }
-
-  #reach {
-    background-color: $odiColour3;
-  }
-
-  #bookings {
-    background-color: $odiColour2;
-  }
-
-  #kpis, #non-commercial-bookings {
-    background-color: $odiColour1;
-  }
-
-  #value {
-    background-color: $odiColour10;
-  }
-
-  #odcs {
-    background-color: $odiColour11;
-  }
-
-  #members, #revenue-by-sector {
-    background-color: $odiColour12;
-  }
-
+#q4-progress {
+  background-color: $darkblue;
 }
 
-#membership {
-
-  #total-members {
-    background-color: $odiColour7;
-  }
-
-  #member-members {
-    background-color: $odiColour3;
-  }
-
-  #partner-members {
-    background-color: $odiColour2;
-  }
-
-  #sponsor-members {
-    background-color: $odiColour1;
-  }
-
-  #renewals {
-    background-color: $odiColour5;
-  }
-
-  #income {
-    background-color: $odiColour6;
-  }
-
-  #ranking {
-    background-color: $odiColour8;
-  }
-
+#q3-progress {
+  background-color: $turquoise;
 }
 
-#commercial, #research, #opex {
-
-  #members, #tile-10 {
-    background-color: $odiColour10;
-  }
-
-  #weighted-pipeline, #tile-2 {
-    background-color: $odiColour2;
-  }
-
-  #old-opportunities, #tile-1 {
-    background-color: $odiColour1;
-  }
-
-  #bookings, #tile-3 {
-    background-color: $odiColour3;
-  }
-
-  #revenue, #tile-11 {
-    background-color: $odiColour11;
-  }
-
-  #backlog, #tile-12 {
-    background-color: $odiColour12;
-  }
-
-  #pipeline, #tile-9 {
-    background-color: $odiColour9;
-  }
-
-  #weighted-pipeline, #tile-8 {
-    background-color: $odiColour8;
-  }
-
+#q2-progress {
+  background-color: $lightblue;
 }
 
-#progress {
+#q1-progress {
+  background-color: $blue;
+}
 
-  #q1-progress {
-    background-color: $odiColour5;
-  }
+// Company
 
-  #q2-progress {
-    background-color: $odiColour2;
-  }
+#bookings {
+  background-color: $orange;
+}
 
-  #q3-progress {
-    background-color: $odiColour7;
-  }
+#value-unlocked {
+  background-color: $blue;
+}
 
-  #q4-progress {
-    background-color: $odiColour3;
-  }
+#network-size {
+  background-color: $green;
+}
 
-  .this-month {
-    background-color: $odiColour1;
-  }
+#odcs {
+  background-color: $magenta;
+}
 
-  .rest-of-quarter {
-    background-color: $odiColour5;
-  }
+#grant-funding {
+  background-color: $pink;
+}
 
-  .discuss {
-    background-color: $odiColour7;
-  }
+#non-commercial-bookings {
+  background-color: $yellow;
+}
 
-  .done {
-    background-color: $odiColour8;
-  }
+#kpis {
+  background-color: $purple;
+}
 
+#revenue-by-sector {
+  background-color: $purple;
+}
+
+// Network and membership
+
+#total-members {
+  background-color: $darkblue;
+}
+
+#active-members {
+  background-color: $yellow;
+}
+
+#partners {
+  background-color: $orange;
+}
+
+#sponsors {
+  background-color: $red;
+}
+
+#supporters {
+  background-color: $blue;
+}
+
+#nodes {
+  background-color: $purple;
+}
+
+#startups {
+  background-color: $green;
+}
+
+// OpEx
+
+#income {
+  background-color: $green;
+}
+
+#total-costs {
+  background-color: $red;
+}
+
+#headcount {
+  background-color: $blue;
+}
+
+#ebitda-ytd {
+  background-color: $magenta;
+}
+
+#ebitda-month {
+  background-color: $pink;
+}
+
+#burn {
+  background-color: $yellow;
+}
+
+#cash {
+  background-color: $orange;
+}
+
+#costs {
+  background-color: $purple;
+}
+
+// News
+
+#spokespeople {
+  background-color: $yellow;
+}
+
+#geographies {
+  background-color: $orange;
+}
+
+#sectors {
+  background-color: $red;
+}
+
+#sentiment {
+  background-color: $purple;
+}
+
+#odi-volume {
+  background-color: $blue;
+}
+
+#odi-value {
+  background-color: $midblue;
+}
+
+#odi-reach {
+  background-color: $teal;
+}
+
+#data-volume {
+  background-color: $green;
+}
+
+#data-value {
+  background-color: $turquoise;
+}
+
+#data-reach {
+  background-color: $lightgreen;
+}
+
+// Research, Projects, Training
+
+#commercial-research {
+  background-color: $yellow;
+}
+
+#noncommercial-research {
+  background-color: $orange;
+}
+
+#commercial-training {
+  background-color: $lightblue;
+}
+
+#noncommercial-training {
+  background-color: $blue;
+}
+
+#commercial-projects {
+  background-color: $lightgreen;
+}
+
+#noncommercial-projects {
+  background-color: $green;
+}
+
+// Reach
+
+#total-reach {
+  background-color: $red;
+}
+
+#active-reach {
+  background-color: $orange;
+}
+
+#passive-reach {
+  background-color: $yellow;
+}
+
+#articles {
+  background-color: $green;
+}
+
+#events {
+  background-color: $lightblue;
+}
+
+#people-trained {
+  background-color: $pink;
+}
+
+// Progress
+
+.this-month {
+  background-color: $red;
+}
+
+.rest-of-quarter {
+  background-color: $blue;
+}
+
+.discuss {
+  background-color: $yellow;
+}
+
+.done {
+  background-color: $green;
+}
+
+// Tech
+
+#twitter-mentions {
+  background-color: $purple;
+}
+
+#pingdom {
+  background-color: $lightblue;
+}
+
+#build-status {
+  background-color: $yellow;
+}
+
+#issues {
+  background-color: $red;
+}
+
+#open-prs {
+  background-color: $orange;
+}
+
+#external-prs {
+  background-color: $yellow;
+}
+
+#external-merged {
+  background-color: $green;
+}
+
+#milestone {
+  background-color: $blue;
+}
+
+// Other
+
+#renewals {
+  background-color: $green;
+}
+
+#ranking {
+  background-color: $blue;
+}
+
+#weighted-pipeline {
+  background-color: $orange;
+}
+
+#old-opportunities {
+  background-color: $red;
+}
+
+#revenue {
+  background-color: $magenta;
+}
+
+#backlog {
+  background-color: $purple;
+}
+
+#pipeline {
+  background-color: $lightblue;
+}
+
+#weighted-pipeline {
+  background-color: $blue;
 }

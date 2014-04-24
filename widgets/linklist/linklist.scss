@@ -4,9 +4,7 @@
 $background-color:  #12b0c5;
 $value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);
 $label-color:       rgba(255, 255, 255, 0.7);
-$moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
 // Widget-linklist styles
@@ -15,10 +13,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   background-color: $background-color;
   vertical-align: top;
-
-  .title {
-    color: $title-color;
-  }
 
   ol, ul {
     margin: 0 15px;
@@ -40,9 +34,9 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .label {
     color: $label-color;
-    
+
     &:active, &:hover {
-     text-decoration: underline; 
+     text-decoration: underline;
     }
   }
 
@@ -51,14 +45,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     margin-left: 12px;
     font-weight: 600;
     color: $value-color;
-  }
-
-  .updated-at {
-    color: rgba(0, 0, 0, 0.3);
-  }
-
-  .more-info {
-    color: $moreinfo-color;
   }
 
 }
