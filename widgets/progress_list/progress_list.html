@@ -3,7 +3,9 @@
 <ul class="list">
   <li data-foreach-item="items">
     <div class="item">
-      <span class="label" data-bind="item.title"></span>
+      <a data-bind-href="'https://trello.com/c/' | append item.id">
+        <span class="label" data-bind="item.title"></span>
+      </a>
       <progress data-bind-max="0" data-bind-data-min="1" data-bind-value="item.progress" data-removeif="item.no_checklist"></progress>
       <span class="missing" data-showif="item.no_checklist">!</span>
     </div>
