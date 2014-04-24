@@ -110,6 +110,40 @@ ul.grid > li > div {
   background-color: $green;
 }
 
+// OpEx
+
+#income {
+  background-color: $green;
+}
+
+#total-costs {
+  background-color: $red;
+}
+
+#headcount {
+  background-color: $blue;
+}
+
+#ebitda-ytd {
+  background-color: $magenta;
+}
+
+#ebitda-month {
+  background-color: $pink;
+}
+
+#burn {
+  background-color: $yellow;
+}
+
+#cash {
+  background-color: $orange;
+}
+
+#costs {
+  background-color: $purple;
+}
+
 // Research, Projects, Training
 
 #commercial-research {
@@ -218,10 +252,6 @@ ul.grid > li > div {
 
 #renewals {
   background-color: $green;
-}
-
-#income {
-  background-color: $turquoise;
 }
 
 #ranking {
