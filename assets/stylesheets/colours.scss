@@ -76,64 +76,38 @@ ul.grid > li > div {
   background-color: $purple;
 }
 
-#members {
-  background-color: $green;
-}
-
 #revenue-by-sector {
   background-color: $purple;
 }
+
+// Network and membership
 
 #total-members {
   background-color: $darkblue;
 }
 
-#member-members {
+#active-members {
   background-color: $yellow;
 }
 
-#partner-members {
+#partners {
   background-color: $orange;
 }
 
-#sponsor-members {
+#sponsors {
   background-color: $red;
 }
 
-#renewals {
-  background-color: $green;
-}
-
-#income {
-  background-color: $turquoise;
-}
-
-#ranking {
+#supporters {
   background-color: $blue;
 }
 
-#weighted-pipeline {
-  background-color: $orange;
-}
-
-#old-opportunities {
-  background-color: $red;
-}
-
-#revenue {
-  background-color: $magenta;
-}
-
-#backlog {
+#nodes {
   background-color: $purple;
 }
 
-#pipeline {
-  background-color: $lightblue;
-}
-
-#weighted-pipeline {
-  background-color: $blue;
+#startups {
+  background-color: $green;
 }
 
 // Research, Projects, Training
@@ -237,5 +211,43 @@ ul.grid > li > div {
 }
 
 #milestone {
+  background-color: $blue;
+}
+
+// Other
+
+#renewals {
+  background-color: $green;
+}
+
+#income {
+  background-color: $turquoise;
+}
+
+#ranking {
+  background-color: $blue;
+}
+
+#weighted-pipeline {
+  background-color: $orange;
+}
+
+#old-opportunities {
+  background-color: $red;
+}
+
+#revenue {
+  background-color: $magenta;
+}
+
+#backlog {
+  background-color: $purple;
+}
+
+#pipeline {
+  background-color: $lightblue;
+}
+
+#weighted-pipeline {
   background-color: $blue;
 }
