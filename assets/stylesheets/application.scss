@@ -297,9 +297,9 @@ h3 {
 .clearfix { zoom: 1; }
 
 
-// Global title styles
+// Global widget styles
 
-$title-color:       rgba(255, 255, 255, 0.7);;
+$title-color:       rgba(255, 255, 255, 0.7);
 
 .title {
   color: $title-color;
@@ -313,4 +313,17 @@ $title-color:       rgba(255, 255, 255, 0.7);;
     font-size: 20px;
   }
 
+}
+
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+.more-info {
+  color: $moreinfo-color;
+}
+
+.updated-at {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 8px;
+  position: absolute;
+  bottom: 5px;
 }
