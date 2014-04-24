@@ -20,6 +20,8 @@ $odiPink:       #ef3aab;
 $odiMagenta:    #e6007c;
 $odiPurple:     #b13198;
 
+// Quarterly progress bars
+
 #q4-progress {
   background-color: $odiBlueDark;
 }
@@ -35,6 +37,8 @@ $odiPurple:     #b13198;
 #q1-progress {
   background-color: $odiBlue;
 }
+
+// Number displays
 
 #reach {
   background-color: $odiYellow;
@@ -120,35 +124,18 @@ $odiPurple:     #b13198;
   background-color: $odiBlue;
 }
 
-
-#q1-progress {
-  background-color: $odiGreen;
-}
-
-#q2-progress {
-  background-color: $odiOrange;
-}
-
-#q3-progress {
-  background-color: $odiBlueDark;
-}
-
-#q4-progress {
-  background-color: $odiYellow;
-}
-
 .this-month {
   background-color: $odiRed;
 }
 
 .rest-of-quarter {
-  background-color: $odiGreen;
+  background-color: $odiBlue;
 }
 
 .discuss {
-  background-color: $odiBlueDark;
+  background-color: $odiYellow;
 }
 
 .done {
-  background-color: $odiBlue;
+  background-color: $odiGreen;
 }
