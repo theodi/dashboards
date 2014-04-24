@@ -15,51 +15,47 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   vertical-align: top !important;
   padding: 0 !important;
-  
-  .title {
-    font-size: 0.9em;
-  }
-  
+
   ul {
-    
+
     li {
       margin: 0 0 10px 0;
       padding: 5px 0;
       font-size: 0.7em;
-    
+
       &.success {
         background-color: #0DBC37;
       }
-    
+
       &.failure {
         background-color: #ff6700;
       }
-    
+
       &.disabled {
         background-color: gray;
       }
     }
-    
+
     .last-run {
       font-size: 0.8em;
       opacity: 0.6;
     }
-  
+
   }
-  
+
   img {
     width: 100%;
     margin: 0 auto;
   }
-  
+
   div.pass {
     background-color: #0DBC37;
   }
-  
+
   div.fail {
     background-color: #ff6700;
   }
-  
+
   #failboat {
     padding: 35px 0;
     color: rgba(255, 255, 255, 0.8);

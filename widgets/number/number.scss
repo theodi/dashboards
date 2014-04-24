@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 $value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);;
 $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
 // ----------------------------------------------------------------------------
@@ -12,12 +11,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 .widget-number {
 
   padding: 15px 12px !important;
-
-  .title {
-    color: $title-color;
-    font-size: 30px;
-    white-space: nowrap;
-  }
 
   .number {
     text-align: center;
@@ -52,11 +45,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
 }
 
-.small-number  {
-
-  .title {
-    font-size: 20px;
-  }
+.small  {
 
   .value {
     font-size: 30px;

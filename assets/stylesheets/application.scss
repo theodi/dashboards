@@ -295,3 +295,22 @@ h3 {
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+
+// Global title styles
+
+$title-color:       rgba(255, 255, 255, 0.7);;
+
+.title {
+  color: $title-color;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.small {
+
+  .title {
+    font-size: 20px;
+  }
+
+}

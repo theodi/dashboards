@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------------
 $background-color:  #eb9c3c;
 
-$title-color:       rgba(255, 255, 255, 0.7);
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
@@ -13,13 +12,12 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   background-color: $background-color;
   font-size: 0.8em;
-  
+
   h1 {
     font-size: 25px;
   }
 
   .title {
-    color: $title-color;
     margin-bottom: 15px;
   }
 

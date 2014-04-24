@@ -4,7 +4,6 @@
 $background-color:  #12b0c5;
 $value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);
 $label-color:       rgba(255, 255, 255, 0.7);
 $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
@@ -18,11 +17,6 @@ $meter-background:  darken($background-color, 15%);
   background-color: $background-color;
   vertical-align: top !important;
   display: relative;
-
-  .title {
-    color: $title-color;
-    height: 70px;
-  }
 
   ol, ul {
     margin: 0 15px;
