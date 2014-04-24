@@ -1,0 +1,66 @@
+ul.grid {
+
+  position: relative;
+
+  > li {
+    position: absolute;
+    display: table;
+    border: 3px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    > div {
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+
+}
+
+@for $i from 1 through 20 {
+
+  $ratio: 100.0 / $i;
+
+  ul.rows-#{$i} {
+
+    > li {
+      height: 1.0% * $ratio;
+    }
+
+    @for $r from 1 through $i {
+
+      > li.row-#{$r} {
+        top: 1.0% * $ratio * ($r - 1);
+      }
+
+      > li.height-#{$r} {
+        height: 1.0% * $ratio* $r;
+      }
+
+    }
+
+  }
+
+  ul.cols-#{$i} {
+
+    > li {
+      width: 1.0% * $ratio;
+    }
+
+    @for $r from 1 through $i {
+
+      > li.col-#{$r} {
+        left: 1.0% * $ratio * ($r - 1);
+      }
+
+      > li.width-#{$r} {
+        width: 1.0% * $ratio* $r;
+      }
+
+    }
+
+  }
+
+}

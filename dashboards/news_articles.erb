@@ -1,39 +1,32 @@
-<script type='text/javascript'>
-$(function() {
-  Dashing.setSize(9,5) // rows, cols
-});
-</script>
-<div class="gridster" id="commercial">
-  <ul>
-    <li data-row="1" data-col="4" data-sizex="1" data-sizey="5">
-      <div data-id="comms-spokespeople" data-view="List" data-ordered="true" data-title="Spokespeople" id="tile-2"></div>
-    </li>
-    <li data-row="6" data-col="4" data-sizex="1" data-sizey="2">
-      <div data-id="comms-sectors" data-view="List" data-ordered="true" data-title="Sector spread" id="tile-1"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="4">
-      <div data-id="comms-sentiment" data-view="Pie" data-title="Sentiment" id="tile-12"></div>
-    </li>
-    <li data-row="5" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="comms-odi-volume" data-view="Number" data-title="ODI: Volume" id="tile-9"></div>
-    </li>
-    <li data-row="5" data-col="2" data-sizex="1" data-sizey="2">
-      <div data-id="comms-odi-value" data-view="Number" data-title="ODI: PR value" id="tile-9"></div>
-    </li>
-    <li data-row="5" data-col="3" data-sizex="1" data-sizey="2">
-      <div data-id="comms-odi-reach" data-view="Number" data-title="ODI: Reach" id="tile-9"></div>
-    </li>
-    <li data-row="7" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="comms-opendata-volume" data-view="Number" data-title="Open data: Volume" id="tile-8"></div>
-    </li>
-    <li data-row="7" data-col="2" data-sizex="1" data-sizey="2">
-      <div data-id="comms-opendata-value" data-view="Number" data-title="Open data: PR value" id="tile-8"></div>
-    </li>
-    <li data-row="7" data-col="3" data-sizex="1" data-sizey="2">
-      <div data-id="comms-opendata-reach" data-view="Number" data-title="Open data: Reach" id="tile-8"></div>
-    </li>
-    <li data-row="1" data-col="5" data-sizex="1" data-sizey="8">
-      <div data-id="comms-geographies" data-view="List" data-ordered="true" data-title="Geo spread" id="tile-3"></div>
-    </li>
-  </ul>
-</div>
+<ul class="grid rows-8 cols-5" id="commercial">
+  <li class="row-1 col-4 height-5">
+    <div data-id="comms-spokespeople" data-view="List" data-ordered="true" data-title="Spokespeople" id="tile-2"></div>
+  </li>
+  <li class="row-6 col-4 height-3">
+    <div data-id="comms-sectors" data-view="List" data-ordered="true" data-title="Sector Spread" id="tile-1"></div>
+  </li>
+  <li class="row-1 col-1 width-3 height-4">
+    <div data-id="comms-sentiment" data-view="Pie" data-title="Sentiment" id="tile-12"></div>
+  </li>
+  <li class="row-5 col-1 height-2">
+    <div data-id="comms-odi-volume" data-view="Number" data-title="ODI: Volume" id="tile-9"></div>
+  </li>
+  <li class="row-5 col-2 height-2">
+    <div data-id="comms-odi-value" data-view="Number" data-title="ODI: PR Value" id="tile-9"></div>
+  </li>
+  <li class="row-5 col-3 height-2">
+    <div data-id="comms-odi-reach" data-view="Number" data-title="ODI: Reach" id="tile-9"></div>
+  </li>
+  <li class="row-7 col-1 height-2">
+    <div data-id="comms-opendata-volume" data-view="Number" data-title="Open Data: Volume" id="tile-8"></div>
+  </li>
+  <li class="row-7 col-2 height-2">
+    <div data-id="comms-opendata-value" data-view="Number" data-title="Open Data: PR Value" id="tile-8"></div>
+  </li>
+  <li class="row-7 col-3 height-2">
+    <div data-id="comms-opendata-reach" data-view="Number" data-title="Open Data: Reach" id="tile-8"></div>
+  </li>
+  <li class="row-1 col-5 height-8">
+    <div data-id="comms-geographies" data-view="List" data-ordered="true" data-title="Geo Spread" id="tile-3"></div>
+  </li>
+</ul>
