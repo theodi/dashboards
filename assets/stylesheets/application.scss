@@ -295,3 +295,330 @@ h3 {
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+// Custom
+
+.widget h1 {
+  text-transform: lowercase;
+}
+
+.widget h1:first-letter {
+  text-transform: uppercase;
+}
+
+#tech-header {
+  padding: 10px 18px;
+  background-color: #dc5945;
+
+  img {
+    margin: 10px 55px;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+}
+
+
+#company-header {
+  width: 1270px;
+  margin: 0px auto;
+
+  img {
+    width: 195px;
+  }
+
+  h1.title {
+    float: right;
+    font-size: 55px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #AAA;
+    position: relative;
+
+    #dropdown {
+      font-size: 24px;
+      color: #666;
+    }
+
+    ul#nav {
+      position: absolute;
+      right: 0px;
+      z-index: 100;
+      background: #666;
+      color: white;
+      list-style: none;
+      text-align: left;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: normal;
+      display: none;
+
+      li {
+        padding: 10px 20px;
+      }
+
+      li:nth-child(even) {
+        background: #555;
+      }
+    }
+  }
+
+  h1.title:hover {
+    #dropdown {
+      background: #666;
+      padding-bottom: 10px;
+      color: white;
+    }
+    ul#nav {
+      display: block;
+    }
+  }
+
+}
+
+#company {
+
+  #q4-progress {
+    background-color: $odiColour7;
+  }
+
+  #q3-progress {
+    background-color: $odiColour6;
+  }
+
+  #q2-progress {
+    background-color: $odiColour9;
+  }
+
+  #q1-progress {
+    background-color: $odiColour8;
+  }
+
+  #reach {
+    background-color: $odiColour3;
+  }
+
+  #bookings {
+    background-color: $odiColour2;
+  }
+
+  #kpis, #non-commercial-bookings {
+    background-color: $odiColour1;
+  }
+
+  #value {
+    background-color: $odiColour10;
+  }
+
+  #odcs {
+    background-color: $odiColour11;
+  }
+
+  #members, #revenue-by-sector {
+    background-color: $odiColour12;
+  }
+
+  .title-wrapper {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 10px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#membership {
+
+  #total-members {
+    background-color: $odiColour7;
+  }
+
+  #member-members {
+    background-color: $odiColour3;
+  }
+
+  #partner-members {
+    background-color: $odiColour2;
+  }
+
+  #sponsor-members {
+    background-color: $odiColour1;
+  }
+
+  #renewals {
+    background-color: $odiColour5;
+
+    h2 {
+      font-size: 25px;
+      text-transform: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+
+    .list {
+      width: 32%;
+      float: left;
+      margin-right: 1%;
+
+      li {
+        width: 76%;
+        margin-left: 13%;
+        text-align: left;
+        position: relative;
+
+        .value {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  #income {
+    background-color: $odiColour6;
+  }
+
+  #ranking {
+    background-color: $odiColour8;
+  }
+
+  .widget-number {
+    .title {
+      font-size: 30px;
+    }
+    h2.value {
+      font-size: 76px;
+      line-height: 1em;
+    }
+  }
+
+  .by-level {
+    .title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    h2.value {
+      font-size: 50px;
+    }
+  }
+
+}
+
+#commercial, #research, #opex {
+
+  #members, #tile-10 {
+    background-color: $odiColour10;
+  }
+
+  #weighted-pipeline, #tile-2 {
+    background-color: $odiColour2;
+  }
+
+  #old-opportunities, #tile-1 {
+    background-color: $odiColour1;
+  }
+
+  #bookings, #tile-3 {
+    background-color: $odiColour3;
+  }
+
+  #revenue, #tile-11 {
+    background-color: $odiColour11;
+  }
+
+  #backlog, #tile-12 {
+    background-color: $odiColour12;
+  }
+
+  #pipeline, #tile-9 {
+    background-color: $odiColour9;
+  }
+
+  #weighted-pipeline, #tile-8 {
+    background-color: $odiColour8;
+  }
+
+  .widget-number {
+    .title {
+      font-size: 22px;
+    }
+    h2.value {
+      font-size: 60px;
+      line-height: 1em;
+      text-transform: none;
+    }
+  }
+
+}
+
+#company-header {
+  position: relative;
+}
+
+#currency-switch {
+  position: absolute;
+  bottom: 5px;
+  left: 225px;
+}
+
+.currency {
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 0px;
+  cursor: pointer;
+  color: #999;
+}
+
+.currency-active {
+  background: #999;
+  color: black;
+}
+
+.currency:hover {
+  background: #333;
+  color: #999;
+}
+
+#progress {
+
+  #q1-progress {
+    background-color: $odiColour5;
+  }
+
+  #q2-progress {
+    background-color: $odiColour2;
+  }
+
+  #q3-progress {
+    background-color: $odiColour7;
+  }
+
+  #q4-progress {
+    background-color: $odiColour3;
+  }
+
+  .this-month {
+    background-color: $odiColour1;
+  }
+
+  .rest-of-quarter {
+    background-color: $odiColour5;
+  }
+
+  .discuss {
+    background-color: $odiColour7;
+  }
+
+  .done {
+    background-color: $odiColour8;
+  }
+
+}
