@@ -20,6 +20,12 @@ $odiPink:       #ef3aab;
 $odiMagenta:    #e6007c;
 $odiPurple:     #b13198;
 
+// Default widget colour
+
+ul.grid > li > div {
+  background-color: $odiGrey;
+}
+
 // Quarterly progress bars
 
 #q4-progress {
