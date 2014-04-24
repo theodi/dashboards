@@ -130,6 +130,34 @@ ul.grid > li > div {
   background-color: $odiBlue;
 }
 
+// Reach
+
+#total-reach {
+  background-color: $odiRed;
+}
+
+#active-reach {
+  background-color: $odiOrange;
+}
+
+#passive-reach {
+  background-color: $odiYellow;
+}
+
+#articles {
+  background-color: $odiGreen;
+}
+
+#events {
+  background-color: $odiBlueLight;
+}
+
+#people-trained {
+  background-color: $odiPink;
+}
+
+// Progress
+
 .this-month {
   background-color: $odiRed;
 }
