@@ -1,67 +1,65 @@
-$odiBlue: #00b7ff;
-$odiBlueDark: #2254f4;
-$odiBlueLight: #08def9;
-$odiOrange: #ff6700;
-$odiYellow: #F9BC26;
-$odiRed: #d60303;
-$odiGrey: #888888;
-$odiGreyDark: #333333;
-$odiGreyLight: #BBBBBB;
+$odiGrey:       #888888;
+$odiGreyDark:   #333333;
+$odiGreyLight:  #BBBBBB;
 
-// Colour variables, primarily for home modules
-$odiColour1: #D60303; // red
-$odiColour2: $odiOrange; // orange
-$odiColour3: $odiYellow; // yellow
-$odiColour4: #67EF67; //light green
-$odiColour5: #0DBC37; // med green
-$odiColour6: #1dd3a7; // turquoise
-$odiColour7: $odiBlueDark; // dark blue
-$odiColour8: $odiBlue;
-$odiColour9: $odiBlueLight; // light blue
-$odiColour10: #ef3aab; // pink
-$odiColour11: #e6007c; // magenta
-$odiColour12: #b13198; // purple
+$odiBlue:       #00b7ff;
+$odiBlueDark:   #2254f4;
+$odiBlueLight:  #08def9;
+
+$odiOrange:     #ff6700;
+$odiYellow:     #F9BC26;
+$odiRed:        #d60303;
+
+// NON STANDARD COLOURS - NEED TO BE CORRECTED
+
+$odiGreenLight: #67EF67;
+$odiGreen:      #0DBC37;
+$odiTurquoise:  #1dd3a7;
+
+$odiPink:       #ef3aab;
+$odiMagenta:    #e6007c;
+$odiPurple:     #b13198;
 
 #company {
 
   #q4-progress {
-    background-color: $odiColour7;
+    background-color: $odiBlueDark;
   }
 
   #q3-progress {
-    background-color: $odiColour6;
+    background-color: $odiTurquoise;
   }
 
   #q2-progress {
-    background-color: $odiColour9;
+    background-color: $odiBlueLight;
   }
 
   #q1-progress {
-    background-color: $odiColour8;
+    background-color: $odiBlue;
   }
 
   #reach {
-    background-color: $odiColour3;
+    background-color: $odiYellow;
   }
 
   #bookings {
-    background-color: $odiColour2;
+    background-color: $odiOrange;
   }
 
   #kpis, #non-commercial-bookings {
-    background-color: $odiColour1;
+    background-color: $odiRed;
   }
 
   #value {
-    background-color: $odiColour10;
+    background-color: $odiPink;
   }
 
   #odcs {
-    background-color: $odiColour11;
+    background-color: $odiMagenta;
   }
 
   #members, #revenue-by-sector {
-    background-color: $odiColour12;
+    background-color: $odiPurple;
   }
 
 }
@@ -69,31 +67,31 @@ $odiColour12: #b13198; // purple
 #membership {
 
   #total-members {
-    background-color: $odiColour7;
+    background-color: $odiBlueDark;
   }
 
   #member-members {
-    background-color: $odiColour3;
+    background-color: $odiYellow;
   }
 
   #partner-members {
-    background-color: $odiColour2;
+    background-color: $odiOrange;
   }
 
   #sponsor-members {
-    background-color: $odiColour1;
+    background-color: $odiRed;
   }
 
   #renewals {
-    background-color: $odiColour5;
+    background-color: $odiGreen;
   }
 
   #income {
-    background-color: $odiColour6;
+    background-color: $odiTurquoise;
   }
 
   #ranking {
-    background-color: $odiColour8;
+    background-color: $odiBlue;
   }
 
 }
@@ -101,35 +99,35 @@ $odiColour12: #b13198; // purple
 #commercial, #research, #opex {
 
   #members, #tile-10 {
-    background-color: $odiColour10;
+    background-color: $odiPink;
   }
 
   #weighted-pipeline, #tile-2 {
-    background-color: $odiColour2;
+    background-color: $odiOrange;
   }
 
   #old-opportunities, #tile-1 {
-    background-color: $odiColour1;
+    background-color: $odiRed;
   }
 
   #bookings, #tile-3 {
-    background-color: $odiColour3;
+    background-color: $odiYellow;
   }
 
   #revenue, #tile-11 {
-    background-color: $odiColour11;
+    background-color: $odiMagenta;
   }
 
   #backlog, #tile-12 {
-    background-color: $odiColour12;
+    background-color: $odiPurple;
   }
 
   #pipeline, #tile-9 {
-    background-color: $odiColour9;
+    background-color: $odiBlueLight;
   }
 
   #weighted-pipeline, #tile-8 {
-    background-color: $odiColour8;
+    background-color: $odiBlue;
   }
 
 }
@@ -137,35 +135,35 @@ $odiColour12: #b13198; // purple
 #progress {
 
   #q1-progress {
-    background-color: $odiColour5;
+    background-color: $odiGreen;
   }
 
   #q2-progress {
-    background-color: $odiColour2;
+    background-color: $odiOrange;
   }
 
   #q3-progress {
-    background-color: $odiColour7;
+    background-color: $odiBlueDark;
   }
 
   #q4-progress {
-    background-color: $odiColour3;
+    background-color: $odiYellow;
   }
 
   .this-month {
-    background-color: $odiColour1;
+    background-color: $odiRed;
   }
 
   .rest-of-quarter {
-    background-color: $odiColour5;
+    background-color: $odiGreen;
   }
 
   .discuss {
-    background-color: $odiColour7;
+    background-color: $odiBlueDark;
   }
 
   .done {
-    background-color: $odiColour8;
+    background-color: $odiBlue;
   }
 
 }
