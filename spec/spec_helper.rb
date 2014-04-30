@@ -2,6 +2,8 @@ require 'vcr'
 require 'dotenv'
 require 'timecop'
 require 'pry'
+require 'i18n'
+require 'i18n/backend/fallbacks'
 
 Dotenv.load
 
@@ -34,3 +36,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 end
+
+I18n.load_path = Dir[File.join(File.dirname(__FILE__), '..', 'locales', '*.yml')]
+I18n.backend.load_translations
