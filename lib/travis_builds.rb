@@ -39,7 +39,9 @@ class TravisBuilds
   end
 
   def self.latest(jobs)
-    jobs.take(5)
+    num = 12 - failboat(jobs).count
+    num = 5 if num < 5
+    jobs.take(num)
   end
 
   def self.failboat(jobs)
