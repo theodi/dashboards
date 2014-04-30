@@ -2,9 +2,13 @@ require 'json'
 require 'open-uri'
 require 'dotenv'
 
+require 'action_view/helpers'
+
 Dotenv.load
 
 class TravisBuilds
+
+  extend ActionView::Helpers::DateHelper
 
   def self.update
     jobs = get_jobs(url)
@@ -44,10 +48,14 @@ class TravisBuilds
 
   def self.get_jobs(url)
     json = JSON.parse(open(url).read)
-    json.sort_by!{ |j| j['last_build_started_at'] }.reverse!
+    json.sort_by!{ |j| j['last_build_finished_at'] || job['last_build_started_at']}.reverse!
 
     json.map do |job|
-      { job: job['slug'], date: job['last_build_started_at'], status: job_status(job['last_build_result']) }
+      {
+        job: job['slug'].split('/').last,
+        date: time_ago_in_words(DateTime.parse(job['last_build_finished_at'] || job['last_build_started_at'])) + " ago",
+        status: job_status(job['last_build_result'])
+      }
     end
   end
 

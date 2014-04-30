@@ -59,20 +59,20 @@ describe TravisBuilds do
 
     it "should return the five latest builds and create a list" do
       @result[:latest].count.should == 3
-      @result[:latest][0][:job].should == "theodi/dashboards"
+      @result[:latest][0][:job].should == "dashboards"
       @result[:latest][0][:date].should == "2014-02-21T12:43:51Z"
       @result[:latest][0][:status].should == "success"
-      @result[:latest][1][:job].should == "theodi/breasal"
+      @result[:latest][1][:job].should == "breasal"
       @result[:latest][1][:date].should == "2014-02-21T12:17:53Z"
       @result[:latest][1][:status].should == "failure"
-      @result[:latest][2][:job].should == "theodi/csvlint"
+      @result[:latest][2][:job].should == "csvlint"
       @result[:latest][2][:date].should == "2014-02-21T10:22:53Z"
       @result[:latest][2][:status].should == "disabled"
     end
 
     it "should return failing builds" do
       @result[:failboat].count.should == 1
-      @result[:failboat][0][:job].should == "theodi/breasal"
+      @result[:failboat][0][:job].should == "breasal"
       @result[:failboat][0][:date].should == "2014-02-21T12:17:53Z"
       @result[:failboat][0][:status].should == "failure"
     end
