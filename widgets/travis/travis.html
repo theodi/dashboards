@@ -1,23 +1,30 @@
-<h1 class="title" data-bind="title"></h1>
+<div data-bind-class="buildStatus">
 
-<div class="builds">
-  <ul class="list-nostyle">
-    <li data-foreach-item="latest" data-bind-class="item.status">
-      <p data-bind='item.job'></p>
-      <p class='last-run'>(Last run at <span data-bind='item.date'></span>)</p>
-    </li>
-  </ul>
-</div>
+  <div>
 
-<div class="failboat">
-  <h1 class="title">Failboat</h1>
+    <h1 class="title" data-bind="title"></h1>
 
-  <ul class="list-nostyle">
-    <li data-foreach-item="failboat" data-bind-class="item.status">
-      <p data-bind='item.job'></p>
-      <p class='last-run'>(Last run at <span data-bind='item.date'></span>)</p>
-    </li>
-  </ul>
+    <div class="builds">
+      <ul class="list-nostyle">
+        <li data-foreach-item="latest" data-bind-class="item.status">
+          <p data-bind='item.job'></p>
+          <p class='last-run'><span data-bind='item.date'></span></p>
+        </li>
+      </ul>
+    </div>
 
-  <p data-showif="failboatempty" id="failboat">No passengers aboard!</p>
+    <div data-showunless="failboatempty" class="failboat">
+      <h2 class="title">Failboat</h2>
+
+      <ul class="list-nostyle">
+        <li data-foreach-item="failboat" data-bind-class="item.status">
+          <p data-bind='item.job'></p>
+          <p class='last-run'><span data-bind='item.date'></span></p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
 </div>
