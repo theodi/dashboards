@@ -1,22 +1,17 @@
 // ----------------------------------------------------------------------------
 // Widget-image styles
 // ----------------------------------------------------------------------------
+
 .widget-image {
 
   margin: 0;
   padding: 0 !important;
 
-  img {
-    height: 220px;
-    margin: 0 auto;
-  }
-
-  div.pass {
-    background-color: green;
-  }
-
-  div.fail {
-    background-color: red;
+  div {
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   #trombone {
