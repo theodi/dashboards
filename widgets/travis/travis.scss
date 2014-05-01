@@ -46,8 +46,12 @@ $orange:     #FF6700;
         background-color: $orange;
       }
 
-      &.disabled {
-        background-color: gray;
+      &.error {
+        background-color: $orange;
+      }
+
+      &.building {
+        background-color: $yellow;
       }
     }
 

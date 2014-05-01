@@ -45,30 +45,38 @@ class TravisBuilds
   end
 
   def self.failboat(jobs)
-    jobs.select { |j| j[:status] == "failure" }
+    jobs.select { |j| j[:status] == "failure" || j[:status] == "error" }
   end
 
   def self.get_jobs(url)
     json = JSON.parse(open(url).read)
-    json.sort_by!{ |j| j['last_build_finished_at'] || job['last_build_started_at']}.reverse!
+    json.sort_by! { |j|
+      j['last_build_finished_at'] ||
+      j['last_build_started_at'] || DateTime.now.iso8601
+    }.reverse!
 
     json.map do |job|
+      time = DateTime.parse(job['last_build_finished_at'] || job['last_build_started_at']) rescue DateTime.now
       {
         job: job['slug'].split('/').last,
-        date: time_ago_in_words(DateTime.parse(job['last_build_finished_at'] || job['last_build_started_at'])) + " ago",
-        status: job_status(job['last_build_result'])
+        date: time_ago_in_words(time) + " ago",
+        status: job_status(job)
       }
     end
   end
 
-  def self.job_status(result)
-    case result
+  def self.job_status(job)
+    case job['last_build_result']
     when 0
       "success"
     when 1
       "failure"
     when nil
-      "disabled"
+      if job['last_build_finished_at']
+        "error"
+      else
+        "building"
+      end
     end
   end
 
