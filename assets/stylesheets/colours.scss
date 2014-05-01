@@ -266,10 +266,6 @@ ul.grid > li > div {
   background-color: $lightblue;
 }
 
-#build-status {
-  background-color: $yellow;
-}
-
 #issues {
   background-color: $red;
 }
@@ -288,6 +284,14 @@ ul.grid > li > div {
 
 #milestone {
   background-color: $blue;
+}
+
+.build-failed, .fail {
+  background-color: $red;
+}
+
+.build-passed, .pass {
+  background-color: $green;
 }
 
 // Other

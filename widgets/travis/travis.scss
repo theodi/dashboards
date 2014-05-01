@@ -6,37 +6,58 @@ $value-color:       #fff;
 
 $label-color:       rgba(255, 255, 255, 0.7);
 
+$green:      #0DBC37;
+$red:        #D60303;
+$lightgreen: #67EF67;
+$yellow:     #F9BC26;
+$orange:     #FF6700;
+
+
 // ----------------------------------------------------------------------------
 // Widget-jenkins styles
 // ----------------------------------------------------------------------------
 .widget-travis {
 
-  vertical-align: top !important;
-  padding: 0 !important;
+  padding: 0px !important;
+
+  > div {
+    height:100%;
+    display: table;
+    width: 100%;
+
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 
   ul {
 
     li {
-      margin: 0 0 10px 0;
       padding: 5px 0;
-      font-size: 0.7em;
+      margin: 0px 10px;
+      font-size: 1.0em;
 
       &.success {
-        background-color: #0DBC37;
+        background-color: $lightgreen;
       }
 
       &.failure {
-        background-color: #ff6700;
+        background-color: $orange;
       }
 
-      &.disabled {
-        background-color: gray;
+      &.error {
+        background-color: $orange;
+      }
+
+      &.building {
+        background-color: $yellow;
       }
     }
 
     .last-run {
-      font-size: 0.8em;
-      opacity: 0.6;
+      font-size: 0.5em;
+      color: black;
     }
 
   }
@@ -46,19 +67,17 @@ $label-color:       rgba(255, 255, 255, 0.7);
     margin: 0 auto;
   }
 
-  div.pass {
-    background-color: #0DBC37;
-  }
-
-  div.fail {
-    background-color: #ff6700;
-  }
-
   #failboat {
     padding: 35px 0;
     color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     background-color: #0DBC37;
+  }
+
+  h2.title {
+      text-transform: none;
+      font-size: 100%;
+      margin-top: 20px;
   }
 
 }

@@ -21,6 +21,7 @@ gem 'rufus-scheduler'
 gem 'faraday', '< 0.9'
 gem 'i18n'
 gem 'sinatra-partial'
+gem 'actionview'
 
 group :development, :test do
   gem 'rspec'
