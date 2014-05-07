@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/<SOUNDCLOUD_USERNAME>/shared/milestones?access_token=<GITHUB_OAUTH_TOKEN>&state=open&sort=due_date
+    uri: https://api.github.com/repos/<CAPSULECRM_ACCOUNT_NAME>/shared/milestones?access_token=<GITHUB_OAUTH_TOKEN>&state=open&sort=due_date
     body:
       encoding: US-ASCII
       string: ''
@@ -15,7 +15,7 @@ http_interactions:
       - Github Ruby Gem 0.11.3
       authorization:
       - Token token="<GITHUB_OAUTH_TOKEN>"
-      accept-enc<METRICS_API_USERNAME>ng:
+      accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
@@ -28,10 +28,13 @@ http_interactions:
         R2l0SHViLmNvbQ==
       !binary "ZGF0ZQ==":
       - !binary |-
-        V2VkLCAwNyBNYXkgMjAxNCAwNzo0Nzo1MCBHTVQ=
+        V2VkLCAwNyBNYXkgMjAxNCAwODoyOTowNSBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
       !binary "Y29ubmVjdGlvbg==":
       - !binary |-
         Y2xvc2U=
@@ -43,10 +46,10 @@ http_interactions:
         NTAwMA==
       !binary "eC1yYXRlbGltaXQtcmVtYWluaW5n":
       - !binary |-
-        NDU4OQ==
+        NDc0Ng==
       !binary "eC1yYXRlbGltaXQtcmVzZXQ=":
       - !binary |-
-        MTM5OTQ0OTcwNA==
+        MTM5OTQ1MzMwNA==
       !binary "Y2FjaGUtY29udHJvbA==":
       - !binary |-
         cHJpdmF0ZSwgbWF4LWFnZT02MCwgcy1tYXhhZ2U9NjA=
@@ -62,7 +65,7 @@ http_interactions:
       - !binary |-
         QWNjZXB0LCBBdXRob3JpemF0aW9uLCBDb29raWUsIFgtR2l0SHViLU9UUA==
       - !binary |-
-        QWNjZXB0LUVuYzxNRVRSSUNTX0FQSV9VU0VSTkFNRT5uZw==
+        QWNjZXB0LUVuY29kaW5n
       !binary "eC1naXRodWItbWVkaWEtdHlwZQ==":
       - !binary |-
         Z2l0aHViLnYzOyBmb3JtYXQ9anNvbg==
@@ -89,7 +92,7 @@ http_interactions:
         Kg==
       !binary "eC1naXRodWItcmVxdWVzdC1pZA==":
       - !binary |-
-        M0VGRUY3ODM6MkEwNDo5NUU1QjQwOjUzNjlFNTI2
+        NTY5MjI5NDM6MDQxRDo0RDUyQTg3OjUzNjlFRUQx
       !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
       - !binary |-
         bWF4LWFnZT0zMTUzNjAwMA==
@@ -98,11 +101,8 @@ http_interactions:
         bm9zbmlmZg==
       !binary "eC1zZXJ2ZWQtYnk=":
       - !binary |-
-        MzA2MTk3NWUxZjM3MTIxYjM3NTE2MDRhZDE1M2M2ODc=
-      !binary "dHJhbnNmZXItZW5jPE1FVFJJQ1NfQVBJX1VTRVJOQU1FPm5n":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Y29udGVudC1lbmM8TUVUUklDU19BUElfVVNFUk5BTUU+bmc=":
+        NmQ3ZGU5ZTY0NTgxNGNhYzM0ZWEyYThkNzJiYTMxNDE=
+      !binary "Y29udGVudC1lbmNvZGluZw==":
       - !binary |-
         Z3ppcA==
     body:
@@ -128,5 +128,5 @@ http_interactions:
         2kfg738SZMOTTw8AAA==
     http_version: !binary |-
       MS4x
-  recorded_at: Wed, 07 May 2014 07:47:51 GMT
+  recorded_at: Wed, 07 May 2014 08:29:05 GMT
 recorded_with: VCR 2.9.0
