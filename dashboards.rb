@@ -4,8 +4,13 @@ require 'i18n'
 require 'i18n/backend/fallbacks'
 require 'sinatra/partial'
 require 'airbrake'
+require 'rack-google-analytics'
 
 Dotenv.load
+
+if ENV['DASHBOARDS_ANALYTICS_KEY']
+  use Rack::GoogleAnalytics, :tracker => ENV['DASHBOARDS_ANALYTICS_KEY']
+end
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
