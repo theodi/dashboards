@@ -9,7 +9,7 @@ require 'rack-google-analytics'
 Dotenv.load
 
 if ENV['DASHBOARDS_ANALYTICS_KEY']
-  use Rack::GoogleAnalytics, :tracker => ENV['DASHBOARDS_ANALYTICS_KEY']
+  use Rack::GoogleAnalytics, tracker: ENV['DASHBOARDS_ANALYTICS_KEY']
 end
 
 configure do
