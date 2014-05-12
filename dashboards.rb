@@ -3,6 +3,7 @@ require 'dotenv'
 require 'i18n'
 require 'i18n/backend/fallbacks'
 require 'sinatra/partial'
+require 'airbrake'
 
 Dotenv.load
 
@@ -71,6 +72,19 @@ before '/progress/*' do
       @dashboard = "current_progress"
     else
       @dashboard = "progress"
+    end
+  end
+end
+
+if ENV['DASHBOARDS_AIRBRAKE_KEY']
+  configure :production do
+    Airbrake.configure do |config|
+      config.api_key = ENV['DASHBOARDS_AIRBRAKE_KEY']
+    end
+    use Airbrake::Sinatra
+
+    def SCHEDULER.on_error(job, error)
+      Airbrake.notify(error)
     end
   end
 end
