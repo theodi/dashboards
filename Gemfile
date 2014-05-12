@@ -22,6 +22,8 @@ gem 'faraday', '< 0.9'
 gem 'i18n'
 gem 'sinatra-partial'
 gem 'actionview'
+gem 'airbrake'
+gem 'rack-google-analytics'
 
 group :development, :test do
   gem 'rspec'

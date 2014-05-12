@@ -17,6 +17,11 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    actionpack (4.1.0)
+      actionview (= 4.1.0)
+      activesupport (= 4.1.0)
+      rack (~> 1.5.2)
+      rack-test (~> 0.6.2)
     actionview (4.1.0)
       activesupport (= 4.1.0)
       builder (~> 3.1)
@@ -31,6 +36,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    airbrake (3.1.16)
+      builder
+      multi_json
     backports (3.6.0)
     builder (3.2.2)
     capsulecrm (0.0.3)
@@ -149,6 +157,9 @@ GEM
       json
       websocket (~> 1.0)
     rack (1.5.2)
+    rack-google-analytics (1.1.0)
+      actionpack
+      activesupport
     rack-protection (1.5.3)
       rack
     rack-test (0.6.2)
@@ -250,6 +261,7 @@ PLATFORMS
 DEPENDENCIES
   actionview
   activesupport
+  airbrake
   capsulecrm
   capybara
   coveralls
@@ -265,6 +277,7 @@ DEPENDENCIES
   i18n
   json
   pry
+  rack-google-analytics
   rake
   rscribd
   rspec
