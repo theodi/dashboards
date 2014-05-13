@@ -24,6 +24,11 @@ en:
     title: Membership
   training:
     title: Training
+    upcoming_courses: Upcoming courses
+    upcoming_lectures: Upcoming lectures
+    previous_lectures: Previous lectures
+    scribd: Views on scribd
+    soundcloud: Listens on soundcloud
   tech:
     title: Tech team
     issues: Issues
