@@ -12,6 +12,14 @@ en:
   opex:
     "2014":
       title: 2014 opex
+    income: Income
+    costs: Total costs
+    headcount: Headcount
+    ebitda_ytd: EBITDA (YTD)
+    ebitda_month: EBITDA (this month)
+    burn: Burn rate
+    cash: Cash reserves
+    costs: Costs breakdown
   reach:
     "2014":
       title: 2014 reach
