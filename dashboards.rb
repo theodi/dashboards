@@ -26,16 +26,11 @@ configure do
     end
 
     def get_navigation(item)
-      title = I18n.t item.gsub('/','.')
-      if title.class == Hash
-        I18n.t item.gsub('/','.') + ".main"
-      else
-        title
-      end
+      title = I18n.t item.gsub('/','.')+".title"
     end
 
     def page_title
-      I18n.t params["splat"][0].gsub('/','.')
+      I18n.t params["splat"][0].gsub('/','.')+'.title'
     end
 
     def navigation_tree
