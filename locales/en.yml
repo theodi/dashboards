@@ -173,6 +173,22 @@ en:
         title: Progress 2014 Q3
       q4:
         title: Progress 2014 Q4
+    tips:
+      outstanding: Tasks that were not completed during the quarter
+      discuss: Tasks that need further discussion
+      done: Completed tasks
+      this_month: Tasks that are scheduled for this month
+      rest_of_quarter: Tasks for later in the quarter
+      "2013":
+        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      "2014":
+        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
   news_articles:
     title: News articles
     sentiment: Sentiment
