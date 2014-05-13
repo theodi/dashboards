@@ -18,6 +18,11 @@ en:
   research-projects-training:
     "2014":
       title: 2014 research, projects & training
+    commercial: Commercial
+    non_commercial: Non-commercial
+    research: Research
+    training: Training
+    projects: Projects
   commercial:
     title: Commercial
     total_pipeline: Total pipeline
