@@ -15,6 +15,12 @@ en:
   reach:
     "2014":
       title: 2014 reach
+    total: Total reach
+    active: Active reach
+    passive: Passive reach
+    articles: Articles
+    events: Events
+    people_trained: People trained
   research-projects-training:
     "2014":
       title: 2014 research, projects & training
