@@ -39,6 +39,11 @@ en:
     build_status: Build status
     pingdom: Pingdom status
   progress:
+    outstanding: Outstanding tasks
+    discuss: To discuss
+    done: Done
+    this_month: Tasks this month
+    rest_of_quarter: Rest of quarter
     "2013":
       title: Progress 2013
       q1:
