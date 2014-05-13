@@ -22,6 +22,14 @@ en:
     title: Commercial
   membership:
     title: Membership
+    total_members: Total members
+    sponsors: Sponsors
+    partners: Partners
+    members: Members
+    supporters: Supporters
+    renewals: Renewals due
+    income: Income ratio
+    ranking: Ranking vs whitespace
   training:
     title: Training
     upcoming_courses: Upcoming courses
