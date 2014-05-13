@@ -31,11 +31,11 @@ configure do
     end
 
     def get_navigation(item)
-      title = I18n.t item.gsub('/','.')+".title"
+      title = I18n.t item.gsub('/', '.') + '.title'
     end
 
     def page_title
-      I18n.t params["splat"][0].gsub('/','.')+'.title'
+      I18n.t params['splat'][0].gsub('/', '.') + '.title'
     end
 
     def navigation_tree
