@@ -9,6 +9,12 @@ en:
   network:
     "2014":
       title: 2014 network
+    members: Active members
+    partners: Partners
+    nodes: Nodes
+    supporters: Supporters
+    sponsors: Sponsors
+    startups: Startups
   opex:
     "2014":
       title: 2014 opex
