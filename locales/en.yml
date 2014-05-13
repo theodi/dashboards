@@ -2,10 +2,22 @@ en:
   company:
     "2013":
       title: 2013 company
+      kpis: Year 1 investor KPIs
     "2014":
       title: 2014 company
     all:
       title: Lifetime Company
+    reach: People reached
+    value: Value unlocked
+    network: Network size
+    training: People trained
+    bookings: Bookings
+    odcs: Open data certificates
+    members: Members
+    commercial_bookings: Commercial bookings
+    non_commercial_bookings: Non-commercial bookings
+    grants: Grant funding
+    revenue_by_sector: Income split
   network:
     "2014":
       title: 2014 network
