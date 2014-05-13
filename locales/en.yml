@@ -25,7 +25,14 @@ en:
   training:
     title: Training
   tech:
-    title: Tech Team
+    title: Tech team
+    issues: Issues
+    open_prs: Open PRs
+    ex_prs: External PRs
+    ex_prs_merged: Ex. PRs merged
+    mentions: "@UKODITech mentions"
+    build_status: Build status
+    pingdom: Pingdom status
   progress:
     "2013":
       title: Progress 2013
