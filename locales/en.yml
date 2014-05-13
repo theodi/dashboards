@@ -25,6 +25,10 @@ en:
       training: "Total number of people who have taken an ODI course"
       bookings: "Total contract value of direct sales made by the ODI team (e.g. a 3 year membership deal is 'booked' at the time of signing) since ODI started"
       odcs: "Total number of datasets that have been taken through the questionnaire; these might not have been published."
+      commercial_bookings: "The total contract value of sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from commercial companies (e.g. corporate membership)"
+      non_commercial_bookings: "The total contract value of sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from non-commercial sources (e.g. EU funded research)"
+      grants: "The total value of *new* funds closed for the ODI from funders.  For example, our 5 year funding via TSB was recognised in 2013."
+      revenue_by_sector: "The split of income against the different areas of work that ODI carries out"
   network:
     "2014":
       title: 2014 network
