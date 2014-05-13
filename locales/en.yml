@@ -1,23 +1,23 @@
 en:
   company:
     "2013":
-      title: 2013 Company
+      title: 2013 company
     "2014":
-      title: 2014 Company
+      title: 2014 company
     all:
       title: Lifetime Company
   network:
     "2014":
-      title: 2014 Network
+      title: 2014 network
   opex:
     "2014":
-      title: 2014 OpEx
+      title: 2014 opex
   reach:
     "2014":
-      title: 2014 Reach
+      title: 2014 reach
   research-projects-training:
     "2014":
-      title: 2014 Research, Projects & Training
+      title: 2014 research, projects & training
   commercial:
     title: Commercial
   membership:
@@ -55,7 +55,7 @@ en:
       q4:
         title: Progress 2014 Q4
   news_articles:
-    title: News Articles
+    title: News articles
   datetime:
     distance_in_words:
       about_x_hours:
