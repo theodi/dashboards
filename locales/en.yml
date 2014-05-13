@@ -20,6 +20,15 @@ en:
       title: 2014 research, projects & training
   commercial:
     title: Commercial
+    total_pipeline: Total pipeline
+    weighted_pipeline: Weighted pipeline
+    three_yr_pipeline: Three year pipeline
+    bookings: Commercial bookings
+    grants_recognised: Grant revenue recognised
+    grants_backlog: Grant income backlog
+    members: Members signed
+    opportunity_age: Average age of opportunities
+    old_opportunities: Old opportunities
   membership:
     title: Membership
     total_members: Total members
