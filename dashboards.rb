@@ -20,6 +20,11 @@ configure do
   enable :partial_underscores
 
   helpers do
+
+    def t(*args)
+      I18n.t(*args)
+    end
+
     def protected!
      # Put any authentication code you want in here.
      # This method is run before accessing any resource.
