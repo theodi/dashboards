@@ -1,11 +1,11 @@
 require 'json'
 require 'net/http'
-require 'active_support/core_ext/date/conversions'
+require 'active_support/all'
 
 class EventList
-  
+
   def self.update
-    
+
     json = Net::HTTP.get URI.parse("http://theodi.org/courses.json")
     events = JSON.parse(json)
 
@@ -18,5 +18,5 @@ class EventList
     { items: event_list.compact }
 
   end
-  
+
 end
