@@ -66,6 +66,18 @@ en:
         title: Progress 2014 Q4
   news_articles:
     title: News articles
+    sentiment: Sentiment
+    spokespeople: Spokespeople
+    geographies: Geo spread
+    sectors: Sector spread
+    odi:
+      volume: "ODI: volume"
+      value: "ODI: value"
+      reach: "ODI: reach"
+    open_data:
+      volume: "Open data: volume"
+      value: "Open data: value"
+      reach: "Open data: reach"
   datetime:
     distance_in_words:
       about_x_hours:
