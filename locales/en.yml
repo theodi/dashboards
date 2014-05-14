@@ -1,34 +1,137 @@
 en:
   company:
-    "2013": 2013 Company
-    "2014": 2014 Company
-    all: Lifetime Company
-  network:
-    "2014": 2014 Network
-  opex:
-    "2014": 2014 OpEx
-  reach:
-    "2014": 2014 Reach
-  research-projects-training:
-    "2014": 2014 Research, Projects & Training
-  commercial: Commercial
-  membership: Membership
-  training: Training
-  tech: Tech Team
-  progress:
     "2013":
-      main: Progress 2013
-      q1: Progress 2013 Q1
-      q2: Progress 2013 Q2
-      q3: Progress 2013 Q3
-      q4: Progress 2013 Q4
+      title: 2013 company
+      kpis: Year 1 investor KPIs
     "2014":
-      main: Progress 2014
-      q1: Progress 2014 Q1
-      q2: Progress 2014 Q2
-      q3: Progress 2014 Q3
-      q4: Progress 2014 Q4
-  news_articles: News Articles
+      title: 2014 company
+    all:
+      title: Lifetime company
+    reach: People reached
+    value: Value unlocked
+    network: Network size
+    training: People trained
+    bookings: Bookings
+    odcs: Open data certificates
+    members: Members
+    commercial_bookings: Commercial bookings
+    non_commercial_bookings: Non-commercial bookings
+    grants: Grant funding
+    revenue_by_sector: Income split
+  network:
+    "2014":
+      title: 2014 network
+    members: Active members
+    partners: Partners
+    nodes: Nodes
+    supporters: Supporters
+    sponsors: Sponsors
+    startups: Startups
+  opex:
+    "2014":
+      title: 2014 opex
+    income: Income
+    costs: Total costs
+    headcount: Headcount
+    ebitda_ytd: EBITDA (YTD)
+    ebitda_month: EBITDA (this month)
+    burn: Burn rate
+    cash: Cash reserves
+    costs: Costs breakdown
+  reach:
+    "2014":
+      title: 2014 reach
+    total: Total reach
+    active: Active reach
+    passive: Passive reach
+    articles: Articles
+    events: Events
+    people_trained: People trained
+  research-projects-training:
+    "2014":
+      title: 2014 research, projects & training
+    commercial: Commercial
+    non_commercial: Non-commercial
+    research: Research
+    training: Training
+    projects: Projects
+  commercial:
+    title: Commercial
+    total_pipeline: Total pipeline
+    weighted_pipeline: Weighted pipeline
+    three_yr_pipeline: Three year pipeline
+    bookings: Commercial bookings
+    grants_recognised: Grant revenue recognised
+    grants_backlog: Grant income backlog
+    members: Members signed
+    opportunity_age: Average age of opportunities
+    old_opportunities: Old opportunities
+  membership:
+    title: Membership
+    total_members: Total members
+    sponsors: Sponsors
+    partners: Partners
+    members: Members
+    supporters: Supporters
+    renewals: Renewals due
+    income: Income ratio
+    ranking: Ranking vs whitespace
+  training:
+    title: Training
+    upcoming_courses: Upcoming courses
+    upcoming_lectures: Upcoming lectures
+    previous_lectures: Previous lectures
+    scribd: Views on scribd
+    soundcloud: Listens on soundcloud
+  tech:
+    title: Tech team
+    issues: Issues
+    open_prs: Open PRs
+    ex_prs: External PRs
+    ex_prs_merged: Ex. PRs merged
+    mentions: "@UKODITech mentions"
+    build_status: Build status
+    pingdom: Pingdom status
+  progress:
+    outstanding: Outstanding tasks
+    discuss: To discuss
+    done: Done
+    this_month: Tasks this month
+    rest_of_quarter: Rest of quarter
+    "2013":
+      title: Progress 2013
+      q1:
+        title: Progress 2013 Q1
+      q2:
+        title: Progress 2013 Q2
+      q3:
+        title: Progress 2013 Q3
+      q4:
+        title: Progress 2013 Q4
+    "2014":
+      title: Progress 2014
+      q1:
+        title: Progress 2014 Q1
+      q2:
+        title: Progress 2014 Q2
+      q3:
+        title: Progress 2014 Q3
+      q4:
+        title: Progress 2014 Q4
+  news_articles:
+    title: News articles
+    sentiment: Sentiment
+    spokespeople: Spokespeople
+    geographies: Geo spread
+    sectors: Sector spread
+    odi:
+      volume: "ODI: volume"
+      value: "ODI: value"
+      reach: "ODI: reach"
+    open_data:
+      volume: "Open data: volume"
+      value: "Open data: value"
+      reach: "Open data: reach"
   datetime:
     distance_in_words:
       about_x_hours:
