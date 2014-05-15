@@ -3,6 +3,8 @@ en:
     "2013":
       title: 2013 company
       kpis: Year 1 investor KPIs
+      tips:
+        kpis: "Percentage completion against reach, engagement, and influence targets defined by investors at the point of investment"
     "2014":
       title: 2014 company
     all:
@@ -18,6 +20,18 @@ en:
     non_commercial_bookings: Non-commercial bookings
     grants: Grant funding
     revenue_by_sector: Income split
+    tips:
+      reach: "Includes both 'active' reach (people we've met in person) and 'passive' reach (unique webviews + video + slide views on 3rd party sites like scribd). Total since ODI started."
+      value: "Total amount of cash unlocked in direct investments in ODI, competitions, contracts, and partnerships since ODI started. Includes income that ODI startups have generated since joining the ODI programme."
+      network: "Total number of active corporate members + the Nodes + ODI startups + affiliates (e.g. BBC) since the ODI started"
+      training: "Total number of people who have taken an ODI course"
+      bookings: "Total contract value of direct sales made by the ODI team (e.g. a 3 year membership deal is 'booked' at the time of signing) since ODI started"
+      odcs: "Total number of datasets that have been taken through the questionnaire; these might not have been published."
+      members: "Total number of active corporate members"
+      commercial_bookings: "The total contract value of sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from commercial companies (e.g. corporate membership)"
+      non_commercial_bookings: "The total contract value of sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from non-commercial sources (e.g. EU funded research)"
+      grants: "The total value of *new* funds closed for the ODI from funders.  For example, our 5 year funding via TSB was recognised in 2013."
+      revenue_by_sector: "The split of income against the different areas of work that ODI carries out"
   network:
     "2014":
       title: 2014 network
@@ -27,6 +41,13 @@ en:
     supporters: Supporters
     sponsors: Sponsors
     startups: Startups
+    tips:
+      members: "Total *new* active members in this year against target (Partners + Sponsors + Supporters)"
+      partners: "Total *new* Partners in this year against target"
+      nodes: "Total *new* Nodes in this year against target"
+      supporters: "Total *new* Supporters in this year against target"
+      sponsors: "Total *new* Sponsors in this year against target"
+      startups: "Total *new* Startups in this year against target"
   opex:
     "2014":
       title: 2014 opex
@@ -38,6 +59,15 @@ en:
     burn: Burn rate
     cash: Cash reserves
     costs: Costs breakdown
+    tips:
+      income: "Total cash received this year from commercial and non-commercial contracts. Excludes grant funding."
+      costs: "Total cash spent this year."
+      headcount: "The number of people employed by the ODI. Excludes ODI Associates and freelancers."
+      ebitda_ytd: "Earnings before interest, tax, depreciation and amortization for this year"
+      ebitda_month: "Earnings before interest, tax, depreciation and amortization for this month"
+      burn: "The average monthly cash spend of the organisation. This is calculated on a rolling basis based on the previous 3 months."
+      cash: "Total cash held in ODI bank accounts."
+      costs: "The split of spending against different areas across ODI activities"
   reach:
     "2014":
       title: 2014 reach
@@ -47,14 +77,31 @@ en:
     articles: Articles
     events: Events
     people_trained: People trained
+    tips:
+      total: "Active + Passive reach"
+      active: "Number of people who have attended events in-person, trained, or attended live online discussions"
+      passive: "Number of unique views to the ODI website + 3rd party sites (e.g. videos on YouTube + Slide views on Slideshare, Scribd/etc.)"
+      articles: "Number of print articles referencing the ODI (e.g. newspapers and relevant websites)"
+      events: "Number of events ODI has held"
+      people_trained: "Number of people trained this year"
   research-projects-training:
     "2014":
       title: 2014 research, projects & training
     commercial: Commercial
     non_commercial: Non-commercial
-    research: Research
-    training: Training
-    projects: Projects
+    commercial_research: Research
+    commercial_training: Training
+    commercial_projects: Projects
+    non_commercial_research: Research
+    non_commercial_training: Training
+    non_commercial_projects: Projects
+    tips:
+      commercial_research: "Total contract value of research sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from commercial companies (e.g. research for a company)"
+      commercial_training: "The total contract value of training sales made by the ODI team from commercial sources (e.g. training a company's staff)"
+      commercial_projects: "Total contract value of project sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from commercial companies (e.g. a custom project for a company)"
+      non_commercial_research: "The total contract value of research sales made by the ODI team (e.g. a 3 year programme is 'booked' at the time of signing) from non-commercial sources (e.g. EU funded research)"
+      non_commercial_training: "The total contract value of training sales made by the ODI team from non-commercial sources (e.g. training civil servants)"
+      non_commercial_projects: "Total contract value of project sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from non-commercial companies (e.g. a government initiative)"
   commercial:
     title: Commercial
     total_pipeline: Total pipeline
@@ -92,6 +139,14 @@ en:
     mentions: "@UKODITech mentions"
     build_status: Build status
     pingdom: Pingdom status
+    tips:
+      issues: "Total number of issues open on GitHub across all projects"
+      open_prs: "Total number of pull requests open on GitHub across all projects"
+      ex_prs: "Total number of pull requests submitted to external projects"
+      ex_prs_merged: "Total number of pull requests merged into external projects"
+      mentions: "Mentions of @UKODITech on Twitter"
+      build_status: "Current status of Travis CI test builds"
+      pingdom: "Current status of Pingdom uptime checks on various servers"
   progress:
     outstanding: Outstanding tasks
     discuss: To discuss
@@ -118,6 +173,22 @@ en:
         title: Progress 2014 Q3
       q4:
         title: Progress 2014 Q4
+    tips:
+      outstanding: Tasks that were not completed during the quarter
+      discuss: Tasks that need further discussion
+      done: Completed tasks
+      this_month: Tasks that are scheduled for this month
+      rest_of_quarter: Tasks for later in the quarter
+      "2013":
+        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      "2014":
+        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
   news_articles:
     title: News articles
     sentiment: Sentiment
@@ -132,6 +203,19 @@ en:
       volume: "Open data: volume"
       value: "Open data: value"
       reach: "Open data: reach"
+    tips:
+      sentiment: "Sentiment analysis for news mentioning the ODI"
+      spokespeople: "Who is most cited in articles mentioning the ODI"
+      geographies: "In which countries are the most references found"
+      sectors: "In which sectors are the most references found"
+      odi:
+        volume: "Number of articles mentioning the ODI"
+        value: "Equivalent value if we'd had to buy advertising space"
+        reach: "Total combined reach of the publications in which the ODI is mentioned"
+      open_data:
+        volume: "Number of articles mentioning Open Data and an ODI spokesperson"
+        value: "Equivalent value if we'd had to buy advertising space"
+        reach: "Total combined reach of the publications in which Open data and an ODI spokesperson are mentioned"
   datetime:
     distance_in_words:
       about_x_hours:

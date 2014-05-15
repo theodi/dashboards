@@ -1,0 +1,34 @@
+/*====================================================
+Based on CSS Tooltips by Adam Whitcroft
+https://github.com/AdamWhitcroft/CSS.Tooltips
+====================================================*/
+
+.title {
+	position: relative;
+
+	&[data-tip] {
+		position:relative;
+		cursor:help;
+
+		&:after {
+			display:none;
+			content:attr(data-tip);
+			position:absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			padding:5px 8px;
+			background:rgba(0,0,0,0.4);
+			color:#fff;
+			z-index:9;
+			font-size: 14px;
+		}
+
+		&:hover:before,
+		&:hover:after {
+			display:block;
+		}
+
+	}
+
+}
