@@ -8,18 +8,18 @@
   <div class="number-with-target">
 
     <div class='annual-bar'>
-      <div class='label' data-tip="Target for end of this year">
+      <div class='label' data-tip="annual target">
         <span data-bind="annual_target | numberWithCurrency currency | prepend prefix | append suffix"></span>
       </div>
     </div>
     <div class='ytd-bar' data-bind-style='ytd_percent'>
-      <div class='label' data-tip="Target for end of this month">
+      <div class='label' data-tip="year to date target">
         <span data-bind="ytd_target | numberWithCurrency currency | prepend prefix | append suffix"></span>
       </div>
     </div>
     <div class='value-bar' data-bind-style='value_percent'>
     </div>
-    <div class='value-label tip-below' data-bind-style='value_percent' data-tip="Current value">
+    <div class='value-label tip-below' data-bind-style='value_percent' data-tip="year to date actual">
       <span data-bind="current | numberWithCurrency currency | prepend prefix | append suffix"></span>
     </div>
   </div>
