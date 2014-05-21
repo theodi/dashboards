@@ -12,6 +12,44 @@ $value-color:       #fff;
     margin-top: 10px;
     position: relative;
     height: 130px;
+
+    .tip {
+      display: none;
+      background:rgba(0,0,0,0.4) !important;
+      font-weight: normal;
+      padding:5px 8px !important;
+      z-index: 50;
+      color: white;
+      font-size: 14px;
+      white-space: nowrap;
+      position: absolute;
+
+      &.annual-tip {
+        top: -35px;
+        right: 0px;
+      }
+
+      &.ytd-tip {
+        top: -34px;
+        right: 0px;
+      }
+
+      &.value-tip {
+        bottom: -35px;
+        right: 0px;
+      }
+
+    }
+
+
+    :hover ~ .tip {
+      display: inline;
+    }
+
+    .label :hover {
+      cursor: help;
+    }
+
   }
 
   .annual-bar {
@@ -22,11 +60,11 @@ $value-color:       #fff;
     position: absolute;
     top: 60px;
     z-index: 0;
+    text-align: right;
 
     .label {
-      position: absolute;
+      position: relative;
       top: -24px;
-      right: 0px;
 
       span {
         background: rgba(153, 153, 153, 0.5);
@@ -60,29 +98,31 @@ $value-color:       #fff;
 
   }
 
-  .value-bar {
-    height: 40px;
-    background: white;
+  .value-container {
     position: absolute;
     z-index: 1;
     top: 60px;
-  }
 
-  .value-label {
-    z-index: 3;
-    width: 100%;
-    position: relative;
-    top: 100px;
-    left: 0px;
-    text-align: right;
-    font-weight: bold;
-    color: black;
-
-    span {
-      background-color: white;
-      padding: 5px;
+    .value-bar {
+      width: 100%;
+      height: 40px;
+      background: white;
     }
 
-  }
+    .value-label {
+      z-index: 3;
+      width: 100%;
+      position: relative;
+      top: 4.5px;
+      text-align: right;
+      font-weight: bold;
+      color: black;
 
+      span {
+        background-color: white;
+        padding: 5px;
+      }
+
+    }
+  }
 }
