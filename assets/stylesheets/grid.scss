@@ -7,7 +7,7 @@ ul.grid {
     display: table;
     border: 3px solid #222;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: visible;
 
     > div {
       height: 100%;
