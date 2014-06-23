@@ -2,6 +2,7 @@ require 'json'
 require 'open-uri'
 require 'dotenv'
 
+require 'active_support/all'
 require 'action_view/helpers'
 
 Dotenv.load
