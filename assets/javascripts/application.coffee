@@ -1,3 +1,7 @@
+# make sure Yaffle's eventsource goes in first
+#= require eventsource.js
+
+
 # dashing.js is located in the dashing framework
 # It includes jquery & batman for you.
 #= require dashing.js
