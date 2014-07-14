@@ -9,5 +9,5 @@ class Dashing.Travis extends Dashing.Widget
       "build-failed"
 
   onData: (data) ->
-    if data.failboat.length == 0
-      @set 'failboatempty', true
+    if data.failboat.length > 0
+      @set 'failboatpassengers', true
