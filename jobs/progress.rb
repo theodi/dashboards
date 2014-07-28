@@ -1,7 +1,7 @@
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   years = {
     "2013" => ["q1", "q2", "q3", "q4"],
-    "2014" => ["q1", "q2"]
+    "2014" => ["q1", "q2", "q3"]
   }
 
   years.each do |year,quarters|
