@@ -252,3 +252,22 @@ en:
       x_seconds:
         one: 1 second
         other: ! '%{count} seconds'
+  diversity:
+    title: Gender Diversity
+    gender:
+      total: All ODI Employees
+      board: Board
+      smt: Management
+      commercial: Commercial
+      international: International
+      operations: Operations
+      technical: Technical
+    tips:
+      gender:
+        total: Gender split of all ODI employees
+        board: Gender split of board members employed by ODI. Doesn't include non-employed board members.
+        smt: Gender split of the ODI senior management team
+        commercial: Gender split of the ODI commercial team
+        international: Gender split of the ODI international team
+        operations: Gender split of the ODI operations team
+        technical: Gender split of the ODI technical team
