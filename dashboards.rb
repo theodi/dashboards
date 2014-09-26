@@ -55,7 +55,7 @@ def current_quarter
 end
 
 before '/company' do
-  redirect to '/company/2014'
+  redirect to '/company/all'
 end
 
 before '/progress' do
