@@ -15,7 +15,6 @@ class Dashing.ProgressList extends Dashing.Widget
 
     $('.pagination a').click (event) ->
       event.preventDefault()
-      console.log(autopaginator)
       clearInterval(autopaginator)
 
   nextPage: =>

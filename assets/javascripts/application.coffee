@@ -9,7 +9,8 @@
 #= require_directory .
 #= require_tree ../../widgets
 
-console.log("Yeah! The dashboard has started!")
+if window.console
+  console.log("Yeah! The dashboard has started!")
 
 convertCurrency = (currency, value) ->
   # Assume currency is "GBP" for now
