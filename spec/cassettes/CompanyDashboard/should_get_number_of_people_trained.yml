@@ -19,18 +19,18 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 04 Mar 2014 13:57:20 GMT
+      - Wed, 12 Nov 2014 15:37:30 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '245'
+      - '262'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"5315d5d8ef922c6e570020bc","name":"current-year-people-trained","time":"2014-03-04T13:32:08+00:00","value":{"commercial":{"actual":4,"annual_target":190,"ytd_target":45},"non_commercial":{"actual":12,"annual_target":206,"ytd_target":48}}}'
+      string: ! '{"_id":"546377b5ef922cabb20065c5","name":"current-year-people-trained","time":"2014-11-12T15:07:33+00:00","value":{"commercial":{"actual":411,"annual_target":190,"ytd_target":177},"non_commercial":{"actual":144,"annual_target":206,"ytd_target":192},"total":497}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Mar 2014 13:57:20 GMT
+  recorded_at: Wed, 12 Nov 2014 15:37:31 GMT
 - request:
     method: get
     uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-people-trained
@@ -50,7 +50,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 04 Mar 2014 13:57:20 GMT
+      - Wed, 12 Nov 2014 15:37:31 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -59,7 +59,7 @@ http_interactions:
       - '116'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"5315d5d8ef922c6e570020bd","name":"cumulative-people-trained","time":"2014-03-04T13:32:08+00:00","value":234}'
+      string: ! '{"_id":"546377b5ef922cabb20065c6","name":"cumulative-people-trained","time":"2014-11-12T15:07:33+00:00","value":731}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Mar 2014 13:57:20 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Wed, 12 Nov 2014 15:37:31 GMT
+recorded_with: VCR 2.9.0

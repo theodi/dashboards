@@ -83,11 +83,11 @@ describe CompanyDashboard do
 
   it "should get number of people trained", :vcr do
     CompanyDashboard.people_trained(2014).should == {
-      'actual' => 16,
+      'actual' => 497,
       'annual_target' => 396,
-      'ytd_target' => 93
+      'ytd_target' => 369
     }
-    CompanyDashboard.people_trained.should == 234
+    CompanyDashboard.people_trained.should == 731
   end
 
   it "should get network size", :vcr do
