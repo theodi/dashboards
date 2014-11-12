@@ -3,9 +3,11 @@ require_relative 'metrics_helper'
 class Hash
   def sum
     inject({}) do |acc, values|
-      values[1].each_pair do |k,v|
-        acc[k] ||= 0
-        acc[k] += v
+      if values[1].is_a? Hash
+        values[1].each_pair do |k,v|
+          acc[k] ||= 0
+          acc[k] += v
+        end
       end
       acc
     end
@@ -133,7 +135,12 @@ class CompanyDashboard < MetricsHelper
 
   def self.people_trained(year = nil)
     data = select_metric 'people-trained', year
-    year ? data.sum : data
+    if data.is_a? Hash
+      total = data["total"]
+      data = year ? data.sum : data
+      data["actual"] = total || data["actual"] # use override total if there. What a hack.
+    end
+    data
   end
 
   def self.network_size(year = nil, sections = nil)
