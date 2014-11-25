@@ -34,7 +34,6 @@ class DiversityDashboard < MetricsHelper
   
   def self.team(name)
     data = []
-    puts load_metric 'diversity-gender'
     (load_metric 'diversity-gender')['value']['teams'][name].each_pair do |gender, value|
       data << {label: gender, value: value}
     end
