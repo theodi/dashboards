@@ -34,8 +34,6 @@ Capybara.app = Sinatra::Application
 
 class DashingWorld
   include Capybara::DSL
-  include RSpec::Expectations
-  include RSpec::Matchers
 
   def app
     Sinatra::Application
