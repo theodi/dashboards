@@ -146,50 +146,6 @@ describe TravisBuilds do
 
   end
 
-  describe "with an unstarted build" do
-
-    before :all do
-      @json = [
-        {
-          "id" => 877145,
-          "slug" => "theodi/dashboards",
-          "description" => "ODI dashboards, built using Dashing",
-          "last_build_id" => 24166451,
-          "last_build_number" => "278",
-          "last_build_status" => nil,
-          "last_build_result" => nil,
-          "last_build_duration" => nil,
-          "last_build_language" => nil,
-          "last_build_started_at" => nil,
-          "last_build_finished_at" => nil
-        },
-        {
-          "id"                     => 1544293,
-          "slug"                   => "theodi/breasal",
-          "description"            => "A Ruby gem that converts GB and Irish Eastings and Northing to Latitude and Longitude",
-          "last_build_id"          => 19329423,
-          "last_build_number"      => "3",
-          "last_build_status"      => 0,
-          "last_build_result"      => 0,
-          "last_build_duration"    => 121,
-          "last_build_language"    => nil,
-          "last_build_started_at"  => "2014-02-21T12:17:53Z",
-          "last_build_finished_at" => "2014-02-21T12:18:44Z"
-        },
-      ].to_json
-      FakeWeb.register_uri(:get, "https://api.travis-ci.org/repos/#{ENV['JENKINS_ORG']}.json", :body => @json)
-    end
-
-    it "should return failing builds" do
-      result = TravisBuilds.update
-      result[:failboat].count.should == 0
-      result[:latest][0][:job].should == "dashboards"
-      result[:latest][0][:date].should == "less than a minute ago"
-      result[:latest][0][:status].should == "building"
-    end
-
-  end
-
   describe "with a build in progress" do
 
     before :all do
