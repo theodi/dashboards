@@ -2,21 +2,21 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/<CAPSULECRM_ACCOUNT_NAME>/shared/milestones?access_token=18<XPC_SERVICE_NAME>77ce8<XPC_SERVICE_NAME><XPC_SERVICE_NAME>69336<XPC_SERVICE_NAME><XPC_SERVICE_NAME><XPC_SERVICE_NAME>c66f9f15e8434622b251<XPC_SERVICE_NAME>e&state=open&sort=due_date
+    uri: https://api.github.com/repos/<CAPSULECRM_ACCOUNT_NAME>/shared/milestones?access_token=18077ce80069336000c66f9f15e8434622b2510e&state=open&sort=due_date
     body:
       encoding: US-ASCII
       string: ''
     headers:
       accept:
-      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=<XPC_SERVICE_NAME>.5,application/json;q=<XPC_SERVICE_NAME>.1
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
       accept-charset:
       - utf-8
       user-agent:
-      - Github Ruby Gem <XPC_SERVICE_NAME>.11.3
+      - Github Ruby Gem 0.11.3
       authorization:
-      - Token token="18<XPC_SERVICE_NAME>77ce8<XPC_SERVICE_NAME><XPC_SERVICE_NAME>69336<XPC_SERVICE_NAME><XPC_SERVICE_NAME><XPC_SERVICE_NAME>c66f9f15e8434622b251<XPC_SERVICE_NAME>e"
+      - Token token="18077ce80069336000c66f9f15e8434622b2510e"
       accept-encoding:
-      - gzip;q=1.<XPC_SERVICE_NAME>,deflate;q=<XPC_SERVICE_NAME>.6,identity;q=<XPC_SERVICE_NAME>.3
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
