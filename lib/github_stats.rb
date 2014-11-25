@@ -79,7 +79,7 @@ class GithubDashboard
         @open = milestone["open_issues"]
         @closed = milestone["closed_issues"]
         @total = @open + @closed
-        @value = (@closed.to_f / @total.to_f * 100).to_i
+        @value = (@closed.to_f / @total.to_f * 100).to_i rescue 0
       end
     end
     return { min: 0, max: 100, value: @value || 0, title: @title || "unknown"}

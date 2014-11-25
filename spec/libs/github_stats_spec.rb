@@ -45,15 +45,15 @@ describe GithubDashboard do
 
     before :all do
       VCR.use_cassette("GithubDashboard/milestone") do
-        Timecop.freeze(2014,05,14)
+        Timecop.freeze(2014,11,15)
         @result = GithubDashboard.milestone
         Timecop.return
       end
     end
 
     it "should return correct information about the current milestone", :vcr do
-      @result[:title].should == "Sprint #26"
-      @result[:value].should == 6
+      @result[:title].should == "Sprint #37"
+      @result[:value].should == 10
     end
 
   end
