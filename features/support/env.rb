@@ -14,11 +14,11 @@ require 'cucumber/rspec/doubles'
 require 'capybara'
 require 'capybara/cucumber'
 require path + '/../../dashboards'
+require 'ignore_env'
 
 VCR.configure do |c|
   # Automatically filter all secure details that are stored in the environment
-  ignore_env = %w{SHLVL RUNLEVEL GUARD_NOTIFY DRB COLUMNS USER LOGNAME LINES}
-  (ENV.keys-ignore_env).select { |x| x =~ /\A[A-Z_]*\Z/ }.each do |key|
+  (ENV.keys-$ignore_env).select { |x| x =~ /\A[A-Z_]*\Z/ }.each do |key|
     c.filter_sensitive_data("<#{key}>") { ENV[key] }
   end
   c.default_cassette_options = { :record => :once }
