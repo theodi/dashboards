@@ -4,8 +4,11 @@ cache: bundler
 rvm:
 - 1.9.3
 after_success:
-- "[ \"$TRAVIS_BRANCH\" == \"master\" ] && [ \"$TRAVIS_PULL_REQUEST\" == \"false\" ] && curl -v -X DELETE -u $GITHUB_USER:$GITHUB_PASSWORD \"https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs/tags/CURRENT\""
-- "[ \"$TRAVIS_BRANCH\" == \"master\" ] && [ \"$TRAVIS_PULL_REQUEST\" == \"false\" ] && curl -v -X POST -d '{\"ref\":\"refs/tags/CURRENT\",\"sha\":\"'$TRAVIS_COMMIT'\"}' --header \"Content-Type:application/json\" -u $GITHUB_USER:$GITHUB_PASSWORD \"https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs\""
+- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
+  curl -v -X DELETE -u $GITHUB_USER:$GITHUB_PASSWORD "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs/tags/CURRENT"'
+- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
+  curl -v -X POST -d ''{"ref":"refs/tags/CURRENT","sha":"''$TRAVIS_COMMIT''"}'' --header
+  "Content-Type:application/json" -u $GITHUB_USER:$GITHUB_PASSWORD "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs"'
 branches:
   except:
   - CURRENT
@@ -14,7 +17,7 @@ notifications:
     channels:
     - irc.freenode.net#theodi
     template:
-    - "%{repository} %{branch} - %{message} %{build_url}"
+    - ! '%{repository} %{branch} - %{message} %{build_url}'
     on_success: change
     on_failure: always
 env:
@@ -49,3 +52,5 @@ env:
   - secure: I3TZl9J/2cYLCKKqbU1fBgcsGosZ/j7aWQ1eWwut8umH+c9MSGIYgPK1zuM2T6Ciu3GMsMFHsCmc7B1kPJHVh+vH4TM9JyTJV4LOXMNpE2J059Gd9Xa10Z50ZA3rDMr9cwsfuTQUfC/mKAdVRoV/XVmgul4D5Qpb0NV6G0m6v/w=
   - secure: kKZnfNKvvQNKFzYarI65Ks3ItQEdN4eeyqU521c2XLZFoJMOhY27cSlfXNp4uUCEtNVLPzjAlwNfmkEiPeQOMcGZi7AGkjVfcn9w0EpuIpSGTR9O42BPSGOIyLrXejS8ItVx4janB01bq7AhR5ie8r9gnOFfNO2jmjaJHgAFLy8=
   - secure: Euo+Pebn7ekPKwB/qllrO4vDm1oth/ZB34m4+ZKeXKozHf473OCRJ04ga7oKaqg4sinnT9i9BbvP3NU5BxLxNrs9GQxRdXtAE9gkTDA2kf4d04WbzzLvAXgQKqkZWQY43GlH7VCSgqIuZvSSlMZEF6euHZbZRW4F85gJEhHjgtU=
+  - secure: HPnR5WwWI/HXyy4EybTyitaY1N38J2P+M85fp1Q1CoRXU6ogOP1P8aaqm1DgFWeOPLQY82Pwu1mWt7tNu22qNSQ7RBsod2Lk+326RPhZ3jvXd4YOGIpLXkzwy0lYp8XjkA/5fPEciXBydsd5RGA2Yp60e2LwZX0epXR1XEEFay8=
+  - TRAVIS_IGNORE_REPOS='theodi/sauceconnect'

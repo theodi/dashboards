@@ -79,6 +79,15 @@ describe TravisBuilds do
       result[:trombone].should include('<source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
 
+    it "should ignore specified builds" do
+      ENV['TRAVIS_IGNORE_REPOS'] = "theodi/csvlint"
+
+      @result = TravisBuilds.update
+      @result[:latest].count.should == 2
+
+      ENV['TRAVIS_IGNORE_REPOS'] = ''
+    end
+
   end
 
   describe "with failing builds" do
