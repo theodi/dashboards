@@ -55,9 +55,10 @@ class TravisBuilds
       j['last_build_finished_at'] ||
       j['last_build_started_at'] || DateTime.now.iso8601
     }.reverse!
-    
+
     json.select! { |j| j['last_build_finished_at'] || j['last_build_started_at'] }
-    
+    json.reject! { |j| ENV['TRAVIS_IGNORE_REPOS'].split(",").include?(j['slug']) }
+
     json.map do |job|
       time = DateTime.parse(job['last_build_finished_at'] || job['last_build_started_at']) rescue DateTime.now
       {
