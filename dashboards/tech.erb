@@ -23,7 +23,10 @@
   <li class='row-1 col-7 width-2 height-2'>
     <div data-id="travis-build-image" data-view="Image" data-unordered="true" id='build-image'></div>
   </li>
-  <li class='row-3 col-7 width-2 height-4'>
-    <div data-id="pingdom-status" data-view="List" data-title="<%= t 'tech.pingdom' %>" id='pingdom' data-tooltip="<%= t 'tech.tips.pingdom' %>"></div>
+  <li class='row-3 col-7 width-2 height-3'>
+    <div data-id="dependencies" data-view="Pie" data-title="<%= t 'tech.dependencies' %>" id="dependencies" data-tooltip="<%= t 'tech.tips.dependencies' %>"></div>
+  </li>
+  <li class='row-6 col-7 width-2 height-1'>
+    <div class='small' data-id="dependency-alerts" data-view="Number" data-title="<%= t 'tech.dependency-alerts' %>" id="dependency-alerts" data-tooltip="<%= t 'tech.tips.dependency-alerts' %>"></div>
   </li>
 </ul>
