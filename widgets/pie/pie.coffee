@@ -72,7 +72,7 @@ class Dashing.Pie extends Dashing.Widget
           .attr("width", 130)
           .attr("fill", '#fff')
           .attr("font-size", "15px")
-          .text((d, i) -> d.label + " - " + Math.round(d.value/sum * 100) + '%')
+          .text((d, i) -> d.label + " - " + d.value + " ("+Math.round(d.value/sum * 100) + '%)')
       )
 
 
