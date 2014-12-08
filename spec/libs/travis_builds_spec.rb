@@ -84,6 +84,8 @@ describe TravisBuilds do
 
       @result = TravisBuilds.update
       @result[:latest].count.should == 2
+
+      ENV['TRAVIS_IGNORE_REPOS'] = ''
     end
 
   end
