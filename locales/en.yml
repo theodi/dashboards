@@ -140,7 +140,8 @@ en:
     build_status: Build status
     pingdom: Pingdom status
     dependencies: Dependency Status
-    dependency-alerts: Dependency Alerts
+    dependency-alerts: Dep Alerts
+    application-errors: App Errors
     tips:
       issues: "Total number of issues open on GitHub across all projects"
       open_prs: "Total number of pull requests open on GitHub across all projects"
@@ -151,6 +152,7 @@ en:
       pingdom: "Current status of Pingdom uptime checks on various servers"
       dependencies: Breakdown of dependencies tracked by Gemnasium
       dependency-alerts: Open gemnasium alerts
+      application-errors: Unresolved Airbrake errors
   progress:
     outstanding: Outstanding tasks
     discuss: To discuss

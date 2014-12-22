@@ -267,10 +267,14 @@ ul.grid > li > div {
 }
 
 #dependencies {
-  background-color: $lightblue;
+  background-color: $blue;
 }
 
 #dependency-alerts {
+  background-color: $orange;
+}
+
+#application-errors {
   background-color: $red;
 }
 
