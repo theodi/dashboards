@@ -74,7 +74,7 @@ describe TravisBuilds do
     it "should return a success image, a state and EVERYTHING IS AWESOME" do
       result = TravisBuilds.build_images
       result[:image].should match /https:\/\/buildmemes.herokuapp.com\/p\?[0-9]+/
-      result[:state].should == "pass"
+      result[:state].should == "build-passed"
       result[:trombone].should include('<source src="/awesome.mp3" type="audio/mpeg; codecs=\'mp3\'">')
       result[:trombone].should include('<source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
@@ -148,7 +148,7 @@ describe TravisBuilds do
     it "should return a fail image, a state and a sad trombone" do
       result = TravisBuilds.build_images
       result[:image].should match /https:\/\/buildmemes.herokuapp.com\/f\?[0-9]+/
-      result[:state].should == "fail"
+      result[:state].should == "build-failed"
       result[:trombone].should include('<source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">')
       result[:trombone].should include('<source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
