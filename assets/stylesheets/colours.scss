@@ -298,11 +298,11 @@ ul.grid > li > div {
   background-color: $blue;
 }
 
-.build-failed, .fail {
+.build-failed {
   background-color: $red;
 }
 
-.build-passed, .pass {
+.build-passed {
   background-color: $green;
 }
 

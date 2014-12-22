@@ -14,7 +14,7 @@ class TravisBuilds
   def self.update
     jobs = get_jobs(url)
     fails = failboat(jobs)
-    { state: fails.empty? ? "pass" : "fail", latest: latest(jobs), failboat: fails }
+    { state: fails.empty? ? "build-passed" : "build-failed", latest: latest(jobs), failboat: fails }
   end
 
   def self.build_images
@@ -22,7 +22,7 @@ class TravisBuilds
     if failboat(jobs).length > 0
       {
         :image => "https://buildmemes.herokuapp.com/f?#{Time.now.to_i}",
-        :state => "fail",
+        :state => "build-failed",
         :trombone => '<audio autoplay>
                         <source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">
                         <source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">
@@ -31,7 +31,7 @@ class TravisBuilds
     else
       {
         :image => "https://buildmemes.herokuapp.com/p?#{Time.now.to_i}",
-        :state => "pass",
+        :state => "build-passed",
         :trombone => '<audio autoplay>
                         <source src="/awesome.mp3" type="audio/mpeg; codecs=\'mp3\'">
                         <source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">
