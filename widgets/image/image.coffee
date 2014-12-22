@@ -1,12 +1,10 @@
 class Dashing.Image extends Dashing.Widget
 
   ready: ->
-    # This is fired when the widget is done being rendered
-
-  @accessor 'backgroundStyle', ->
-    "background-image: url(#{@image})"
+    set_background_image(@node, @image)
 
   onData: (data) ->
-    # Handle incoming data
-    # You can access the html node of this widget with `@node`
-    # Example: $(@node).fadeOut().fadeIn() will make the node flash each time data comes in.
+    set_background_image(@node, @image)
+    
+  set_background_image = (node, image) ->
+    node.children[0].style.backgroundImage = "url(#{image})"
