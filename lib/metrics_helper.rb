@@ -31,7 +31,4 @@ class MetricsHelper
     (load_metric metric, time)['value']
   end
 
-  def self.google_drive
-    GoogleDrive.login(ENV['GAPPS_USER_EMAIL'], ENV['GAPPS_PASSWORD'])
-  end
 end
