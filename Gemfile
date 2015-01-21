@@ -25,7 +25,6 @@ gem 'rack-google-analytics'
 
 group :development, :test do
   gem 'rspec'
-  gem 'rspec-pride'
   gem 'cucumber'
   gem 'capybara'
   gem 'coveralls', require: false
