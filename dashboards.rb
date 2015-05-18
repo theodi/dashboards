@@ -15,6 +15,7 @@ end
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'company'
+  set :protection, except: :frame_options
 
   set :partial_template_engine, :erb
   enable :partial_underscores
