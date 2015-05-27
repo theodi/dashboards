@@ -263,17 +263,16 @@ en:
     gender:
       total: All ODI Employees
       board: Board
-      smt: Management
-      commercial: Commercial
-      international: International
-      operations: Operations
-      technical: Technical
+      leadership: Leadership
+      international: Global network
+      innovation: Innovation unit
+      core: Core
     tips:
       gender:
         total: Gender split of all ODI employees
         board: Gender split of board members employed by ODI. Doesn't include non-employed board members.
-        smt: Gender split of the ODI senior management team
+        leadership: Gender split of the ODI leadership team
         commercial: Gender split of the ODI commercial team
         international: Gender split of the ODI international team
-        operations: Gender split of the ODI operations team
-        technical: Gender split of the ODI technical team
+        innovation: Gender split of the ODI innovation unit
+        core: Gender split of the ODI core team
