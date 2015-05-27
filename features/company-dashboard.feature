@@ -18,4 +18,4 @@ Feature: Company Dashboard
 
   Scenario: Cumulative dashboard should appear at /company/all
     When I visit "/company/all"
-    Then I should see "Lifetime company"
+    Then I should see "Lifetime impact"
