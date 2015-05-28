@@ -15,9 +15,13 @@ if window.console
 convertCurrency = (currency, value) ->
   # Assume currency is "GBP" for now
   if Dashing.currentCurrency == "EUR"
-    value * 1.21365
+    value * 1.39986
   else if Dashing.currentCurrency == "USD"
-    value * 1.67459
+    value * 1.55911
+  else if Dashing.currentCurrency == "JPY"
+    value * 187.274
+  else if Dashing.currentCurrency == "KRW"
+    value * 1710.25
   else
     value
 
@@ -29,6 +33,10 @@ currencySymbol = (currency) ->
       "€"
     when "USD"
       "$"
+    when "JPY"
+      "¥"
+    when "KRW"
+      "₩"
 
 Dashing.on 'ready', ->
   Dashing.currentCurrency ||= "GBP"
