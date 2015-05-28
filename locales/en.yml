@@ -185,16 +185,10 @@ en:
       done: Completed tasks
       this_month: Tasks that are scheduled for this month
       rest_of_quarter: Tasks for later in the quarter
-      "2013":
-        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-      "2014":
-        q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
-        q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      q1: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      q2: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      q3: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
+      q4: "Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."
   news_articles:
     title: News articles
     sentiment: Sentiment
