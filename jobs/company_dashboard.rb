@@ -12,7 +12,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2013-Value',    current: CompanyDashboard.value(2013),   currency: "GBP"
   send_event '2013-ODCs',     current: CompanyDashboard.odcs(2013),    link: "https://certificates.theodi.org/status"
   send_event '2013-KPIs',     current: CompanyDashboard.kpis(2013),    suffix: "%"
-  send_event '2013-Bookings', current: CompanyDashboard.old_bookings(2013), currency: "GBP" # derprecated metric
+  send_event '2013-Bookings', current: CompanyDashboard.bookings(2013), currency: "GBP" # derprecated metric
   # Trello gubbins
   progress_2013 = CompanyDashboard.progress(2013)
   send_event '2013-q1-progress', min: 0, max: 100, value: progress_2013[:q1], link: "/progress/2013/q1"
@@ -96,5 +96,5 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event 'Lifetime-ODCs',           current: CompanyDashboard.odcs,    link: "https://certificates.theodi.org/status"
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
   send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
-  send_event 'Lifetime-bookings',       current: CompanyDashboard.cumulative_bookings, currency: "GBP"
+  send_event 'Lifetime-bookings',       current: CompanyDashboard.bookings, currency: "GBP"
 end

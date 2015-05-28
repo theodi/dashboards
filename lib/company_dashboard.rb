@@ -65,23 +65,19 @@ class CompanyDashboard < MetricsHelper
     select_metric 'burn', year
   end
 
-  def self.old_bookings(year = nil)
+  def self.bookings(year = nil)
     select_metric 'bookings', year
   end
 
   def self.commercial_bookings(year = nil)
-    bookings(:commercial, year)
+    bookings_by_type(:commercial, year)
   end
 
   def self.noncommercial_bookings(year = nil)
-    bookings(:non_commercial, year)
+    bookings_by_type(:non_commercial, year)
   end
 
-  def self.cumulative_bookings
-    select_metric 'bookings',  nil
-  end
-
-  def self.bookings type, year = nil
+  def self.bookings_by_type type, year = nil
     bookings = bookings_by_sector(year)
     bookings.inject({}) do |acc, values|
       values[1][type.to_s].each_pair do |k,v|
