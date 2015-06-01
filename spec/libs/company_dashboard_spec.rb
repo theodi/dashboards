@@ -127,7 +127,7 @@ describe CompanyDashboard do
   end
 
   it "should get cumulative bookings value", :vcr do
-    CompanyDashboard.cumulative_bookings.should == 686000
+    CompanyDashboard.bookings.should == 686000
   end
 
   it "should show the correct commercial bookings value", :vcr do
