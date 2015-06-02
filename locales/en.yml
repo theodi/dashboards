@@ -160,7 +160,7 @@ en:
     this_month: Tasks this month
     rest_of_quarter: Rest of quarter
     "2013":
-      title: Progress 2013
+      title: 2013 Activities
       q1:
         title: Progress 2013 Q1
       q2:
@@ -170,7 +170,7 @@ en:
       q4:
         title: Progress 2013 Q4
     "2014":
-      title: Progress 2014
+      title: 2014 Activities
       q1:
         title: Progress 2014 Q1
       q2:
@@ -179,6 +179,16 @@ en:
         title: Progress 2014 Q3
       q4:
         title: Progress 2014 Q4
+    "2015":
+      title: 2015 Activities
+      q1:
+        title: Progress 2015 Q1
+      q2:
+        title: Progress 2015 Q2
+      q3:
+        title: Progress 2015 Q3
+      q4:
+        title: Progress 2015 Q4
     tips:
       outstanding: Tasks that were not completed during the quarter
       discuss: Tasks that need further discussion

@@ -19,18 +19,18 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:55 GMT
+      - Tue, 02 Jun 2015 11:37:22 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '195'
+      - '248'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52ea2cd3ef922c6e570001d2","name":"quarterly-progress","time":"2014-01-30T10:43:31+00:00","value":{"2014":{"q1":9.8,"q2":0,"q3":0,"q4":0},"2013":{"q1":97.0,"q2":90.2,"q3":93.1,"q4":89.8}}}'
+      string: ! '{"_id":"556d8b69ef922c16fc031314","name":"quarterly-progress","time":"2015-06-02T10:54:30+00:00","value":{"2013":{"q1":97.0,"q2":90.2,"q3":93.4,"q4":90.8},"2014":{"q1":91.8,"q2":91.5,"q3":84.1,"q4":92.5},"2015":{"q1":68.9,"q2":15.3,"q3":0,"q4":0}}}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:55 GMT
+  recorded_at: Tue, 02 Jun 2015 11:37:19 GMT
 - request:
     method: get
     uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/quarterly-progress
@@ -50,16 +50,47 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:55 GMT
+      - Tue, 02 Jun 2015 11:37:22 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '195'
+      - '248'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52ea2cd3ef922c6e570001d2","name":"quarterly-progress","time":"2014-01-30T10:43:31+00:00","value":{"2014":{"q1":9.8,"q2":0,"q3":0,"q4":0},"2013":{"q1":97.0,"q2":90.2,"q3":93.1,"q4":89.8}}}'
+      string: ! '{"_id":"556d8b69ef922c16fc031314","name":"quarterly-progress","time":"2015-06-02T10:54:30+00:00","value":{"2013":{"q1":97.0,"q2":90.2,"q3":93.4,"q4":90.8},"2014":{"q1":91.8,"q2":91.5,"q3":84.1,"q4":92.5},"2015":{"q1":68.9,"q2":15.3,"q3":0,"q4":0}}}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:55 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 02 Jun 2015 11:37:20 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/quarterly-progress
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 02 Jun 2015 11:37:23 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '248'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556d8b69ef922c16fc031314","name":"quarterly-progress","time":"2015-06-02T10:54:30+00:00","value":{"2013":{"q1":97.0,"q2":90.2,"q3":93.4,"q4":90.8},"2014":{"q1":91.8,"q2":91.5,"q3":84.1,"q4":92.5},"2015":{"q1":68.9,"q2":15.3,"q3":0,"q4":0}}}'
+    http_version: '1.1'
+  recorded_at: Tue, 02 Jun 2015 11:37:20 GMT
+recorded_with: VCR 2.9.3
