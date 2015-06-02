@@ -161,4 +161,12 @@ describe CompanyDashboard do
     }
   end
 
+  it "should show the correct 2015 bookings value", :vcr do
+    CompanyDashboard.bookings(2015).should == {
+      "actual" => 335000,
+      "annual_target" => 1044000,
+      "ytd_target" => 420000
+    }
+  end
+
 end
