@@ -7,12 +7,18 @@ describe CompanyDashboard do
     progress = CompanyDashboard.progress(2013)
     progress[:q1].should == 97
     progress[:q2].should == 90.2
-    progress[:q3].should == 93.1
-    progress[:q4].should == 89.8
+    progress[:q3].should == 93.4
+    progress[:q4].should == 90.8
 
     progress = CompanyDashboard.progress(2014)
-    progress[:q1].should == 9.8
-    progress[:q2].should == 0
+    progress[:q1].should == 91.8
+    progress[:q2].should == 91.5
+    progress[:q3].should == 84.1
+    progress[:q4].should == 92.5
+
+    progress = CompanyDashboard.progress(2015)
+    progress[:q1].should == 68.9
+    progress[:q2].should == 15.3
     progress[:q3].should == 0
     progress[:q4].should == 0
   end
