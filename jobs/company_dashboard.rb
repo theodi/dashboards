@@ -13,18 +13,6 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2013-ODCs',     current: CompanyDashboard.odcs(2013),    link: "https://certificates.theodi.org/status"
   send_event '2013-KPIs',     current: CompanyDashboard.kpis(2013),    suffix: "%"
   send_event '2013-Bookings', current: CompanyDashboard.bookings(2013), currency: "GBP" # derprecated metric
-  # Trello gubbins
-  progress_2013 = CompanyDashboard.progress(2013)
-  send_event '2013-q1-progress', min: 0, max: 100, value: progress_2013[:q1], link: "/progress/2013/q1"
-  send_event '2013-q2-progress', min: 0, max: 100, value: progress_2013[:q2], link: "/progress/2013/q2"
-  send_event '2013-q3-progress', min: 0, max: 100, value: progress_2013[:q3], link: "/progress/2013/q3"
-  send_event '2013-q4-progress', min: 0, max: 100, value: progress_2013[:q4], link: "/progress/2013/q4"
-
-  progress_2014 = CompanyDashboard.progress(2014)
-  send_event '2014-q1-progress', min: 0, max: 100, value: progress_2014[:q1], link: "/progress/2014/q1"
-  send_event '2014-q2-progress', min: 0, max: 100, value: progress_2014[:q2], link: "/progress/2014/q2"
-  send_event '2014-q3-progress', min: 0, max: 100, value: progress_2014[:q3], link: "/progress/2014/q3"
-  send_event '2014-q4-progress', min: 0, max: 100, value: progress_2014[:q4], link: "/progress/2014/q4"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
@@ -97,4 +85,11 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event 'Lifetime-network-size',   current: CompanyDashboard.network_size
   send_event 'Lifetime-people-trained', current: CompanyDashboard.people_trained
   send_event 'Lifetime-bookings',       current: CompanyDashboard.bookings, currency: "GBP"
+
+  (2013..DateTime.now.year).each do |year|
+    [:q1, :q2, :q3, :q4].each do |quarter|
+      progress = CompanyDashboard.progress(year)
+      send_event "#{year}-#{quarter}-progress", min: 0, max: 100, value: progress[quarter], link: "/progress/#{year}/#{quarter}"
+    end
+  end
 end
