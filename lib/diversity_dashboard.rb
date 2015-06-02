@@ -5,7 +5,7 @@ class DiversityDashboard < MetricsHelper
     (load_metric 'diversity-gender')['value']['total'].each_pair do |gender, value|
       data << {label: gender, value: value}
     end
-    data
+    data.sort_by { |d| d[:label] }
   end
   
   def self.gender_board
@@ -37,7 +37,7 @@ class DiversityDashboard < MetricsHelper
     (load_metric 'diversity-gender')['value']['teams'][name].each_pair do |gender, value|
       data << {label: gender, value: value}
     end
-    data
+    data.sort_by { |d| d[:label] }
   end
   
 end
