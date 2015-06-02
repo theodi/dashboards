@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-network-size/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-network-size/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,21 +19,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 04 Mar 2014 13:56:30 GMT
+      - Tue, 02 Jun 2015 12:21:54 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '427'
+      - '431'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"5315d5d8ef922c6e570020be","name":"current-year-network-size","time":"2014-03-04T13:32:08+00:00","value":{"partners":{"actual":2,"annual_target":10,"ytd_target":3},"sponsors":{"actual":0,"annual_target":5,"ytd_target":0},"supporters":{"actual":3,"annual_target":34,"ytd_target":4},"startups":{"actual":0,"annual_target":6,"ytd_target":6},"nodes":{"actual":0,"annual_target":20,"ytd_target":0},"affiliates":{"actual":0}}}'
+      string: ! '{"_id":"54b68eaeef922c5d1001d778","name":"current-year-network-size","time":"2014-12-31T23:59:59+00:00","value":{"partners":{"actual":3,"annual_target":10,"ytd_target":10},"sponsors":{"actual":1,"annual_target":5,"ytd_target":5},"supporters":{"actual":55,"annual_target":34,"ytd_target":34},"startups":{"actual":7,"annual_target":6,"ytd_target":6},"nodes":{"actual":9,"annual_target":20,"ytd_target":20},"affiliates":{"actual":0}}}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Mar 2014 13:56:31 GMT
+  recorded_at: Tue, 02 Jun 2015 12:21:51 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-network-size
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-network-size
     body:
       encoding: US-ASCII
       string: ''
@@ -50,16 +50,16 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 04 Mar 2014 13:56:31 GMT
+      - Tue, 02 Jun 2015 12:21:55 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '113'
+      - '114'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"5315d5d8ef922c6e570020bf","name":"cumulative-network-size","time":"2014-03-04T13:32:08+00:00","value":80}'
+      string: ! '{"_id":"556d90f6ef922c16fc0313e8","name":"cumulative-network-size","time":"2015-06-02T11:18:12+00:00","value":258}'
     http_version: '1.1'
-  recorded_at: Tue, 04 Mar 2014 13:56:31 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 02 Jun 2015 12:21:52 GMT
+recorded_with: VCR 2.9.3

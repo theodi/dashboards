@@ -100,11 +100,12 @@ describe CompanyDashboard do
 
   it "should get network size", :vcr do
     CompanyDashboard.network_size(2014).should == {
-      "actual" => 5,
+      "actual" => 75,
       "annual_target" => 75,
-      "ytd_target" => 13
+      "ytd_target" => 75
     }
-    CompanyDashboard.network_size.should == 80
+
+    CompanyDashboard.network_size.should == 258
   end
 
   it "should get network size for just one level", :vcr do
