@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-bookings
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-bookings
     body:
       encoding: US-ASCII
       string: ''
@@ -19,16 +19,16 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 07 Apr 2014 12:52:29 GMT
+      - Tue, 02 Jun 2015 12:22:39 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '115'
+      - '114'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"53429c87ef922c9c5500389b","name":"cumulative-bookings","time":"2014-04-07T12:39:35+00:00","value":686000.0}'
+      string: ! '{"_id":"556d90e7ef922c16fc0313d6","name":"cumulative-bookings","time":"2015-06-02T11:17:57+00:00","value":5405426}'
     http_version: '1.1'
-  recorded_at: Mon, 07 Apr 2014 12:52:29 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 02 Jun 2015 12:22:36 GMT
+recorded_with: VCR 2.9.3
