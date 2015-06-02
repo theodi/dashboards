@@ -43,8 +43,9 @@ describe CompanyDashboard do
 
   it "should show the correct unlocked value", :vcr do
     CompanyDashboard.value(2013).should == 16924307
-    CompanyDashboard.value(2014).should == 0
-    CompanyDashboard.value.should == 16924307
+    CompanyDashboard.value(2014).should == 16569234
+    CompanyDashboard.value(2015).should == 499511
+    CompanyDashboard.value.should == 32863121
   end
 
   it "should show the correct cash reserves", :vcr do
