@@ -132,7 +132,9 @@ class CompanyDashboard < MetricsHelper
   def self.people_trained(year = nil)
     data = select_metric 'people-trained', year
     if data.is_a? Hash
-      total = data["total"]
+      if not data["total"].is_a? Hash
+        total = data["total"]
+      end
       data = year ? data.sum : data
       data["actual"] = total || data["actual"] # use override total if there. What a hack.
     end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-people-trained/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-people-trained/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 12 Nov 2014 15:37:30 GMT
+      - Wed, 03 Jun 2015 08:20:40 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -28,12 +28,12 @@ http_interactions:
       - '262'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"546377b5ef922cabb20065c5","name":"current-year-people-trained","time":"2014-11-12T15:07:33+00:00","value":{"commercial":{"actual":411,"annual_target":190,"ytd_target":177},"non_commercial":{"actual":144,"annual_target":206,"ytd_target":192},"total":497}}'
+      string: ! '{"_id":"54b68eaeef922c5d1001d776","name":"current-year-people-trained","time":"2014-12-31T23:59:59+00:00","value":{"commercial":{"actual":157,"annual_target":190,"ytd_target":190},"non_commercial":{"actual":144,"annual_target":206,"ytd_target":206},"total":702}}'
     http_version: '1.1'
-  recorded_at: Wed, 12 Nov 2014 15:37:31 GMT
+  recorded_at: Wed, 03 Jun 2015 08:20:40 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-people-trained
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-people-trained/2015-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -50,16 +50,47 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Wed, 12 Nov 2014 15:37:31 GMT
+      - Wed, 03 Jun 2015 08:20:41 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '116'
+      - '177'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"546377b5ef922cabb20065c6","name":"cumulative-people-trained","time":"2014-11-12T15:07:33+00:00","value":731}'
+      string: ! '{"_id":"556eaae2ef922c16fc031d31","name":"current-year-people-trained","time":"2015-06-03T07:21:06+00:00","value":{"total":{"actual":657,"annual_target":1000,"ytd_target":480}}}'
     http_version: '1.1'
-  recorded_at: Wed, 12 Nov 2014 15:37:31 GMT
-recorded_with: VCR 2.9.0
+  recorded_at: Wed, 03 Jun 2015 08:20:41 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-people-trained
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 03 Jun 2015 08:20:42 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '117'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556eaae2ef922c16fc031d32","name":"cumulative-people-trained","time":"2015-06-03T07:21:06+00:00","value":1593}'
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 08:20:41 GMT
+recorded_with: VCR 2.9.3
