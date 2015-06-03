@@ -92,6 +92,10 @@ class CompanyDashboard < MetricsHelper
     select_metric 'bookings-by-sector', year
   end
 
+  def self.flagship_stories(year)
+    select_metric 'flagship-stories', year
+  end
+
   def self.value(year = nil)
     select_metric 'value-unlocked', year
   end
@@ -139,6 +143,10 @@ class CompanyDashboard < MetricsHelper
       data["actual"] = total || data["actual"] # use override total if there. What a hack.
     end
     data
+  end
+
+  def self.trainers_trained(year = nil)
+    select_metric 'trainers-trained', year
   end
 
   def self.network_size(year = nil, sections = nil)
