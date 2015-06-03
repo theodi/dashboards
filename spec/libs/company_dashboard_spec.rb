@@ -112,6 +112,14 @@ describe CompanyDashboard do
     }
   end
 
+  it "should get number of flagship stories", :vcr do
+    CompanyDashboard.flagship_stories(2015).should == {
+      'actual' => 0,
+      'annual_target' => 0,
+      'ytd_target' => 0
+    }
+  end
+
   it "should get network size", :vcr do
     CompanyDashboard.network_size(2014).should == {
       "actual" => 75,
