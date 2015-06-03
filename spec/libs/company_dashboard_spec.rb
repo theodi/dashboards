@@ -185,4 +185,24 @@ describe CompanyDashboard do
     }
   end
 
+  it "should show the correct 2015 bookings by sector", :vcr do
+    CompanyDashboard.bookings_by_sector(2015).should == {
+      "core" => {
+        "actual" => 29000.0,
+        "annual_target" => 191000.0,
+        "ytd_target" => 20000.0
+      },
+      "innovation" => {
+        "actual" => 589000.0,
+        "annual_target" => 1419000.0,
+        "ytd_target" => 791000.0
+      },
+      "network" => {
+        "actual" => 467000.0,
+        "annual_target" => 1252000.0,
+        "ytd_target" => 558000.0
+      },
+    }
+  end
+
 end
