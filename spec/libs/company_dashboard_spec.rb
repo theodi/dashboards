@@ -38,7 +38,11 @@ describe CompanyDashboard do
 
   it "should show the correct reach", :vcr do
     CompanyDashboard.reach(2014).should == 541748
-    CompanyDashboard.reach(2015).should == 383896
+    CompanyDashboard.reach(2015).should == {
+      "actual" => 383896,
+      "annual_target" => 1000000,
+      "ytd_target" => 470000
+    }
     CompanyDashboard.reach.should == 1229040
   end
 

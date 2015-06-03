@@ -31,16 +31,7 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.reach(year = nil)
-    reach = select_metric('reach', year)
-    if reach.is_a? Hash
-      if reach['total'].is_a? Hash
-        reach['total']['actual']
-      else
-        reach['total']
-      end
-    else
-      reach
-    end
+    select_metric('reach', year)['total'] rescue select_metric('reach', year)
   end
 
   def self.active_reach(year = nil)
