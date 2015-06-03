@@ -31,7 +31,16 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.reach(year = nil)
-    select_metric('reach', year)['total'] rescue select_metric('reach', year)
+    reach = select_metric('reach', year)
+    if reach.is_a? Hash
+      if reach['total'].is_a? Hash
+        reach['total']['actual']
+      else
+        reach['total']
+      end
+    else
+      reach
+    end
   end
 
   def self.active_reach(year = nil)
@@ -132,7 +141,9 @@ class CompanyDashboard < MetricsHelper
   def self.people_trained(year = nil)
     data = select_metric 'people-trained', year
     if data.is_a? Hash
-      total = data["total"]
+      if not data["total"].is_a? Hash
+        total = data["total"]
+      end
       data = year ? data.sum : data
       data["actual"] = total || data["actual"] # use override total if there. What a hack.
     end

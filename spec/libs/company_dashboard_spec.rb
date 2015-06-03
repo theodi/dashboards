@@ -25,8 +25,9 @@ describe CompanyDashboard do
 
   it "should show the correct number of published Open Data Certificates", :vcr do
     CompanyDashboard.odcs(2013).should == 599
-    CompanyDashboard.odcs(2014).should == 641
-    CompanyDashboard.odcs.should == 641
+    CompanyDashboard.odcs(2014).should == 10254
+    CompanyDashboard.odcs(2015).should == 10518
+    CompanyDashboard.odcs.should == 10518
   end
 
   it "should show the correct member count", :vcr do
@@ -36,14 +37,16 @@ describe CompanyDashboard do
   end
 
   it "should show the correct reach", :vcr do
-    CompanyDashboard.reach(2014).should == 0
-    CompanyDashboard.reach.should == 303396
+    CompanyDashboard.reach(2014).should == 541748
+    CompanyDashboard.reach(2015).should == 383896
+    CompanyDashboard.reach.should == 1229040
   end
 
   it "should show the correct unlocked value", :vcr do
     CompanyDashboard.value(2013).should == 16924307
-    CompanyDashboard.value(2014).should == 0
-    CompanyDashboard.value.should == 16924307
+    CompanyDashboard.value(2014).should == 16569234
+    CompanyDashboard.value(2015).should == 499511
+    CompanyDashboard.value.should == 32863121
   end
 
   it "should show the correct cash reserves", :vcr do
@@ -89,20 +92,26 @@ describe CompanyDashboard do
 
   it "should get number of people trained", :vcr do
     CompanyDashboard.people_trained(2014).should == {
-      'actual' => 497,
+      'actual' => 702,
       'annual_target' => 396,
-      'ytd_target' => 369
+      'ytd_target' => 396
     }
-    CompanyDashboard.people_trained.should == 731
+    CompanyDashboard.people_trained(2015).should == {
+      'actual' => 657,
+      'annual_target' => 1000,
+      'ytd_target' => 480
+    }
+    CompanyDashboard.people_trained.should == 1593
   end
 
   it "should get network size", :vcr do
     CompanyDashboard.network_size(2014).should == {
-      "actual" => 5,
+      "actual" => 75,
       "annual_target" => 75,
-      "ytd_target" => 13
+      "ytd_target" => 75
     }
-    CompanyDashboard.network_size.should == 80
+
+    CompanyDashboard.network_size.should == 258
   end
 
   it "should get network size for just one level", :vcr do
@@ -133,7 +142,7 @@ describe CompanyDashboard do
   end
 
   it "should get cumulative bookings value", :vcr do
-    CompanyDashboard.bookings.should == 686000
+    CompanyDashboard.bookings.should == 5405426
   end
 
   it "should show the correct commercial bookings value", :vcr do

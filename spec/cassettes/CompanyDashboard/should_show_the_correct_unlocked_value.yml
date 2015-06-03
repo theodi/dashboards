@@ -19,7 +19,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:56 GMT
+      - Tue, 02 Jun 2015 11:46:28 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -30,7 +30,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"_id":"52e8ceb1ef922c6e57000117","name":"current-year-value-unlocked","time":"2013-12-31T23:59:59+00:00","value":16924307}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:56 GMT
+  recorded_at: Tue, 02 Jun 2015 11:46:25 GMT
 - request:
     method: get
     uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-value-unlocked/2014-12-31T23:59:59+00:00
@@ -50,18 +50,49 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:57 GMT
+      - Tue, 02 Jun 2015 11:46:29 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '116'
+      - '123'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52eb8308ef922c6e5700027a","name":"current-year-value-unlocked","time":"2014-01-31T11:03:35+00:00","value":0}'
+      string: ! '{"_id":"54b692abef922c5d1001d7a1","name":"current-year-value-unlocked","time":"2014-12-31T23:59:59+00:00","value":16569234}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:57 GMT
+  recorded_at: Tue, 02 Jun 2015 11:46:26 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-value-unlocked/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 02 Jun 2015 11:46:31 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '121'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556d90e7ef922c16fc0313d2","name":"current-year-value-unlocked","time":"2015-06-02T11:17:56+00:00","value":499511}'
+    http_version: '1.1'
+  recorded_at: Tue, 02 Jun 2015 11:46:28 GMT
 - request:
     method: get
     uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-value-unlocked
@@ -81,7 +112,7 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 31 Jan 2014 11:57:57 GMT
+      - Tue, 02 Jun 2015 11:46:32 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -90,7 +121,7 @@ http_interactions:
       - '121'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52eb8309ef922c6e5700027b","name":"cumulative-value-unlocked","time":"2014-01-31T11:03:36+00:00","value":16924307}'
+      string: ! '{"_id":"556d90e7ef922c16fc0313d3","name":"cumulative-value-unlocked","time":"2015-06-02T11:17:56+00:00","value":32863121}'
     http_version: '1.1'
-  recorded_at: Fri, 31 Jan 2014 11:57:57 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 02 Jun 2015 11:46:29 GMT
+recorded_with: VCR 2.9.3

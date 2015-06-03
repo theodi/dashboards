@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/current-year-reach/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-reach/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,21 +19,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 07 Feb 2014 17:27:11 GMT
+      - Wed, 03 Jun 2015 08:31:15 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '154'
+      - '168'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52f50ef2ef922c6e57000d73","name":"current-year-reach","time":"2014-02-07T16:50:58+00:00","value":{"total":0,"breakdown":{"active":0,"passive":0}}}'
+      string: ! '{"_id":"54b68eadef922c5d1001d772","name":"current-year-reach","time":"2014-12-31T23:59:59+00:00","value":{"total":541748,"breakdown":{"active":13780,"passive":527968}}}'
     http_version: '1.1'
-  recorded_at: Fri, 07 Feb 2014 17:27:11 GMT
+  recorded_at: Wed, 03 Jun 2015 08:31:15 GMT
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cumulative-reach
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-reach/2015-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -50,16 +50,47 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 07 Feb 2014 17:27:11 GMT
+      - Wed, 03 Jun 2015 08:31:16 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '166'
+      - '318'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"52f50ef3ef922c6e57000d74","name":"cumulative-reach","time":"2014-02-07T16:50:58+00:00","value":{"total":303396,"breakdown":{"active":10526,"passive":292870}}}'
+      string: ! '{"_id":"556eaae2ef922c16fc031d2e","name":"current-year-reach","time":"2015-06-03T07:21:06+00:00","value":{"total":{"actual":383896,"annual_target":1000000,"ytd_target":470000},"breakdown":{"active":{"actual":0,"annual_target":0,"ytd_target":0},"passive":{"actual":383896,"annual_target":1000000,"ytd_target":470000}}}}'
     http_version: '1.1'
-  recorded_at: Fri, 07 Feb 2014 17:27:11 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Wed, 03 Jun 2015 08:31:15 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-reach
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 03 Jun 2015 08:31:16 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '168'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556eaae2ef922c16fc031d2f","name":"cumulative-reach","time":"2015-06-03T07:21:06+00:00","value":{"total":1229040,"breakdown":{"active":24306,"passive":1204734}}}'
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 08:31:16 GMT
+recorded_with: VCR 2.9.3
