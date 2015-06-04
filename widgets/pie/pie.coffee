@@ -1,11 +1,16 @@
 class Dashing.Pie extends Dashing.Widget
   @accessor 'value'
+  @accessor 'currency'
 
   onData: (data) ->
     $(@node).fadeOut().fadeIn()
     @renderPie(data.value)
 
   ready: () ->
+    @renderPie(null)
+
+  render: () ->
+    super
     @renderPie(null)
 
   renderPie: (data) ->
@@ -18,6 +23,7 @@ class Dashing.Pie extends Dashing.Widget
     width = @get("width") || 260 #width
     height = @get("height") || 260 #height
     radius = @get("radius") || 130 #radius
+    currency = @get("currency")
 
     colours =  @get("colours") || ['#D60303','#ff6700','#F9BC26','#67EF67','#0DBC37','#1dd3a7','#2254f4','#ef3aab','#b13198']
 
@@ -72,7 +78,7 @@ class Dashing.Pie extends Dashing.Widget
           .attr("width", 130)
           .attr("fill", '#fff')
           .attr("font-size", "15px")
-          .text((d, i) -> d.label + " - " + d.value + " ("+Math.round(d.value/sum * 100) + '%)')
+          .text((d, i) -> d.label + " - " + Batman.Filters.numberWithCurrency(d.value, currency) + " ("+Math.round(d.value/sum * 100) + '%)')
       )
 
 
