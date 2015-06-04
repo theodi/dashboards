@@ -53,8 +53,14 @@ describe CompanyDashboard do
     CompanyDashboard.value.should == 32863121
   end
 
+  it "should show the correct burn rate", :vcr do
+    CompanyDashboard.burn(2014).should == 335128.44333333336
+    CompanyDashboard.burn(2015).should == 182333.33333333334
+  end
+
   it "should show the correct cash reserves", :vcr do
-    CompanyDashboard.cash_reserves.should == 1015006.28
+    CompanyDashboard.cash_reserves(2014).should == 839489.27
+    CompanyDashboard.cash_reserves(2015).should == 1304880.05
   end
 
   it "should show the correct kpi percentage", :vcr do
@@ -74,15 +80,157 @@ describe CompanyDashboard do
     CompanyDashboard.pipeline(2014).should == 228603
   end
 
-  it "should get fixed costs", :vcr do
-    CompanyDashboard.fixed_cost_breakdown(2014).should == {
-      "staff" => 0,
-      "associates" => 0,
-      "office_and_operational" => 0,
-      "delivery" => 0,
-      "communications" => 0,
-      "professional_fees" => 0,
-      "software" => 0,
+  it "should get the total costs", :vcr do
+    CompanyDashboard.total_costs(2014).should == {
+      "actual" => 3526939.9699999997,
+      "annual_target" => 5939066.66666667,
+      "ytd_target" => 5939066.66666667,
+      "breakdown" => {
+        "variable" => {
+          "research" => {
+            "actual" => 61185.020000000004,
+            "annual_target" => 447916.66666666704,
+            "ytd_target" => 447916.66666666657
+          },
+          "training" => {
+            "actual" => 43592.29,
+            "annual_target" => 123560.0,
+            "ytd_target" => 123559.99999999997
+          },
+          "projects" => {
+            "actual" => 341327.33,
+            "annual_target" => 397925.0,
+            "ytd_target" => 397925.0000000004
+          },
+          "network" => {
+            "actual" => 38952.950000000004,
+            "annual_target" => 100695.0,
+            "ytd_target" => 100695.00000000003
+          }
+        },
+        "fixed" => {
+          "staff" => {
+            "actual" => 1644713.0,
+            "annual_target" => 2113000.0,
+            "ytd_target" => 2113000.0
+          },
+          "associates" => {
+              "actual" => 472212.0,
+            "annual_target" => 858000.0,
+            "ytd_target" => 858000.0
+          },
+          "office_and_operational" => {
+            "actual" => 301261.87,
+            "annual_target" => 494000.0,
+            "ytd_target" => 494000.0000000003
+          },
+          "delivery" => {
+            "actual" => 257644.72999999998,
+            "annual_target" => 778270.0,
+            "ytd_target" => 778269.9999999992
+          },
+          "communications" => {
+            "actual" => 181889.0,
+            "annual_target" => 315000.0,
+            "ytd_target" => 315000.0
+          },
+          "professional_fees" => {
+            "actual" => 154921.9,
+            "annual_target" => 200000.0,
+            "ytd_target" => 200000.00000000035
+          },
+          "software" => {
+            "actual" => 29239.88,
+            "annual_target" => 110700.0,
+            "ytd_target" => 110700.0
+          }
+        }
+      }
+    }
+
+    CompanyDashboard.total_costs(2015).should == {
+      "actual" => 2317000.0,
+      "annual_target" => 6252000.0,
+      "ytd_target" => 3029000.0,
+      "breakdown" => {
+        "network" => {
+          "actual" => 334000.0,
+          "annual_target" => 1195000.0,
+          "ytd_target" => 585000.0,
+        },
+        "innovation" => {
+          "actual" => 659000.0,
+          "annual_target" => 1891000.0,
+          "ytd_target" => 950000.0,
+        },
+        "core" => {
+          "actual" => 296000.0,
+          "annual_target" => 936000.0,
+          "ytd_target" => 410000.0,
+        },
+        "staff" => {
+          "actual" => 648000.0,
+          "annual_target" => 1230000.0,
+          "ytd_target" => 607000.0,
+        },
+        "other" => {
+          "actual" => 380000.0,
+          "annual_target" => 1000000.0,
+          "ytd_target" => 477000.0,
+        }
+      }
+    }
+  end
+
+  it "should get fixed cost breakdown", :vcr do
+    CompanyDashboard.cost_breakdown(2014, 'fixed').should == {
+      "staff" => 1644713.0,
+      "associates" => 472212.0,
+      "office_and_operational" => 301261.87,
+      "delivery" => 257644.72999999998,
+      "communications" => 181889.0,
+      "professional_fees" => 154921.9,
+      "software" => 29239.88,
+    }
+  end
+
+  it "should get cost breakdown", :vcr do
+    CompanyDashboard.cost_breakdown(2015).should == {
+      "core" => 296000.0,
+      "innovation" => 659000.0,
+      "network" => 334000.0,
+      "other" => 380000.0,
+      "staff" => 648000.0,
+    }
+  end
+
+  it "should get the headcount", :vcr do
+    CompanyDashboard.headcount(2014).should == {
+      "actual" => 39.0,
+      "annual_target" => 34.0,
+      "ytd_target" => 34.0
+    }
+
+    CompanyDashboard.headcount(2015).should == {
+      "actual" => 55.0,
+      "annual_target" => 52.0,
+      "ytd_target" => 52.0
+    }
+  end
+
+  it "should get EBITDA", :vcr do
+    CompanyDashboard.ebitda(2014).should == {
+      "actual" => -1938527.1199999999,
+      "annual_target" => -3003883.33333333,
+      "latest" => -230153.0,
+      "ytd_target" => -3003883.3333333326,
+    }
+
+    CompanyDashboard.ebitda(2015).should == {
+      "actual" => -1254000.0,
+      "annual_target" => -3488000.0,
+      "latest" => -300000.0,
+      "ytd_target" => -1713000.0,
     }
   end
 
@@ -154,11 +302,16 @@ describe CompanyDashboard do
 
   it "should get income", :vcr do
     CompanyDashboard.income(2014).should == {
-      "actual" => 88468.0,
+      "actual" => 1588412.8499999999,
       "annual_target" => 2935183.33333333,
-      "ytd_target" => 280543.3333333333
+      "ytd_target" => 2935183.333333331
     }
-    CompanyDashboard.income.should == 91123
+    CompanyDashboard.income(2015).should == {
+      "actual" => 1064000.0,
+      "annual_target" => 2862000.0,
+      "ytd_target" => 1368000.0
+    }
+    CompanyDashboard.income.should == 7057000.0
   end
 
   it "should get cumulative bookings value", :vcr do

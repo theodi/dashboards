@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cash-reserves/2014-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-burn/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,21 +19,21 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Thu, 04 Jun 2015 08:52:57 GMT
+      - Thu, 04 Jun 2015 08:58:33 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '110'
+      - '123'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"54b692abef922c5d1001d7a0","name":"cash-reserves","time":"2014-12-31T23:59:59+00:00","value":839489.27}'
+      string: ! '{"_id":"54b692adef922c5d1001d7aa","name":"current-year-burn","time":"2014-12-31T23:59:59+00:00","value":335128.44333333336}'
     http_version: '1.1'
-  recorded_at: Thu, 04 Jun 2015 08:52:55 GMT
+  recorded_at: Thu, 04 Jun 2015 08:58:31 GMT
 - request:
     method: get
-    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cash-reserves/2015-12-31T23:59:59+00:00
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-burn/2015-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -50,16 +50,16 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Thu, 04 Jun 2015 08:52:57 GMT
+      - Thu, 04 Jun 2015 08:58:33 GMT
       x-content-type-options:
       - nosniff
       connection:
       - close
       content-length:
-      - '111'
+      - '123'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"5570069cef922c014b0005bc","name":"cash-reserves","time":"2015-06-04T08:04:43+00:00","value":1304880.05}'
+      string: ! '{"_id":"5570069cef922c014b0005c6","name":"current-year-burn","time":"2015-06-04T08:04:44+00:00","value":182333.33333333334}'
     http_version: '1.1'
-  recorded_at: Thu, 04 Jun 2015 08:52:56 GMT
+  recorded_at: Thu, 04 Jun 2015 08:58:32 GMT
 recorded_with: VCR 2.9.3

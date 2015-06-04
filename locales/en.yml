@@ -56,7 +56,9 @@ en:
       startups: "Total *new* Startups in this year against target"
   opex:
     "2014":
-      title: 2014 opex
+      title: 2014 OpEx
+    "2015":
+      title: 2015 OpEx
     income: Income
     costs: Total costs
     headcount: Headcount
@@ -64,7 +66,8 @@ en:
     ebitda_month: EBITDA (this month)
     burn: Burn rate
     cash: Cash reserves
-    costs: Costs breakdown
+    costs: Costs
+    cost_split: Cost split
     tips:
       income: "Total cash received this year from commercial and non-commercial contracts. Excludes grant funding."
       costs: "Total cash spent this year."
