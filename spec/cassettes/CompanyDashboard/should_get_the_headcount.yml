@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-headcount/2014-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 04 Jun 2015 08:08:51 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '164'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"54b692acef922c5d1001d7a9","name":"current-year-headcount","time":"2014-12-31T23:59:59+00:00","value":{"actual":39.0,"annual_target":34.0,"ytd_target":34.0}}'
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jun 2015 08:08:50 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-headcount/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 04 Jun 2015 08:08:52 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '164'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"5570069cef922c014b0005c5","name":"current-year-headcount","time":"2015-06-04T08:04:44+00:00","value":{"actual":55.0,"annual_target":52.0,"ytd_target":52.0}}'
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jun 2015 08:08:51 GMT
+recorded_with: VCR 2.9.3

@@ -96,6 +96,20 @@ describe CompanyDashboard do
     }
   end
 
+  it "should get the headcount", :vcr do
+    CompanyDashboard.headcount(2014).should == {
+      "actual" => 39.0,
+      "annual_target" => 34.0,
+      "ytd_target" => 34.0
+    }
+
+    CompanyDashboard.headcount(2015).should == {
+      "actual" => 55.0,
+      "annual_target" => 52.0,
+      "ytd_target" => 52.0
+    }
+  end
+
   it "should get number of articles published", :vcr do
     CompanyDashboard.articles(2014).should == 0
   end
