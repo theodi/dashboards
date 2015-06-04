@@ -53,6 +53,11 @@ describe CompanyDashboard do
     CompanyDashboard.value.should == 32863121
   end
 
+  it "should show the correct burn rate", :vcr do
+    CompanyDashboard.burn(2014).should == 335128.44333333336
+    CompanyDashboard.burn(2015).should == 182333.33333333334
+  end
+
   it "should show the correct cash reserves", :vcr do
     CompanyDashboard.cash_reserves(2014).should == 839489.27
     CompanyDashboard.cash_reserves(2015).should == 1304880.05
