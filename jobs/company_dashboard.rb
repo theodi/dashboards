@@ -27,7 +27,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   CompanyDashboard.bookings_by_sector(2014).each do |k, v|
     data << { label: k, value: v['commercial']['actual'] + v['non_commercial']['actual'] }
   end
-  send_event '2014-revenue-by-sector', value: data
+  send_event '2014-revenue-by-sector', value: data, currency: "GBP"
 
 end
 
@@ -74,7 +74,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   pie = CompanyDashboard.cost_breakdown(2014, 'fixed').map do |key, value|
     {label: key.humanize, value: value}
   end
-  send_event '2014-Fixed-cost-breakdown', value: pie
+  send_event '2014-Fixed-cost-breakdown', value: pie, currency: "GBP"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
@@ -94,7 +94,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   CompanyDashboard.bookings_by_sector(2015).each do |k, v|
     data << { label: legend.fetch(k, k), value: v['actual'] }
   end
-  send_event '2015-revenue-by-sector', value: data
+  send_event '2015-revenue-by-sector', value: data, currency: "GBP"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
@@ -109,7 +109,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   pie = CompanyDashboard.cost_breakdown(2015).map do |key, value|
     {label: key.humanize, value: value}
   end
-  send_event '2015-cost-breakdown', value: pie
+  send_event '2015-cost-breakdown', value: pie, currency: "GBP"
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
