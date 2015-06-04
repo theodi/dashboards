@@ -74,6 +74,108 @@ describe CompanyDashboard do
     CompanyDashboard.pipeline(2014).should == 228603
   end
 
+  it "should get the total costs", :vcr do
+    CompanyDashboard.total_costs(2014).should == {
+      "actual" => 3526939.9699999997,
+      "annual_target" => 5939066.66666667,
+      "ytd_target" => 5939066.66666667,
+      "breakdown" => {
+        "variable" => {
+          "research" => {
+            "actual" => 61185.020000000004,
+            "annual_target" => 447916.66666666704,
+            "ytd_target" => 447916.66666666657
+          },
+          "training" => {
+            "actual" => 43592.29,
+            "annual_target" => 123560.0,
+            "ytd_target" => 123559.99999999997
+          },
+          "projects" => {
+            "actual" => 341327.33,
+            "annual_target" => 397925.0,
+            "ytd_target" => 397925.0000000004
+          },
+          "network" => {
+            "actual" => 38952.950000000004,
+            "annual_target" => 100695.0,
+            "ytd_target" => 100695.00000000003
+          }
+        },
+        "fixed" => {
+          "staff" => {
+            "actual" => 1644713.0,
+            "annual_target" => 2113000.0,
+            "ytd_target" => 2113000.0
+          },
+          "associates" => {
+              "actual" => 472212.0,
+            "annual_target" => 858000.0,
+            "ytd_target" => 858000.0
+          },
+          "office_and_operational" => {
+            "actual" => 301261.87,
+            "annual_target" => 494000.0,
+            "ytd_target" => 494000.0000000003
+          },
+          "delivery" => {
+            "actual" => 257644.72999999998,
+            "annual_target" => 778270.0,
+            "ytd_target" => 778269.9999999992
+          },
+          "communications" => {
+            "actual" => 181889.0,
+            "annual_target" => 315000.0,
+            "ytd_target" => 315000.0
+          },
+          "professional_fees" => {
+            "actual" => 154921.9,
+            "annual_target" => 200000.0,
+            "ytd_target" => 200000.00000000035
+          },
+          "software" => {
+            "actual" => 29239.88,
+            "annual_target" => 110700.0,
+            "ytd_target" => 110700.0
+          }
+        }
+      }
+    }
+
+    CompanyDashboard.total_costs(2015).should == {
+      "actual" => 2317000.0,
+      "annual_target" => 6252000.0,
+      "ytd_target" => 3029000.0,
+      "breakdown" => {
+        "network" => {
+          "actual" => 334000.0,
+          "annual_target" => 1195000.0,
+          "ytd_target" => 585000.0,
+        },
+        "innovation" => {
+          "actual" => 659000.0,
+          "annual_target" => 1891000.0,
+          "ytd_target" => 950000.0,
+        },
+        "core" => {
+          "actual" => 296000.0,
+          "annual_target" => 936000.0,
+          "ytd_target" => 410000.0,
+        },
+        "staff" => {
+          "actual" => 648000.0,
+          "annual_target" => 1230000.0,
+          "ytd_target" => 607000.0,
+        },
+        "other" => {
+          "actual" => 380000.0,
+          "annual_target" => 1000000.0,
+          "ytd_target" => 477000.0,
+        }
+      }
+    }
+  end
+
   it "should get fixed cost breakdown", :vcr do
     CompanyDashboard.cost_breakdown(2014, 'fixed').should == {
       "staff" => 1644713.0,
