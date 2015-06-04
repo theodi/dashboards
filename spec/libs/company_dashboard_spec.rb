@@ -110,6 +110,22 @@ describe CompanyDashboard do
     }
   end
 
+  it "should get EBITDA", :vcr do
+    CompanyDashboard.ebitda(2014).should == {
+      "actual" => -1938527.1199999999,
+      "annual_target" => -3003883.33333333,
+      "latest" => -230153.0,
+      "ytd_target" => -3003883.3333333326,
+    }
+
+    CompanyDashboard.ebitda(2015).should == {
+      "actual" => -1254000.0,
+      "annual_target" => -3488000.0,
+      "latest" => -300000.0,
+      "ytd_target" => -1713000.0,
+    }
+  end
+
   it "should get number of articles published", :vcr do
     CompanyDashboard.articles(2014).should == 0
   end
