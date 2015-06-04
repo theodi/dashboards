@@ -70,7 +70,7 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
   send_event '2014-EBITDA',           current: CompanyDashboard.ebitda(2014)['latest'], currency: "GBP"
   send_metric_with_targets '2014-Total-Costs', CompanyDashboard.total_costs(2014), currency: "GBP"
   send_event '2014-Burn',  current:            CompanyDashboard.burn(2014), currency: "GBP"
-  send_event '2014-Cash-Reserves',  current:   CompanyDashboard.cash_reserves, currency: "GBP"
+  send_event '2014-Cash-Reserves',  current:   CompanyDashboard.cash_reserves(2014), currency: "GBP"
   pie = CompanyDashboard.cost_breakdown(2014, 'fixed').map do |key, value|
     {label: key.humanize, value: value}
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://metrics.<CAPSULECRM_ACCOUNT_NAME>.org/metrics/cash-reserves
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cash-reserves/2014-12-31T23:59:59+00:00
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,38 @@ http_interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 07 Apr 2014 12:41:22 GMT
+      - Thu, 04 Jun 2015 08:52:57 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '110'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"54b692abef922c5d1001d7a0","name":"cash-reserves","time":"2014-12-31T23:59:59+00:00","value":839489.27}'
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jun 2015 08:52:55 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cash-reserves/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 04 Jun 2015 08:52:57 GMT
       x-content-type-options:
       - nosniff
       connection:
@@ -28,7 +59,7 @@ http_interactions:
       - '111'
     body:
       encoding: US-ASCII
-      string: ! '{"_id":"53429c87ef922c9c55003896","name":"cash-reserves","time":"2014-04-07T12:39:35+00:00","value":1015006.28}'
+      string: ! '{"_id":"5570069cef922c014b0005bc","name":"cash-reserves","time":"2015-06-04T08:04:43+00:00","value":1304880.05}'
     http_version: '1.1'
-  recorded_at: Mon, 07 Apr 2014 12:41:22 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Thu, 04 Jun 2015 08:52:56 GMT
+recorded_with: VCR 2.9.3

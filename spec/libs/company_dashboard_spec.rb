@@ -54,7 +54,8 @@ describe CompanyDashboard do
   end
 
   it "should show the correct cash reserves", :vcr do
-    CompanyDashboard.cash_reserves.should == 1015006.28
+    CompanyDashboard.cash_reserves(2014).should == 839489.27
+    CompanyDashboard.cash_reserves(2015).should == 1304880.05
   end
 
   it "should show the correct kpi percentage", :vcr do

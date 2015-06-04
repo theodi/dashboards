@@ -115,8 +115,9 @@ class CompanyDashboard < MetricsHelper
     select_metric 'grant-funding', year
   end
 
-  def self.cash_reserves
-    load_metric('cash-reserves')["value"]
+  def self.cash_reserves(year)
+    time = year_to_time year
+    (load_metric 'cash-reserves', time)['value']
   end
 
   def self.pipeline(year)
