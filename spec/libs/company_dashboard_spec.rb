@@ -154,11 +154,16 @@ describe CompanyDashboard do
 
   it "should get income", :vcr do
     CompanyDashboard.income(2014).should == {
-      "actual" => 88468.0,
+      "actual" => 1588412.8499999999,
       "annual_target" => 2935183.33333333,
-      "ytd_target" => 280543.3333333333
+      "ytd_target" => 2935183.333333331
     }
-    CompanyDashboard.income.should == 91123
+    CompanyDashboard.income(2015).should == {
+      "actual" => 1064000.0,
+      "annual_target" => 2862000.0,
+      "ytd_target" => 1368000.0
+    }
+    CompanyDashboard.income.should == 7057000.0
   end
 
   it "should get cumulative bookings value", :vcr do
