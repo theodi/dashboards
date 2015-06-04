@@ -38,7 +38,11 @@ describe CompanyDashboard do
 
   it "should show the correct reach", :vcr do
     CompanyDashboard.reach(2014).should == 541748
-    CompanyDashboard.reach(2015).should == 383896
+    CompanyDashboard.reach(2015).should == {
+      "actual" => 383896,
+      "annual_target" => 1000000,
+      "ytd_target" => 470000
+    }
     CompanyDashboard.reach.should == 1229040
   end
 
@@ -104,6 +108,22 @@ describe CompanyDashboard do
     CompanyDashboard.people_trained.should == 1593
   end
 
+  it "should get number of trainers trained", :vcr do
+    CompanyDashboard.trainers_trained(2015).should == {
+      'actual' => 3,
+      'annual_target' => 48,
+      'ytd_target' => 23
+    }
+  end
+
+  it "should get number of flagship stories", :vcr do
+    CompanyDashboard.flagship_stories(2015).should == {
+      'actual' => 0,
+      'annual_target' => 0,
+      'ytd_target' => 0
+    }
+  end
+
   it "should get network size", :vcr do
     CompanyDashboard.network_size(2014).should == {
       "actual" => 75,
@@ -158,6 +178,34 @@ describe CompanyDashboard do
       "actual" => 0.0,
       "annual_target" => 1475980.0,
       "ytd_target" => 89780.0
+    }
+  end
+
+  it "should show the correct 2015 bookings value", :vcr do
+    CompanyDashboard.bookings(2015).should == {
+      "actual" => 335000,
+      "annual_target" => 1044000,
+      "ytd_target" => 420000
+    }
+  end
+
+  it "should show the correct 2015 bookings by sector", :vcr do
+    CompanyDashboard.bookings_by_sector(2015).should == {
+      "core" => {
+        "actual" => 29000.0,
+        "annual_target" => 191000.0,
+        "ytd_target" => 20000.0
+      },
+      "innovation" => {
+        "actual" => 589000.0,
+        "annual_target" => 1419000.0,
+        "ytd_target" => 791000.0
+      },
+      "network" => {
+        "actual" => 467000.0,
+        "annual_target" => 1252000.0,
+        "ytd_target" => 558000.0
+      },
     }
   end
 

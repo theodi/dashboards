@@ -78,6 +78,26 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
+  # 2015 Company
+  send_metric_with_targets '2015-people-trained', CompanyDashboard.people_trained(2015)
+  send_metric_with_targets '2015-trainers-trained', CompanyDashboard.trainers_trained(2015)
+  send_metric_with_targets '2015-Reach', CompanyDashboard.reach(2015)
+  send_metric_with_targets '2015-flagship-stories', CompanyDashboard.flagship_stories(2015)
+  send_metric_with_targets '2015-bookings', CompanyDashboard.bookings(2015), currency: "GBP"
+
+  legend = {
+    "network" => "Global Network",
+    "innovation" => "Innovation Unit",
+    "core" => "Core",
+  }
+  data = []
+  CompanyDashboard.bookings_by_sector(2015).each do |k, v|
+    data << { label: legend.fetch(k, k), value: v['actual'] }
+  end
+  send_event '2015-revenue-by-sector', value: data
+end
+
+SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # Lifetime
   send_event 'Lifetime-Reach',          current: CompanyDashboard.reach
   send_event 'Lifetime-Value',          current: CompanyDashboard.value,   currency: "GBP"

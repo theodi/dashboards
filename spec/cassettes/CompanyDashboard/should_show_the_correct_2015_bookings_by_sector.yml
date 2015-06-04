@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-bookings-by-sector/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 03 Jun 2015 08:40:02 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '351'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556eb6ceef922c16fc031d6e","name":"current-year-bookings-by-sector","time":"2015-06-03T08:11:58+00:00","value":{"network":{"actual":467000.0,"annual_target":1252000.0,"ytd_target":558000.0},"innovation":{"actual":589000.0,"annual_target":1419000.0,"ytd_target":791000.0},"core":{"actual":29000.0,"annual_target":191000.0,"ytd_target":20000.0}}}'
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 08:40:02 GMT
+recorded_with: VCR 2.9.3

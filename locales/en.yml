@@ -1,18 +1,22 @@
 en:
   company:
     "2013":
-      title: 2013 company
+      title: 2013 Performance
       kpis: Year 1 investor KPIs
       tips:
         kpis: "Percentage completion against reach, engagement, and influence targets defined by investors at the point of investment"
     "2014":
-      title: 2014 company
+      title: 2014 Performance
+    "2015":
+      title: 2015 Performance
     all:
       title: Lifetime impact
     reach: People reached
+    flagship_stories: Flagship stories
     value: Value unlocked
     network: Global network
     training: People trained
+    trainers: Trainers trained
     bookings: Sales
     odcs: Open data certificates
     members: Members
@@ -22,9 +26,11 @@ en:
     revenue_by_sector: Income split
     tips:
       reach: "Includes both 'active' reach (people we've met in person) and 'passive' reach (unique webviews + video + slide views on 3rd party sites like scribd). Total since ODI started."
+      flagship_stories: "Significant stories that reveal the power, potential impact and/or impact of open data."
       value: "Total amount of cash unlocked in direct investments in ODI, competitions, contracts, and partnerships since ODI started. Includes income that ODI startups have generated since joining the ODI programme."
       network: "Total number of active corporate members + the Nodes + ODI startups + affiliates (e.g. BBC) since the ODI started"
       training: "Total number of people who have taken an ODI course"
+      trainers: "Total number of trainers who have taken an ODI course"
       bookings: "Total contract value of direct sales made by the ODI team (e.g. a 3 year membership deal is 'booked' at the time of signing) since ODI started"
       odcs: "Total number of datasets that have been taken through the questionnaire; these might not have been published."
       members: "Total number of active corporate members"

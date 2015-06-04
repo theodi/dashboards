@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-trainers-trained/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 03 Jun 2015 08:24:50 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '164'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"556eaae2ef922c16fc031d33","name":"current-year-trainers-trained","time":"2015-06-03T07:21:06+00:00","value":{"actual":3,"annual_target":48,"ytd_target":23}}'
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 08:24:49 GMT
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/cumulative-trainers-trained
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Wed, 03 Jun 2015 08:24:50 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '4'
+    body:
+      encoding: US-ASCII
+      string: 'null'
+    http_version: '1.1'
+  recorded_at: Wed, 03 Jun 2015 08:24:50 GMT
+recorded_with: VCR 2.9.3
