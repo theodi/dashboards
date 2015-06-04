@@ -74,15 +74,25 @@ describe CompanyDashboard do
     CompanyDashboard.pipeline(2014).should == 228603
   end
 
-  it "should get fixed costs", :vcr do
-    CompanyDashboard.fixed_cost_breakdown(2014).should == {
-      "staff" => 0,
-      "associates" => 0,
-      "office_and_operational" => 0,
-      "delivery" => 0,
-      "communications" => 0,
-      "professional_fees" => 0,
-      "software" => 0,
+  it "should get fixed cost breakdown", :vcr do
+    CompanyDashboard.cost_breakdown(2014, 'fixed').should == {
+      "staff" => 1644713.0,
+      "associates" => 472212.0,
+      "office_and_operational" => 301261.87,
+      "delivery" => 257644.72999999998,
+      "communications" => 181889.0,
+      "professional_fees" => 154921.9,
+      "software" => 29239.88,
+    }
+  end
+
+  it "should get cost breakdown", :vcr do
+    CompanyDashboard.cost_breakdown(2015).should == {
+      "core" => 296000.0,
+      "innovation" => 659000.0,
+      "network" => 334000.0,
+      "other" => 380000.0,
+      "staff" => 648000.0,
     }
   end
 

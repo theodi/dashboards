@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://metrics.<SOUNDCLOUD_USERNAME>.org/metrics/current-year-total-costs/2015-12-31T23:59:59+00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.1.19
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 04 Jun 2015 10:25:49 GMT
+      x-content-type-options:
+      - nosniff
+      connection:
+      - close
+      content-length:
+      - '580'
+    body:
+      encoding: US-ASCII
+      string: ! '{"_id":"55702720ef922c014b000690","name":"current-year-total-costs","time":"2015-06-04T10:23:25+00:00","value":{"actual":2317000.0,"annual_target":6252000.0,"ytd_target":3029000.0,"breakdown":{"network":{"actual":334000.0,"annual_target":1195000.0,"ytd_target":585000.0},"innovation":{"actual":659000.0,"annual_target":1891000.0,"ytd_target":950000.0},"core":{"actual":296000.0,"annual_target":936000.0,"ytd_target":410000.0},"staff":{"actual":648000.0,"annual_target":1230000.0,"ytd_target":607000.0},"other":{"actual":380000.0,"annual_target":1000000.0,"ytd_target":477000.0}}}}'
+    http_version: '1.1'
+  recorded_at: Thu, 04 Jun 2015 10:25:47 GMT
+recorded_with: VCR 2.9.3
