@@ -98,6 +98,21 @@ SCHEDULER.every '1h', :first_in => Time.now + 10 do
 end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
+  # 2015 OpExs
+  send_metric_with_targets '2015-Income',      CompanyDashboard.income(2015),  currency: "GBP"
+  send_metric_with_targets '2015-Headcount',   CompanyDashboard.headcount(2015)
+  send_metric_with_targets '2015-EBITDA-YTD',  CompanyDashboard.ebitda(2015), currency: "GBP"
+  send_event '2015-EBITDA',           current: CompanyDashboard.ebitda(2015)['latest'], currency: "GBP"
+  send_metric_with_targets '2015-Total-Costs', CompanyDashboard.total_costs(2015), currency: "GBP"
+  send_event '2015-Burn',             current: CompanyDashboard.burn(2015), currency: "GBP"
+  send_event '2015-Cash-Reserves',    current: CompanyDashboard.cash_reserves(2015), currency: "GBP"
+  pie = CompanyDashboard.cost_breakdown(2015).map do |key, value|
+    {label: key.humanize, value: value}
+  end
+  send_event '2015-cost-breakdown', value: pie
+end
+
+SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # Lifetime
   send_event 'Lifetime-Reach',          current: CompanyDashboard.reach
   send_event 'Lifetime-Value',          current: CompanyDashboard.value,   currency: "GBP"

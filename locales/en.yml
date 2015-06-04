@@ -57,6 +57,8 @@ en:
   opex:
     "2014":
       title: 2014 OpEx
+    "2015":
+      title: 2015 OpEx
     income: Income
     costs: Total costs
     headcount: Headcount
