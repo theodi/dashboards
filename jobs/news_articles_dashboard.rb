@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-SCHEDULER.every '1h', :first_in => Time.now + 10 do
+SCHEDULER.every '1h', :first_in => 10 do
   send_event 'comms-spokespeople', items: NewsArticlesDashboard.spokespeople(2014).first(10)
   send_event 'comms-sectors', items: NewsArticlesDashboard.sectors(2014).first(10)
   send_event 'comms-geographies', items: NewsArticlesDashboard.geographies(2014).first(22)

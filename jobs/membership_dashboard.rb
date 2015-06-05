@@ -1,4 +1,4 @@
-SCHEDULER.every '5m', :first_in => Time.now + 10 do
+SCHEDULER.every '5m', :first_in => 10 do
   by_level = MembershipDashboard.by_level
   renewals = MembershipDashboard.renewals
   send_event('total-members', { current: MembershipDashboard.count })
