@@ -1,4 +1,4 @@
-SCHEDULER.every '1h', :first_in => Time.now + 10 do
+SCHEDULER.every '1h', :first_in => 10 do
 
   (2013..DateTime.now.year).each do |year|
     ["q1", "q2", "q3", "q4"].each do |quarter|

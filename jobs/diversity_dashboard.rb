@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-SCHEDULER.every '1h', :first_in => Time.now + 10 do
+SCHEDULER.every '1h', :first_in => 10 do
   send_event 'Diversity-gender-total', value: DiversityDashboard.gender_total
   send_event 'Diversity-gender-board', value: DiversityDashboard.gender_board
   send_event 'Diversity-gender-leadership', value: DiversityDashboard.gender_leadership
