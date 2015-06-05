@@ -79,6 +79,7 @@ end
 
 SCHEDULER.every '1h', :first_in => Time.now + 10 do
   # 2015 Company
+  send_event               '2015-network-size', current: CompanyDashboard.network_size(2015)['actual']
   send_metric_with_targets '2015-people-trained', CompanyDashboard.people_trained(2015)
   send_metric_with_targets '2015-trainers-trained', CompanyDashboard.trainers_trained(2015)
   send_metric_with_targets '2015-Reach', CompanyDashboard.reach(2015)
