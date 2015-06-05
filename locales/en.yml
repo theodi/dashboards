@@ -80,19 +80,41 @@ en:
   reach:
     "2014":
       title: 2014 reach
+      tips:
+        total: "Active + Passive reach"
+        active: "Number of people who have attended events in-person, trained, or attended live online discussions"
+        passive: "Number of unique views to the ODI website + 3rd party sites (e.g. videos on YouTube + Slide views on Slideshare, Scribd/etc.)"
+        articles: "Number of print articles referencing the ODI (e.g. newspapers and relevant websites)"
+        events: "Number of events ODI has held"
+        people_trained: "Number of people trained this year"
+    "2015":
+      title: "2015 Outputs & reach"
+      tips:
+        active: "Total number of people ODI has spoken to in-person (e.g. training + events) (source: ODI)"
+        passive: "Total number of unique people reached, including via online content. (source: ODI + Google Analytics)"
+        events: "Number of events run by ODI (souce: ODI)"
+        event_attendees: "Event attendees, + attendees at external speaking engagements (Source: Eventbrite + external event producers)"
+        website_visitors: "Unique number of visitors to the ODI websites (HQ + Nodes) (Source: Google Analytics)"
+        publication_reads: "Number of times ODI publications have been read. Includes physical print runs, downloads, embeds & views (Source: ODI)"
+        social_media: "Reach on social media networks and platforms using ODI accounts for Twitter, Vimeo, LinkedIn (source: various platforms)"
+        pr: "PR reach of online articles that mention the ODI worldwide (Source: PreciseMedia)"
+        offline: "Reach of ODI content on thirs-party media (tv, radio, galleries etc) does not include embedded media websites (source: ODI + 3rd party data)"
+        visitors: "Visitors to ODI HQ and Node offices (Source: ODI visitor registration app and Node data)"
+        geographies: "Website reach by region (Source: Google Analytics / PreciseMedia)"
     total: Total reach
     active: Active reach
     passive: Passive reach
     articles: Articles
     events: Events
+    event_attendees: Event attendees
+    website_visitors: Website visitors
+    publication_reads: Publication reads
+    social_media: Social media reach
+    pr: PR reach
+    offline: Offline media reach
+    visitors: Visitors
+    geographies: Geographic reach
     people_trained: People trained
-    tips:
-      total: "Active + Passive reach"
-      active: "Number of people who have attended events in-person, trained, or attended live online discussions"
-      passive: "Number of unique views to the ODI website + 3rd party sites (e.g. videos on YouTube + Slide views on Slideshare, Scribd/etc.)"
-      articles: "Number of print articles referencing the ODI (e.g. newspapers and relevant websites)"
-      events: "Number of events ODI has held"
-      people_trained: "Number of people trained this year"
   research-projects-training:
     "2014":
       title: 2014 research, projects & training
