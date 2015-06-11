@@ -1,6 +1,7 @@
-SCHEDULER.every '30s', :first_in => 10 do
-
+schedule('30s') do
   send_event('travis-builds', TravisBuilds.update)
-  send_event('travis-build-image', TravisBuilds.build_images)
+end
 
+schedule('30s') do
+  send_event('travis-build-image', TravisBuilds.build_images)
 end
