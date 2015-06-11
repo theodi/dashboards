@@ -169,7 +169,6 @@ en:
     ex_prs_merged: Ex. PRs merged
     mentions: "@UKODITech mentions"
     build_status: Build status
-    pingdom: Pingdom status
     dependencies: Dependency Status
     dependency-alerts: Dep Alerts
     application-errors: App Errors
@@ -180,7 +179,6 @@ en:
       ex_prs_merged: "Total number of pull requests merged into external projects"
       mentions: "Mentions of @UKODITech on Twitter"
       build_status: "Current status of Travis CI test builds"
-      pingdom: "Current status of Pingdom uptime checks on various servers"
       dependencies: Breakdown of dependencies tracked by Gemnasium
       dependency-alerts: Open gemnasium alerts
       application-errors: Unresolved Airbrake errors
