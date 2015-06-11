@@ -1,5 +1,3 @@
-SCHEDULER.every '1m', :first_in => 10 do
-
+schedule('1m') do
   send_event('pingdom-status', Pingdom.perform )
-
 end
