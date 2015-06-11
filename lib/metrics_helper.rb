@@ -1,6 +1,7 @@
 require 'httparty'
 require 'date'
 require 'active_support/all'
+require 'airbrake'
 
 class MetricsHelper
 
@@ -18,7 +19,15 @@ class MetricsHelper
       ]
     end
 
-    JSON.parse HTTParty.get(url, :headers => { 'Accept' => 'application/json' }).body
+    response = HTTParty.get(url, :headers => { 'Accept' => 'application/json' })
+    if response.success?
+      JSON.parse response.body
+    else
+      msg = "HTTP fail getting #{url}: #{response.code}"
+      Airbrake.notify(error_class: "HTTP fail", error_message: msg, parameters: {metric: metric, time: time, url: url, code: response.code})
+      raise Exception.new(msg)
+    end
+    
   end
 
   def self.year_to_time year = nil
