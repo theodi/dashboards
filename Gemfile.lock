@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/theodi/dashing.git
-  revision: 84d23651aec453c372f9ca0c51052bf74e1e3626
+  revision: 86ce0e8ad801b6f6110de1757342a726f1412c9f
   specs:
     dashing (1.3.x)
       coffee-script (~> 2.2.0)
