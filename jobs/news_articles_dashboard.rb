@@ -40,3 +40,23 @@ end
 schedule do
   send_event 'comms-opendata-reach', current: NewsArticlesDashboard.reach(2014, "OpenData")
 end
+
+# 2015 Reach
+
+schedule do
+  send_event '2015-Active-reach',  current: CompanyDashboard.active_reach(2015)['actual']
+end
+
+
+schedule do
+  send_event '2015-Passive-reach', current: CompanyDashboard.passive_reach(2015)['actual']
+end
+
+schedule do
+  geo = NewsArticlesDashboard.geographies(2015)
+  geo = geo.first(4) << { label: 'Other', value: geo[4..-1].inject(0){|sum, x| sum + x[:value] } }
+  send_event '2015-Geographic-reach', value: geo
+  # send_event '2014-Articles',      current:       CompanyDashboard.articles(2014)
+  # send_event '2014-Events',        current:       CompanyDashboard.events_hosted(2014)
+  # send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
+end
