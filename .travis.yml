@@ -56,3 +56,10 @@ env:
   - TRAVIS_IGNORE_REPOS='theodi/sauceconnect'
   - secure: S1Znf4ywXH9LJPa121wDsIItuIwDQD2dAQCbwkU+c6k8gVDHEaaVAaqTWXZdPHjJbelctkcv+ca3yAHZfLpNPgta1fk4o6KX1dASCitTZjQkdSWrdhDC0WVKyHTEWk8yProFWd+T0aEFcU9yF8ef9Y5yODYfyozG5V1xGyw1smk=
   - secure: BXfj9rfLY8htRUpY6haNSG+MOGsPm9fHH+LSx2PPamFC3kRI5FjwM8QZV0UuoMVv1ZionZhbwNx0VJMYiKsH383UAmaf1ai0CdD1GLyIpf306sD7URjkoehAktQdLM2hkt6Y/Qy24Ixo+kQnZWz2JALXJC2qRBJ7KYLBX8Br1ls=
+deploy:
+  provider: heroku
+  api_key:
+    secure: dU5FkBqeP4zBvuocknZWStSYynVTslbsuAEBRirbz+sA53pSRvO+ocoOCUokApPmlmakW40Mcv3q50/UttSjwtisYrrUqnbnTEn0s427yyf4vdjLrfjITmwVj6VHul/8vGNQutTcZho46zsa2rk2pDBH4kpM6CKxEoGfczjN2zQ=
+  app: odi-dashboards
+  on:
+    repo: theodi/dashboards

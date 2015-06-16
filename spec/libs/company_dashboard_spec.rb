@@ -279,7 +279,11 @@ describe CompanyDashboard do
       "ytd_target" => 75
     }
 
-    CompanyDashboard.network_size.should == 258
+    CompanyDashboard.network_size(2015).should == {
+      "actual" => 157,
+    }
+
+    CompanyDashboard.network_size.should == 308
   end
 
   it "should get network size for just one level", :vcr do

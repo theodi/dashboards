@@ -38,6 +38,11 @@ class DiversityDashboard < MetricsHelper
       data << {label: gender, value: value}
     end
     data.sort_by { |d| d[:label] }
+  rescue Exception => e
+    msg = "Team not found in gender diversity metrics data: #{name}"    
+    puts msg
+    Airbrake.notify(error_class: "Bad Team", error_message: msg, parameters: {name: name})
+    []
   end
   
 end

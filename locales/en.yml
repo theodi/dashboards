@@ -9,15 +9,30 @@ en:
       title: 2014 Performance
     "2015":
       title: 2015 Performance
+      tips:
+        network: "Number of new members in 2015 (source: ODI)"
+        training: "Number of people trained by ODI HQ and ODI Nodes in 2015 (source: ODI + Nodes)"
+        trainers: "Number of trainers trained in 2015 by ODI HQ (source: ODI)"
+        reach: "Number of unique people reached in person and online in 2015 (source: ODI + Google Analytics)"
+        flagship_stories: "Significant stories that reveal the power, potential impact and/or impact of open data. Flagship stories are also promoted to reach a large audience. (source: ODI)"
+        sales: "Sales booked/closed in 2015 (e.g. a £120 twelve month services booking can become £10 a month over those months, so bookings and cash often vary in timing) (source: ODI)"
     all:
       title: Lifetime impact
+      tips:
+        value: "Total amount of cash unlocked in direct investments in ODI, competition funding, direct contracts, and partnerships, and income that ODI Nodes and ODI Startups have generated since joining the ODI programme (source: ODI + Nodes + startups)"
+        network: "Total number of active members + Nodes (source: ODI)"
+        sales: "Total sales since ODI began (source: ODI)"
+        reach: "Total number of unique people reached since we began, in person and online (source: ODI + Google Analytics)"
+        odcs: "Total Open Data Certificates created (source: ODI)"
+        training: "Total number of people trained by ODI HQ and ODI Nodes since we began (source: ODI)"
     reach: People reached
     flagship_stories: Flagship stories
     value: Value unlocked
     network: Global network
     training: People trained
     trainers: Trainers trained
-    bookings: Sales
+    bookings: Bookings
+    sales: Sales
     odcs: Open data certificates
     members: Members
     commercial_bookings: Commercial bookings
@@ -26,7 +41,6 @@ en:
     revenue_by_sector: Income split
     tips:
       reach: "Includes both 'active' reach (people we've met in person) and 'passive' reach (unique webviews + video + slide views on 3rd party sites like scribd). Total since ODI started."
-      flagship_stories: "Significant stories that reveal the power, potential impact and/or impact of open data."
       value: "Total amount of cash unlocked in direct investments in ODI, competitions, contracts, and partnerships since ODI started. Includes income that ODI startups have generated since joining the ODI programme."
       network: "Total number of active corporate members + the Nodes + ODI startups + affiliates (e.g. BBC) since the ODI started"
       training: "Total number of people who have taken an ODI course"
@@ -59,6 +73,14 @@ en:
       title: 2014 OpEx
     "2015":
       title: 2015 OpEx
+      tips:
+        income: "The total cash received this year, excluding general grant funding from InnovateUK and Omidyar (source: ODI)"
+        costs: "Total cost of delivery (source: ODI)"
+        headcount: "The number of people employed by the ODI, on payroll. Excludes ODI Associates and freelancers (source: ODI)"
+        ebitda_ytd: "Earnings before interest, tax, depreciation and amortization for the year-to-date (source: ODI)"
+        ebitda_month: "Earnings before interest, tax, depreciation and amortization for this month (source: ODI)"
+        burn: "The average monthly cash spend of the organisation (calculated on a rolling basis based on the previous three months) (source: ODI)"
+        cash: "Total cash held in ODI bank accounts (source: ODI)"
     income: Income
     costs: Total costs
     headcount: Headcount
@@ -169,7 +191,6 @@ en:
     ex_prs_merged: Ex. PRs merged
     mentions: "@UKODITech mentions"
     build_status: Build status
-    pingdom: Pingdom status
     dependencies: Dependency Status
     dependency-alerts: Dep Alerts
     application-errors: App Errors
@@ -180,7 +201,6 @@ en:
       ex_prs_merged: "Total number of pull requests merged into external projects"
       mentions: "Mentions of @UKODITech on Twitter"
       build_status: "Current status of Travis CI test builds"
-      pingdom: "Current status of Pingdom uptime checks on various servers"
       dependencies: Breakdown of dependencies tracked by Gemnasium
       dependency-alerts: Open gemnasium alerts
       application-errors: Unresolved Airbrake errors
