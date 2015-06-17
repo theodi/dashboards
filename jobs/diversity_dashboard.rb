@@ -14,7 +14,7 @@ schedule do
 end
 
 schedule do
-  send_event 'Diversity-gender-international', value: DiversityDashboard.gender_international
+  send_event 'Diversity-gender-international', value: DiversityDashboard.gender_global_network
 end
 
 schedule do
@@ -22,5 +22,5 @@ schedule do
 end
 
 schedule do
-  send_event 'Diversity-gender-innovation', value: DiversityDashboard.gender_innovation
+  send_event 'Diversity-gender-innovation', value: DiversityDashboard.gender_innovation_unit
 end

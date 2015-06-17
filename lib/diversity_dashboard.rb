@@ -16,20 +16,20 @@ class DiversityDashboard < MetricsHelper
     team("leadership")
   end
   
-  def self.gender_commercial
-    team("commercial")
+  def self.gender_spt
+    team("spt")
   end
   
-  def self.gender_international
-    team("international")
+  def self.gender_global_network
+    team("global_network")
   end
 
   def self.gender_core
-    team("operations")
+    team("core")
   end
 
   def self.gender_innovation
-    team("technical")
+    team("innovation_unit")
   end
   
   def self.team(name)
