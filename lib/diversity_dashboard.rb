@@ -28,7 +28,7 @@ class DiversityDashboard < MetricsHelper
     team("core")
   end
 
-  def self.gender_innovation
+  def self.gender_innovation_unit
     team("innovation_unit")
   end
   
