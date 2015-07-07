@@ -1,5 +1,6 @@
 class Dashing.ProgressList extends Dashing.Widget
   ready: ->
+    return
     @currentIndex = 1
     @list = new List("#{@get('node').id}",
        valueNames: ["label"]

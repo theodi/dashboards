@@ -3,7 +3,7 @@
     
     schedule do
       progress = CompanyDashboard.progress(year)
-      send_event "#{year}-#{quarter}-progress", min: 0, max: 100, value: progress[quarter], link: "/progress/#{year}/#{quarter}"
+      send_event "#{year}-#{quarter}-progress", min: 0, max: 100, value: progress[quarter.to_sym], link: "/progress/#{year}/#{quarter}"
     end
     
     schedule do
