@@ -62,9 +62,9 @@ schedule do
   send_metric_with_targets '2015-Total-Costs', CompanyDashboard.total_costs(2015), currency: "GBP"
 end
 
-schedule do
-  send_event '2015-Burn',             current: CompanyDashboard.burn(2015), currency: "GBP"
-end
+#schedule do
+  #send_event '2015-Burn',             current: CompanyDashboard.burn(2015), currency: "GBP"
+#end
 
 schedule do
   send_event '2015-Cash-Reserves',    current: CompanyDashboard.cash_reserves(2015), currency: "GBP"
