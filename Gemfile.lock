@@ -226,7 +226,7 @@ GEM
     thor (0.18.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    timecop (0.7.4)
+    timecop (0.8.0)
     tins (0.13.2)
     travis (1.8.0)
       addressable (~> 2.3)
