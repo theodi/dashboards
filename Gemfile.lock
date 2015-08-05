@@ -39,7 +39,7 @@ GEM
     airbrake (4.3.0)
       builder
       multi_json
-    backports (3.6.5)
+    backports (3.6.6)
     buftok (0.2.0)
     builder (3.2.2)
     capsulecrm (0.0.3)
@@ -113,7 +113,7 @@ GEM
       nokogiri (~> 1.6.0)
       oauth2
     hashie (2.1.2)
-    highline (1.7.2)
+    highline (1.7.3)
     hike (1.2.3)
     httmultiparty (0.3.16)
       httparty (>= 0.7.3)
