@@ -325,7 +325,7 @@ en:
     tips:
       gender:
         total: Gender split of all ODI employees
-        board: Gender split of board members employed by ODI. Doesn't include non-employed board members.
+        board: Gender split of ODI board members.
         leadership: Gender split of the ODI leadership team
         commercial: Gender split of the ODI commercial team
         international: Gender split of the ODI international team
