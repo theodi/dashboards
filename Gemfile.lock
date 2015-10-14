@@ -113,8 +113,9 @@ GEM
       multi_json (>= 1.7.5, < 2.0)
       nokogiri (~> 1.6.0)
       oauth2
+    hashdiff (0.2.2)
     hashie (2.1.2)
-    highline (1.7.7)
+    highline (1.7.8)
     hike (1.2.3)
     httmultiparty (0.3.16)
       httparty (>= 0.7.3)
@@ -265,9 +266,10 @@ GEM
       unf_ext
     unf_ext (0.0.7.1)
     vcr (2.9.3)
-    webmock (1.21.0)
+    webmock (1.22.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
+      hashdiff
     websocket (1.2.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
