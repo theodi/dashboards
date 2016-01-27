@@ -144,9 +144,7 @@ GEM
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     method_source (0.8.2)
-    mime-types (3.0)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2015.1120)
+    mime-types (2.6.2)
     mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -297,6 +295,7 @@ DEPENDENCIES
   httparty
   i18n
   json
+  mime-types (= 2.6.2)
   pry
   rack-google-analytics
   rake

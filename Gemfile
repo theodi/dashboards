@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 #ruby-gemset=dashboards
 
 gem 'rake'
+gem 'mime-types', '2.6.2'
 gem 'dashing' , github: 'theodi/dashing'
 gem 'foreman'
 gem 'activesupport', '~> 4.1.0'
