@@ -12,11 +12,11 @@ describe GithubDashboard do
     end
 
     it "should return the correct number of issues", :vcr do
-      @result[:open_issues].should == 280
+      expect(@result[:open_issues]).to eq(280)
     end
 
     it "should return the correct number of pull requests", :vcr do
-      @result[:pull_requests].should == 16
+      expect(@result[:pull_requests]).to eq(16)
     end
 
   end
@@ -32,11 +32,11 @@ describe GithubDashboard do
     # EXTERNAL PRS ARE DISABLED CURRENTLY. SEE #106
 
     it "should return the correct number of total external pull requests", :vcr do
-      @result[:total_pulls].should == 0 #43
+      expect(@result[:total_pulls]).to eq(0) #43
     end
 
     it "should return the correct number of merged external pull requests", :vcr do
-      @result[:merged_pulls].should == 0 #24
+      expect(@result[:merged_pulls]).to eq(0) #24
     end
 
   end
@@ -52,8 +52,8 @@ describe GithubDashboard do
     end
 
     it "should return correct information about the current milestone", :vcr do
-      @result[:title].should == "Sprint #37"
-      @result[:value].should == 10
+      expect(@result[:title]).to eq("Sprint #37")
+      expect(@result[:value]).to eq(10)
     end
 
   end

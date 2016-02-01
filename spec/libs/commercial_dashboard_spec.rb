@@ -8,27 +8,27 @@ describe CommercialDashboard do
   end
   
   it "should show the pipeline for the current year", :vcr do
-    CommercialDashboard.pipeline.should == 470825
+    expect(CommercialDashboard.pipeline).to eq(470825)
   end
   
   it "should show the weighted pipeline for the current year", :vcr do
-    CommercialDashboard.weighted.should == 78026
+    expect(CommercialDashboard.weighted).to eq(78026)
   end  
   
   it "should show the pipeline for the next three years", :vcr do
-    CommercialDashboard.three_year.should == 470825
+    expect(CommercialDashboard.three_year).to eq(470825)
   end
   
   it "should show the number of members", :vcr do
-    CommercialDashboard.members.should == 52
+    expect(CommercialDashboard.members).to eq(52)
   end
   
   it "should show the average age of opportunities", :vcr do
-    CommercialDashboard.age.should == 156
+    expect(CommercialDashboard.age).to eq(156)
   end
   
   it "should show a count of old opportunities", :vcr do
-    CommercialDashboard.old_opportunities.should == 107
+    expect(CommercialDashboard.old_opportunities).to eq(107)
   end
   
   after :all do

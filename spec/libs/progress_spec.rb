@@ -74,31 +74,31 @@ describe Progress do
   it "returns the correct progress for the current month" do
     Timecop.travel("2014-04-01")
     current = @progress.current_month
-    current.count.should == 1
-    current[0].should == {"title"=>"One card", "due"=>"2014-04-10T11:00:00Z", "progress"=>0.5, "no_checklist" => false}
+    expect(current.count).to eq(1)
+    expect(current[0]).to eq({"title"=>"One card", "due"=>"2014-04-10T11:00:00Z", "progress"=>0.5, "no_checklist" => false})
     Timecop.return
   end
 
   it "returns the correct progress for the rest of the quarter" do
     Timecop.travel("2014-04-01")
     rest_of_quarter = @progress.rest_of_quarter
-    rest_of_quarter.count.should == 3
-    rest_of_quarter[0].should == {"title"=>"Two cards", "due"=> nil, "progress"=>0.0, "no_checklist" => false}
-    rest_of_quarter[1].should == {"title"=>"Another card", "due"=> nil, "progress"=>0.5, "no_checklist" => false}
-    rest_of_quarter[2].should == {"title"=>"No checklist!", "due"=> nil, "progress"=>0, "no_checklist" => true}
+    expect(rest_of_quarter.count).to eq(3)
+    expect(rest_of_quarter[0]).to eq({"title"=>"Two cards", "due"=> nil, "progress"=>0.0, "no_checklist" => false})
+    expect(rest_of_quarter[1]).to eq({"title"=>"Another card", "due"=> nil, "progress"=>0.5, "no_checklist" => false})
+    expect(rest_of_quarter[2]).to eq({"title"=>"No checklist!", "due"=> nil, "progress"=>0, "no_checklist" => true})
     Timecop.return
   end
 
   it "returns the correct to discuss cards", :vcr do
     to_discuss = @progress.to_discuss
-    to_discuss.count.should == 1
-    to_discuss[0].should == {"title" => "Let's have a chat about this one", "due" => nil, "progress" => 0.0, "no_checklist" => false}
+    expect(to_discuss.count).to eq(1)
+    expect(to_discuss[0]).to eq({"title" => "Let's have a chat about this one", "due" => nil, "progress" => 0.0, "no_checklist" => false})
   end
 
   it "returns the correct done cards", :vcr do
     done = @progress.done
-    done.count.should == 1
-    done[0].should == {"title" => "We've done this one", "due" => nil, "progress" => 1.0, "no_checklist" => false}
+    expect(done.count).to eq(1)
+    expect(done[0]).to eq({"title" => "We've done this one", "due" => nil, "progress" => 1.0, "no_checklist" => false})
   end
 
 end
