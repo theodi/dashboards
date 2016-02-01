@@ -5,83 +5,83 @@ describe CompanyDashboard do
 
   it "should show correct progress for each quarter", :vcr do
     progress = CompanyDashboard.progress(2013)
-    progress[:q1].should == 97
-    progress[:q2].should == 90.2
-    progress[:q3].should == 93.4
-    progress[:q4].should == 90.8
+    expect(progress[:q1]).to eq(97)
+    expect(progress[:q2]).to eq(90.2)
+    expect(progress[:q3]).to eq(93.4)
+    expect(progress[:q4]).to eq(90.8)
 
     progress = CompanyDashboard.progress(2014)
-    progress[:q1].should == 91.8
-    progress[:q2].should == 91.5
-    progress[:q3].should == 84.1
-    progress[:q4].should == 92.5
+    expect(progress[:q1]).to eq(91.8)
+    expect(progress[:q2]).to eq(91.5)
+    expect(progress[:q3]).to eq(84.1)
+    expect(progress[:q4]).to eq(92.5)
 
     progress = CompanyDashboard.progress(2015)
-    progress[:q1].should == 68.9
-    progress[:q2].should == 15.3
-    progress[:q3].should == 0
-    progress[:q4].should == 0
+    expect(progress[:q1]).to eq(68.9)
+    expect(progress[:q2]).to eq(15.3)
+    expect(progress[:q3]).to eq(0)
+    expect(progress[:q4]).to eq(0)
   end
 
   it "should show the correct number of published Open Data Certificates", :vcr do
-    CompanyDashboard.odcs(2013).should == 599
-    CompanyDashboard.odcs(2014).should == 10254
-    CompanyDashboard.odcs(2015).should == 10518
-    CompanyDashboard.odcs.should == 10518
+    expect(CompanyDashboard.odcs(2013)).to eq(599)
+    expect(CompanyDashboard.odcs(2014)).to eq(10254)
+    expect(CompanyDashboard.odcs(2015)).to eq(10518)
+    expect(CompanyDashboard.odcs).to eq(10518)
   end
 
   it "should show the correct member count", :vcr do
-    CompanyDashboard.members(2013).should == 54
-    CompanyDashboard.members(2014).should == 59
-    CompanyDashboard.members.should == 59
+    expect(CompanyDashboard.members(2013)).to eq(54)
+    expect(CompanyDashboard.members(2014)).to eq(59)
+    expect(CompanyDashboard.members).to eq(59)
   end
 
   it "should show the correct reach", :vcr do
-    CompanyDashboard.reach(2014).should == 541748
-    CompanyDashboard.reach(2015).should == {
+    expect(CompanyDashboard.reach(2014)).to eq(541748)
+    expect(CompanyDashboard.reach(2015)).to eq({
       "actual" => 383896,
       "annual_target" => 1000000,
       "ytd_target" => 470000
-    }
-    CompanyDashboard.reach.should == 1229040
+    })
+    expect(CompanyDashboard.reach).to eq(1229040)
   end
 
   it "should show the correct unlocked value", :vcr do
-    CompanyDashboard.value(2013).should == 16924307
-    CompanyDashboard.value(2014).should == 16569234
-    CompanyDashboard.value(2015).should == 499511
-    CompanyDashboard.value.should == 32863121
+    expect(CompanyDashboard.value(2013)).to eq(16924307)
+    expect(CompanyDashboard.value(2014)).to eq(16569234)
+    expect(CompanyDashboard.value(2015)).to eq(499511)
+    expect(CompanyDashboard.value).to eq(32863121)
   end
 
   it "should show the correct burn rate", :vcr do
-    CompanyDashboard.burn(2014).should == 335128.44333333336
-    CompanyDashboard.burn(2015).should == 182333.33333333334
+    expect(CompanyDashboard.burn(2014)).to eq(335128.44333333336)
+    expect(CompanyDashboard.burn(2015)).to eq(182333.33333333334)
   end
 
   it "should show the correct cash reserves", :vcr do
-    CompanyDashboard.cash_reserves(2014).should == 839489.27
-    CompanyDashboard.cash_reserves(2015).should == 1304880.05
+    expect(CompanyDashboard.cash_reserves(2014)).to eq(839489.27)
+    expect(CompanyDashboard.cash_reserves(2015)).to eq(1304880.05)
   end
 
   it "should show the correct kpi percentage", :vcr do
-    CompanyDashboard.kpis(2013).should == 100.0
-    CompanyDashboard.kpis(2014).should == 1.0
+    expect(CompanyDashboard.kpis(2013)).to eq(100.0)
+    expect(CompanyDashboard.kpis(2014)).to eq(1.0)
   end
 
   it "should show the correct grant funding", :vcr do
-    CompanyDashboard.grant_funding(2014).should == {
+    expect(CompanyDashboard.grant_funding(2014)).to eq({
       "actual" => 0.0,
       "annual_target" => 3354617.6046176003,
       "ytd_target" => 373917.748917748
-    }
+    })
   end
 
   it "should show the correct pipeline", :vcr do
-    CompanyDashboard.pipeline(2014).should == 228603
+    expect(CompanyDashboard.pipeline(2014)).to eq(228603)
   end
 
   it "should get the total costs", :vcr do
-    CompanyDashboard.total_costs(2014).should == {
+    expect(CompanyDashboard.total_costs(2014)).to eq({
       "actual" => 3526939.9699999997,
       "annual_target" => 5939066.66666667,
       "ytd_target" => 5939066.66666667,
@@ -146,9 +146,9 @@ describe CompanyDashboard do
           }
         }
       }
-    }
+    })
 
-    CompanyDashboard.total_costs(2015).should == {
+    expect(CompanyDashboard.total_costs(2015)).to eq({
       "actual" => 2317000.0,
       "annual_target" => 6252000.0,
       "ytd_target" => 3029000.0,
@@ -179,11 +179,11 @@ describe CompanyDashboard do
           "ytd_target" => 477000.0,
         }
       }
-    }
+    })
   end
 
   it "should get fixed cost breakdown", :vcr do
-    CompanyDashboard.cost_breakdown(2014, 'fixed').should == {
+    expect(CompanyDashboard.cost_breakdown(2014, 'fixed')).to eq({
       "staff" => 1644713.0,
       "associates" => 472212.0,
       "office_and_operational" => 301261.87,
@@ -191,163 +191,163 @@ describe CompanyDashboard do
       "communications" => 181889.0,
       "professional_fees" => 154921.9,
       "software" => 29239.88,
-    }
+    })
   end
 
   it "should get cost breakdown", :vcr do
-    CompanyDashboard.cost_breakdown(2015).should == {
+    expect(CompanyDashboard.cost_breakdown(2015)).to eq({
       "core" => 296000.0,
       "innovation" => 659000.0,
       "network" => 334000.0,
       "other" => 380000.0,
       "staff" => 648000.0,
-    }
+    })
   end
 
   it "should get the headcount", :vcr do
-    CompanyDashboard.headcount(2014).should == {
+    expect(CompanyDashboard.headcount(2014)).to eq({
       "actual" => 39.0,
       "annual_target" => 34.0,
       "ytd_target" => 34.0
-    }
+    })
 
-    CompanyDashboard.headcount(2015).should == {
+    expect(CompanyDashboard.headcount(2015)).to eq({
       "actual" => 55.0,
       "annual_target" => 52.0,
       "ytd_target" => 52.0
-    }
+    })
   end
 
   it "should get EBITDA", :vcr do
-    CompanyDashboard.ebitda(2014).should == {
+    expect(CompanyDashboard.ebitda(2014)).to eq({
       "actual" => -1938527.1199999999,
       "annual_target" => -3003883.33333333,
       "latest" => -230153.0,
       "ytd_target" => -3003883.3333333326,
-    }
+    })
 
-    CompanyDashboard.ebitda(2015).should == {
+    expect(CompanyDashboard.ebitda(2015)).to eq({
       "actual" => -1254000.0,
       "annual_target" => -3488000.0,
       "latest" => -300000.0,
       "ytd_target" => -1713000.0,
-    }
+    })
   end
 
   it "should get number of articles published", :vcr do
-    CompanyDashboard.articles(2014).should == 0
+    expect(CompanyDashboard.articles(2014)).to eq(0)
   end
 
   it "should get number of events hosted", :vcr do
-    CompanyDashboard.events_hosted(2014).should == 2
+    expect(CompanyDashboard.events_hosted(2014)).to eq(2)
   end
 
   it "should get number of people trained", :vcr do
-    CompanyDashboard.people_trained(2014).should == {
+    expect(CompanyDashboard.people_trained(2014)).to eq({
       'actual' => 702,
       'annual_target' => 396,
       'ytd_target' => 396
-    }
-    CompanyDashboard.people_trained(2015).should == {
+    })
+    expect(CompanyDashboard.people_trained(2015)).to eq({
       'actual' => 657,
       'annual_target' => 1000,
       'ytd_target' => 480
-    }
-    CompanyDashboard.people_trained.should == 1593
+    })
+    expect(CompanyDashboard.people_trained).to eq(1593)
   end
 
   it "should get number of trainers trained", :vcr do
-    CompanyDashboard.trainers_trained(2015).should == {
+    expect(CompanyDashboard.trainers_trained(2015)).to eq({
       'actual' => 3,
       'annual_target' => 48,
       'ytd_target' => 23
-    }
+    })
   end
 
   it "should get number of flagship stories", :vcr do
-    CompanyDashboard.flagship_stories(2015).should == {
+    expect(CompanyDashboard.flagship_stories(2015)).to eq({
       'actual' => 0,
       'annual_target' => 0,
       'ytd_target' => 0
-    }
+    })
   end
 
   it "should get network size", :vcr do
-    CompanyDashboard.network_size(2014).should == {
+    expect(CompanyDashboard.network_size(2014)).to eq({
       "actual" => 75,
       "annual_target" => 75,
       "ytd_target" => 75
-    }
+    })
 
-    CompanyDashboard.network_size(2015).should == {
+    expect(CompanyDashboard.network_size(2015)).to eq({
       "actual" => 157,
-    }
+    })
 
-    CompanyDashboard.network_size.should == 308
+    expect(CompanyDashboard.network_size).to eq(308)
   end
 
   it "should get network size for just one level", :vcr do
-    CompanyDashboard.network_size(2014, [:supporters]).should == {
+    expect(CompanyDashboard.network_size(2014, [:supporters])).to eq({
       "actual" => 17,
       "annual_target" => 34,
       "ytd_target" => 6
-    }
-    CompanyDashboard.network_size.should == 80
+    })
+    expect(CompanyDashboard.network_size).to eq(80)
   end
 
   it "should get network size for three levels", :vcr do
-    CompanyDashboard.network_size(2014, [:partners, :supporters, :sponsors]).should == {
+    expect(CompanyDashboard.network_size(2014, [:partners, :supporters, :sponsors])).to eq({
       "actual" => 19,
       "annual_target" => 49,
       "ytd_target" => 11
-    }
-    CompanyDashboard.network_size.should == 80
+    })
+    expect(CompanyDashboard.network_size).to eq(80)
   end
 
   it "should get income", :vcr do
-    CompanyDashboard.income(2014).should == {
+    expect(CompanyDashboard.income(2014)).to eq({
       "actual" => 1588412.8499999999,
       "annual_target" => 2935183.33333333,
       "ytd_target" => 2935183.333333331
-    }
-    CompanyDashboard.income(2015).should == {
+    })
+    expect(CompanyDashboard.income(2015)).to eq({
       "actual" => 1064000.0,
       "annual_target" => 2862000.0,
       "ytd_target" => 1368000.0
-    }
-    CompanyDashboard.income.should == 7057000.0
+    })
+    expect(CompanyDashboard.income).to eq(7057000.0)
   end
 
   it "should get cumulative bookings value", :vcr do
-    CompanyDashboard.bookings.should == 5405426
+    expect(CompanyDashboard.bookings).to eq(5405426)
   end
 
   it "should show the correct commercial bookings value", :vcr do
-    CompanyDashboard.commercial_bookings(2014).should == {
+    expect(CompanyDashboard.commercial_bookings(2014)).to eq({
       'actual' => 14000.0,
       'annual_target' => 2952600.0,
       'ytd_target' => 158800
-    }
+    })
   end
 
   it "should show the correct non-commercial bookings value", :vcr do
-    CompanyDashboard.noncommercial_bookings(2014).should == {
+    expect(CompanyDashboard.noncommercial_bookings(2014)).to eq({
       "actual" => 0.0,
       "annual_target" => 1475980.0,
       "ytd_target" => 89780.0
-    }
+    })
   end
 
   it "should show the correct 2015 bookings value", :vcr do
-    CompanyDashboard.bookings(2015).should == {
+    expect(CompanyDashboard.bookings(2015)).to eq({
       "actual" => 335000,
       "annual_target" => 1044000,
       "ytd_target" => 420000
-    }
+    })
   end
 
   it "should show the correct 2015 bookings by sector", :vcr do
-    CompanyDashboard.bookings_by_sector(2015).should == {
+    expect(CompanyDashboard.bookings_by_sector(2015)).to eq({
       "core" => {
         "actual" => 29000.0,
         "annual_target" => 191000.0,
@@ -363,7 +363,7 @@ describe CompanyDashboard do
         "annual_target" => 1252000.0,
         "ytd_target" => 558000.0
       },
-    }
+    })
   end
 
 end

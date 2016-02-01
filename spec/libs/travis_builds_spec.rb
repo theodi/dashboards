@@ -59,31 +59,31 @@ describe TravisBuilds do
 
     it "should return the five latest builds and create a list" do
       @result = TravisBuilds.update
-      @result[:latest].count.should == 3
-      @result[:latest][0][:job].should == "dashboards"
-      @result[:latest][0][:date].should == "about 11 hours ago"
-      @result[:latest][0][:status].should == "success"
-      @result[:latest][1][:job].should == "breasal"
-      @result[:latest][1][:date].should == "about 12 hours ago"
-      @result[:latest][1][:status].should == "success"
-      @result[:latest][2][:job].should == "csvlint"
-      @result[:latest][2][:date].should == "about 13 hours ago"
-      @result[:latest][2][:status].should == "success"
+      expect(@result[:latest].count).to eq(3)
+      expect(@result[:latest][0][:job]).to eq("dashboards")
+      expect(@result[:latest][0][:date]).to eq("about 11 hours ago")
+      expect(@result[:latest][0][:status]).to eq("success")
+      expect(@result[:latest][1][:job]).to eq("breasal")
+      expect(@result[:latest][1][:date]).to eq("about 12 hours ago")
+      expect(@result[:latest][1][:status]).to eq("success")
+      expect(@result[:latest][2][:job]).to eq("csvlint")
+      expect(@result[:latest][2][:date]).to eq("about 13 hours ago")
+      expect(@result[:latest][2][:status]).to eq("success")
     end
 
     it "should return a success image, a state and EVERYTHING IS AWESOME" do
       result = TravisBuilds.build_images
-      result[:image].should match /https:\/\/buildmemes.herokuapp.com\/p\?[0-9]+/
-      result[:state].should == "build-passed"
-      result[:trombone].should include('<source src="/awesome.mp3" type="audio/mpeg; codecs=\'mp3\'">')
-      result[:trombone].should include('<source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">')
+      expect(result[:image]).to match /https:\/\/buildmemes.herokuapp.com\/p\?[0-9]+/
+      expect(result[:state]).to eq("build-passed")
+      expect(result[:trombone]).to include('<source src="/awesome.mp3" type="audio/mpeg; codecs=\'mp3\'">')
+      expect(result[:trombone]).to include('<source src="/awesome.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
 
     it "should ignore specified builds" do
       ENV['TRAVIS_IGNORE_REPOS'] = "theodi/csvlint"
 
       @result = TravisBuilds.update
-      @result[:latest].count.should == 2
+      expect(@result[:latest].count).to eq(2)
 
       ENV['TRAVIS_IGNORE_REPOS'] = ''
     end
@@ -139,18 +139,18 @@ describe TravisBuilds do
 
     it "should return failing builds" do
       @result = TravisBuilds.update
-      @result[:failboat].count.should == 1
-      @result[:failboat][0][:job].should == "breasal"
-      @result[:failboat][0][:date].should == "about 12 hours ago"
-      @result[:failboat][0][:status].should == "failure"
+      expect(@result[:failboat].count).to eq(1)
+      expect(@result[:failboat][0][:job]).to eq("breasal")
+      expect(@result[:failboat][0][:date]).to eq("about 12 hours ago")
+      expect(@result[:failboat][0][:status]).to eq("failure")
     end
 
     it "should return a fail image, a state and a sad trombone" do
       result = TravisBuilds.build_images
-      result[:image].should match /https:\/\/buildmemes.herokuapp.com\/f\?[0-9]+/
-      result[:state].should == "build-failed"
-      result[:trombone].should include('<source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">')
-      result[:trombone].should include('<source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">')
+      expect(result[:image]).to match /https:\/\/buildmemes.herokuapp.com\/f\?[0-9]+/
+      expect(result[:state]).to eq("build-failed")
+      expect(result[:trombone]).to include('<source src="/sadtrombone.mp3" type="audio/mpeg; codecs=\'mp3\'">')
+      expect(result[:trombone]).to include('<source src="/sadtrombone.ogg" type="audio/ogg; codecs=\'vorbis\'">')
     end
 
   end
@@ -176,10 +176,10 @@ describe TravisBuilds do
 
     it "should return failing builds" do
       result = TravisBuilds.update
-      result[:failboat].count.should == 0
-      result[:latest][0][:job].should == "dashboards"
-      result[:latest][0][:date].should == "about 11 hours ago"
-      result[:latest][0][:status].should == "building"
+      expect(result[:failboat].count).to eq(0)
+      expect(result[:latest][0][:job]).to eq("dashboards")
+      expect(result[:latest][0][:date]).to eq("about 11 hours ago")
+      expect(result[:latest][0][:status]).to eq("building")
     end
 
   end
@@ -205,10 +205,10 @@ describe TravisBuilds do
 
     it "should return errored builds" do
       result = TravisBuilds.update
-      result[:failboat].count.should == 1
-      result[:failboat][0][:job].should == "dashboards"
-      result[:failboat][0][:date].should == "about 11 hours ago"
-      result[:failboat][0][:status].should == "error"
+      expect(result[:failboat].count).to eq(1)
+      expect(result[:failboat][0][:job]).to eq("dashboards")
+      expect(result[:failboat][0][:date]).to eq("about 11 hours ago")
+      expect(result[:failboat][0][:status]).to eq("error")
     end
 
   end
