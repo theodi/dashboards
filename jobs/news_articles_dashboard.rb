@@ -60,3 +60,20 @@ schedule do
   # send_event '2014-Events',        current:       CompanyDashboard.events_hosted(2014)
   # send_metric_with_targets '2014-People-trained', CompanyDashboard.people_trained(2014)
 end
+
+# 2016 Reach
+
+schedule do
+  send_event '2016-Active-reach',  current: CompanyDashboard.active_reach(2016)['actual']
+end
+
+
+schedule do
+  send_event '2016-Passive-reach', current: CompanyDashboard.passive_reach(2016)['actual']
+end
+
+schedule do
+  geo = NewsArticlesDashboard.geographies(2016)
+  geo = geo.first(4) << { label: 'Other', value: geo[4..-1].inject(0){|sum, x| sum + x[:value] } }
+  send_event '2016-Geographic-reach', value: geo
+end
