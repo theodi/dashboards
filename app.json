@@ -1,0 +1,55 @@
+{
+  "name": "dashboards",
+  "scripts": {
+  },
+  "env": {
+    "DASHBOARDS_AIRBRAKE_KEY": {
+      "required": true
+    },
+    "DASHBOARDS_ANALYTICS_KEY": {
+      "required": true
+    },
+    "GITHUB_OAUTH_TOKEN": {
+      "required": true
+    },
+    "GITHUB_ORGANISATION": {
+      "required": true
+    },
+    "JENKINS_ORG": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "METRICS_API_BASE_URL": {
+      "required": true
+    },
+    "PINGDOM_PASSWORD": {
+      "required": true
+    },
+    "PINGDOM_USERNAME": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "TRAVIS_IGNORE_REPOS": {
+      "required": true
+    },
+    "TWITTER_UKODITECH_CONSUMER_KEY": {
+      "required": true
+    },
+    "TWITTER_UKODITECH_CONSUMER_SECRET": {
+      "required": true
+    },
+    "TWITTER_UKODITECH_OAUTH_TOKEN": {
+      "required": true
+    },
+    "TWITTER_UKODITECH_OAUTH_TOKEN_SECRET": {
+      "required": true
+    }
+  },
+  "addons": [
+
+  ]
+}
