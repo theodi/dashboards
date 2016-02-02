@@ -82,7 +82,8 @@ class GithubDashboard
         @value = (@closed.to_f / @total.to_f * 100).to_i rescue 0
       end
     end
-    return { min: 0, max: 100, value: @value || 0, title: @title || "unknown"}
+  ensure
+    return { min: 0, max: 100, value: @value || 0, title: @title || "error :("}
   end
   
   # def self.get_stats(type)
