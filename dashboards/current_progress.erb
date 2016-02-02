@@ -11,14 +11,11 @@
   <li class="row-4 col-1 width-3">
     <div data-id="<%= @year %>-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="<%= t "progress.#{@year}.q1.title" %>" id="q1-progress" data-tooltip="<%= t "progress.tips.q1" %>"></div>
   </li>
-  <li class="row-1 col-4 width-2 height-4">
+  <li class="row-1 col-4 width-4 height-4">
     <div data-id="<%= @year %>-<%= @quarter %>-current-month" data-view="ProgressList" data-title="<%= t "progress.this_month" %>" id="this-month" data-tooltip="<%= t "progress.tips.this_month" %>"></div>
   </li>
-  <li class="row-1 col-6 width-2 height-4">
-    <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="<%= t "progress.rest_of_quarter" %>" id="rest-of-quarter" data-tooltip="<%= t "progress.tips.rest_of_quarter" %>"></div>
-  </li>
   <li class="row-1 col-8 width-2 height-4">
-    <div data-id="<%= @year %>-<%= @quarter %>-discuss" data-view="ProgressList" data-title="<%= t "progress.discuss" %>" id="discuss" data-tooltip="<%= t "progress.tips.discuss" %>"></div>
+    <div data-id="<%= @year %>-<%= @quarter %>-rest-of-quarter" data-view="ProgressList" data-title="<%= t "progress.rest_of_quarter" %>" id="rest-of-quarter" data-tooltip="<%= t "progress.tips.rest_of_quarter" %>"></div>
   </li>
   <li class="row-1 col-10 width-2 height-4">
     <div data-id="<%= @year %>-<%= @quarter %>-done" data-view="ProgressList" data-title="<%= t "progress.done" %>" id="done" data-tooltip="<%= t "progress.tips.done" %>"></div>
