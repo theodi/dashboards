@@ -64,12 +64,14 @@ end
 # 2016 Reach
 
 schedule do
-  send_event '2016-Active-reach',  current: CompanyDashboard.active_reach(2016)['actual']
+  reach = CompanyDashboard.active_reach(2016)['actual'] rescue 0
+  send_event '2016-Active-reach',  current: reach
 end
 
 
 schedule do
-  send_event '2016-Passive-reach', current: CompanyDashboard.passive_reach(2016)['actual']
+  reach = CompanyDashboard.passive_reach(2016)['actual'] rescue 0
+  send_event '2016-Passive-reach', current: reach
 end
 
 schedule do

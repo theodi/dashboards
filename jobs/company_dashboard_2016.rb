@@ -4,7 +4,8 @@
 # 2016 Company
 
 schedule do
-  send_event               '2016-network-size', current: CompanyDashboard.network_size(2016)['actual']
+  size = CompanyDashboard.network_size(2016)['actual'] rescue 0
+  send_event               '2016-network-size', current: size
 end
 
 schedule do
@@ -55,7 +56,8 @@ schedule do
 end
 
 schedule do
-  send_event '2016-EBITDA',           current: CompanyDashboard.ebitda(2016)['latest'], currency: "GBP"
+  ebitda = CompanyDashboard.ebitda(2016)['latest'] rescue 0
+  send_event '2016-EBITDA',           current: ebitda, currency: "GBP"
 end
 
 schedule do
