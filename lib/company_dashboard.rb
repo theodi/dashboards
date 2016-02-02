@@ -43,15 +43,15 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.headcount(year = nil)
-    select_metric 'headcount', year
+    select_metric('headcount', year) || 0
   end
 
   def self.ebitda(year = nil)
-    select_metric 'ebitda', year
+    select_metric('ebitda', year) || 0
   end
 
   def self.total_costs(year = nil)
-    select_metric 'total-costs', year
+    select_metric('total-costs', year) || 0
   end
 
   def self.cost_breakdown(year = nil, cost_type = nil)
@@ -65,19 +65,19 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.burn(year = nil)
-    select_metric 'burn', year
+    select_metric('burn', year) || 0
   end
 
   def self.bookings(year = nil)
-    select_metric 'bookings', year
+    select_metric('bookings', year) || 0
   end
 
   def self.commercial_bookings(year = nil)
-    bookings_by_type(:commercial, year)
+    bookings_by_type(:commercial, year) || 0
   end
 
   def self.noncommercial_bookings(year = nil)
-    bookings_by_type(:non_commercial, year)
+    bookings_by_type(:non_commercial, year) || 0
   end
 
   def self.bookings_by_type type, year = nil
@@ -92,32 +92,33 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.bookings_by_sector(year = nil)
-    select_metric 'bookings-by-sector', year
+    select_metric('bookings-by-sector', year) || 0
   end
 
   def self.flagship_stories(year)
-    select_metric 'flagship-stories', year
+    select_metric('flagship-stories', year) || 0
   end
 
   def self.value(year = nil)
-    select_metric 'value-unlocked', year
+    select_metric('value-unlocked', year) || 0
   end
 
   def self.income(year = nil)
-    select_metric 'income', year
+    select_metric('income', year) || 0
   end
 
   def self.kpis(year)
-    select_metric 'kpi-performance', year if year # year should never be nil for this
+    select_metric('kpi-performance', year) || 0 if year # year should never be nil for this
   end
 
   def self.grant_funding(year)
-    select_metric 'grant-funding', year
+    select_metric('grant-funding', year) || 0
   end
 
   def self.cash_reserves(year)
     time = year_to_time year
-    (load_metric 'cash-reserves', time)['value']
+    cash = load_metric 'cash-reserves', time
+    cash ? cash['value'] : 0
   end
 
   def self.pipeline(year)
@@ -130,11 +131,11 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.articles(year)
-    select_metric 'pr-pieces', year
+    select_metric('pr-pieces', year) || 0
   end
 
   def self.events_hosted(year)
-    select_metric 'events-hosted', year
+    select_metric('events-hosted', year) || 0
   end
 
   def self.people_trained(year = nil)
@@ -150,11 +151,11 @@ class CompanyDashboard < MetricsHelper
   end
 
   def self.trainers_trained(year = nil)
-    select_metric 'trainers-trained', year
+    select_metric('trainers-trained', year) || 0
   end
 
   def self.network_size(year = nil, sections = nil)
-    data = select_metric 'network-size', year
+    data = select_metric('network-size', year) || 0
     if sections
       data.select!{|k,v| sections.include? k.to_sym }
     end

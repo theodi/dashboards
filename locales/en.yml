@@ -16,6 +16,15 @@ en:
         reach: "Number of unique people reached in person and online in 2015 (source: ODI + Google Analytics)"
         flagship_stories: "Significant stories that reveal the power, potential impact and/or impact of open data. Flagship stories are also promoted to reach a large audience. (source: ODI)"
         sales: "Sales booked/closed in 2015 (e.g. a £120 twelve month services booking can become £10 a month over those months, so bookings and cash often vary in timing) (source: ODI)"
+    "2016":
+      title: 2016 Performance
+      tips:
+        network: "Number of new members in 2016 (source: ODI)"
+        training: "Number of people trained by ODI HQ and ODI Nodes in 2016 (source: ODI + Nodes)"
+        trainers: "Number of trainers trained in 2016 by ODI HQ (source: ODI)"
+        reach: "Number of unique people reached in person and online in 2016 (source: ODI + Google Analytics)"
+        flagship_stories: "Significant stories that reveal the power, potential impact and/or impact of open data. Flagship stories are also promoted to reach a large audience. (source: ODI)"
+        sales: "Sales booked/closed in 2016 (e.g. a £120 twelve month services booking can become £10 a month over those months, so bookings and cash often vary in timing) (source: ODI)"
     all:
       title: Lifetime impact
       tips:
@@ -81,6 +90,16 @@ en:
         ebitda_month: "Earnings before interest, tax, depreciation and amortization for this month (source: ODI)"
         burn: "The average monthly cash spend of the organisation (calculated on a rolling basis based on the previous three months) (source: ODI)"
         cash: "Total cash held in ODI bank accounts (source: ODI)"
+    "2016":
+      title: 2016 OpEx
+      tips:
+        income: "The total cash received this year, excluding general grant funding from InnovateUK and Omidyar (source: ODI)"
+        costs: "Total cost of delivery (source: ODI)"
+        headcount: "The number of people employed by the ODI, on payroll. Excludes ODI Associates and freelancers (source: ODI)"
+        ebitda_ytd: "Earnings before interest, tax, depreciation and amortization for the year-to-date (source: ODI)"
+        ebitda_month: "Earnings before interest, tax, depreciation and amortization for this month (source: ODI)"
+        burn: "The average monthly cash spend of the organisation (calculated on a rolling basis based on the previous three months) (source: ODI)"
+        cash: "Total cash held in ODI bank accounts (source: ODI)"
     income: Income
     costs: Total costs
     headcount: Headcount
@@ -111,6 +130,20 @@ en:
         people_trained: "Number of people trained this year"
     "2015":
       title: "2015 Outputs & reach"
+      tips:
+        active: "Total number of people ODI has spoken to in-person (e.g. training + events) (source: ODI)"
+        passive: "Total number of unique people reached, including via online content. (source: ODI + Google Analytics)"
+        events: "Number of events run by ODI (souce: ODI)"
+        event_attendees: "Event attendees, + attendees at external speaking engagements (Source: Eventbrite + external event producers)"
+        website_visitors: "Unique number of visitors to the ODI websites (HQ + Nodes) (Source: Google Analytics)"
+        publication_reads: "Number of times ODI publications have been read. Includes physical print runs, downloads, embeds & views (Source: ODI)"
+        social_media: "Reach on social media networks and platforms using ODI accounts for Twitter, Vimeo, LinkedIn (source: various platforms)"
+        pr: "PR reach of online articles that mention the ODI worldwide (Source: PreciseMedia)"
+        offline: "Reach of ODI content on thirs-party media (tv, radio, galleries etc) does not include embedded media websites (source: ODI + 3rd party data)"
+        visitors: "Visitors to ODI HQ and Node offices (Source: ODI visitor registration app and Node data)"
+        geographies: "Website reach by region (Source: Google Analytics / PreciseMedia)"
+    "2016":
+      title: "2016 Outputs & reach"
       tips:
         active: "Total number of people ODI has spoken to in-person (e.g. training + events) (source: ODI)"
         passive: "Total number of unique people reached, including via online content. (source: ODI + Google Analytics)"
@@ -184,7 +217,7 @@ en:
     scribd: Views on scribd
     soundcloud: Listens on soundcloud
   tech:
-    title: Tech team
+    title: Software Team
     issues: Issues
     open_prs: Open PRs
     ex_prs: External PRs
@@ -240,6 +273,16 @@ en:
         title: Progress 2015 Q3
       q4:
         title: Progress 2015 Q4
+    "2016":
+      title: 2016 Activities
+      q1:
+        title: Progress 2016 Q1
+      q2:
+        title: Progress 2016 Q2
+      q3:
+        title: Progress 2016 Q3
+      q4:
+        title: Progress 2016 Q4
     tips:
       outstanding: Tasks that were not completed during the quarter
       discuss: Tasks that need further discussion

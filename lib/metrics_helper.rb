@@ -20,7 +20,7 @@ class MetricsHelper
     end
 
     response = HTTParty.get(url, :headers => { 'Accept' => 'application/json' })
-    if response.success?
+    if response.success? && response.body != "null"
       JSON.parse response.body
     else
       msg = "HTTP fail getting #{url}: #{response.code}"
