@@ -39,7 +39,7 @@ GEM
     airbrake (4.3.5)
       builder
       multi_json
-    backports (3.6.7)
+    backports (3.6.8)
     buftok (0.2.0)
     builder (3.2.2)
     capsulecrm (0.0.3)
@@ -201,7 +201,7 @@ GEM
     safe_yaml (1.0.4)
     sass (3.2.19)
     simple_oauth (0.3.1)
-    simplecov (0.11.1)
+    simplecov (0.11.2)
       docile (~> 1.1.0)
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
@@ -265,7 +265,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.2)
     vcr (3.0.1)
     webmock (1.22.6)
       addressable (>= 2.3.6)
