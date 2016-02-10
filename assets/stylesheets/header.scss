@@ -56,3 +56,15 @@
   }
 
 }
+
+@media all and ( max-width: 768px ) {
+  #company-header {
+    margin: 5px;
+    h1.title {
+      text-align: left;
+      font-size: 45px;
+      float: left;
+    }
+  }
+
+}
