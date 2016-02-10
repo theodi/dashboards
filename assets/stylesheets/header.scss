@@ -44,7 +44,7 @@
     }
   }
 
-  h1.title:hover {
+  h1.title:hover, h1.title:focus {
     #dropdown {
       background: #666;
       padding-bottom: 10px;
