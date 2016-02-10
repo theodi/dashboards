@@ -60,9 +60,14 @@
 @media all and ( max-width: 768px ) {
   #company-header {
     margin: 5px;
+
+    img {
+      width: 145px;
+    }
+
     h1.title {
       text-align: left;
-      font-size: 45px;
+      font-size: 35px;
       float: none;
     }
   }
