@@ -21,3 +21,15 @@
   background: #333;
   color: #999;
 }
+
+@media all and ( max-width: 600px ) {
+  .currency {
+    font-size: 15px;
+    padding: 2px 7px;
+  }
+
+  #currency-switch {
+    bottom: 45px;
+    left: 175px;
+  }
+}

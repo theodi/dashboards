@@ -64,3 +64,14 @@ ul.grid {
   }
 
 }
+
+@media all and ( max-width: 600px ) {
+  ul.grid > li {
+    position: static;
+    width: 100% !important;
+
+    div {
+      position: relative;
+    }
+  }
+}
