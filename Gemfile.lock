@@ -148,7 +148,7 @@ GEM
     mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multi_test (0.1.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -267,7 +267,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.2)
     vcr (3.0.1)
-    webmock (1.24.3)
+    webmock (2.0.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
