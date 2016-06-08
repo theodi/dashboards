@@ -5,7 +5,7 @@ ul.grid {
   > li {
     position: absolute;
     display: table;
-    border: 3px solid #222;
+    border: 3px solid #000;
     box-sizing: border-box;
     overflow: visible;
 
@@ -63,4 +63,15 @@ ul.grid {
 
   }
 
+}
+
+@media all and ( max-width: 600px ) {
+  ul.grid > li {
+    position: static;
+    width: 100% !important;
+
+    div {
+      position: relative;
+    }
+  }
 }
