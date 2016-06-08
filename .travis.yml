@@ -59,7 +59,7 @@ env:
 deploy:
   provider: heroku
   api_key:
-    secure: dU5FkBqeP4zBvuocknZWStSYynVTslbsuAEBRirbz+sA53pSRvO+ocoOCUokApPmlmakW40Mcv3q50/UttSjwtisYrrUqnbnTEn0s427yyf4vdjLrfjITmwVj6VHul/8vGNQutTcZho46zsa2rk2pDBH4kpM6CKxEoGfczjN2zQ=
+    secure: TgcZ+5At0/CBIU0mr7VKiIgMMzPVKjKFEkeTZ93NUedw7tnBO7yXzyxp4Z21aJ7lfBK1VJ1JF4CzN3b8McJQcHvSec7QOedh4YD52neOSxHIOqJjTt0WZRo4NxAaahXKVoptILwDpkqejxhHCB3P1n5SM57JI8qKMJ95FqRXcSE=
   app: odi-dashboards
   on:
     repo: theodi/dashboards
