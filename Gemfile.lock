@@ -36,7 +36,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    airbrake (4.3.7)
+    airbrake (4.3.8)
       builder
       multi_json
     backports (3.6.8)
