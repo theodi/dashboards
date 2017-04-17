@@ -1,1 +1,1 @@
-dashing:  bundle exec dashing start -p 3000
+web: bundle exec rackup -p $PORT -E $RACK_ENV -s webrick
