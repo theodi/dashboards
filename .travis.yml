@@ -3,23 +3,6 @@ sudo: false
 cache: bundler
 rvm:
 - 1.9.3
-after_success:
-- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
-  curl -v -X DELETE -u $GITHUB_USER:$GITHUB_PASSWORD "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs/tags/CURRENT"'
-- ! '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&
-  curl -v -X POST -d ''{"ref":"refs/tags/CURRENT","sha":"''$TRAVIS_COMMIT''"}'' --header
-  "Content-Type:application/json" -u $GITHUB_USER:$GITHUB_PASSWORD "https://api.github.com/repos/$TRAVIS_REPO_SLUG/git/refs"'
-branches:
-  except:
-  - CURRENT
-notifications:
-  irc:
-    channels:
-    - irc.freenode.net#theodi
-    template:
-    - ! '%{repository} %{branch} - %{message} %{build_url}'
-    on_success: change
-    on_failure: always
 env:
   global:
   - secure: Xssl8klhHtnZn8YvgPfAZP58oFQYXPx9Yhyj6KxW3vV6AB3n9z8ZlETS3J0k0ZyNdS/NOpSt+ZErzZhen0MBRu4MB8XugWCagzg3aBCZ2t1kZav5jYa+Y35H7/CUzbe6ulPm4PRMGPbfNq418F9TqvwAGQODVz4h2uBMQVgOGoU=
@@ -56,10 +39,3 @@ env:
   - TRAVIS_IGNORE_REPOS='theodi/sauceconnect'
   - secure: S1Znf4ywXH9LJPa121wDsIItuIwDQD2dAQCbwkU+c6k8gVDHEaaVAaqTWXZdPHjJbelctkcv+ca3yAHZfLpNPgta1fk4o6KX1dASCitTZjQkdSWrdhDC0WVKyHTEWk8yProFWd+T0aEFcU9yF8ef9Y5yODYfyozG5V1xGyw1smk=
   - secure: BXfj9rfLY8htRUpY6haNSG+MOGsPm9fHH+LSx2PPamFC3kRI5FjwM8QZV0UuoMVv1ZionZhbwNx0VJMYiKsH383UAmaf1ai0CdD1GLyIpf306sD7URjkoehAktQdLM2hkt6Y/Qy24Ixo+kQnZWz2JALXJC2qRBJ7KYLBX8Br1ls=
-deploy:
-  provider: heroku
-  api_key:
-    secure: TgcZ+5At0/CBIU0mr7VKiIgMMzPVKjKFEkeTZ93NUedw7tnBO7yXzyxp4Z21aJ7lfBK1VJ1JF4CzN3b8McJQcHvSec7QOedh4YD52neOSxHIOqJjTt0WZRo4NxAaahXKVoptILwDpkqejxhHCB3P1n5SM57JI8qKMJ95FqRXcSE=
-  app: odi-dashboards
-  on:
-    repo: theodi/dashboards
