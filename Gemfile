@@ -21,7 +21,7 @@ gem 'i18n'
 gem 'sinatra-partial'
 gem 'actionpack', '~> 4.1.0'
 gem 'actionview', '~> 4.1.0'
-gem 'airbrake', '~> 4.3.0'
+gem 'airbrake', '~> 7.0.1'
 gem 'rack-google-analytics'
 
 group :development, :test do
