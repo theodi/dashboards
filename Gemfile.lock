@@ -36,12 +36,12 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    airbrake (4.3.8)
-      builder
-      multi_json
+    airbrake (7.0.1)
+      airbrake-ruby (~> 2.4)
+    airbrake-ruby (2.4.0)
     backports (3.8.0)
     buftok (0.2.0)
-    builder (3.2.2)
+    builder (3.2.3)
     capsulecrm (0.0.3)
       activemodel (>= 3.0.5)
       activesupport (>= 3.0.5)
@@ -146,7 +146,7 @@ GEM
     mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
-    multi_json (1.12.1)
+    multi_json (1.12.2)
     multi_test (0.1.2)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -280,7 +280,7 @@ DEPENDENCIES
   actionpack (~> 4.1.0)
   actionview (~> 4.1.0)
   activesupport (~> 4.1.0)
-  airbrake (~> 4.3.0)
+  airbrake (~> 7.0.1)
   capsulecrm
   capybara
   coveralls
