@@ -1,0 +1,32 @@
+<div data-bind-class="state">
+
+  <div>
+
+    <h1 class="title" data-bind-data-tip="tooltip">
+      <span data-bind="title"></span>
+    </h1>
+
+    <div class="builds">
+      <ul class="list-nostyle">
+        <li data-foreach-item="latest" data-bind-class="item.status">
+          <p data-bind='item.job'></p>
+          <p class='last-run'><span data-bind='item.date'></span></p>
+        </li>
+      </ul>
+    </div>
+
+    <div data-showif="failboatpassengers" class="failboat">
+      <h2 class="title">Failboat</h2>
+
+      <ul class="list-nostyle">
+        <li data-foreach-item="failboat" data-bind-class="item.status">
+          <p data-bind='item.job'></p>
+          <p class='last-run'><span data-bind='item.date'></span></p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>

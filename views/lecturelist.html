@@ -1,0 +1,20 @@
+<h1 class="title" data-bind-data-tip="tooltip">
+  <span data-bind="title"></span>
+</h1>
+
+<ul class="list-nostyle">
+  <li data-foreach-item="items">
+    <p class='label'><a data-bind-href="item.url" data-bind='item.text'></a></p>
+    <p class='label' data-bind="item.date | prepend '(' | append ')'"></p>
+    <p class='people' data-bind="item.people | raw"></p>
+  </li>
+</ul>
+
+<p data-showif="empty">No upcoming lectures</p>
+
+<p class="progress" style="font-size: 8px;" data-bind='dots | raw'></p>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
+
+<a href="http://www.theodi.org/lectures.json" class="data"><span class="icon-list"></span> JSON</a>

@@ -1,0 +1,12 @@
+<a data-bind-href="link">
+  <h1 class="title" data-bind-data-tip="tooltip">
+    <span data-bind="title"></span>
+  </h1>
+</a>
+
+<div class="meter-container">
+  <p class="percentage" data-bind="value | append '%'"></p>
+  <progress data-bind-max="max" data-bind-data-min="min" data-bind-value="value"></progress>
+</div>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
