@@ -1,0 +1,41 @@
+<a data-bind-href="link">
+  <div class="title-wrapper">
+    <h1 class="title" data-bind-data-tip="tooltip">
+      <span data-bind="title"></span>
+    </h1>
+  </div>
+
+  <div class="number-with-target">
+
+    <div class='annual-bar'>
+      <div class='label'>
+        <span data-bind="annual_target | numberWithCurrency currency | prepend prefix | append suffix"></span>
+        <span class='annual-tip tip'>
+          annual target
+        </span>
+      </div>
+    </div>
+    <div class='ytd-bar' data-bind-style='ytd_percent'>
+      <div class='label'>
+        <span data-bind="ytd_target | numberWithCurrency currency | prepend prefix | append suffix"></span>
+        <span class='ytd-tip tip'>
+          year to date target
+        </span>
+      </div>
+    </div>
+    <div class='value-container' data-bind-style='value_percent'>
+      <div class='value-bar'>
+      </div>
+      <div class='value-label label'>
+        <span data-bind="current | numberWithCurrency currency | prepend prefix | append suffix"></span>
+        <span class='value-tip tip'>
+          year to date actual
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <p class="more-info" data-bind="moreinfo | raw"></p>
+
+  <p class="updated-at" data-bind="updatedAtMessage"></p>
+</a>

@@ -12703,7 +12703,7 @@ var prepareString = "a"[0] != "a",
     };
 
     App.event('ready').oneShot = true;
-
+1
     App.event('stop').oneShot = true;
 
     App.stop = function() {
@@ -14704,7 +14704,7 @@ var prepareString = "a"[0] != "a",
       },
       set: function(path, content) {
         if (path.charAt(0) !== '/') {
-          return this.set("" + path, content);
+          return this.set("/" + path, content);
         }
         this._requestedPaths.add(path);
         return this._viewContents[path] = content;
@@ -15492,7 +15492,7 @@ var prepareString = "a"[0] != "a",
 
   Dashing.debugMode = false;
 
-  source = new EventSource('assets/events.json');
+  source = new EventSource('/assets/events.json');
 
   source.addEventListener('open', function(e) {
     if (Dashing.debugMode) {
