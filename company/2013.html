@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+  <title>ODI Dashboards | 2013 Performance</title>
+
+  <!-- The javascript and css are managed by sprockets. The files can be found in the /assets folder-->
+  <script type="text/javascript" src="/assets/application.js"></script>
+  <link rel="stylesheet" href="/assets/application.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="http://static.theodi.org/assets/favicon.ico">
+
+  <script>
+  $(document).ready(function() {
+    $('#company-header h1.title').click(function() {
+      return true;
+    })
+  })
+  </script>
+
+<script type="text/javascript">
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34573394-13', {});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ga('send', 'pageview');
+
+
+</script></head>
+  <body>
+    <div id="container">
+      <div id='company-header'>
+        <a href="http://theodi.org/"><img src="/assets/odi_dashboard_logo.svg" /></a>
+        <div id='currency-switch'>
+  <script>
+    function setCurrency(currency) {
+      $(".currency").removeClass("currency-active");
+      $("#"+currency).addClass("currency-active");
+      Dashing.setCurrency(currency);
+      return false;
+    }
+  </script>
+  <a class='currency currency-active' id='GBP' onClick='setCurrency("GBP")' title="View currencies in Pounds Sterling">£</a>
+  <a class='currency' id='EUR' onClick='setCurrency("EUR")' title="View currencies in Euro">€</a>
+  <a class='currency' id='USD' onClick='setCurrency("USD")' title="View currencies in US Dollars">$</a>
+  <a class='currency' id='JPY' onClick='setCurrency("JPY")' title="View currencies in Japanese Yen">¥</a>
+  <a class='currency' id='KRW' onClick='setCurrency("KRW")' title="View currencies in South Korean Won">₩</a>
+</div>
+
+        <h1 class="title">
+          2013 Performance
+          <small id='dropdown'>&#x25BC;</small>
+          <ul id='nav'>
+  
+    <li>
+      
+        <a href='/company/all'>Lifetime impact</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/company/2015'>2015 Performance</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/company/2014'>2014 Performance</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/company/2013'>2013 Performance</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/tech'>Software Team</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/diversity'>Gender Diversity</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/opex/2015'>2015 OpEx</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/opex/2014'>2014 OpEx</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/progress/2015'>2015 Activities</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/progress/2014'>2014 Activities</a>
+      
+    </li>
+  
+    <li>
+      
+        <a href='/progress/2013'>2013 Activities</a>
+      
+    </li>
+  
+</ul>
+
+        </h1>
+      </div>
+      <ul class="grid rows-4 cols-4" id="company">
+  <li class="row-1 col-1">
+    <div data-id="2013-q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2013 Q4" id="q4-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
+  </li>
+  <li class="row-2 col-1">
+    <div data-id="2013-q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2013 Q3" id="q3-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
+  </li>
+  <li class="row-3 col-1">
+    <div data-id="2013-q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2013 Q2" id="q2-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
+  </li>
+  <li class="row-4 col-1">
+    <div data-id="2013-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2013 Q1" id="q1-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
+  </li>
+
+  <li class="row-1 col-2 height-2">
+    <div data-id="2013-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="total-reach" data-tooltip="Includes both 'active' reach (people we've met in person) and 'passive' reach (unique webviews + video + slide views on 3rd party sites like scribd). Total since ODI started."></div>
+  </li>
+  <li class="row-1 col-3 height-2">
+    <div data-id="2013-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value-unlocked" data-tooltip="Total amount of cash unlocked in direct investments in ODI, competitions, contracts, and partnerships since ODI started. Includes income that ODI startups have generated since joining the ODI programme."></div>
+  </li>
+  <li class="row-1 col-4 height-2">
+    <div data-id="2013-Members" data-view="Number" data-unordered="true" data-title="Members" id="active-members" data-tooltip="Total number of active corporate members"></div>
+  </li>
+<li class="row-3 col-2 height-2">
+  <div data-id="2013-KPIs" data-view="Number" data-unordered="true" data-title="Year 1 investor KPIs" id="kpis" data-tooltip="Percentage completion against reach, engagement, and influence targets defined by investors at the point of investment"></div>
+</li>
+  <li class="row-3 col-3 height-2">
+    <div data-id="2013-Bookings" data-view="Number" data-unordered="true" data-title="Commercial bookings" id="bookings" data-tooltip="The total contract value of sales made by the ODI team (e.g. a 3 year deal is 'booked' at the time of signing) from commercial companies (e.g. corporate membership)"></div>
+  </li>
+  <li class="row-3 col-4 height-2">
+    <div data-id="2013-ODCs" data-view="Number" data-unordered="true" data-title="Open data certificates" id="odcs" data-tooltip="Total number of datasets that have been taken through the questionnaire; these might not have been published."></div>
+  </li>
+</ul>
+
+    </div>
+  </body>
+</html>

@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=9">
 
-  <title>ODI Dashboards | Lifetime impact</title>
+  <title>ODI Dashboards | Progress 2015 Q1</title>
 
   <!-- The javascript and css are managed by sprockets. The files can be found in the /assets folder-->
-  <script type="text/javascript" src="assets/application.js"></script>
-  <link rel="stylesheet" href="assets/application.css">
+  <script type="text/javascript" src="../assets/application.js"></script>
+  <link rel="stylesheet" href="../assets/application.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="../assets/favicon.ico">
 
   <script>
   $(document).ready(function() {
@@ -55,7 +55,7 @@
   <body>
     <div id="container">
       <div id='company-header'>
-        <a href=""><img src="assets/odi_dashboard_logo.svg" /></a>
+        <a href="../"><img src="../assets/odi_dashboard_logo.svg" /></a>
         <div id='currency-switch'>
   <script>
     function setCurrency(currency) {
@@ -73,7 +73,7 @@
 </div>
 
         <h1 class="title">
-          Lifetime impact
+          Progress 2015 Q1
           <small id='dropdown'>&#x25BC;</small>
           <ul id='nav'>
   
@@ -147,24 +147,24 @@
 
         </h1>
       </div>
-      <ul class="grid rows-2 cols-3" id="company">
-  <li class="row-1 col-1">
-    <div data-id="Lifetime-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value-unlocked" data-tooltip="Total amount of cash unlocked in direct investments in ODI, competition funding, direct contracts, and partnerships, and income that ODI Nodes and ODI Startups have generated since joining the ODI programme (source: ODI + Nodes + startups)"></div>
+      <ul class="grid rows-4 cols-11" id="progress">
+  <li class="row-1 col-1 width-3">
+    <div data-id="2015-q4-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2015 Q4" id="q4-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
   </li>
-  <li class="row-1 col-2">
-    <div data-id="Lifetime-network-size" data-view="Number" data-unordered="true" data-title="Global network" id="network-size" data-tooltip="Total number of active members + Nodes (source: ODI)"></div>
+  <li class="row-2 col-1 width-3">
+    <div data-id="2015-q3-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2015 Q3" id="q3-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
   </li>
-  <li class="row-1 col-3">
-    <div data-id="Lifetime-bookings" data-view="Number" data-unordered="true" data-title="Sales" id="bookings" data-tooltip="Total sales since ODI began (source: ODI)"></div>
+  <li class="row-3 col-1 width-3">
+    <div data-id="2015-q2-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2015 Q2" id="q2-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
   </li>
-  <li class="row-2 col-1">
-    <div data-id="Lifetime-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="total-reach" data-tooltip="Total number of unique people reached since we began, in person and online (source: ODI + Google Analytics)"></div>
+  <li class="row-4 col-1 width-3">
+    <div data-id="2015-q1-progress" data-view="Smallmeter" data-unordered="true" data-title="Progress 2015 Q1" id="q1-progress" data-tooltip="Percentage completion of all tasks the ODI team defined at the beginning of the quarter that were completed."></div>
   </li>
-  <li class="row-2 col-2">
-    <div data-id="Lifetime-ODCs" data-view="Number" data-unordered="true" data-title="Open data certificates" id="odcs" data-tooltip="Total Open Data Certificates created (source: ODI)"></div>
+  <li class="row-1 col-4 width-4 height-4">
+    <div data-id="2015-q1-rest-of-quarter" data-view="ProgressList" data-title="Outstanding tasks" id="this-month" data-tooltip="Tasks that were not completed during the quarter"></div>
   </li>
-  <li class="row-2 col-3">
-    <div data-id="Lifetime-people-trained" data-view="Number" data-unordered="true" data-title="People trained" id="people-trained" data-tooltip="Total number of people trained by ODI HQ and ODI Nodes since we began (source: ODI)"></div>
+  <li class="row-1 col-8 width-4 height-4">
+    <div data-id="2015-q1-done" data-view="ProgressList" data-title="Done" id="done" data-tooltip="Completed tasks"></div>
   </li>
 </ul>
 

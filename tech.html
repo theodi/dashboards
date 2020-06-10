@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=9">
 
-  <title>ODI Dashboards | Lifetime impact</title>
+  <title>ODI Dashboards | Software Team</title>
 
   <!-- The javascript and css are managed by sprockets. The files can be found in the /assets folder-->
   <script type="text/javascript" src="assets/application.js"></script>
@@ -73,7 +73,7 @@
 </div>
 
         <h1 class="title">
-          Lifetime impact
+          Software Team
           <small id='dropdown'>&#x25BC;</small>
           <ul id='nav'>
   
@@ -147,24 +147,39 @@
 
         </h1>
       </div>
-      <ul class="grid rows-2 cols-3" id="company">
-  <li class="row-1 col-1">
-    <div data-id="Lifetime-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value-unlocked" data-tooltip="Total amount of cash unlocked in direct investments in ODI, competition funding, direct contracts, and partnerships, and income that ODI Nodes and ODI Startups have generated since joining the ODI programme (source: ODI + Nodes + startups)"></div>
+      <ul class="grid rows-6 cols-8">
+  <li class='row-1 col-1 width-2 height-2'>
+    <div data-id="milestone" data-view="Meter" id='milestone'></div>
   </li>
-  <li class="row-1 col-2">
-    <div data-id="Lifetime-network-size" data-view="Number" data-unordered="true" data-title="Global network" id="network-size" data-tooltip="Total number of active members + Nodes (source: ODI)"></div>
+  <li class='row-3 col-1'>
+    <div class='small' data-id="issues-graph" data-view="Number" data-title="Issues" id='issues' data-tooltip="Total number of issues open on GitHub across all projects"></div>
   </li>
-  <li class="row-1 col-3">
-    <div data-id="Lifetime-bookings" data-view="Number" data-unordered="true" data-title="Sales" id="bookings" data-tooltip="Total sales since ODI began (source: ODI)"></div>
+  <li class='row-3 col-2'>
+    <div class='small' data-id="pull-requests" data-view="Number" data-title="Open PRs" id='open-prs' data-tooltip="Total number of pull requests open on GitHub across all projects"></div>
   </li>
-  <li class="row-2 col-1">
-    <div data-id="Lifetime-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="total-reach" data-tooltip="Total number of unique people reached since we began, in person and online (source: ODI + Google Analytics)"></div>
+  <li class='row-4 col-1'>
+    <div class='small' data-id="external-pulls" data-view="Number" data-title="External PRs" id='external-prs' data-tooltip="Total number of pull requests submitted to external projects"></div>
   </li>
-  <li class="row-2 col-2">
-    <div data-id="Lifetime-ODCs" data-view="Number" data-unordered="true" data-title="Open data certificates" id="odcs" data-tooltip="Total Open Data Certificates created (source: ODI)"></div>
+  <li class='row-4 col-2'>
+    <div class='small' data-id="external-pulls-merged" data-view="Number" data-title="Ex. PRs merged" id='external-merged' data-tooltip="Total number of pull requests merged into external projects"></div>
   </li>
-  <li class="row-2 col-3">
-    <div data-id="Lifetime-people-trained" data-view="Number" data-unordered="true" data-title="People trained" id="people-trained" data-tooltip="Total number of people trained by ODI HQ and ODI Nodes since we began (source: ODI)"></div>
+  <li class='row-5 col-1 width-2 height-2'>
+    <div data-id="twitter_mentions" data-view="Comments" data-title="@UKODITech mentions" id='twitter-mentions' data-tooltip="Mentions of @UKODITech on Twitter"></div>
+  </li>
+  <li class='row-1 col-3 width-4 height-6'>
+    <div data-id="travis-builds" data-view="Travis" data-unordered="true" data-title="Build status" id='build-status' data-tooltip="Current status of Travis CI test builds"></div>
+  </li>
+  <li class='row-1 col-7 width-2 height-2'>
+    <div data-id="travis-build-image" data-view="Image" data-unordered="true" id='build-image'></div>
+  </li>
+  <li class='row-3 col-7 width-2 height-3'>
+    <div data-id="dependencies" data-view="Pie" data-title="Dependency Status" id="dependencies" data-tooltip="Breakdown of dependencies tracked by Gemnasium"></div>
+  </li>
+  <li class='row-6 col-7 width-1 height-1'>
+    <div class='small' data-id="dependency-alerts" data-view="Number" data-title="Dep Alerts" id="dependency-alerts" data-tooltip="Open gemnasium alerts"></div>
+  </li>
+  <li class='row-6 col-8 width-1 height-1'>
+    <div class='small' data-id="application-errors" data-view="Number" data-title="App Errors" id="application-errors" data-tooltip="Unresolved Airbrake errors"></div>
   </li>
 </ul>
 

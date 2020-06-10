@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=9">
 
-  <title>ODI Dashboards | Lifetime impact</title>
+  <title>ODI Dashboards | 2015 Performance</title>
 
   <!-- The javascript and css are managed by sprockets. The files can be found in the /assets folder-->
-  <script type="text/javascript" src="assets/application.js"></script>
-  <link rel="stylesheet" href="assets/application.css">
+  <script type="text/javascript" src="/assets/application.js"></script>
+  <link rel="stylesheet" href="/assets/application.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="http://static.theodi.org/assets/favicon.ico">
 
   <script>
   $(document).ready(function() {
@@ -55,7 +55,7 @@
   <body>
     <div id="container">
       <div id='company-header'>
-        <a href=""><img src="assets/odi_dashboard_logo.svg" /></a>
+        <a href="http://theodi.org/"><img src="/assets/odi_dashboard_logo.svg" /></a>
         <div id='currency-switch'>
   <script>
     function setCurrency(currency) {
@@ -73,7 +73,7 @@
 </div>
 
         <h1 class="title">
-          Lifetime impact
+          2015 Performance
           <small id='dropdown'>&#x25BC;</small>
           <ul id='nav'>
   
@@ -147,24 +147,27 @@
 
         </h1>
       </div>
-      <ul class="grid rows-2 cols-3" id="company">
+      <ul class="grid rows-2 cols-4" id="company">
   <li class="row-1 col-1">
-    <div data-id="Lifetime-Value" data-view="Number" data-unordered="true" data-title="Value unlocked" id="value-unlocked" data-tooltip="Total amount of cash unlocked in direct investments in ODI, competition funding, direct contracts, and partnerships, and income that ODI Nodes and ODI Startups have generated since joining the ODI programme (source: ODI + Nodes + startups)"></div>
+    <div data-id="2015-network-size" data-view="Number" data-unordered="true" data-title="Global network" id="network-size" data-tooltip="Number of new members in 2015 (source: ODI)"></div>
   </li>
   <li class="row-1 col-2">
-    <div data-id="Lifetime-network-size" data-view="Number" data-unordered="true" data-title="Global network" id="network-size" data-tooltip="Total number of active members + Nodes (source: ODI)"></div>
+    <div data-id="2015-people-trained" data-view="NumberWithTarget" data-unordered="true" data-title="People trained" id="people-trained" data-tooltip="Number of people trained by ODI HQ and ODI Nodes in 2015 (source: ODI + Nodes)"></div>
   </li>
   <li class="row-1 col-3">
-    <div data-id="Lifetime-bookings" data-view="Number" data-unordered="true" data-title="Sales" id="bookings" data-tooltip="Total sales since ODI began (source: ODI)"></div>
+    <div data-id="2015-trainers-trained" data-view="NumberWithTarget" data-unordered="true" data-title="Trainers trained" id="trainers-trained" data-tooltip="Number of trainers trained in 2015 by ODI HQ (source: ODI)"></div>
   </li>
   <li class="row-2 col-1">
-    <div data-id="Lifetime-Reach" data-view="Number" data-unordered="true" data-title="People reached" id="total-reach" data-tooltip="Total number of unique people reached since we began, in person and online (source: ODI + Google Analytics)"></div>
+    <div data-id="2015-Reach" data-view="NumberWithTarget" data-unordered="true" data-title="People reached" id="total-reach" data-tooltip="Number of unique people reached in person and online in 2015 (source: ODI + Google Analytics)"></div>
   </li>
   <li class="row-2 col-2">
-    <div data-id="Lifetime-ODCs" data-view="Number" data-unordered="true" data-title="Open data certificates" id="odcs" data-tooltip="Total Open Data Certificates created (source: ODI)"></div>
+    <div data-id="2015-flagship-stories" data-view="NumberWithTarget" data-unordered="true" data-title="Flagship stories" id="flagship-stories" data-tooltip="Significant stories that reveal the power, potential impact and/or impact of open data. Flagship stories are also promoted to reach a large audience. (source: ODI)"></div>
   </li>
   <li class="row-2 col-3">
-    <div data-id="Lifetime-people-trained" data-view="Number" data-unordered="true" data-title="People trained" id="people-trained" data-tooltip="Total number of people trained by ODI HQ and ODI Nodes since we began (source: ODI)"></div>
+    <div data-id="2015-bookings" data-view="NumberWithTarget" data-unordered="true" data-title="Sales" id="bookings" data-tooltip="Sales booked/closed in 2015 (e.g. a £120 twelve month services booking can become £10 a month over those months, so bookings and cash often vary in timing) (source: ODI)"></div>
+  </li>
+  <li class="row-1 col-4 height-2">
+    <div data-id="2015-revenue-by-sector" data-view="Pie" data-title="Income split" id="revenue-by-sector" data-tooltip="The split of income against the different areas of work that ODI carries out"></div>
   </li>
 </ul>
 
